@@ -1,0 +1,2 @@
+var e=`Will Cook`,t={plectis:`https://wcook04.github.io/practical-formal-verification/`,mathsMap:`https://wcook04.github.io/practical-formal-verification/maths/universe.html`,atlas:`https://wcook04.github.io/plectis-atlas/`,atlasFamily:`https://wcook04.github.io/plectis-atlas/families/281.html`,youtube:`https://www.youtube.com/@willcook2004`,github:`https://github.com/wcook04`,contact:`https://wcook04.github.io/practical-formal-verification/docs/contact.html#get-in-touch`,x:`https://x.com/cookie1234593`};export{t as n,e as t};
+//# sourceMappingURL=author-Dmi-H_jd.js.map

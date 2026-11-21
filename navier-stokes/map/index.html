@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Argument map · Navier–Stokes blow-up: the paper</title>
+    <meta
+      name="description"
+      content="Finite-time blow-up for the Navier–Stokes equations, by Levent Alpöge and Tristan Buckmaster, read sentence by sentence beside its Lean."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Finite-time blow-up for the Navier–Stokes equations" />
+    <meta
+      property="og:description"
+      content="By Levent Alpöge and Tristan Buckmaster. Each phrase opens the Lean that states it."
+    />
+    <meta property="og:url" content="https://wcook04.github.io/library/navier-stokes/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="describedby" href="/library/navier-stokes/llms.txt" type="text/plain" />
+    <meta name="author" content="Will Cook" />
+    <meta name="theme-color" content="#f8f0e2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1c1526" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/library/navier-stokes/favicon.svg" type="image/svg+xml" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("lx-theme");
+          if (stored === "light" || stored === "dark") document.documentElement.setAttribute("data-theme", stored);
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/library/navier-stokes/assets/index-MQsjoRO1.js"></script>
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/site-EiTIgco5.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/react-dom-C-IYQ33R.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/client-qcnbbk61.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/jsx-runtime-DmGV9qlq.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/skeletonView-Bx2x-Kyv.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/theme-BTFDFx0Q.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/lean-Dp_hqpPF.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/data-BLjK9qG8.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/router-B0VFYuyQ.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/papers-DbvNDsIz.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/BackControl-JM4bC4fw.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/siteName-RyXDxLGN.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/TopBar-G6vDPtPz.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/cite-BYFSdasX.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/preload-helper-DPQH2YAY.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/restore-BlaK50I0.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/ties-lWJF028G.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/mainGoal-CygVfhsK.js">
+    <link rel="stylesheet" crossorigin href="/library/navier-stokes/assets/BackControl-D90l99kx.css">
+    <link rel="stylesheet" crossorigin href="/library/navier-stokes/assets/TopBar-BtQm4BbY.css">
+    <link rel="stylesheet" crossorigin href="/library/navier-stokes/assets/index-3kWqGhwa.css">
+    <link rel="stylesheet" crossorigin href="/library/navier-stokes/assets/reader-content-DK-xYLm1.css">
+  <link rel="preload" href="/library/navier-stokes/assets/source-sans-3-latin-wght-normal-Bo_j9asI.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/navier-stokes/assets/stix-two-text-latin-400-normal-Dm29J5Fl.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/navier-stokes/assets/stix-two-text-latin-500-normal-QKEzPprE.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/navier-stokes/edition/index.json" as="fetch" crossorigin /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/MapPage-DF1zg0Oy.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/site-EiTIgco5.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/jsx-runtime-DmGV9qlq.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/theme-BTFDFx0Q.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/data-BLjK9qG8.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/lean-Dp_hqpPF.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/router-B0VFYuyQ.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/papers-DbvNDsIz.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/preload-helper-DPQH2YAY.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/useAlignment-BF1DnQv9.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/levels-By0pQQaz.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/TheoremPlate-D3vVjjx4.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/client-qcnbbk61.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/react-dom-C-IYQ33R.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/ties-lWJF028G.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/summary-D9tottrY.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/documents-JS3U3rQK.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/math-D97SR1i2.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/signal-C_HQOtGN.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/author-Dmi-H_jd.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/tokenize-C5yNsREG.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/labels-DXlsYS1F.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/treeModel-DfC1c1Wo.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/declTitle-XO2ImcaK.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/scene-xP4_EMlq.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/restore-BlaK50I0.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/RecordPanel-B7kLOVJq.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/lazy-Co04BQia.js" /><link rel="preload" as="style" crossorigin href="/library/navier-stokes/assets/MapPage-DdIAYf8m.css" /><link rel="preload" as="style" crossorigin href="/library/navier-stokes/assets/TheoremPlate-C7qrGz8L.css" /><link rel="preload" as="style" crossorigin href="/library/navier-stokes/assets/scene-BMN7T5R6.css" /><link rel="preload" as="style" crossorigin href="/library/navier-stokes/assets/RecordPanel-ChHSg_Aj.css" /><link rel="preload" as="style" crossorigin href="/library/navier-stokes/assets/slice-FtnMEvve.css" /><link rel="preload" as="style" crossorigin href="/library/navier-stokes/assets/lean-B0P2vv6P.css" /><link rel="preload" href="/library/navier-stokes/edition/d4a83f96ac69ddd20b2a2fc078a32e1d7e952c8c1b8d0a3d3d51df497759d460.json" as="fetch" crossorigin /><link rel="preload" href="/library/navier-stokes/edition/6b298929d7a66575fd87b4a3a8f8de4b16cedd4281486b417e5ede7f139977da.json" as="fetch" crossorigin /><link rel="preload" href="/library/navier-stokes/edition/850079299e0c0e89192630afeb792da6ffaf560272d2b0880627c6ec8bd25373.json" as="fetch" crossorigin /><link rel="preload" href="/library/navier-stokes/edition/21a55205be7f9a78445b1d08f95466528878735e1a86742eac7c0a378f697cd7.json" as="fetch" crossorigin /><link rel="preload" href="/library/navier-stokes/edition/4aeed45b4a557459a3e63332ebf5859af62be4c0b3dae63a07a67c80701e5fb3.json" as="fetch" crossorigin /><link rel="preload" href="/library/navier-stokes/edition/0b02623d4b00616963cdaed2c1b5d6e108563821bb3a65cf8a44c9e22ba3e303.json" as="fetch" crossorigin /><link rel="preload" href="/library/navier-stokes/edition/5139adeeb1bc473263151524b1a444bf10ffe94b23ec6c172d8392d6708346cf.json" as="fetch" crossorigin /><link rel="preload" href="/library/navier-stokes/edition/3e19e4818d3d871d6be7c10e1945a6006c2713e2a0af680239e31a1cb8dfcf69.json" as="fetch" crossorigin /></head>
+  <body>
+    <div id="root"><div class="app"><header class="topbar"><span class="fam-lockup"><a class="fam-lockup__home" href="https://wcook04.github.io/" rel="author" title="All of Will Cook's websites and videos"><img src="/library/navier-stokes/plectis.svg" alt="" width="26" height="26" /><span class="fam-lockup__owner" translate="no">Will Cook</span></a><span class="fam-lockup__rule" aria-hidden="true"></span><a class="fam-lockup__site" href="/library/navier-stokes/" aria-label="Navier–Stokes blow-up: the paper, front page"><svg viewBox="0 0 32 32" aria-hidden="true" class="wordmark__mark"><path d="M4 27 L4 5 M4 27 L28 27" fill="none" stroke-width="2" stroke-linecap="round"></path><path d="M5 26 C10 22 13 17 16 14 C19 11 22 9 27 6" fill="none" stroke-width="2.6" stroke-linecap="round"></path><circle cx="16" cy="14" r="3"></circle></svg><span class="fam-lockup__name" translate="no">Navier–Stokes blow-up: the paper</span></a></span><nav class="topnav" aria-label="Main"><a class="topnav__job" href="/library/navier-stokes/read/short">Read</a><a class="topnav__job" href="/library/navier-stokes/map">Map</a><a class="topnav__job" href="/library/navier-stokes/compare">Compare</a><a class="topnav__job" href="/library/navier-stokes/checks">What ran</a><a class="topnav__job topnav__job--quiet" href="/library/navier-stokes/lean">Lean index</a></nav></header><main id="main" class="app__main"></main></div></div>
+    <noscript>
+      <p style="max-width: 40rem; margin: 4rem auto; font-family: Georgia, serif; line-height: 1.6">
+        The papers, the Lean beside them, the argument map and the comparisons on this site are drawn in the browser and need JavaScript. The paper and its Lean are in the repository under <code>instances/navier-stokes/</code>.
+      </p>
+    </noscript>
+  </body>
+</html>

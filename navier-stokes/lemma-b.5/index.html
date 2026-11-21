@@ -1,0 +1,173 @@
+<!doctype html>
+<html data-view="read" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Finite-time blow-up for the Navier–Stokes equations · Navier–Stokes blow-up: the paper</title>
+    <meta
+      name="description"
+      content="Finite-time blow-up for the Navier–Stokes equations, by Levent Alpöge and Tristan Buckmaster, read sentence by sentence beside its Lean."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Finite-time blow-up for the Navier–Stokes equations" />
+    <meta
+      property="og:description"
+      content="By Levent Alpöge and Tristan Buckmaster. Each phrase opens the Lean that states it."
+    />
+    <meta property="og:url" content="https://wcook04.github.io/library/navier-stokes/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="describedby" href="/library/navier-stokes/llms.txt" type="text/plain" />
+    <meta name="author" content="Will Cook" />
+    <meta name="theme-color" content="#f8f0e2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1c1526" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/library/navier-stokes/favicon.svg" type="image/svg+xml" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("lx-theme");
+          if (stored === "light" || stored === "dark") document.documentElement.setAttribute("data-theme", stored);
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/library/navier-stokes/assets/index-MQsjoRO1.js"></script>
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/site-EiTIgco5.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/react-dom-C-IYQ33R.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/client-qcnbbk61.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/jsx-runtime-DmGV9qlq.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/skeletonView-Bx2x-Kyv.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/theme-BTFDFx0Q.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/lean-Dp_hqpPF.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/data-BLjK9qG8.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/router-B0VFYuyQ.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/papers-DbvNDsIz.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/BackControl-JM4bC4fw.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/siteName-RyXDxLGN.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/TopBar-G6vDPtPz.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/cite-BYFSdasX.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/preload-helper-DPQH2YAY.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/restore-BlaK50I0.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/ties-lWJF028G.js">
+    <link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/mainGoal-CygVfhsK.js">
+    <link rel="stylesheet" crossorigin href="/library/navier-stokes/assets/BackControl-D90l99kx.css">
+    <link rel="stylesheet" crossorigin href="/library/navier-stokes/assets/TopBar-BtQm4BbY.css">
+    <link rel="stylesheet" crossorigin href="/library/navier-stokes/assets/index-3kWqGhwa.css">
+    <link rel="stylesheet" crossorigin href="/library/navier-stokes/assets/reader-content-DK-xYLm1.css">
+  <link rel="preload" href="/library/navier-stokes/assets/source-sans-3-latin-wght-normal-Bo_j9asI.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/navier-stokes/assets/stix-two-text-latin-400-normal-Dm29J5Fl.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/navier-stokes/assets/stix-two-text-latin-500-normal-QKEzPprE.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/navier-stokes/edition/index.json" as="fetch" crossorigin /><link rel="preload" href="/library/navier-stokes/assets/KaTeX_Main-Regular-B22Nviop.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/navier-stokes/assets/KaTeX_Math-Italic-t53AETM-.woff2" as="font" type="font/woff2" crossorigin /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/ReaderPage-CMCAK3yo.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/site-EiTIgco5.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/jsx-runtime-DmGV9qlq.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/skeletonView-Bx2x-Kyv.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/theme-BTFDFx0Q.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/lean-Dp_hqpPF.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/data-BLjK9qG8.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/router-B0VFYuyQ.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/BackControl-JM4bC4fw.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/papers-DbvNDsIz.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/preload-helper-DPQH2YAY.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/restore-BlaK50I0.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/ties-lWJF028G.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/useAlignment-BF1DnQv9.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/labels-DXlsYS1F.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/documents-JS3U3rQK.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/math-D97SR1i2.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/TheoremPlate-D3vVjjx4.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/client-qcnbbk61.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/react-dom-C-IYQ33R.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/summary-D9tottrY.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/signal-C_HQOtGN.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/author-Dmi-H_jd.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/tokenize-C5yNsREG.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/PhraseCard-DwrT2h29.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/RecordPanel-B7kLOVJq.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/levels-By0pQQaz.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/lazy-Co04BQia.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/walk-7PXRaS2z.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/map-pane-BBbUeb9z.js" /><link rel="modulepreload" crossorigin href="/library/navier-stokes/assets/short-DLmmCTKy.js" /><link rel="preload" as="style" crossorigin href="/library/navier-stokes/assets/ReaderPage-ve5u22oI.css" /><link rel="preload" as="style" crossorigin href="/library/navier-stokes/assets/reader-content-DK-xYLm1.css" /><link rel="preload" as="style" crossorigin href="/library/navier-stokes/assets/BackControl-D90l99kx.css" /><link rel="preload" as="style" crossorigin href="/library/navier-stokes/assets/TheoremPlate-C7qrGz8L.css" /><link rel="preload" as="style" crossorigin href="/library/navier-stokes/assets/reader-page-U6SVI4eh.css" /><link rel="preload" as="style" crossorigin href="/library/navier-stokes/assets/RecordPanel-ChHSg_Aj.css" /><link rel="preload" as="style" crossorigin href="/library/navier-stokes/assets/slice-FtnMEvve.css" /><link rel="preload" as="style" crossorigin href="/library/navier-stokes/assets/lean-B0P2vv6P.css" /><link rel="preload" as="style" crossorigin href="/library/navier-stokes/assets/map-pane-B1b-uN0V.css" /><link rel="preload" href="/library/navier-stokes/edition/d4a83f96ac69ddd20b2a2fc078a32e1d7e952c8c1b8d0a3d3d51df497759d460.json" as="fetch" crossorigin /><link rel="preload" href="/library/navier-stokes/edition/6b298929d7a66575fd87b4a3a8f8de4b16cedd4281486b417e5ede7f139977da.json" as="fetch" crossorigin /><link rel="preload" href="/library/navier-stokes/edition/850079299e0c0e89192630afeb792da6ffaf560272d2b0880627c6ec8bd25373.json" as="fetch" crossorigin /><link rel="preload" href="/library/navier-stokes/edition/21a55205be7f9a78445b1d08f95466528878735e1a86742eac7c0a378f697cd7.json" as="fetch" crossorigin /><link rel="preload" href="/library/navier-stokes/edition/4aeed45b4a557459a3e63332ebf5859af62be4c0b3dae63a07a67c80701e5fb3.json" as="fetch" crossorigin /><link rel="preload" href="/library/navier-stokes/edition/0b02623d4b00616963cdaed2c1b5d6e108563821bb3a65cf8a44c9e22ba3e303.json" as="fetch" crossorigin /><link rel="preload" href="/library/navier-stokes/edition/5d25e1a5e18a3eac1e838410e4a1a6f640735375f4c26972bd1fddf844360e91.md" as="fetch" crossorigin /><link rel="preload" href="/library/navier-stokes/edition/c295d97481930a5cb849e2d345a3361c24a7993c208ebd58a40f37f1965a5216.json" as="fetch" crossorigin /><link rel="preload" href="/library/navier-stokes/edition/ties/short.json" as="fetch" crossorigin /></head>
+  <body>
+    <div id="root"><div class="app"><header class="topbar"><span class="fam-lockup"><a class="fam-lockup__home" href="https://wcook04.github.io/" rel="author" title="All of Will Cook's websites and videos"><img src="/library/navier-stokes/plectis.svg" alt="" width="26" height="26" /><span class="fam-lockup__owner" translate="no">Will Cook</span></a><span class="fam-lockup__rule" aria-hidden="true"></span><a class="fam-lockup__site" href="/library/navier-stokes/" aria-label="Navier–Stokes blow-up: the paper, front page"><svg viewBox="0 0 32 32" aria-hidden="true" class="wordmark__mark"><path d="M4 27 L4 5 M4 27 L28 27" fill="none" stroke-width="2" stroke-linecap="round"></path><path d="M5 26 C10 22 13 17 16 14 C19 11 22 9 27 6" fill="none" stroke-width="2.6" stroke-linecap="round"></path><circle cx="16" cy="14" r="3"></circle></svg><span class="fam-lockup__name" translate="no">Navier–Stokes blow-up: the paper</span></a></span><nav class="topnav" aria-label="Main"><a class="topnav__job" href="/library/navier-stokes/read/short">Read</a><a class="topnav__job" href="/library/navier-stokes/map">Map</a><a class="topnav__job" href="/library/navier-stokes/compare">Compare</a><a class="topnav__job" href="/library/navier-stokes/checks">What ran</a><a class="topnav__job topnav__job--quiet" href="/library/navier-stokes/lean">Lean index</a></nav></header><main id="main" class="app__main"><div data-first-paper style="display:contents"><style>.reader-shape{display:grid;grid-template-columns:minmax(0,var(--reader-measure));justify-content:center;column-gap:var(--reader-gap);align-items:start;padding-inline:var(--space-6)}
+.reader-shape__outline,.reader-shape__side{display:none}
+.reader-shape__strip{height:45px;margin-bottom:var(--space-5);margin-left:-22px;border-bottom:1px solid var(--rule)}
+.reader-shape__text{display:flex;flex-direction:column;gap:14px}
+.reader-shape__text i{display:block;height:13px;background:var(--rule);opacity:.55}
+.reader-shape__text i:first-child{width:62%;height:30px;margin-bottom:var(--space-4)}
+.reader-shape__words{margin:0;font-family:var(--font-sans);font-size:var(--fs-sm);color:var(--ink-3)}
+.reader-shape .account-line{margin:var(--space-4) 0 var(--space-6);font-family:var(--font-sans);font-size:var(--fs-sm);line-height:var(--lh-ui);color:var(--ink-3);text-wrap:pretty}
+.reader-shape .paper.prose{max-width:var(--reader-measure)}
+.reader-shape .part{position:relative;display:flow-root;padding-bottom:var(--space-4)}
+.reader-shape .part__text{content-visibility:visible;contain-intrinsic-block-size:none}
+.reader-shape .part__text>:last-child{margin-bottom:0}
+@media (max-width:700px){.reader-shape{padding-inline:20px}.reader-shape__strip{margin-left:-15px}.reader-shape .account-line{display:none}}
+@media (min-width:1120px) and (max-width:1279px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure))}.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1280px){.reader-shape{grid-template-columns:minmax(0,min(var(--reader-measure),50vw)) minmax(0,1fr);justify-content:start;padding-left:32px;padding-right:0}
+.reader-shape__side{display:block;position:sticky;top:var(--topbar-h);height:calc(100vh - var(--topbar-h));margin-left:16px;border-left:1px solid var(--rule)}}
+@media (min-width:1680px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1fr)}
+.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1921px){.reader-shape{--fs-read:clamp(18px,calc(18px + (100vw - 1920px)/320),20px);--reader-measure:clamp(680px,calc(680px + (100vw - 1920px)*.117),755px)}}
+@media (min-width:2100px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1040px);justify-content:center}}</style><div class="reader-shape"><div class="reader-shape__outline"></div><div><div class="reader-shape__strip"></div><p class="account-line">Finite-time blow-up for the Navier–Stokes equations, by Levent Alpöge and Tristan Buckmaster. Paper and Lean by Levent Alpöge and Tristan Buckmaster, from their repository tristanbuckmaster/navier-stokes at ad53419; their paper thanks Anthropic for supporting the collaboration from which it grew, and states that they used Anthropic's Claude models throughout the work. The links from the text to the Lean, the plain titles, the reading notes and the comparisons were made with AI and have not been reviewed by the authors. No mathematician has reviewed them. <a class="pdf-link" href="/library/navier-stokes/pdf/paper.pdf" target="_blank" rel="noopener">Open PDF, 79 pages</a></p><div class="paper prose"><section class="part"><div class="part__text">
+</div></section><section class="part"><div class="part__text"><h1 id="finite-time-blow-up-for-the-navierstokes-equations" data-line="6">Finite-time blow-up for the Navier–Stokes equations</h1>
+</div></section><section class="part"><div class="part__text"><ul class="authors">
+<li>Levent Alpöge</li>
+<li>Tristan Buckmaster</li>
+</ul>
+
+
+<p data-line="21">We prove that there exist smooth, compactly supported, divergence-free initial data on <span class="math-nobreak math-nobreak--whole"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="double-struck">R</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\mathbb R^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathbb">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span>,</span> and smooth divergence-free initial data on the torus <span class="math-nobreak math-nobreak--whole"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="double-struck">T</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\mathbb T^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathbb">T</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span>,</span> for which the solutions of the three-dimensional Navier–Stokes equations without force blow up in finite time. This disproves the statements (A) and (B) of the Millennium Prize problem as formulated by Fefferman, and hence proves the statements (C) and (D). These solutions converge in self-similar variables to a backward discretely self-similar solution and blow up at its rate, which is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>t</mi><msup><mo stretchy="false">)</mo><mrow><mo>−</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn></mrow></msup></mrow><annotation encoding="application/x-tex">(T-t)^{-1/4}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.1389em;">T</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.138em;vertical-align:-0.25em;"></span><span class="mord mathnormal">t</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1/4</span></span></span></span></span></span></span></span></span></span></span></span> in <span class="math-nobreak math-nobreak--whole"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mover accent="true"><mi>H</mi><mo>˙</mo></mover><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">\dot H^1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.9202em;"></span><span class="mord"><span class="mord katex-accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9202em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.0813em;">H</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.0833em;"><span class="mord">˙</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span>.</span> The discretely self-similar solution is obtained from a certificate: an approximate solution that satisfies explicit inequalities. The certificate will be released soon; its hash is <code>3f7a335b84b6c7631742cacc5343dfcd11cf72f5221ff79b2b9268790b4b22c5</code>.</p>
+
+</div></section><section class="part"><div class="part__text"><h2 id="contents" data-line="26">Contents</h2>
+</div></section><section class="part"><div class="part__text"><table data-line="30">
+<thead data-line="31">
+<tr data-line="32">
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody data-line="33">
+<tr data-line="34">
+<td>1. Introduction</td>
+<td>1</td>
+</tr>
+<tr data-line="35">
+<td>2. Outline of the proof</td>
+<td>10</td>
+</tr>
+<tr data-line="36">
+<td>3. Preliminaries</td>
+<td>12</td>
+</tr>
+<tr data-line="37">
+<td>4. The equation linearized about <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>u</mi><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">u^*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6887em;"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6887em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mbin mtight">∗</span></span></span></span></span></span></span></span></span></span></span></td>
+<td>16</td>
+</tr>
+<tr data-line="38">
+<td>5. Blow-up on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="double-struck">R</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\mathbb R^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathbb">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span></td>
+<td>22</td>
+</tr>
+<tr data-line="39">
+<td>6. Blow-up on the torus</td>
+<td>24</td>
+</tr>
+<tr data-line="40">
+<td>7. From a certificate to a profile</td>
+<td>29</td>
+</tr>
+<tr data-line="41">
+<td>Appendix A. Proofs of the lemmas of Sections 2 and 3</td>
+<td>47</td>
+</tr>
+<tr data-line="42">
+<td>Appendix B. Certificates in the formalization</td>
+<td>49</td>
+</tr>
+<tr data-line="43">
+<td>Appendix C. The computation of the approximate profile</td>
+<td>70</td>
+</tr>
+<tr data-line="44">
+<td>Acknowledgments</td>
+<td>75</td>
+</tr>
+<tr data-line="45">
+<td>References</td>
+<td>75</td>
+</tr>
+</tbody>
+</table>
+</div></section><section class="part"><div class="part__text"><a id="1" class="anchor" aria-hidden="true"></a>
+<a id="1-introduction" class="anchor" aria-hidden="true"></a><h2 id="introduction" data-line="48">1 Introduction</h2>
+</div></section></div></div><div class="reader-shape__side"></div></div></div><template><style>.reader-shape{display:grid;grid-template-columns:minmax(0,var(--reader-measure));justify-content:center;column-gap:var(--reader-gap);align-items:start;padding-inline:var(--space-6)}
+.reader-shape__outline,.reader-shape__side{display:none}
+.reader-shape__strip{height:45px;margin-bottom:var(--space-5);margin-left:-22px;border-bottom:1px solid var(--rule)}
+.reader-shape__text{display:flex;flex-direction:column;gap:14px}
+.reader-shape__text i{display:block;height:13px;background:var(--rule);opacity:.55}
+.reader-shape__text i:first-child{width:62%;height:30px;margin-bottom:var(--space-4)}
+.reader-shape__words{margin:0;font-family:var(--font-sans);font-size:var(--fs-sm);color:var(--ink-3)}
+.reader-shape .account-line{margin:var(--space-4) 0 var(--space-6);font-family:var(--font-sans);font-size:var(--fs-sm);line-height:var(--lh-ui);color:var(--ink-3);text-wrap:pretty}
+.reader-shape .paper.prose{max-width:var(--reader-measure)}
+.reader-shape .part{position:relative;display:flow-root;padding-bottom:var(--space-4)}
+.reader-shape .part__text{content-visibility:visible;contain-intrinsic-block-size:none}
+.reader-shape .part__text>:last-child{margin-bottom:0}
+@media (max-width:700px){.reader-shape{padding-inline:20px}.reader-shape__strip{margin-left:-15px}.reader-shape .account-line{display:none}}
+@media (min-width:1120px) and (max-width:1279px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure))}.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1280px){.reader-shape{grid-template-columns:minmax(0,min(var(--reader-measure),50vw)) minmax(0,1fr);justify-content:start;padding-left:32px;padding-right:0}
+.reader-shape__side{display:block;position:sticky;top:var(--topbar-h);height:calc(100vh - var(--topbar-h));margin-left:16px;border-left:1px solid var(--rule)}}
+@media (min-width:1680px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1fr)}
+.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1921px){.reader-shape{--fs-read:clamp(18px,calc(18px + (100vw - 1920px)/320),20px);--reader-measure:clamp(680px,calc(680px + (100vw - 1920px)*.117),755px)}}
+@media (min-width:2100px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1040px);justify-content:center}}</style><div class="reader-shape" aria-busy="true"><div class="reader-shape__outline"></div><div><div class="reader-shape__strip"></div><p class="reader-shape__words" role="status">Loading the paper…</p><div class="reader-shape__text"><i></i><i style="width:100%"></i><i style="width:96%"></i><i style="width:98%"></i><i style="width:92%"></i><i style="width:60%"></i><i style="visibility:hidden"></i><i style="width:100%"></i><i style="width:94%"></i><i style="width:97%"></i><i style="width:88%"></i><i style="width:99%"></i><i style="width:45%"></i></div></div><div class="reader-shape__side"></div></div></template><script>(function(){if(!location.hash&&!location.search&&!history.state)return;var f=document.querySelector("[data-first-paper]");f.replaceWith(f.nextElementSibling.content)})()</script></main></div></div>
+    <noscript>
+      <p style="max-width: 40rem; margin: 4rem auto; font-family: Georgia, serif; line-height: 1.6">
+        The papers, the Lean beside them, the argument map and the comparisons on this site are drawn in the browser and need JavaScript. The paper and its Lean are in the repository under <code>instances/navier-stokes/</code>.
+      </p>
+    </noscript>
+  </body>
+</html>

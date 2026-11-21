@@ -1,0 +1,1 @@
+{"declarations":[],"imports":["Breakdown.FracCell.CornerIndependenceParts"],"module":"Breakdown.FracCell.CornerModesParts","path":"Breakdown/FracCell/CornerModesParts.lean","sha256":"425998ffeeec793400ea9b1a11c50aea234cd21b0b6b464f8744128d96637849","source":"import Breakdown.FracCell.CornerIndependenceParts\n"}

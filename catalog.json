@@ -37,74 +37,30 @@
     "Levent Alpöge",
     "Tristan Buckmaster"
    ],
-   "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-paper",
-   "here": false,
+   "href": "/library/navier-stokes/",
+   "here": true,
    "sentence": "Proves that there are smooth, compactly supported, divergence-free initial data on ℝ³, and smooth divergence-free data on the torus, whose solutions of the unforced three-dimensional Navier–Stokes equations blow up in finite time, with the profile obtained from a numerical certificate the authors will release.",
    "counts": {
-    "phrases": 242,
-    "statements": 30,
-    "lean": 401
+    "phrases": 2117,
+    "statements": 379,
+    "lean": 787
    },
-   "comparator": "Comparator accepted the 15 selected theorems and rejected a control with a deleted hypothesis.",
+   "comparator": null,
    "pages": [
     {
-     "title": "The paper by number",
-     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-index"
+     "title": "The digest and the full account, Parts I and II",
+     "href": "/library/navier-stokes/accounts/"
     },
     {
-     "title": "Specialist digest",
-     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-digest"
+     "title": "How the Lean encodes it",
+     "href": "/library/navier-stokes/how-the-lean-encodes-it/"
     },
     {
-     "title": "Part I: Theorem 1.1",
-     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-part-1"
-    },
-    {
-     "title": "Part II: Theorem 7.1",
-     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-part-2"
-    },
-    {
-     "title": "Part III: Appendix B",
-     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-appendix-b"
-    },
-    {
-     "title": "What the Lean states",
-     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes"
-    },
-    {
-     "title": "Statement files",
-     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-statement-files"
-    },
-    {
-     "title": "Proof routes",
-     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-routes"
-    },
-    {
-     "title": "Proof routes in detail",
-     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-route-details"
-    },
-    {
-     "title": "Cell layer guide",
-     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-cell-guide"
-    },
-    {
-     "title": "Cell reference",
-     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-cell-reference"
-    },
-    {
-     "title": "Cell layer and Appendix B",
-     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-cell-fidelity"
-    },
-    {
-     "title": "The certificate checker",
-     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-certificate-checker"
-    },
-    {
-     "title": "Library guides 1 to 30",
-     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-library-01"
+     "title": "The authors’ PDF",
+     "href": "https://github.com/tristanbuckmaster/navier-stokes/blob/ad53419de079eb8f95f60313473374624a348546/paper/finite-time-blow-up-navier-stokes.pdf"
     }
    ],
-   "search": null
+   "search": "/library/_index/search/navier-stokes.json"
   },
   {
    "id": "erdos-257",

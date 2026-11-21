@@ -1,0 +1,1 @@
+{"declarations":[],"imports":["Breakdown.CertCell.AssemblyPotentialGroupsChargePartsCore"],"module":"Breakdown.CertCell.AssemblyPotentialGroupsChargeParts","path":"Breakdown/CertCell/AssemblyPotentialGroupsChargeParts.lean","sha256":"c272fac199b12b5c73e8e8ea7e79d45f89a2e6da6f9d92dba9bf2df44f6eb804","source":"import Breakdown.CertCell.AssemblyPotentialGroupsChargePartsCore\n"}

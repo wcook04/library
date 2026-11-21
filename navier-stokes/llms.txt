@@ -1,0 +1,15 @@
+# Finite-time blow-up for the Navier–Stokes equations
+
+> Finite-time blow-up for the Navier–Stokes equations, by Levent Alpöge and Tristan Buckmaster, read beside its Lean. Paper and Lean by Levent Alpöge and Tristan Buckmaster, from their repository tristanbuckmaster/navier-stokes at ad53419; their paper thanks Anthropic for supporting the collaboration from which it grew, and states that they used Anthropic's Claude models throughout the work.
+
+The links from the text to the Lean, the plain titles, the reading notes and the comparisons were made with AI and have not been reviewed by the authors. No mathematician has reviewed them.
+
+## Read
+
+- [Finite-time blow-up for the Navier–Stokes equations](https://wcook04.github.io/library/navier-stokes/)
+
+## Data
+
+All data is static JSON under https://wcook04.github.io/library/navier-stokes/edition/. Start at edition/index.json: it maps API routes to files.
+
+The Lean index has 2,257 modules and 41,663 declarations.

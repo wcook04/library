@@ -13,12 +13,16 @@
    "here": true,
    "sentence": "Constructs smooth periodic initial data for the three-dimensional incompressible Euler equations whose solution blows up in finite time, with the velocity bounded and the vorticity at the origin tending to infinity.",
    "counts": {
-    "phrases": 969,
-    "statements": 255,
-    "lean": 1039
+    "phrases": 999,
+    "statements": 256,
+    "lean": 1012
    },
    "comparator": null,
    "pages": [
+    {
+     "title": "How the Lean encodes it",
+     "href": "/library/euler/how-the-lean-encodes-it/"
+    },
     {
      "title": "The authors’ PDF",
      "href": "https://github.com/mcoiculescu/EulerBlowupPublic/blob/fd3a1588967810b9abe42a1dcf46ee662d6434e2/manuscript/paper.pdf"

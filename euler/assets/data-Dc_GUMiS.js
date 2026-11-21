@@ -1,0 +1,1 @@
+export{s as fetchModule,f as shellResource}from"./data-ByT64V4g.js";

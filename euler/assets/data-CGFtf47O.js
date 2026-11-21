@@ -1,1 +1,0 @@
-export{s as fetchModule,f as shellResource}from"./data-Dx1QMdFg.js";

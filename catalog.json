@@ -17,7 +17,7 @@
     "statements": 256,
     "lean": 1012
    },
-   "comparator": null,
+   "comparator": "Comparator accepted the main theorem's Lean against the authors' definitions with five kernels and only the axioms propext, Quot.sound, Classical.choice. Three altered statements were rejected.",
    "pages": [
     {
      "title": "How the Lean encodes it",

@@ -12,4 +12,4 @@ The links from the text to the Lean, the plain titles, the reading notes and the
 
 All data is static JSON under https://wcook04.github.io/library/euler/edition/. Start at edition/index.json: it maps API routes to files.
 
-The Lean index has 729 modules and 9,297 declarations.
+The Lean index has 730 modules and 9,297 declarations.

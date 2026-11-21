@@ -15,7 +15,7 @@
    "counts": {
     "phrases": 999,
     "statements": 256,
-    "lean": 1012
+    "lean": 1013
    },
    "comparator": "Comparator accepted the main theorem's Lean against the authors' definitions with five kernels and only the axioms propext, Quot.sound, Classical.choice. Three altered statements were rejected.",
    "pages": [

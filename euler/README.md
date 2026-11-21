@@ -6,4 +6,4 @@ By Levent Alpöge, Tristan Buckmaster and Matei P. Coiculescu. Paper and Lean by
 
 The links from the text to the Lean, the plain titles, the reading notes and the comparisons were made with AI and have not been reviewed by the authors. No mathematician has reviewed them.
 
-The Lean shown here has 729 modules and 9,297 declarations.
+The Lean shown here has 730 modules and 9,297 declarations.

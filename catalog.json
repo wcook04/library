@@ -1,22 +1,311 @@
 {
- "schema": "library-catalog/1",
+ "schema": "library-catalog/2",
  "papers": [
   {
    "id": "euler",
    "title": "Finite-Time Singularity Formation for the Three-Dimensional Euler Equations",
-   "short_title": "Euler singularity on the torus",
    "authors": [
     "Levent Alpöge",
     "Tristan Buckmaster",
     "Matei P. Coiculescu"
    ],
+   "href": "/library/euler/",
+   "here": true,
+   "sentence": "Constructs smooth periodic initial data for the three-dimensional incompressible Euler equations whose solution blows up in finite time, with the velocity bounded and the vorticity at the origin tending to infinity.",
+   "counts": {
+    "phrases": 969,
+    "statements": 255,
+    "lean": 1039
+   },
+   "comparator": null,
    "pages": [
     {
-     "slug": "",
-     "title": "Finite-Time Singularity Formation for the Three-Dimensional Euler Equations",
-     "noun": "paper"
+     "title": "The authors’ PDF",
+     "href": "https://github.com/mcoiculescu/EulerBlowupPublic/blob/fd3a1588967810b9abe42a1dcf46ee662d6434e2/manuscript/paper.pdf"
     }
-   ]
+   ],
+   "search": "/library/_index/search/euler.json"
+  },
+  {
+   "id": "navier-stokes",
+   "title": "Finite-time blow-up for the Navier–Stokes equations",
+   "authors": [
+    "Levent Alpöge",
+    "Tristan Buckmaster"
+   ],
+   "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-paper",
+   "here": false,
+   "sentence": "Proves that there are smooth, compactly supported, divergence-free initial data on ℝ³, and smooth divergence-free data on the torus, whose solutions of the unforced three-dimensional Navier–Stokes equations blow up in finite time, with the profile obtained from a numerical certificate the authors will release.",
+   "counts": {
+    "phrases": 242,
+    "statements": 30,
+    "lean": 401
+   },
+   "comparator": "Comparator accepted the 15 selected theorems and rejected a control with a deleted hypothesis.",
+   "pages": [
+    {
+     "title": "The paper by number",
+     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-index"
+    },
+    {
+     "title": "Specialist digest",
+     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-digest"
+    },
+    {
+     "title": "Part I: Theorem 1.1",
+     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-part-1"
+    },
+    {
+     "title": "Part II: Theorem 7.1",
+     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-part-2"
+    },
+    {
+     "title": "Part III: Appendix B",
+     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-appendix-b"
+    },
+    {
+     "title": "What the Lean states",
+     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes"
+    },
+    {
+     "title": "Statement files",
+     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-statement-files"
+    },
+    {
+     "title": "Proof routes",
+     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-routes"
+    },
+    {
+     "title": "Proof routes in detail",
+     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-route-details"
+    },
+    {
+     "title": "Cell layer guide",
+     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-cell-guide"
+    },
+    {
+     "title": "Cell reference",
+     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-cell-reference"
+    },
+    {
+     "title": "Cell layer and Appendix B",
+     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-cell-fidelity"
+    },
+    {
+     "title": "The certificate checker",
+     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-certificate-checker"
+    },
+    {
+     "title": "Library guides 1 to 30",
+     "href": "https://wcook04.github.io/proof-reader/#/navier-stokes-library-01"
+    }
+   ],
+   "search": null
+  },
+  {
+   "id": "erdos-257",
+   "title": "Which sums of 1/(2ⁿ − 1) are irrational?",
+   "authors": [
+    "Will Cook, using AI"
+   ],
+   "href": "https://wcook04.github.io/erdos-257-reader/",
+   "here": false,
+   "sentence": "Proves that the sum of 1/(2ᵃ − 1) over an infinite set A is irrational when A satisfies a weighted summability condition, has a summable divisor cover, or lies in a union of one set of each kind, at every integer base b ≥ 2; Erdős’s question for every infinite A stays open.",
+   "counts": {
+    "phrases": 1459,
+    "statements": 738,
+    "lean": 881
+   },
+   "comparator": "Comparator accepted all 51 statements replayed on GitHub Actions.",
+   "pages": [
+    {
+     "title": "Short paper",
+     "href": "https://wcook04.github.io/erdos-257-reader/read/short/"
+    },
+    {
+     "title": "Exposition",
+     "href": "https://wcook04.github.io/erdos-257-reader/read/expository/"
+    },
+    {
+     "title": "Long record",
+     "href": "https://wcook04.github.io/erdos-257-reader/read/long/"
+    }
+   ],
+   "search": null
+  },
+  {
+   "id": "sk",
+   "title": "Why the Sherrington–Kirkpatrick order parameter has no gaps",
+   "authors": [
+    "OpenAI (the proof and its Lean)",
+    "Will Cook, using AI (the three papers)"
+   ],
+   "href": "https://wcook04.github.io/lean-exposition-site/",
+   "here": false,
+   "sentence": "A minimising Parisi order parameter of the Sherrington–Kirkpatrick spin glass has no gaps: it increases across every interval in [0, 1), and its derivative is positive between 0 and 1.",
+   "counts": {
+    "phrases": 707,
+    "statements": 250,
+    "lean": 399
+   },
+   "comparator": null,
+   "pages": [
+    {
+     "title": "Short paper",
+     "href": "https://wcook04.github.io/lean-exposition-site/read/short/"
+    },
+    {
+     "title": "Exposition",
+     "href": "https://wcook04.github.io/lean-exposition-site/read/expository/"
+    },
+    {
+     "title": "Long record",
+     "href": "https://wcook04.github.io/lean-exposition-site/read/long/"
+    }
+   ],
+   "search": null
+  },
+  {
+   "id": "quartic",
+   "title": "A nearly quartic separation between randomized and quantum query complexity",
+   "authors": [
+    "OpenAI"
+   ],
+   "href": "https://wcook04.github.io/quartic-query-lean/",
+   "here": false,
+   "sentence": "For every power below four there is a total Boolean function whose randomized query complexity exceeds that power of its quantum query complexity, and four is the best possible exponent; Lean checks the optimal exponent with no hypothesis.",
+   "counts": {
+    "phrases": 350,
+    "statements": 121,
+    "lean": 472
+   },
+   "comparator": "Comparator accepted each statement bundle in local runs.",
+   "pages": [
+    {
+     "title": "OpenAI’s paper",
+     "href": "https://wcook04.github.io/quartic-query-lean/#/read/original"
+    },
+    {
+     "title": "Full proof reconstruction",
+     "href": "https://wcook04.github.io/quartic-query-lean/#/read/reconstruction"
+    },
+    {
+     "title": "Expert companion",
+     "href": "https://wcook04.github.io/quartic-query-lean/#/read/expert"
+    },
+    {
+     "title": "Worked exposition",
+     "href": "https://wcook04.github.io/quartic-query-lean/#/read/exposition"
+    }
+   ],
+   "search": null
+  },
+  {
+   "id": "pcp",
+   "title": "Constant-query verification by algebraic encoding",
+   "authors": [
+    "Will Cook, with AI assistance (explanatory reconstruction)"
+   ],
+   "href": "https://wcook04.github.io/proof-reader/#/pcp-specialist",
+   "here": false,
+   "sentence": "The PCP theorem: every language in NP has a polynomial-time verifier with logarithmic randomness, constantly many proof-bit queries, perfect completeness and soundness error at most one half, by the algebraic proof of Amireddy, Behera, Srinivasan, Sudan and Willumsgaard.",
+   "counts": {
+    "phrases": 177,
+    "statements": 23,
+    "lean": 101
+   },
+   "comparator": "Comparator accepted the forward theorem, its converse and the equivalence with the reference NP class.",
+   "pages": [
+    {
+     "title": "The detailed account",
+     "href": "https://wcook04.github.io/proof-reader/#/pcp-full-argument"
+    },
+    {
+     "title": "Checking a long proof by reading a few bits",
+     "href": "https://wcook04.github.io/proof-reader/#/pcp-exposition"
+    },
+    {
+     "title": "Troy Lee’s reading guide",
+     "href": "https://wcook04.github.io/proof-reader/#/pcp-reading-guide"
+    }
+   ],
+   "search": null
+  },
+  {
+   "id": "contextual-embeddings",
+   "title": "Contextual Embeddings: Implementing Bound Variables Through Instance Resolution",
+   "authors": [
+    "Samantha Frohlich",
+    "Jessica Foster",
+    "G. A. Kavvos",
+    "Meng Wang"
+   ],
+   "href": "https://wcook04.github.io/proof-reader/#/contextual-embeddings",
+   "here": false,
+   "sentence": "Uses instance resolution to define a context-directed isomorphism between a higher-order interface for bound variables and a first-order representation, and proves the round trip in Lean.",
+   "counts": {
+    "phrases": 66,
+    "statements": 5,
+    "lean": 22
+   },
+   "comparator": null,
+   "pages": [],
+   "search": null
+  },
+  {
+   "id": "smtlib",
+   "title": "The SMT-LIB Standard: Version 2.7",
+   "authors": [
+    "Clark Barrett",
+    "Pascal Fontaine",
+    "Cesare Tinelli"
+   ],
+   "href": "https://wcook04.github.io/proof-reader/#/smtlib-2-7",
+   "here": false,
+   "sentence": "The reference standard for SMT-LIB 2.7, read beside BSmtLib, a Lean formalisation of its lexicon, grammar and parser.",
+   "counts": {
+    "phrases": 97,
+    "lean": 94
+   },
+   "comparator": null,
+   "pages": [],
+   "search": null
+  },
+  {
+   "id": "coupled-spring",
+   "title": "The minimum of the coupled spring potential",
+   "authors": [
+    "Bjørn Kjos-Hanssen (the Lean)",
+    "AI agents under Will Cook’s direction (the page)"
+   ],
+   "href": "https://wcook04.github.io/proof-reader/#/coupled-spring",
+   "here": false,
+   "sentence": "The coupled spring potential U(x₀, x₁) = x₀² + x₀x₁ + x₁² has a local minimum at the origin, proved in PhyslibAlpha by a general second-derivative test.",
+   "counts": {
+    "phrases": 22,
+    "statements": 13,
+    "lean": 16
+   },
+   "comparator": "Comparator accepted the local-minimum theorem and rejected a control that asked for a local maximum.",
+   "pages": [],
+   "search": null
+  },
+  {
+   "id": "physlib-gauge-theory",
+   "title": "Gauge theory: Physlib’s API map",
+   "authors": [
+    "The Physlib contributors"
+   ],
+   "href": "https://wcook04.github.io/proof-reader/#/physlib-gauge-theory",
+   "here": false,
+   "sentence": "Physlib’s own map of its gauge theory formalisation, read beside the Lean files it cites.",
+   "counts": {
+    "phrases": 32,
+    "lean": 42
+   },
+   "comparator": null,
+   "pages": [],
+   "search": null
   }
  ]
 }

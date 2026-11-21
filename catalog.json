@@ -1,0 +1,22 @@
+{
+ "schema": "library-catalog/1",
+ "papers": [
+  {
+   "id": "euler",
+   "title": "Finite-Time Singularity Formation for the Three-Dimensional Euler Equations",
+   "short_title": "Euler singularity on the torus",
+   "authors": [
+    "Levent Alpöge",
+    "Tristan Buckmaster",
+    "Matei P. Coiculescu"
+   ],
+   "pages": [
+    {
+     "slug": "",
+     "title": "Finite-Time Singularity Formation for the Three-Dimensional Euler Equations",
+     "noun": "paper"
+    }
+   ]
+  }
+ ]
+}

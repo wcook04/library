@@ -15,8 +15,8 @@
 <script>try{var s=localStorage.getItem("lx-theme");if(s==="light"||s==="dark")document.documentElement.setAttribute("data-theme",s)}catch(e){}</script>
 <link rel="preload" href="/library/_index/fonts/stix-two-text-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/library/_index/fonts/source-sans-3-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/library/_index/index.css?v=7499402cc6">
-<script type="module" src="/library/_index/index.js?v=7499402cc6"></script>
+<link rel="stylesheet" href="/library/_index/index.css?v=87b9f801a6">
+<script type="module" src="/library/_index/index.js?v=87b9f801a6"></script>
 <script>(function(){var ids=["euler", "navier-stokes"];var m=location.pathname.match(/^\/library\/([a-z0-9-]+)\//);if(!m||ids.indexOf(m[1])<0)return;document.documentElement.style.visibility='hidden';fetch('/library/'+m[1]+'/404.html').then(function(r){return r.ok?r.text():null}).then(function(t){if(!t){document.documentElement.style.visibility='';return}document.open();document.write(t);document.close();}).catch(function(){document.documentElement.style.visibility=''});})();</script>
 </head>
 <body>
@@ -40,10 +40,11 @@
 <h1 id="library-title">Mathematics papers, read beside their Lean</h1>
 <p class="lede">Each phrase that a Lean declaration states is underlined in its paper. Click it and that Lean opens beside the text, with a plain title, a comparison and a reading note.</p>
 <form class="search" role="search" action="/library/" onsubmit="return false">
-<label class="search__label" for="q">Search every paper: statements, titles and Lean names</label>
+<label class="search__label" for="q">Search the papers</label>
+<p class="search__scope" id="search-scope">Covers 2 papers’ contents indexed (statements and Lean names), 8 by title, authors and summary only.</p>
 <div class="search__field">
 <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><circle cx="7" cy="7" r="4.6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.4 10.4 L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-<input id="q" name="q" type="search" autocomplete="off" spellcheck="false" placeholder="vorticity, Lemma 2.1, Navier–Stokes, theorem11" aria-describedby="search-status">
+<input id="q" name="q" type="search" autocomplete="off" spellcheck="false" placeholder="vorticity, Lemma 2.1, Navier–Stokes, theorem11" aria-describedby="search-scope search-status">
 <kbd class="kbd" aria-hidden="true">/</kbd>
 </div>
 <p id="search-status" class="search__status" aria-live="polite"></p>

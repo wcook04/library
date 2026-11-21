@@ -1,1 +1,0 @@
-export{s as fetchModule,f as shellResource}from"./data-UK2DoSjO.js";

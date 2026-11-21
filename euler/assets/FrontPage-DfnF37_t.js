@@ -1,2 +1,0 @@
-import{a as e,r as t}from"./site-Dz18Xe3s.js";import{n}from"./router-CIGmPz1t.js";var r=e();function i(){return(0,r.useEffect)(()=>{n({view:`read`,stage:t.slot},{replace:!0})},[]),null}export{i as FrontPage};
-//# sourceMappingURL=FrontPage-DfnF37_t.js.map

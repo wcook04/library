@@ -1,1 +1,0 @@
-export{s as fetchModule,f as shellResource}from"./data-DUSjzwj8.js";

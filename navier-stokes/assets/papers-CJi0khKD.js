@@ -1,0 +1,2 @@
+import{t as e}from"./site-Czv4dpRS.js";var t=e.paperNames,n=e.stages??[`expository`,`short`,`long`],r={expository:`the exposition`,short:`the short paper`,long:`the long record`};function i(e){let t=n.filter(t=>e.includes(t)).map(e=>r[e]);return t.length===0?``:`In ${t.length===1?t[0]:`${t.slice(0,-1).join(`, `)} and ${t[t.length-1]}`}`}export{i,t as n,n as r,r as t};
+//# sourceMappingURL=papers-CJi0khKD.js.map

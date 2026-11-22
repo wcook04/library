@@ -1,0 +1,1 @@
+{"papers":[{"matches":[{"anchor":"sec-common-kernel","witnesses":[{"root_node_id":"step.subadditivity"}]},{"anchor":"sec-mixed","witnesses":[{"root_node_id":"step.common_distribution"}]},{"anchor":"sec-comparison","witnesses":[{"root_node_id":"short.res-strict-mixed-supports"}]}],"stage":"short"}],"representation":"reader_node_matches"}

@@ -1,0 +1,1 @@
+{"papers":[{"matches":[{"anchor":"sec-common-kernel","witnesses":[{"root_node_id":"step.cover_condition"}]},{"anchor":"sec-mixed","witnesses":[{"root_node_id":"step.common_distribution"}]},{"anchor":"sec-comparison","witnesses":[{"root_node_id":"step.construction_cover_not_weighted"}]}],"stage":"short"}],"representation":"reader_node_matches"}

@@ -1,0 +1,1 @@
+{"papers":[{"matches":[{"anchor":"sec-problem","witnesses":[{"root_node_id":"exp.thm-main"}]},{"anchor":"sec-test","witnesses":[{"root_node_id":"exp.step.gap"}]},{"anchor":"sec-split","witnesses":[{"root_node_id":"exp.step.split"}]}],"stage":"expository"}],"representation":"reader_node_matches"}

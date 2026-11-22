@@ -1,0 +1,1 @@
+{"papers":[{"matches":[{"anchor":"sec-problem","witnesses":[{"root_node_id":"exp.thm-main"}]},{"anchor":"sec-general","witnesses":[{"root_node_id":"exp.step.average"}]},{"anchor":"sec-proof","witnesses":[{"root_node_id":"exp.step.explicit_choices"}]}],"stage":"expository"}],"representation":"reader_node_matches"}

@@ -235,6 +235,37 @@
    "search": "/library/_index/search/navier-stokes.json"
   },
   {
+   "id": "erdos-257",
+   "title": "Which sums of 1/(2ⁿ − 1) are irrational?",
+   "authors": [
+    "Will Cook"
+   ],
+   "href": "/library/erdos-257/",
+   "here": true,
+   "sentence": "Proves that the sum of 1/(2ᵃ − 1) over an infinite set A is irrational when A satisfies a weighted summability condition, has a summable divisor cover, or lies in a union of one set of each kind, at every integer base b ≥ 2; Erdős’s question for every infinite A stays open.",
+   "counts": {
+    "phrases": 1459,
+    "statements": 738,
+    "lean": 881
+   },
+   "comparator": "Comparator accepted all 51 statements replayed on GitHub Actions.",
+   "pages": [
+    {
+     "title": "Long record",
+     "href": "/library/erdos-257/record/"
+    },
+    {
+     "title": "Exposition",
+     "href": "/library/erdos-257/exposition/"
+    },
+    {
+     "title": "The authors’ PDF",
+     "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/257/erdos-257-mersenne-support-subseries.pdf"
+    }
+   ],
+   "search": "/library/_index/search/erdos-257.json"
+  },
+  {
    "id": "quartic",
    "title": "Reconstructing OpenAI’s nearly quartic query separation",
    "authors": [

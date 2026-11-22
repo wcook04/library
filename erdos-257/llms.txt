@@ -1,0 +1,15 @@
+# Which sums of 1/(2ⁿ − 1) are irrational?
+
+> Which sums of 1/(2ⁿ − 1) are irrational?, by Will Cook, read beside its Lean. Made by Will Cook using AI. He built and directed the research; AI agents did most of the research, the drafting and the Lean, and no independent mathematician has reviewed the papers.
+
+The links from the papers to the Lean, the plain titles, the reading notes and the comparisons were made with AI. No mathematician has reviewed them.
+
+## Read
+
+- [Short paper](https://wcook04.github.io/library/erdos-257/)
+
+## Data
+
+All data is static JSON under https://wcook04.github.io/library/erdos-257/edition/. Start at edition/index.json: it maps API routes to files.
+
+The Lean index has 239 modules and 6,010 declarations.

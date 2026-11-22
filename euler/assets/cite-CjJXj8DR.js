@@ -1,2 +1,0 @@
-import"./router-B8C8xLgF.js";import"./papers-D8iGy__7.js";import"./siteName-AvsZMSJV.js";var e=`edition`;function t(t=window.location.href){let n=new URL(t).searchParams.get(e);return n&&/^[0-9a-f]{6,64}$/i.test(n)?n.toLowerCase():null}function n(e,t){return t.manifest_sha256.toLowerCase().startsWith(e)}export{n,t};
-//# sourceMappingURL=cite-CjJXj8DR.js.map

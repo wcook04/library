@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<script>
+/* A frozen edition: the reader's request for the current edition (index.json) is answered with this
+   snapshot's own edition, and the pooled edition files are read from /library/quartic/editions/_site/reading-api/v1/. */
+(function () {
+  var api = "/library/quartic/editions/_site/reading-api/v1/", own = "edition-3b05941f74a9b78fa045665189fc3a48e81b45b9c4d6cedee08d586332a79355.json", real = window.fetch.bind(window);
+  window.fetch = function (input, init) {
+    var u;
+    try { u = new URL(typeof input === "string" ? input : (input && input.url) || String(input), location.href); }
+    catch (e) { return real(input, init); }
+    var m = u.origin === location.origin && u.pathname.match(/\/reading-api\/v1\/(.*)$/);
+    if (!m) return real(input, init);
+    var rest = m[1] === "index.json" ? own : m[1];
+    return real(location.origin + api + rest, init).then(function (r) {
+      return new Response(r.body, { status: r.status, statusText: r.statusText, headers: r.headers });
+    });
+  };
+})();
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#1c1526" />
+    <script>
+      // Night unless the reader chose day; set before paint so nothing flashes.
+      (function () {
+        var stored = null;
+        try { stored = localStorage.getItem("quartic-theme"); } catch (e) {}
+        document.documentElement.setAttribute("data-theme", stored === "light" ? "light" : "dark");
+      })();
+    </script>
+    <meta name="robots" content="noindex">
+    <title>Quartic reader</title>
+    <meta name="description" content="OpenAI’s nearly quartic separation between randomized and quantum query complexity, three accounts of its proof, and a Lean proof that opens next to each paper." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23F2F3EE'/%3E%3Crect x='2' y='2' width='5' height='5' fill='%231B2232'/%3E%3Crect x='9' y='2' width='5' height='5' fill='%231D5BA6'/%3E%3Crect x='2' y='9' width='5' height='5' fill='%231B2232'/%3E%3Crect x='9' y='9' width='5' height='5' fill='%231B2232'/%3E%3C/svg%3E" />
+    <script type="module" crossorigin src="/library/quartic/editions/_site/assets/index-CirFGld5.js"></script>
+    <link rel="modulepreload" crossorigin href="/library/quartic/editions/_site/assets/rolldown-runtime-WkwZ5CU-.js">
+    <link rel="stylesheet" crossorigin href="/library/quartic/editions/_site/assets/index-A0XsshBh.css">
+  </head>
+  <body>
+<div class="frozen-edition" role="note" style="position:relative;z-index:2147483647;margin:0;padding:6px 16px;font:14px/1.45 system-ui,-apple-system,'Segoe UI',sans-serif;background:#fdf3d0;color:#3b2f00;border-bottom:1px solid #e2cf8a;overflow-wrap:anywhere">A fixed edition of the quartic reader, as published on 2026-11-16. <a href="/library/quartic/" style="color:#174ea6;font-weight:600">Read the current version in the library →</a></div>
+    <div id="root"></div>
+  </body>
+</html>

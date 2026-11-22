@@ -1,0 +1,462 @@
+{
+ "schema": 1,
+ "source": "quartic-query-lean origin/gh-pages",
+ "meaning": "Each edition the old quartic reader served, frozen at /library/quartic/editions/<sha256>/ with the app it was published with.",
+ "editions": [
+  {
+   "edition": "edition-0d902ae6003fa860e538ebb317518947135633436bd228de10b14905ad6e457f.json",
+   "sha256": "0d902ae6003fa860e538ebb317518947135633436bd228de10b14905ad6e457f",
+   "commit": "7f66808d6e79936ab46bfab3df4783b9169728eb",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-1f2725760bacfa705528a765308096c3fadda4d47c4c16e2206ac7501b3dcc38.json",
+   "sha256": "1f2725760bacfa705528a765308096c3fadda4d47c4c16e2206ac7501b3dcc38",
+   "commit": "7f66808d6e79936ab46bfab3df4783b9169728eb",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-3efe0e236a2159e76e400b65bd83821f200da87d9c0469fb3b8e79c64b61dea0.json",
+   "sha256": "3efe0e236a2159e76e400b65bd83821f200da87d9c0469fb3b8e79c64b61dea0",
+   "commit": "7f66808d6e79936ab46bfab3df4783b9169728eb",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-4ea5cdefc5c3021ca7450abbc866ba6a22fba48e9ef55a636322a92f4d3234b5.json",
+   "sha256": "4ea5cdefc5c3021ca7450abbc866ba6a22fba48e9ef55a636322a92f4d3234b5",
+   "commit": "7f66808d6e79936ab46bfab3df4783b9169728eb",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-568d516a646b80d039f6120e0ec061d2384b05d7726041f98e4ded51fd97709d.json",
+   "sha256": "568d516a646b80d039f6120e0ec061d2384b05d7726041f98e4ded51fd97709d",
+   "commit": "7f66808d6e79936ab46bfab3df4783b9169728eb",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-5ad74d43f11610eb1ffd09fd9c4a852e7d6833cac5c21fb3a9561099b49e2fb9.json",
+   "sha256": "5ad74d43f11610eb1ffd09fd9c4a852e7d6833cac5c21fb3a9561099b49e2fb9",
+   "commit": "7f66808d6e79936ab46bfab3df4783b9169728eb",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-69e442aa50f1e6e7c40f30346743e6d4e328e7d2b2f8333d23b1d79f5fab5211.json",
+   "sha256": "69e442aa50f1e6e7c40f30346743e6d4e328e7d2b2f8333d23b1d79f5fab5211",
+   "commit": "7f66808d6e79936ab46bfab3df4783b9169728eb",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-6f760afcc04c02ad8fc3a22443749af0479ae246f6ac8c2f82a4a0ab3aec541c.json",
+   "sha256": "6f760afcc04c02ad8fc3a22443749af0479ae246f6ac8c2f82a4a0ab3aec541c",
+   "commit": "7f66808d6e79936ab46bfab3df4783b9169728eb",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-85c8c6ad9d01da6cd9f077da332b494c90c7e5d8a1fe0f2bb3b225e0daacd680.json",
+   "sha256": "85c8c6ad9d01da6cd9f077da332b494c90c7e5d8a1fe0f2bb3b225e0daacd680",
+   "commit": "7f66808d6e79936ab46bfab3df4783b9169728eb",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-91619a5bbfffb7b8dd163a1403347c7fb543cd2bb8757b404514842b56cc9c5e.json",
+   "sha256": "91619a5bbfffb7b8dd163a1403347c7fb543cd2bb8757b404514842b56cc9c5e",
+   "commit": "7f66808d6e79936ab46bfab3df4783b9169728eb",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-9430c86b51b35a81a57ca5bf188917284c96432c4d02cc096a1431200e900727.json",
+   "sha256": "9430c86b51b35a81a57ca5bf188917284c96432c4d02cc096a1431200e900727",
+   "commit": "7f66808d6e79936ab46bfab3df4783b9169728eb",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-9f79152e9090225747c6714118874644cf45123899a99df8abdc2b7601bb12e3.json",
+   "sha256": "9f79152e9090225747c6714118874644cf45123899a99df8abdc2b7601bb12e3",
+   "commit": "7f66808d6e79936ab46bfab3df4783b9169728eb",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-a5c36ee8d49c7f40d231f2fba575ac2a725b95e452e8a7e1939a73448a5e76ec.json",
+   "sha256": "a5c36ee8d49c7f40d231f2fba575ac2a725b95e452e8a7e1939a73448a5e76ec",
+   "commit": "7f66808d6e79936ab46bfab3df4783b9169728eb",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-af189c902368d662d74f542afa5c11491074e41bc2f2a18157ccbdfe1722bce2.json",
+   "sha256": "af189c902368d662d74f542afa5c11491074e41bc2f2a18157ccbdfe1722bce2",
+   "commit": "7f66808d6e79936ab46bfab3df4783b9169728eb",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-c92743acf347cb55232c865056ed01f18743fcdc0cd62e65bc88f8781d3cd97e.json",
+   "sha256": "c92743acf347cb55232c865056ed01f18743fcdc0cd62e65bc88f8781d3cd97e",
+   "commit": "7f66808d6e79936ab46bfab3df4783b9169728eb",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-f43377685697befac5e2054f9fc4614a45c59c3588701ccced8953f0346d8bb8.json",
+   "sha256": "f43377685697befac5e2054f9fc4614a45c59c3588701ccced8953f0346d8bb8",
+   "commit": "7f66808d6e79936ab46bfab3df4783b9169728eb",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-f5b729651cb6674101f104977ffa7b227c32528161c4d7425d2c158ac6b1b379.json",
+   "sha256": "f5b729651cb6674101f104977ffa7b227c32528161c4d7425d2c158ac6b1b379",
+   "commit": "7f66808d6e79936ab46bfab3df4783b9169728eb",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-63315b7f3422d87490d891d3740f6c98d2e5eef7783df6858ef417bcb52d1abd.json",
+   "sha256": "63315b7f3422d87490d891d3740f6c98d2e5eef7783df6858ef417bcb52d1abd",
+   "commit": "71e4aecceae105e769079505671f96c04a3c15c4",
+   "published": "2026-11-06",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-9960b4c8387d27a960bb47a8299f21cf050ecf83dedaf1a6216722b078535eea.json",
+   "sha256": "9960b4c8387d27a960bb47a8299f21cf050ecf83dedaf1a6216722b078535eea",
+   "commit": "7648cf233b4159e133fbad9fcc474f0a5d62c37c",
+   "published": "2026-11-07",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-370be2a1c5c9388139d5e3937f4bf400b7ea5205e8c36e09e0eb7333d89b199d.json",
+   "sha256": "370be2a1c5c9388139d5e3937f4bf400b7ea5205e8c36e09e0eb7333d89b199d",
+   "commit": "e9339b33608058ae0f01f96e44bc9f15be3f5452",
+   "published": "2026-11-07",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-1ea1ed8be217811b88b6383e8cebdac2c779bb82b1dff9c9fe77b39c69b84860.json",
+   "sha256": "1ea1ed8be217811b88b6383e8cebdac2c779bb82b1dff9c9fe77b39c69b84860",
+   "commit": "4717e7df790cf75c58c2c6021e4003b5585140e6",
+   "published": "2026-11-07",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-0de87d9708ae7ddebba6ff63d26fa2a5d3e5c544e4955db2282612a8dd92faf7.json",
+   "sha256": "0de87d9708ae7ddebba6ff63d26fa2a5d3e5c544e4955db2282612a8dd92faf7",
+   "commit": "84fb9dd418f6ab8b60fb6a715f3ec1ca48f24725",
+   "published": "2026-11-07",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-25ce209309570f9867ca9ab9e02eddb38b9c2896b14213549cc6295c684889b5.json",
+   "sha256": "25ce209309570f9867ca9ab9e02eddb38b9c2896b14213549cc6295c684889b5",
+   "commit": "84fb9dd418f6ab8b60fb6a715f3ec1ca48f24725",
+   "published": "2026-11-07",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-35bd0e0927147a0381a4784341603446d8b5730081d751f0b16fd36ce235056d.json",
+   "sha256": "35bd0e0927147a0381a4784341603446d8b5730081d751f0b16fd36ce235056d",
+   "commit": "c5d0e1ac0d83b0507b832bfd6d88b1b1feae7bee",
+   "published": "2026-11-07",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-4f3621626e1e1d5026b4f98c99eba91b60fc08c6dda2af62ad081f44c343203a.json",
+   "sha256": "4f3621626e1e1d5026b4f98c99eba91b60fc08c6dda2af62ad081f44c343203a",
+   "commit": "c5d0e1ac0d83b0507b832bfd6d88b1b1feae7bee",
+   "published": "2026-11-07",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-b1b577cb65e6ad33ec125ff0a7105064c805588795376d602d5d608a39a65fc3.json",
+   "sha256": "b1b577cb65e6ad33ec125ff0a7105064c805588795376d602d5d608a39a65fc3",
+   "commit": "c5d0e1ac0d83b0507b832bfd6d88b1b1feae7bee",
+   "published": "2026-11-07",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-bd17e369fa3a3157c180dba94348736d5788a1e99fce5475fdd4a7bda009c39e.json",
+   "sha256": "bd17e369fa3a3157c180dba94348736d5788a1e99fce5475fdd4a7bda009c39e",
+   "commit": "c5d0e1ac0d83b0507b832bfd6d88b1b1feae7bee",
+   "published": "2026-11-07",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-c4a9f1e7f472809f8cea356bb0c47d83f56a90929aa90d80edf5c168bff82f3c.json",
+   "sha256": "c4a9f1e7f472809f8cea356bb0c47d83f56a90929aa90d80edf5c168bff82f3c",
+   "commit": "c5d0e1ac0d83b0507b832bfd6d88b1b1feae7bee",
+   "published": "2026-11-07",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-f44305e1f7ed14de0c01c8ab7cdbde2ed42822586ed433ec2ff15097b9f4f0c5.json",
+   "sha256": "f44305e1f7ed14de0c01c8ab7cdbde2ed42822586ed433ec2ff15097b9f4f0c5",
+   "commit": "c5d0e1ac0d83b0507b832bfd6d88b1b1feae7bee",
+   "published": "2026-11-07",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-f92ec15b1d9961f196aa2f28dc8b5258d9f55d378de060a24dfd4c205cbdd3df.json",
+   "sha256": "f92ec15b1d9961f196aa2f28dc8b5258d9f55d378de060a24dfd4c205cbdd3df",
+   "commit": "c5d0e1ac0d83b0507b832bfd6d88b1b1feae7bee",
+   "published": "2026-11-07",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-69d2096a5c481e38c7a94129993e18a2f924213642c9c519bd77b45257ea1132.json",
+   "sha256": "69d2096a5c481e38c7a94129993e18a2f924213642c9c519bd77b45257ea1132",
+   "commit": "20bee795db28c7eeabfbe85603d7a8b99ff17139",
+   "published": "2026-11-07",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-64a97d1f53d7d63207bd3958062b2a20b113b9bf5fb37823a5c0ad6f40af6fc6.json",
+   "sha256": "64a97d1f53d7d63207bd3958062b2a20b113b9bf5fb37823a5c0ad6f40af6fc6",
+   "commit": "53155ca112814b1027c2b4597304991665b0d2c9",
+   "published": "2026-11-07",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-34efbebce95236d7e2c914600effb158cb8660aee42f1f7471265a58f85d4603.json",
+   "sha256": "34efbebce95236d7e2c914600effb158cb8660aee42f1f7471265a58f85d4603",
+   "commit": "a6b50c22fbf731531cb2b5107625590f3e0c9e7b",
+   "published": "2026-11-07",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-6d639ff3d5d673940fcdaf97886d55c391794ea279e2439ff53c3f539dc98e0d.json",
+   "sha256": "6d639ff3d5d673940fcdaf97886d55c391794ea279e2439ff53c3f539dc98e0d",
+   "commit": "a6b50c22fbf731531cb2b5107625590f3e0c9e7b",
+   "published": "2026-11-07",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-4bff0bf7b02309283e0dde0c6247f707916aab9c2d2e62d41ad368c43d9b7d3c.json",
+   "sha256": "4bff0bf7b02309283e0dde0c6247f707916aab9c2d2e62d41ad368c43d9b7d3c",
+   "commit": "72bfd5c95f15c67efe2ff3cd0dca077661b8c338",
+   "published": "2026-11-11",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-b58947da275b84d6e66dda10db8738efa7282e0ff4391ae4aa37e28c790f2ff9.json",
+   "sha256": "b58947da275b84d6e66dda10db8738efa7282e0ff4391ae4aa37e28c790f2ff9",
+   "commit": "fa6d5183264ec752a3ecf33efe8ada31569c14d4",
+   "published": "2026-11-11",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-6ab3c9b1a90de17cd4197569202da0e21362dd9a28599905745bd56d8576aeb8.json",
+   "sha256": "6ab3c9b1a90de17cd4197569202da0e21362dd9a28599905745bd56d8576aeb8",
+   "commit": "33c63dd8c088e7049bd4ff7147b82c0360d2469b",
+   "published": "2026-11-12",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-6c21661a3709912ef9cb32b09fac3d1090e2123443ab451f9d8137d5865b462b.json",
+   "sha256": "6c21661a3709912ef9cb32b09fac3d1090e2123443ab451f9d8137d5865b462b",
+   "commit": "c1d49d13530e53700356061acfeea2f78adc3ac7",
+   "published": "2026-11-12",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-4a6d7a29ff9e1bff40a59db722b99c039ed5af56ff553c9bf47fc3f20b982a18.json",
+   "sha256": "4a6d7a29ff9e1bff40a59db722b99c039ed5af56ff553c9bf47fc3f20b982a18",
+   "commit": "50e98132b23d7f697cecebb415e77be04f50f386",
+   "published": "2026-11-13",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-47d002aaed5b60642f15135a0089b069a7aebd41d4d49193deefc887a3ba3d52.json",
+   "sha256": "47d002aaed5b60642f15135a0089b069a7aebd41d4d49193deefc887a3ba3d52",
+   "commit": "1e18b2a07a02200a035fa839d48a0ffcfdb100cb",
+   "published": "2026-11-16",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-3b05941f74a9b78fa045665189fc3a48e81b45b9c4d6cedee08d586332a79355.json",
+   "sha256": "3b05941f74a9b78fa045665189fc3a48e81b45b9c4d6cedee08d586332a79355",
+   "commit": "223413f8cfad4793ff0223def30367eb9a4a2554",
+   "published": "2026-11-16",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-c3ab3d700c83315af1db584d28bd991e3fc9662a09eb33cc028c6d843abc4267.json",
+   "sha256": "c3ab3d700c83315af1db584d28bd991e3fc9662a09eb33cc028c6d843abc4267",
+   "commit": "c0e6380fdb63bafaa451d512dc8c4ae4afd6c998",
+   "published": "2026-11-16",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-46f8959ba8b01f71ac42f79532f933cf130d4aad2d573270268bd94bfb216339.json",
+   "sha256": "46f8959ba8b01f71ac42f79532f933cf130d4aad2d573270268bd94bfb216339",
+   "commit": "b03211f41ee185329cfab7cfed877b85d348c682",
+   "published": "2026-11-19",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-2ac8b6a770c924852dbc71f0b6c2ec01ee79767a25332652296e02fe7fc6245f.json",
+   "sha256": "2ac8b6a770c924852dbc71f0b6c2ec01ee79767a25332652296e02fe7fc6245f",
+   "commit": "2821ff829ab8aae7b3fd9fc4c9f64990812aafbb",
+   "published": "2026-11-19",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-86c93ba8f507985b72c02ec5fd3b87131413dcfefd905074fdfd77d10fd64904.json",
+   "sha256": "86c93ba8f507985b72c02ec5fd3b87131413dcfefd905074fdfd77d10fd64904",
+   "commit": "475afb8d7fefb0ba6d767bb488a3a2f917757575",
+   "published": "2026-11-19",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-aecc156784070a6e17566d2f0705b0a2dbc8e446d98ee460c591a58159d23427.json",
+   "sha256": "aecc156784070a6e17566d2f0705b0a2dbc8e446d98ee460c591a58159d23427",
+   "commit": "a3c4aa13472ac2579f0926fe29d0e9ae6e93dca3",
+   "published": "2026-11-20",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-0648e35d07fd8737bbdd5c34217f7fc33593fb988e8a7c5eb5d16fda1f0a0c38.json",
+   "sha256": "0648e35d07fd8737bbdd5c34217f7fc33593fb988e8a7c5eb5d16fda1f0a0c38",
+   "commit": "b1d8163a6db8103ef63ce8446e92ce276d1ed5cd",
+   "published": "2026-11-20",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-739046610d2ef386bd00383b400dd6cd73cd23a44a30756d49add6e52f155b15.json",
+   "sha256": "739046610d2ef386bd00383b400dd6cd73cd23a44a30756d49add6e52f155b15",
+   "commit": "4656858e7bd4bbffce291fa4db0c024b2cbc8f95",
+   "published": "2026-11-20",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-2a6ef7e717012ce0ef0a01a57edbdb17db88d96483f151028fa641e2d241c1c8.json",
+   "sha256": "2a6ef7e717012ce0ef0a01a57edbdb17db88d96483f151028fa641e2d241c1c8",
+   "commit": "b56602cf190f41724aa5c263a74d84f4f7c41598",
+   "published": "2026-11-20",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-413fedc5aabfb9fb640eaa6a051cff41a05dd173f9f4494ef6169fa96de41f11.json",
+   "sha256": "413fedc5aabfb9fb640eaa6a051cff41a05dd173f9f4494ef6169fa96de41f11",
+   "commit": "b56602cf190f41724aa5c263a74d84f4f7c41598",
+   "published": "2026-11-20",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-94618ad83084250926bb84ad73a089453290dd6d0e602b087c8721f051d40af8.json",
+   "sha256": "94618ad83084250926bb84ad73a089453290dd6d0e602b087c8721f051d40af8",
+   "commit": "b56602cf190f41724aa5c263a74d84f4f7c41598",
+   "published": "2026-11-20",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-a8d82e38abd2be3927c86766a3393e0c7d667fcd0b228fbab6b9950879a9bc76.json",
+   "sha256": "a8d82e38abd2be3927c86766a3393e0c7d667fcd0b228fbab6b9950879a9bc76",
+   "commit": "b56602cf190f41724aa5c263a74d84f4f7c41598",
+   "published": "2026-11-20",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-e64d4e33cb7ba1235d8b16e7fea6da6aa55df87fe9fcb326b90a50ebf5e1f8a6.json",
+   "sha256": "e64d4e33cb7ba1235d8b16e7fea6da6aa55df87fe9fcb326b90a50ebf5e1f8a6",
+   "commit": "b56602cf190f41724aa5c263a74d84f4f7c41598",
+   "published": "2026-11-20",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-fa12070e07187eca25915f4898adf63d4290bb18d2eedbfe5125994a0a1c5337.json",
+   "sha256": "fa12070e07187eca25915f4898adf63d4290bb18d2eedbfe5125994a0a1c5337",
+   "commit": "b56602cf190f41724aa5c263a74d84f4f7c41598",
+   "published": "2026-11-20",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-196d7d05c1fab3c6e946b2744fc5af210f6f769a54a179416df29da16bbc0f4d.json",
+   "sha256": "196d7d05c1fab3c6e946b2744fc5af210f6f769a54a179416df29da16bbc0f4d",
+   "commit": "02d2003129311b2c2f1f4431e978a36685ceaeec",
+   "published": "2026-11-20",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-ca7644ff5624ead3cbe5eea0a5e997178ece3cde0252f4ef0bce08bc858c9ca2.json",
+   "sha256": "ca7644ff5624ead3cbe5eea0a5e997178ece3cde0252f4ef0bce08bc858c9ca2",
+   "commit": "02d2003129311b2c2f1f4431e978a36685ceaeec",
+   "published": "2026-11-20",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-092bd86e1a4767d527da59bdccbad9f87465e148c428374a39187838505c7804.json",
+   "sha256": "092bd86e1a4767d527da59bdccbad9f87465e148c428374a39187838505c7804",
+   "commit": "908171bf629ae7b56ebe9a8f8716e1f228d20b40",
+   "published": "2026-11-20",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-f2a3cc9ca230c80cf41d82ed93d13ef043569a903036f8421bf33c0df9396d71.json",
+   "sha256": "f2a3cc9ca230c80cf41d82ed93d13ef043569a903036f8421bf33c0df9396d71",
+   "commit": "908171bf629ae7b56ebe9a8f8716e1f228d20b40",
+   "published": "2026-11-20",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-ce3e3be6e2aace7fc6415625c504d101131dd9bdff1164fc04082dd5f6d59f17.json",
+   "sha256": "ce3e3be6e2aace7fc6415625c504d101131dd9bdff1164fc04082dd5f6d59f17",
+   "commit": "cc2119b176e386a0bd45845d433a1eec3723e266",
+   "published": "2026-11-21",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-b8cde382d6b113a147e851a4288dff7524cf3100023859c2149185dc8c288684.json",
+   "sha256": "b8cde382d6b113a147e851a4288dff7524cf3100023859c2149185dc8c288684",
+   "commit": "9e6a225a02460d7243a9a57af2b60eb306f6df36",
+   "published": "2026-11-21",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-d483aa7bc0337f1248aa6e8cedb7d44f74068cd9fd9bb1c8c8e17b47cef8dcdf.json",
+   "sha256": "d483aa7bc0337f1248aa6e8cedb7d44f74068cd9fd9bb1c8c8e17b47cef8dcdf",
+   "commit": "21eb405d3e852b1b8803a75d103d775c40393bab",
+   "published": "2026-11-21",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-6cadc340dfe9166b20ca9f0b51e32eecd18850dde3105a768381f8fbf8dc972e.json",
+   "sha256": "6cadc340dfe9166b20ca9f0b51e32eecd18850dde3105a768381f8fbf8dc972e",
+   "commit": "dc83d804ac3ccb327189b99c947cc1e340ce8103",
+   "published": "2026-11-21",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-7f95fbf24bcea552395d38aebe433046e37c30ef5186e1e4a5fbb4673c9d2d4e.json",
+   "sha256": "7f95fbf24bcea552395d38aebe433046e37c30ef5186e1e4a5fbb4673c9d2d4e",
+   "commit": "dc83d804ac3ccb327189b99c947cc1e340ce8103",
+   "published": "2026-11-21",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-1ba18d95560407083867964c13e59e81ff44cfe213c345c91482efa88ca8cda7.json",
+   "sha256": "1ba18d95560407083867964c13e59e81ff44cfe213c345c91482efa88ca8cda7",
+   "commit": "baa99180dc6a96cf049a86d3077de08772800d0f",
+   "published": "2026-11-21",
+   "app": "/library/quartic/editions/_site/"
+  },
+  {
+   "edition": "edition-dbbf1f08240a1b016e41182c308366a452c348bc42e7beb7ba2cbd803587e350.json",
+   "sha256": "dbbf1f08240a1b016e41182c308366a452c348bc42e7beb7ba2cbd803587e350",
+   "commit": "baa99180dc6a96cf049a86d3077de08772800d0f",
+   "published": "2026-11-21",
+   "app": "/library/quartic/editions/_site/"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+# Contextual Embeddings: Implementing Bound Variables Through Instance Resolution
+
+> Contextual Embeddings: Implementing Bound Variables Through Instance Resolution, by Samantha Frohlich, Jessica Foster, G. A. Kavvos and Meng Wang, read beside its Lean. 
+
+The links from the text to the Lean, the plain titles, the reading notes and the comparisons were made with AI and have not been reviewed by the authors. No mathematician has reviewed them.
+
+## Read
+
+- [Contextual Embeddings: Implementing Bound Variables Through Instance Resolution](https://wcook04.github.io/library/contextual-embeddings/)
+
+## Data
+
+All data is static JSON under https://wcook04.github.io/library/contextual-embeddings/edition/. Start at edition/index.json: it maps API routes to files.
+
+The Lean index has 1 modules and 48 declarations.

@@ -20,14 +20,6 @@
    "comparator": "Comparator accepted the main theorem's Lean against the authors' definitions with five kernels and only the axioms propext, Quot.sound, Classical.choice. Three altered statements were rejected.",
    "pages": [
     {
-     "title": "How the Lean encodes it",
-     "href": "/library/euler/how-the-lean-encodes-it/"
-    },
-    {
-     "title": "Start here",
-     "href": "/library/euler/start-here/"
-    },
-    {
      "title": "The authors’ PDF",
      "href": "https://github.com/mcoiculescu/EulerBlowupPublic/blob/fd3a1588967810b9abe42a1dcf46ee662d6434e2/manuscript/paper.pdf"
     }
@@ -51,182 +43,6 @@
    },
    "comparator": null,
    "pages": [
-    {
-     "title": "Finite-time blow-up for Navier–Stokes: what the Lean states",
-     "href": "/library/navier-stokes/what-the-lean-states/"
-    },
-    {
-     "title": "From a recurrent profile to unforced Navier–Stokes blow-up",
-     "href": "/library/navier-stokes/digest/"
-    },
-    {
-     "title": "The authors’ paper, by its own numbering",
-     "href": "/library/navier-stokes/index/"
-    },
-    {
-     "title": "From a recurrent profile to compact-data Navier–Stokes blow-up",
-     "href": "/library/navier-stokes/part-1/"
-    },
-    {
-     "title": "Part II. A certificate produces a nonzero periodic profile",
-     "href": "/library/navier-stokes/part-2/"
-    },
-    {
-     "title": "From cell data to a Navier–Stokes certificate",
-     "href": "/library/navier-stokes/appendix-b/"
-    },
-    {
-     "title": "Reading the proof routes",
-     "href": "/library/navier-stokes/routes/"
-    },
-    {
-     "title": "The proof routes in detail",
-     "href": "/library/navier-stokes/route-details/"
-    },
-    {
-     "title": "Annotations of the readable statements",
-     "href": "/library/navier-stokes/statement-files/"
-    },
-    {
-     "title": "Reading the cell certificate",
-     "href": "/library/navier-stokes/cell-guide/"
-    },
-    {
-     "title": "Cell-layer fidelity: the Lean condition and Appendix B",
-     "href": "/library/navier-stokes/cell-fidelity/"
-    },
-    {
-     "title": "Checking the Navier–Stokes certificate",
-     "href": "/library/navier-stokes/certificate-checker/"
-    },
-    {
-     "title": "Cell declaration reference",
-     "href": "/library/navier-stokes/cell-reference/"
-    },
-    {
-     "title": "Library guide 1: Breakdown/Base, Breakdown/CellReduction",
-     "href": "/library/navier-stokes/library-01/"
-    },
-    {
-     "title": "Library guide 2: Breakdown/CellReduction",
-     "href": "/library/navier-stokes/library-02/"
-    },
-    {
-     "title": "Library guide 3: Breakdown/Cert",
-     "href": "/library/navier-stokes/library-03/"
-    },
-    {
-     "title": "Library guide 4: Breakdown/Cert",
-     "href": "/library/navier-stokes/library-04/"
-    },
-    {
-     "title": "Library guide 5: Breakdown/Cert",
-     "href": "/library/navier-stokes/library-05/"
-    },
-    {
-     "title": "Library guide 6: Breakdown/Cert",
-     "href": "/library/navier-stokes/library-06/"
-    },
-    {
-     "title": "Library guide 7: Breakdown/Cert",
-     "href": "/library/navier-stokes/library-07/"
-    },
-    {
-     "title": "Library guide 8: Breakdown/CertCell",
-     "href": "/library/navier-stokes/library-08/"
-    },
-    {
-     "title": "Library guide 9: Breakdown/CertCell",
-     "href": "/library/navier-stokes/library-09/"
-    },
-    {
-     "title": "Library guide 10: Breakdown/CertCell",
-     "href": "/library/navier-stokes/library-10/"
-    },
-    {
-     "title": "Library guide 11: Breakdown/CertCell",
-     "href": "/library/navier-stokes/library-11/"
-    },
-    {
-     "title": "Library guide 12: Breakdown/CertCell",
-     "href": "/library/navier-stokes/library-12/"
-    },
-    {
-     "title": "Library guide 13: Breakdown/CertTorus",
-     "href": "/library/navier-stokes/library-13/"
-    },
-    {
-     "title": "Library guide 14: Breakdown/Frac",
-     "href": "/library/navier-stokes/library-14/"
-    },
-    {
-     "title": "Library guide 15: Breakdown/Frac",
-     "href": "/library/navier-stokes/library-15/"
-    },
-    {
-     "title": "Library guide 16: Breakdown/FracCell",
-     "href": "/library/navier-stokes/library-16/"
-    },
-    {
-     "title": "Library guide 17: Breakdown/FracCell",
-     "href": "/library/navier-stokes/library-17/"
-    },
-    {
-     "title": "Library guide 18: Breakdown/FracCell",
-     "href": "/library/navier-stokes/library-18/"
-    },
-    {
-     "title": "Library guide 19: Breakdown/FracCell",
-     "href": "/library/navier-stokes/library-19/"
-    },
-    {
-     "title": "Library guide 20: Breakdown/FracCell",
-     "href": "/library/navier-stokes/library-20/"
-    },
-    {
-     "title": "Library guide 21: Breakdown/FracCell",
-     "href": "/library/navier-stokes/library-21/"
-    },
-    {
-     "title": "Library guide 22: Breakdown/FracCell",
-     "href": "/library/navier-stokes/library-22/"
-    },
-    {
-     "title": "Library guide 23: Breakdown/FracCert",
-     "href": "/library/navier-stokes/library-23/"
-    },
-    {
-     "title": "Library guide 24: Breakdown/FracCert",
-     "href": "/library/navier-stokes/library-24/"
-    },
-    {
-     "title": "Library guide 25: Breakdown/FreqTr, Breakdown/Held, Breakdown/Profile, Breakdown/Spectral",
-     "href": "/library/navier-stokes/library-25/"
-    },
-    {
-     "title": "Library guide 26: Breakdown/Torus",
-     "href": "/library/navier-stokes/library-26/"
-    },
-    {
-     "title": "Library guide 27: Breakdown/Torus, Breakdown/Transfer",
-     "href": "/library/navier-stokes/library-27/"
-    },
-    {
-     "title": "Library guide 28: Breakdown/Uniqueness, Breakdown/Weak, Solution",
-     "href": "/library/navier-stokes/library-28/"
-    },
-    {
-     "title": "Library guide 29: Fractional statements",
-     "href": "/library/navier-stokes/library-29/"
-    },
-    {
-     "title": "Library guide 30: definitions the readable files restate",
-     "href": "/library/navier-stokes/library-30/"
-    },
-    {
-     "title": "How the Lean encodes it",
-     "href": "/library/navier-stokes/how-the-lean-encodes-it/"
-    },
     {
      "title": "The authors’ PDF",
      "href": "https://github.com/tristanbuckmaster/navier-stokes/blob/ad53419de079eb8f95f60313473374624a348546/paper/finite-time-blow-up-navier-stokes.pdf"
@@ -376,17 +192,22 @@
     "G. A. Kavvos",
     "Meng Wang"
    ],
-   "href": "https://wcook04.github.io/proof-reader/#/contextual-embeddings",
-   "here": false,
+   "href": "/library/contextual-embeddings/",
+   "here": true,
    "sentence": "Uses instance resolution to define a context-directed isomorphism between a higher-order interface for bound variables and a first-order representation, and proves the round trip in Lean.",
    "counts": {
     "phrases": 66,
-    "statements": 5,
+    "statements": 35,
     "lean": 22
    },
    "comparator": null,
-   "pages": [],
-   "search": null
+   "pages": [
+    {
+     "title": "The authors’ PDF",
+     "href": "https://doi.org/10.1145/3808269"
+    }
+   ],
+   "search": "/library/_index/search/contextual-embeddings.json"
   },
   {
    "id": "smtlib",
@@ -396,16 +217,22 @@
     "Pascal Fontaine",
     "Cesare Tinelli"
    ],
-   "href": "https://wcook04.github.io/proof-reader/#/smtlib-2-7",
-   "here": false,
+   "href": "/library/smtlib/",
+   "here": true,
    "sentence": "The reference standard for SMT-LIB 2.7, read beside BSmtLib, a Lean formalisation of its lexicon, grammar and parser.",
    "counts": {
-    "phrases": 97,
+    "phrases": 73,
+    "statements": 0,
     "lean": 94
    },
    "comparator": null,
-   "pages": [],
-   "search": null
+   "pages": [
+    {
+     "title": "The authors’ PDF",
+     "href": "https://smt-lib.org/papers/smt-lib-reference-v2.7-r2026-09-09.pdf"
+    }
+   ],
+   "search": "/library/_index/search/smtlib.json"
   },
   {
    "id": "coupled-spring",

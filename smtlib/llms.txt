@@ -1,0 +1,15 @@
+# The SMT-LIB Standard: Version 2.7
+
+> The SMT-LIB Standard: Version 2.7, by Clark Barrett, Pascal Fontaine and Cesare Tinelli, read beside its Lean. The SMT-LIB Standard, Version 2.7 (release 2026-09-09), by Clark Barrett, Pascal Fontaine and Cesare Tinelli, hosted verbatim with its copyright and permission notice (page 2). BSmtLib, its Lean formalisation of the lexicon, grammar and parser, by Jan Onderka, Armin Biere and Henrik Böving, at 42b45c2 (MIT OR Apache-2.0).
+
+The links from the text to the Lean, the plain titles, the reading notes and the comparisons were made with AI and have not been reviewed by the authors. No mathematician has reviewed them.
+
+## Read
+
+- [The SMT-LIB Standard: Version 2.7](https://wcook04.github.io/library/smtlib/)
+
+## Data
+
+All data is static JSON under https://wcook04.github.io/library/smtlib/edition/. Start at edition/index.json: it maps API routes to files.
+
+The Lean index has 59 modules and 1,645 declarations.

@@ -96,6 +96,26 @@
   --reader-outline: 208px;
   --reader-inspector: 336px;
   --reader-gap: 32px;
+  /* The reader's marks, each with one job (docs/reader-design.md). Aliases of the family's
+     colours: a linked phrase's underline, the selection, the followed passage, and the
+     inspector's type, which does not grow with the window. */
+  --tie-rule: 1px;
+  --tie-rest-line-opacity: 8%;
+  --tie-rest-fill-opacity: 10%;
+  --tie-rule-strong: 2px;
+  --tie-end-gap: 3px;
+  --sel-rule: 2px;
+  --sel-ink: var(--lit);
+  --sel-wash: var(--lit-wash);
+  --sel-rail: 3px;
+  --follow-ink: var(--ink-2);
+  --evidence-fs: 1rem;
+  --evidence-lh: 1.5;
+  --evidence-measure: 38rem;
+  --quote-fs: 1.0625rem;
+  --code-fs: 0.875rem;
+  --band-h: 56px;
+  --held-bar-h: 56px;
 
   /* Day: the family's warm paper and violet ink. */
   --ground: #f8f0e2;
@@ -119,6 +139,8 @@
   --lit-wash: #fae4c7;
   --lit-line: #c9761a;
   --lit-glow: rgb(201 118 26 / 0);
+  /* The wash under selected words: faint, so that the words keep their full contrast. */
+  --pin-wash: color-mix(in oklab, var(--lit-line) 9%, transparent);
   --focus-ring: 2px solid var(--lit);
 
   /* A recorded failed outcome, and only that. */
@@ -212,6 +234,7 @@
   --lit-line: #f3a43a;
   --lit-glow: rgb(243 164 58 / 0.28);
   --fail: #ea8470;
+  --pin-wash: color-mix(in oklab, var(--lit-line) 7%, transparent);
   --rel-supports: #6a7581;
   --rel-supports-lit: #f3a43a;
   --rel-assumes: #7d68b8;
@@ -261,6 +284,7 @@
     --lit-line: #f3a43a;
     --lit-glow: rgb(243 164 58 / 0.28);
     --fail: #ea8470;
+    --pin-wash: color-mix(in oklab, var(--lit-line) 7%, transparent);
     --rel-supports: #6a7581;
     --rel-supports-lit: #f3a43a;
     --rel-assumes: #7d68b8;
@@ -1336,43 +1360,32 @@ mark {
   line-height: 1.5;
 }
 
-.paper__meta > p + p {
+/* Three plain groups: what is linked, what was checked, whose work it is. */
+.paper__group + .paper__group {
+  margin-top: var(--space-4);
+}
+
+.paper__label {
+  margin: 0 0 var(--space-1);
+  color: var(--ink-2);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.paper__group > p + p {
   margin-top: var(--space-2);
 }
 
-.strip {
-  display: flex;
-  gap: 2px;
-  height: 8px;
-  margin-bottom: var(--space-4);
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.strip i {
-  flex-basis: 0;
-  min-width: 3px;
-  background: var(--c-l);
-}
-
-:root[data-theme="dark"] .strip i {
-  background: var(--c-d);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .strip i {
-    background: var(--c-d);
-  }
-}
-
-@media (forced-colors: active) {
-  .strip {
-    border: 1px solid CanvasText;
-  }
-}
-
 .paper__counts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   color: var(--ink);
+  font-family: var(--font-sans);
   font-size: 0.9375rem;
   font-variant-numeric: tabular-nums;
 }
@@ -1449,13 +1462,6 @@ mark {
 @media (min-width: 120em) {
   :root {
     --wrap: 84rem;
-  }
-}
-
-/* A 1440p monitor reads the page from further away: everything set in rem grows a step. */
-@media (min-width: 150em) {
-  html {
-    font-size: 112.5%;
   }
 }
 

@@ -266,6 +266,34 @@
    "search": "/library/_index/search/erdos-257.json"
   },
   {
+   "id": "qaoa-sk",
+   "title": "Why the Sherrington–Kirkpatrick order parameter has no gaps",
+   "authors": [
+    "OpenAI (the proof and its Lean)",
+    "Will Cook, using AI (the three papers)"
+   ],
+   "href": "/library/qaoa-sk/",
+   "here": true,
+   "sentence": "A minimising Parisi order parameter of the Sherrington–Kirkpatrick spin glass has no gaps: it increases across every interval in [0, 1), and its derivative is positive between 0 and 1.",
+   "counts": {
+    "phrases": 707,
+    "statements": 250,
+    "lean": 399
+   },
+   "comparator": null,
+   "pages": [
+    {
+     "title": "Long record",
+     "href": "/library/qaoa-sk/record/"
+    },
+    {
+     "title": "Exposition",
+     "href": "/library/qaoa-sk/exposition/"
+    }
+   ],
+   "search": "/library/_index/search/qaoa-sk.json"
+  },
+  {
    "id": "quartic",
    "title": "Reconstructing OpenAI’s nearly quartic query separation",
    "authors": [

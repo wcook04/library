@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Will Cook’s independent, AI-assisted reading editions of the November 2026 Euler and Navier–Stokes papers, with attribution and links to the authors’ sources.">
+  <title>Euler and Navier–Stokes reading editions</title>
+  <link rel="icon" href="../_index/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../_index/index.css">
+  <style>
+    .edition-page { width: min(100%, 47rem); margin-inline: auto; padding: 3rem 1.5rem; }
+    .edition-page p { margin-block: .65rem .9rem; }
+    .edition-page article { padding-block: 1.4rem; border-block-start: 1px solid var(--rule); }
+    .edition-page article h2 { font-size: 1.5rem; }
+    .edition-page a { text-decoration: underline; text-underline-offset: .18em; }
+  </style>
+</head>
+<body>
+  <main class="edition-page">
+    <h1>Euler and Navier–Stokes reading editions</h1>
+    <p>Will Cook prepared these independent v9 reading editions with Anthropic’s Claude Code and OpenAI’s Codex. The editions explain the authors’ arguments and provide links from numbered results to corresponding Lean declarations.</p>
+    <p>Both sets of authors credit Anthropic for supporting the collaboration behind the original papers.</p>
+    <article aria-labelledby="euler">
+      <h2 id="euler">Finite-Time Singularity Formation for the Three-Dimensional Euler Equations</h2>
+      <p>Original paper by Levent Alpöge, Tristan Buckmaster and Matei P. Coiculescu. The authors report that Anthropic models produced the first draft of the unforced proof and that they developed and revised the argument with Claude and Codex.</p>
+      <p><a href="euler-adapted-v9.pdf">Euler reading edition v9 (PDF, 65 pages)</a></p>
+      <p><a href="https://github.com/mcoiculescu/EulerBlowupPublic/blob/fd3a1588967810b9abe42a1dcf46ee662d6434e2/manuscript/paper.pdf">Authors’ manuscript</a> · <a href="https://github.com/mcoiculescu/EulerBlowupPublic/tree/fd3a1588967810b9abe42a1dcf46ee662d6434e2/formalization">Authors’ Lean formalization</a></p>
+    </article>
+    <article aria-labelledby="navier-stokes">
+      <h2 id="navier-stokes">Finite-time blow-up for the Navier–Stokes equations</h2>
+      <p>Original paper by Levent Alpöge and Tristan Buckmaster. The authors report using Anthropic’s Claude models throughout their work. Their Lean development derives the conclusions from certificate conditions, which the authors report checking by a separate interval-arithmetic computation.</p>
+      <p><a href="navier-stokes-adapted-v9.pdf">Navier–Stokes reading edition v9 (PDF, 95 pages)</a></p>
+      <p><a href="https://github.com/tristanbuckmaster/navier-stokes/blob/ad53419de079eb8f95f60313473374624a348546/paper/finite-time-blow-up-navier-stokes.pdf">Authors’ manuscript</a> · <a href="https://github.com/tristanbuckmaster/navier-stokes/tree/ad53419de079eb8f95f60313473374624a348546/lean">Authors’ Lean formalization</a></p>
+    </article>
+  </main>
+</body>
+</html>

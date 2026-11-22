@@ -13,7 +13,7 @@
    "here": true,
    "sentence": "Constructs smooth periodic initial data for the three-dimensional incompressible Euler equations whose solution blows up in finite time, with the velocity bounded and the vorticity at the origin tending to infinity.",
    "counts": {
-    "phrases": 999,
+    "phrases": 996,
     "statements": 256,
     "lean": 1013
    },
@@ -22,6 +22,10 @@
     {
      "title": "How the Lean encodes it",
      "href": "/library/euler/how-the-lean-encodes-it/"
+    },
+    {
+     "title": "Start here",
+     "href": "/library/euler/start-here/"
     },
     {
      "title": "The authors’ PDF",
@@ -121,41 +125,6 @@
     {
      "title": "Long record",
      "href": "https://wcook04.github.io/lean-exposition-site/read/long/"
-    }
-   ],
-   "search": null
-  },
-  {
-   "id": "quartic",
-   "title": "A nearly quartic separation between randomized and quantum query complexity",
-   "authors": [
-    "OpenAI"
-   ],
-   "href": "https://wcook04.github.io/quartic-query-lean/",
-   "here": false,
-   "sentence": "For every power below four there is a total Boolean function whose randomized query complexity exceeds that power of its quantum query complexity, and four is the best possible exponent; Lean checks the optimal exponent with no hypothesis.",
-   "counts": {
-    "phrases": 350,
-    "statements": 121,
-    "lean": 472
-   },
-   "comparator": "Comparator accepted each statement bundle in local runs.",
-   "pages": [
-    {
-     "title": "OpenAI’s paper",
-     "href": "https://wcook04.github.io/quartic-query-lean/#/read/original"
-    },
-    {
-     "title": "Full proof reconstruction",
-     "href": "https://wcook04.github.io/quartic-query-lean/#/read/reconstruction"
-    },
-    {
-     "title": "Expert companion",
-     "href": "https://wcook04.github.io/quartic-query-lean/#/read/expert"
-    },
-    {
-     "title": "Worked exposition",
-     "href": "https://wcook04.github.io/quartic-query-lean/#/read/exposition"
     }
    ],
    "search": null

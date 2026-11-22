@@ -1,0 +1,270 @@
+<!doctype html>
+<html data-view="read" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reading the Lean PCP proof · Reading the Lean PCP proof</title>
+    <meta
+      name="description"
+      content="Reading the Lean PCP proof, by Troy Lee, read sentence by sentence beside its Lean."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Reading the Lean PCP proof" />
+    <meta
+      property="og:description"
+      content="By Troy Lee. Each phrase opens the Lean that states it."
+    />
+    <meta property="og:url" content="https://wcook04.github.io/library/pcp/reading-guide/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="describedby" href="/library/pcp/reading-guide/llms.txt" type="text/plain" />
+    <meta name="author" content="Will Cook" />
+    <meta name="theme-color" content="#f8f0e2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1c1526" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/library/pcp/reading-guide/favicon.svg" type="image/svg+xml" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("lx-theme");
+          if (stored === "light" || stored === "dark") document.documentElement.setAttribute("data-theme", stored);
+        } catch (e) {}
+      })();
+      // The paper's text waits, hidden but laid out, until its fonts (preloaded below) are in, or
+      // 100 ms at most, so a formula never paints in a fallback face and then shifts.
+      (function () {
+        var root = document.documentElement;
+        if (!document.fonts || !document.fonts.load) return;
+        root.classList.add("fonts-wait");
+        var done = function () {
+          root.classList.remove("fonts-wait");
+        };
+        setTimeout(done, 100);
+        document.addEventListener("DOMContentLoaded", function () {
+          Promise.all(["1em KaTeX_Main", "italic 1em KaTeX_Math", "1em 'STIX Two Text'"].map(function (face) {
+            return document.fonts.load(face);
+          })).then(done, done);
+        });
+      })();
+    </script>
+    <style>html.fonts-wait .paper{visibility:hidden}</style>
+    <script type="module" crossorigin src="/library/pcp/reading-guide/assets/index-C8Pyx8CV.js"></script>
+    <link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/site-D7l7IWdj.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/noteSummaries-FNJGtYAs.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/jsx-runtime-CZyAgjjZ.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/skeletonView-DdfQ8ZE7.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/theme-Fi-6u3Kb.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/lean-BkNKAFHm.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/data-Cmgt641d.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/router-T8GVQLij.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/papers-CuCM1i-z.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/BackControl-DZIN4rSv.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/siteName-CAwLoyLP.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/TopBar-BRhuiIJj.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/cite-BCEQ7uOa.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/ties-CmBRhLoC.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/restore-CuFSRbeh.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/mainGoal-C9gzHWji.js">
+    <link rel="stylesheet" crossorigin href="/library/pcp/reading-guide/assets/noteSummaries-DV8vOBon.css">
+    <link rel="stylesheet" crossorigin href="/library/pcp/reading-guide/assets/BackControl-D90l99kx.css">
+    <link rel="stylesheet" crossorigin href="/library/pcp/reading-guide/assets/TopBar-BtQm4BbY.css">
+    <link rel="stylesheet" crossorigin href="/library/pcp/reading-guide/assets/index-zPivZs1e.css">
+    <link rel="stylesheet" crossorigin href="/library/pcp/reading-guide/assets/reader-content-DrLXmOPu.css">
+  <link rel="preload" href="/library/pcp/reading-guide/assets/KaTeX_Main-Regular-B22Nviop.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/reading-guide/assets/KaTeX_Math-Italic-t53AETM-.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/reading-guide/assets/KaTeX_Size1-Regular-mCD8mA8B.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/reading-guide/assets/KaTeX_Size2-Regular-Dy4dx90m.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/reading-guide/assets/source-sans-3-latin-wght-normal-Bo_j9asI.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/reading-guide/assets/stix-two-text-latin-400-normal-Dm29J5Fl.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/reading-guide/assets/stix-two-text-latin-500-normal-QKEzPprE.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/reading-guide/edition/index.json" as="fetch" crossorigin /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/ReaderPage-B3IjUEs-.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/site-D7l7IWdj.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/jsx-runtime-CZyAgjjZ.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/skeletonView-DdfQ8ZE7.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/theme-Fi-6u3Kb.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/lean-BkNKAFHm.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/data-Cmgt641d.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/router-T8GVQLij.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/BackControl-DZIN4rSv.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/papers-CuCM1i-z.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/ties-CmBRhLoC.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/restore-CuFSRbeh.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/useAlignment-CRPDSZ_Y.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/labels-DXlsYS1F.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/documents-BAT1dZ9G.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/purify.es-Dt-Wh1U0.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/TheoremPlate-CxLTC-99.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/noteSummaries-FNJGtYAs.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/summary-DurUYlo8.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/tokenize-C5yNsREG.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/author-DHR-kKjk.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/RecordPanel-DlAHN7xz.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/levels-BR0ZmXUG.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/lazy-Bn92iNk8.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/walk-7PXRaS2z.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/map-pane-CkOZ_CxB.js" /><link rel="modulepreload" crossorigin href="/library/pcp/reading-guide/assets/short-C-v3JZbm.js" /><link rel="preload" as="style" crossorigin href="/library/pcp/reading-guide/assets/ReaderPage-BWJhqWA1.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/reading-guide/assets/reader-content-DrLXmOPu.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/reading-guide/assets/BackControl-D90l99kx.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/reading-guide/assets/TheoremPlate-DaQYdRUq.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/reading-guide/assets/noteSummaries-DV8vOBon.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/reading-guide/assets/reader-page-gjsKmsou.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/reading-guide/assets/RecordPanel-ChHSg_Aj.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/reading-guide/assets/slice-FtnMEvve.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/reading-guide/assets/lean-B0P2vv6P.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/reading-guide/assets/map-pane-VPPDg1rt.css" /><link rel="preload" href="/library/pcp/reading-guide/edition/a9d6ea5b0223a77bb96a7997eb1878f4be137e693bb2a6fd818ce590d227e6f0.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/reading-guide/edition/341f974ca24e3a6ab9a15b5e8a56896f0694ec9886bff4bbd09d4773deb790ce.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/reading-guide/edition/ad6b62cdd2c055d226092c2ce55670ea5b664c6a9cbfa8b37e3f63b38f07f5e5.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/reading-guide/edition/f6730dd3ae1bcb00d15c8750c98a7b0c53c20869428054086ff4865a17659fbf.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/reading-guide/edition/2d17cdfbbb16cceaa5c4175df1926a8d55c2a1c6ce5d3bccfe2aaefda186badf.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/reading-guide/edition/08f038d5247ccc70140bea8f2c6afccc3ff422cdd3e2d857fa637bf3c289f78e.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/reading-guide/edition/b508f1874c9f50630ac7a077957360bc7650b8eea2c6234c9e96f78d1d627e6f.md" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/reading-guide/edition/7ea65c68d65a9382d45f3dd62f13eb07fadd655fee3e9b9982824028c3086c43.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/reading-guide/edition/ties/short.json" as="fetch" crossorigin /></head>
+  <body>
+    <div id="root"><div class="app"><header class="topbar"><span class="fam-lockup"><a class="fam-lockup__home" href="https://wcook04.github.io/" rel="author" title="All of Will Cook's websites and videos"><img src="/library/pcp/reading-guide/plectis.svg" alt="" width="26" height="26" /><span class="fam-lockup__owner" translate="no">Will Cook</span></a><span class="fam-lockup__rule" aria-hidden="true"></span><a class="fam-lockup__site" href="/library/pcp/reading-guide/" aria-label="Reading the Lean PCP proof, front page"><svg viewBox="0 0 32 32" aria-hidden="true" class="wordmark__mark"><path d="M4 27 L4 5 M4 27 L28 27" fill="none" stroke-width="2" stroke-linecap="round"></path><path d="M5 26 C10 22 13 17 16 14 C19 11 22 9 27 6" fill="none" stroke-width="2.6" stroke-linecap="round"></path><circle cx="16" cy="14" r="3"></circle></svg><span class="fam-lockup__name" translate="no">Reading the Lean PCP proof</span></a></span><nav class="topnav" aria-label="Main"><a class="topnav__job" href="/library/pcp/reading-guide/read/short">Read</a><a class="topnav__job" href="/library/pcp/reading-guide/map">Map</a><a class="topnav__job" href="/library/pcp/reading-guide/compare">Compare</a><a class="topnav__job" href="/library/pcp/reading-guide/checks">What ran</a><a class="topnav__job topnav__job--quiet" href="/library/pcp/reading-guide/lean">Lean index</a></nav></header><main id="main" class="app__main"><div data-first-paper style="display:contents"><style>.reader-shape{display:grid;grid-template-columns:minmax(0,var(--reader-measure));justify-content:center;column-gap:var(--reader-gap);align-items:start;padding-inline:var(--space-6)}
+.reader-shape__outline,.reader-shape__side{display:none}
+.reader-shape__strip{height:45px;margin-bottom:var(--space-5);margin-left:-22px;border-bottom:1px solid var(--rule)}
+.reader-shape__text{display:flex;flex-direction:column;gap:14px}
+.reader-shape__text i{display:block;height:13px;background:var(--rule);opacity:.55}
+.reader-shape__text i:first-child{width:62%;height:30px;margin-bottom:var(--space-4)}
+.reader-shape__words{margin:0;font-family:var(--font-sans);font-size:var(--fs-sm);color:var(--ink-3)}
+.reader-shape .account-line{margin:var(--space-4) 0 var(--space-6);font-family:var(--font-sans);font-size:var(--fs-sm);line-height:var(--lh-ui);color:var(--ink-3);text-wrap:pretty}
+.reader-shape .paper.prose{max-width:var(--reader-measure)}
+.reader-shape .part{position:relative;display:flow-root;padding-bottom:var(--space-4)}
+.reader-shape .part__text{content-visibility:visible;contain-intrinsic-block-size:none}
+.reader-shape .part__text>:last-child{margin-bottom:0}
+@media (max-width:700px){.reader-shape{padding-inline:20px}.reader-shape__strip{margin-left:-15px}.reader-shape .account-line{margin:var(--space-3) 0 var(--space-4)}}
+@media (min-width:1120px) and (max-width:1279px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure))}.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1280px){.reader-shape{grid-template-columns:minmax(0,min(var(--reader-measure),50vw)) minmax(0,1fr);justify-content:start;padding-left:32px;padding-right:0}
+.reader-shape__side{display:block;position:sticky;top:var(--topbar-h);height:calc(100vh - var(--topbar-h));margin-left:16px;border-left:1px solid var(--rule)}}
+@media (min-width:1680px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1fr)}
+.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1921px){.reader-shape{--fs-read:clamp(18px,calc(18px + (100vw - 1920px)/320),20px);--reader-measure:clamp(680px,calc(680px + (100vw - 1920px)*.117),755px)}}
+@media (min-width:2100px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1040px);justify-content:center}}</style><div class="reader-shape"><div class="reader-shape__outline"></div><div><div class="reader-shape__strip"></div><p class="account-line">Reading the Lean PCP proof, by Troy Lee. Text: Troy Lee, tcs-formalizations at a0ce13e, Apache-2.0. The links from the text to the Lean, the plain titles, the reading notes and the comparisons were made with AI and have not been reviewed by the authors. No mathematician has reviewed them.</p><div class="paper prose"><section class="part"><div class="part__text"><h1 id="reading-the-lean-pcp-proof" data-line="3">Reading the Lean PCP proof</h1>
+<p data-line="5">A guide for readers new to Lean: the formal statement of the PCP theorem, the
+definitions it rests on, and three results from the low-degree testing part of
+the proof. It accompanies the <a href="https://github.com/troyjlee/tcs-formalizations/blob/a0ce13ed0fa264f051c1278e039596ce65557fa4/docs/pcp/README.md" class="ext" data-external="" target="_blank" rel="noopener noreferrer">PCP guide</a>, which has the proof map
+and the list of differences from the paper.</p>
+<p data-line="10">The formalization follows <em>A Simple Algebraic Proof of the PCP Theorem</em> by
+Amireddy, Behera, Srinivasan, Sudan and Willumsgaard
+(<a href="https://arxiv.org/abs/2608.17429" class="ext" data-external="" target="_blank" rel="noopener noreferrer">arXiv:2608.17429</a>, to appear in SOSA 2027).
+Theorem numbers are those of the paper (see <a href="https://github.com/troyjlee/tcs-formalizations/blob/a0ce13ed0fa264f051c1278e039596ce65557fa4/docs/pcp/README.md#paper-version" class="ext" data-external="" target="_blank" rel="noopener noreferrer">Paper version</a>).
+Code is quoted verbatim from the development, with doc comments left out; each
+block names its source file.</p>
+<p data-line="17"><strong>Contents</strong></p>
+<ol data-line="19">
+<li data-line="19"><a href="#1" data-in="short">What you have to read</a></li>
+<li data-line="20"><a href="#2" data-in="short">Reading a Lean statement</a></li>
+<li data-line="21"><a href="#3" data-in="short">The definitions</a></li>
+<li data-line="22"><a href="#4" data-in="short">The PCP theorem</a></li>
+<li data-line="23"><a href="#5" data-in="short">Checks on the definitions</a></li>
+<li data-line="24"><a href="#6" data-in="short">The explicit constants</a></li>
+<li data-line="25"><a href="#7" data-in="short">Low-degree testing statements</a></li>
+<li data-line="26"><a href="#8" data-in="short">Reading a proof</a></li>
+<li data-line="27"><a href="#9" data-in="short">Finding your way around</a></li>
+<li data-line="28"><a href="#10" data-in="short">Learning more Lean</a></li>
+</ol>
+</div></section><section class="part"><div class="part__text"><a id="1" class="anchor" aria-hidden="true"></a>
+<a id="1-what-you-have-to-read" class="anchor" aria-hidden="true"></a><h2 id="what-you-have-to-read" data-line="33">1. What you have to read</h2>
+</div></section><section class="part"><div class="part__text"><p data-line="37">Lean checks every proof mechanically, down to the axioms. To know <em>what</em> has
+been proved, you only need to read statements: the final theorem and the
+definitions it mentions. You never need to read a proof to trust it.</p>
+<p data-line="41">Concretely, a reader has to check three things:</p>
+<ol data-line="43">
+<li data-line="43">The definitions of NP, of a verifier, and of polynomial time
+(<a href="#3" data-in="short">Section 3</a>) say what they should.</li>
+<li data-line="45">The final theorem <code>PCP.np_subset_pcp</code> (<a href="#4" data-in="short">Section 4</a>) says
+NP ⊆ PCP(O(log n), O(1)).</li>
+<li data-line="47">No extra axioms were used. Running <code>#print axioms PCP.np_subset_pcp</code> lists
+nothing beyond <code>propext</code>, <code>Classical.choice</code> and <code>Quot.sound</code>, the standard
+axioms of classical mathematics in Lean. The audit script
+<code>scripts/pcp/axiom-audit.sh</code> checks this for every declaration and rejects
+<code>sorry</code> (an unproved step).</li>
+</ol>
+<p data-line="53">Everything else, about 26,000 declarations, is checked by Lean and can be read
+for understanding rather than for trust.</p>
+</div></section><section class="part"><div class="part__text"><a id="2" class="anchor" aria-hidden="true"></a>
+<a id="2-reading-a-lean-statement" class="anchor" aria-hidden="true"></a><h2 id="reading-a-lean-statement" data-line="59">2. Reading a Lean statement</h2>
+</div></section><section class="part"><div class="part__text"><p data-line="63">A theorem has the shape <code>theorem name (h₁ : A) (h₂ : B) : C := proof</code>.
+Everything in parentheses before the last colon is a hypothesis, each with a
+name (<code>h₁</code>, <code>h₂</code>) used later in the proof. What follows the last colon is the
+conclusion. So the line reads “if A and B, then C”. The table covers the
+notation used in this guide.</p>
+<table data-line="69">
+<thead data-line="70">
+<tr data-line="71">
+<th>Lean</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody data-line="72">
+<tr data-line="73">
+<td><code>{F : Type*} [Field F] [Fintype F]</code></td>
+<td>Let F be a finite field. Arguments in braces and brackets are filled in by Lean automatically; brackets state structure on a type (field, finite, …).</td>
+</tr>
+<tr data-line="74">
+<td><code>[DecidableEq F]</code></td>
+<td>Equality in F can be tested by an algorithm. No mathematical content; it lets Lean count disagreements.</td>
+</tr>
+<tr data-line="75">
+<td><code>ℕ</code>, <code>ℚ</code></td>
+<td>Natural numbers (including 0) and rationals. Probabilities and distances are exact rationals.</td>
+</tr>
+<tr data-line="76">
+<td><code>(c + 2 : ℚ)</code></td>
+<td>The number c + 2, read as a rational.</td>
+</tr>
+<tr data-line="77">
+<td><code>Fin n</code></td>
+<td>The set {0, 1, …, n − 1}.</td>
+</tr>
+<tr data-line="78">
+<td><code>σ → F</code>, <code>Fin m → F</code></td>
+<td>The spaces F<sup>σ</sup> and F<sup>m</sup>: a point is a function from coordinates to F.</td>
+</tr>
+<tr data-line="79">
+<td><code>F × F</code>, <code>z.1</code>, <code>z.2</code></td>
+<td>Pairs, and the two coordinates of z = (z₁, z₂).</td>
+</tr>
+<tr data-line="80">
+<td><code>fun z =&gt; e</code></td>
+<td>The function z ↦ e.</td>
+</tr>
+<tr data-line="81">
+<td><code>f x</code>, <code>(R y).eval x</code></td>
+<td>f(x), and R<sub>y</sub>(x). Application is written by juxtaposition.</td>
+</tr>
+<tr data-line="82">
+<td><code>A → B</code>, <code>∀ x, P x</code>, <code>∃ y, Q y</code></td>
+<td>A implies B; for all x; there exists y. Also <code>∧</code>, <code>∨</code>, <code>¬</code>, <code>↔</code> as usual.</td>
+</tr>
+<tr data-line="83">
+<td><code>x : List Bool</code>, <code>x.length</code></td>
+<td>A bit string x ∈ {0,1}*, and its length |x|.</td>
+</tr>
+<tr data-line="84">
+<td><code>Polynomial F</code>, <code>p.natDegree</code>, <code>p.eval t</code></td>
+<td>F[X], deg p (with deg 0 = 0), and p(t).</td>
+</tr>
+<tr data-line="85">
+<td><code>MvPolynomial σ F</code></td>
+<td>Polynomials in variables X<sub>i</sub>, i ∈ σ.</td>
+</tr>
+<tr data-line="86">
+<td><code>P.totalDegree</code>, <code>P.degreeOf j</code></td>
+<td>Total degree, and degree in the variable X<sub>j</sub>.</td>
+</tr>
+<tr data-line="87">
+<td><code>MvPolynomial.eval x P</code></td>
+<td>P(x).</td>
+</tr>
+<tr data-line="88">
+<td><code>![a, b]</code></td>
+<td>The vector (a, b).</td>
+</tr>
+<tr data-line="89">
+<td><code>Fintype.card F</code></td>
+<td>|F|.</td>
+</tr>
+<tr data-line="90">
+<td><code>IsPrimitiveRoot ζ (Fintype.card F - 1)</code></td>
+<td>ζ generates the multiplicative group F<sup>×</sup>.</td>
+</tr>
+<tr data-line="91">
+<td><code>Nat.clog 2 n</code></td>
+<td>⌈log₂ n⌉.</td>
+</tr>
+<tr data-line="92">
+<td><code>{p : Polynomial F // p.natDegree ≤ c}</code></td>
+<td>The set of polynomials of degree at most c; <code>.val</code> is the polynomial itself.</td>
+</tr>
+<tr data-line="93">
+<td><code>V.queries</code>, <code>V.accProb x π</code></td>
+<td>Dot notation: the field <code>queries</code> of V, or a function applied with V as its first argument.</td>
+</tr>
+<tr data-line="94">
+<td><code>Nonempty T</code></td>
+<td>There is an object of type T (for example, a Turing machine with some property).</td>
+</tr>
+<tr data-line="95">
+<td><code>relativeDistance f g</code></td>
+<td>Pr<sub>x</sub>[f(x) ≠ g(x)], the normalized Hamming distance (defined in this project).</td>
+</tr>
+</tbody>
+</table>
+</div></section></div></div><div class="reader-shape__side"></div></div></div><template><style>.reader-shape{display:grid;grid-template-columns:minmax(0,var(--reader-measure));justify-content:center;column-gap:var(--reader-gap);align-items:start;padding-inline:var(--space-6)}
+.reader-shape__outline,.reader-shape__side{display:none}
+.reader-shape__strip{height:45px;margin-bottom:var(--space-5);margin-left:-22px;border-bottom:1px solid var(--rule)}
+.reader-shape__text{display:flex;flex-direction:column;gap:14px}
+.reader-shape__text i{display:block;height:13px;background:var(--rule);opacity:.55}
+.reader-shape__text i:first-child{width:62%;height:30px;margin-bottom:var(--space-4)}
+.reader-shape__words{margin:0;font-family:var(--font-sans);font-size:var(--fs-sm);color:var(--ink-3)}
+.reader-shape .account-line{margin:var(--space-4) 0 var(--space-6);font-family:var(--font-sans);font-size:var(--fs-sm);line-height:var(--lh-ui);color:var(--ink-3);text-wrap:pretty}
+.reader-shape .paper.prose{max-width:var(--reader-measure)}
+.reader-shape .part{position:relative;display:flow-root;padding-bottom:var(--space-4)}
+.reader-shape .part__text{content-visibility:visible;contain-intrinsic-block-size:none}
+.reader-shape .part__text>:last-child{margin-bottom:0}
+@media (max-width:700px){.reader-shape{padding-inline:20px}.reader-shape__strip{margin-left:-15px}.reader-shape .account-line{margin:var(--space-3) 0 var(--space-4)}}
+@media (min-width:1120px) and (max-width:1279px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure))}.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1280px){.reader-shape{grid-template-columns:minmax(0,min(var(--reader-measure),50vw)) minmax(0,1fr);justify-content:start;padding-left:32px;padding-right:0}
+.reader-shape__side{display:block;position:sticky;top:var(--topbar-h);height:calc(100vh - var(--topbar-h));margin-left:16px;border-left:1px solid var(--rule)}}
+@media (min-width:1680px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1fr)}
+.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1921px){.reader-shape{--fs-read:clamp(18px,calc(18px + (100vw - 1920px)/320),20px);--reader-measure:clamp(680px,calc(680px + (100vw - 1920px)*.117),755px)}}
+@media (min-width:2100px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1040px);justify-content:center}}</style><div class="reader-shape" aria-busy="true"><div class="reader-shape__outline"></div><div><div class="reader-shape__strip"></div><p class="reader-shape__words" role="status">Loading the paper…</p><div class="reader-shape__text"><i></i><i style="width:100%"></i><i style="width:96%"></i><i style="width:98%"></i><i style="width:92%"></i><i style="width:60%"></i><i style="visibility:hidden"></i><i style="width:100%"></i><i style="width:94%"></i><i style="width:97%"></i><i style="width:88%"></i><i style="width:99%"></i><i style="width:45%"></i></div></div><div class="reader-shape__side"></div></div></template><script>(function(){if(!location.hash&&!location.search&&!history.state)return;var f=document.querySelector("[data-first-paper]");f.replaceWith(f.nextElementSibling.content)})()</script></main></div></div>
+    <noscript>
+      <p style="max-width: 40rem; margin: 4rem auto; font-family: Georgia, serif; line-height: 1.6">
+        The papers, the Lean beside them, the argument map and the comparisons on this site are drawn in the browser and need JavaScript. The paper and its Lean are in the repository under <code>instances/pcp-reading-guide/</code>.
+      </p>
+    </noscript>
+  </body>
+</html>

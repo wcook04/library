@@ -1,0 +1,15 @@
+# The minimum of the coupled spring potential
+
+> The minimum of the coupled spring potential, by Bjørn Kjos-Hanssen (the Lean) and AI agents under Will Cook’s direction (the page), read beside its Lean. Lean formalization: Bjørn Kjos-Hanssen, PhyslibAlpha in Physlib at be0a9ee. Page written by AI agents under Will Cook's direction; not reviewed by the author of the Lean or by a physicist.
+
+The links from the text to the Lean, the plain titles, the reading notes and the comparisons were made with AI and have not been reviewed by the authors. No mathematician has reviewed them.
+
+## Read
+
+- [The minimum of the coupled spring potential](https://wcook04.github.io/library/coupled-spring/)
+
+## Data
+
+All data is static JSON under https://wcook04.github.io/library/coupled-spring/edition/. Start at edition/index.json: it maps API routes to files.
+
+The Lean index has 2 modules and 31 declarations.

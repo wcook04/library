@@ -414,17 +414,17 @@
     "Bjørn Kjos-Hanssen (the Lean)",
     "AI agents under Will Cook’s direction (the page)"
    ],
-   "href": "https://wcook04.github.io/proof-reader/#/coupled-spring",
-   "here": false,
+   "href": "/library/coupled-spring/",
+   "here": true,
    "sentence": "The coupled spring potential U(x₀, x₁) = x₀² + x₀x₁ + x₁² has a local minimum at the origin, proved in PhyslibAlpha by a general second-derivative test.",
    "counts": {
-    "phrases": 22,
-    "statements": 13,
-    "lean": 16
+    "phrases": 24,
+    "statements": 9,
+    "lean": 18
    },
    "comparator": "Comparator accepted the local-minimum theorem and rejected a control that asked for a local maximum.",
    "pages": [],
-   "search": null
+   "search": "/library/_index/search/coupled-spring.json"
   },
   {
    "id": "physlib-gauge-theory",

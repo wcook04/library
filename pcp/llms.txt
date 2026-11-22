@@ -1,0 +1,15 @@
+# Constant-query verification by algebraic encoding
+
+> Constant-query verification by algebraic encoding, by Will Cook, using AI, read beside its Lean. Original algebraic proof: Amireddy, Behera, Srinivasan, Sudan and Willumsgaard. Lean formalization: Troy Lee. Explanatory reconstruction by Will Cook, using AI.
+
+The links from the text to the Lean, the plain titles, the reading notes and the comparisons were made with AI and have not been reviewed by the authors. No mathematician has reviewed them.
+
+## Read
+
+- [Constant-query verification by algebraic encoding](https://wcook04.github.io/library/pcp/)
+
+## Data
+
+All data is static JSON under https://wcook04.github.io/library/pcp/edition/. Start at edition/index.json: it maps API routes to files.
+
+The Lean index has 750 modules and 9,907 declarations.

@@ -328,18 +328,30 @@
    "id": "pcp",
    "title": "Constant-query verification by algebraic encoding",
    "authors": [
-    "Will Cook, with AI assistance (explanatory reconstruction)"
+    "Will Cook, using AI"
    ],
-   "href": "https://wcook04.github.io/proof-reader/#/pcp-specialist",
-   "here": false,
+   "href": "/library/pcp/",
+   "here": true,
    "sentence": "The PCP theorem: every language in NP has a polynomial-time verifier with logarithmic randomness, constantly many proof-bit queries, perfect completeness and soundness error at most one half, by the algebraic proof of Amireddy, Behera, Srinivasan, Sudan and Willumsgaard.",
    "counts": {
-    "phrases": 177,
-    "statements": 23,
-    "lean": 101
+    "phrases": 128,
+    "statements": 28,
+    "lean": 102
    },
    "comparator": "Comparator accepted the forward theorem, its converse and the equivalence with the reference NP class.",
    "pages": [
+    {
+     "title": "The algebraic PCP theorem: a detailed account",
+     "href": "/library/pcp/full-argument/"
+    },
+    {
+     "title": "Checking a long proof by reading a few bits",
+     "href": "/library/pcp/exposition/"
+    },
+    {
+     "title": "Reading the Lean PCP proof, by Troy Lee",
+     "href": "/library/pcp/reading-guide/"
+    },
     {
      "title": "The detailed account",
      "href": "https://wcook04.github.io/proof-reader/#/pcp-full-argument"
@@ -353,7 +365,7 @@
      "href": "https://wcook04.github.io/proof-reader/#/pcp-reading-guide"
     }
    ],
-   "search": null
+   "search": "/library/_index/search/pcp.json"
   },
   {
    "id": "contextual-embeddings",

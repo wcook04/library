@@ -1,0 +1,124 @@
+<!doctype html>
+<html data-view="read" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The algebraic PCP theorem: a detailed account · Constant-query verification by algebraic encoding</title>
+    <meta
+      name="description"
+      content="Constant-query verification by algebraic encoding, by Will Cook, using AI, read sentence by sentence beside its Lean."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Constant-query verification by algebraic encoding" />
+    <meta
+      property="og:description"
+      content="By Will Cook, using AI. Each phrase opens the Lean that states it."
+    />
+    <meta property="og:url" content="https://wcook04.github.io/library/pcp/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="describedby" href="/library/pcp/llms.txt" type="text/plain" />
+    <meta name="author" content="Will Cook" />
+    <meta name="theme-color" content="#f8f0e2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1c1526" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/library/pcp/favicon.svg" type="image/svg+xml" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("lx-theme");
+          if (stored === "light" || stored === "dark") document.documentElement.setAttribute("data-theme", stored);
+        } catch (e) {}
+      })();
+      // The paper's text waits, hidden but laid out, until its fonts (preloaded below) are in, or
+      // 100 ms at most, so a formula never paints in a fallback face and then shifts.
+      (function () {
+        var root = document.documentElement;
+        if (!document.fonts || !document.fonts.load) return;
+        root.classList.add("fonts-wait");
+        var done = function () {
+          root.classList.remove("fonts-wait");
+        };
+        setTimeout(done, 100);
+        document.addEventListener("DOMContentLoaded", function () {
+          Promise.all(["1em KaTeX_Main", "italic 1em KaTeX_Math", "1em 'STIX Two Text'"].map(function (face) {
+            return document.fonts.load(face);
+          })).then(done, done);
+        });
+      })();
+    </script>
+    <style>html.fonts-wait .paper{visibility:hidden}</style>
+    <script type="module" crossorigin src="/library/pcp/assets/index-BgUrAFKP.js"></script>
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/site-BCr6B9Li.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/noteSummaries-9uf7AZXx.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/jsx-runtime-B9YCZGtr.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/skeletonView-BqJO5dqQ.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/theme-xzFCoOLj.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/lean-Cm6F4eXZ.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/data-B6jEYTxP.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/router-DIZ6hPmk.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/papers-DpWkaMMz.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/BackControl-CSHWwqCc.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/siteName-C1IRsTfe.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/TopBar-xv-Q0-0T.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/cite-Dth-j-Q3.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/ties-ClSxO36a.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/restore-2GWsVyli.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/mainGoal-DIOS9S-V.js">
+    <link rel="stylesheet" crossorigin href="/library/pcp/assets/noteSummaries-DV8vOBon.css">
+    <link rel="stylesheet" crossorigin href="/library/pcp/assets/BackControl-D90l99kx.css">
+    <link rel="stylesheet" crossorigin href="/library/pcp/assets/TopBar-BtQm4BbY.css">
+    <link rel="stylesheet" crossorigin href="/library/pcp/assets/index-BzN5QY5r.css">
+    <link rel="stylesheet" crossorigin href="/library/pcp/assets/reader-content-CVNDVUvG.css">
+  <link rel="preload" href="/library/pcp/assets/KaTeX_Main-Regular-B22Nviop.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/assets/KaTeX_Math-Italic-t53AETM-.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/assets/KaTeX_Size1-Regular-mCD8mA8B.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/assets/KaTeX_Size2-Regular-Dy4dx90m.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/assets/source-sans-3-latin-wght-normal-Bo_j9asI.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/assets/stix-two-text-latin-400-normal-Dm29J5Fl.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/assets/stix-two-text-latin-500-normal-QKEzPprE.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/edition/index.json" as="fetch" crossorigin /><link rel="modulepreload" crossorigin href="/library/pcp/assets/ReaderPage-TlGTiZSa.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/site-BCr6B9Li.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/jsx-runtime-B9YCZGtr.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/skeletonView-BqJO5dqQ.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/theme-xzFCoOLj.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/lean-Cm6F4eXZ.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/data-B6jEYTxP.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/router-DIZ6hPmk.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/BackControl-CSHWwqCc.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/papers-DpWkaMMz.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/ties-ClSxO36a.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/restore-2GWsVyli.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/useAlignment-B0zrnWR_.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/labels-DXlsYS1F.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/documents-DeWAOnpy.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/purify.es-CVP6teAQ.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/TheoremPlate-Cvac2ZGe.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/noteSummaries-9uf7AZXx.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/summary-DUqcgO0Z.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/tokenize-C5yNsREG.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/author-BiVkZYjQ.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/RecordPanel-Cjfu72zw.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/levels-BSq-4cyz.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/lazy-DMb9NIc6.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/walk-7PXRaS2z.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/map-pane-DHcd4NsQ.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/long-SgvwzYXw.js" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/ReaderPage-BWJhqWA1.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/reader-content-CVNDVUvG.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/BackControl-D90l99kx.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/TheoremPlate-DaQYdRUq.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/noteSummaries-DV8vOBon.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/reader-page-gjsKmsou.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/RecordPanel-ChHSg_Aj.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/slice-FtnMEvve.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/lean-B0P2vv6P.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/map-pane-VPPDg1rt.css" /><link rel="preload" href="/library/pcp/edition/57e9aa27cbd44326052ab5b8255f9eb010e2f321665b6d984d9fbb62088af8ba.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/edition/80f3c9d1a57783e0f5db3307371913e00144bdf537db0dd547593e43e62cac3e.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/edition/af7de5361983c8ca4c6f4062a47ed7f47ffea872d8faf50f2079639107c8041a.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/edition/7cb292bb821c95959cf107ce05a2df3551f201ff5606c4792c2b0df1788f74f0.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/edition/b11e9ade880a39963e3832c814630ac93e9a819aecf4b3cb847c139536097366.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/edition/8331071b9e15a21ac9e48f36b72aad2eb6c9a84f2147cb5ca269d0451d764a20.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/edition/dc56e4e1daa1b8023dc887b37931e10b5bd993197dfab563721fc18944d9dea7.md" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/edition/74c6884de1523027ae6394ad867422904accd71cdfd8fbbd8bad2cd19df19e09.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/edition/ties/long.json" as="fetch" crossorigin /></head>
+  <body>
+    <div id="root"><div class="app"><header class="topbar"><span class="fam-lockup"><a class="fam-lockup__home" href="https://wcook04.github.io/" rel="author" title="All of Will Cook's websites and videos"><img src="/library/pcp/plectis.svg" alt="" width="26" height="26" /><span class="fam-lockup__owner" translate="no">Will Cook</span></a><span class="fam-lockup__rule" aria-hidden="true"></span><a class="fam-lockup__site" href="/library/pcp/" aria-label="Constant-query verification by algebraic encoding, front page"><svg viewBox="0 0 32 32" aria-hidden="true" class="wordmark__mark"><path d="M4 27 L4 5 M4 27 L28 27" fill="none" stroke-width="2" stroke-linecap="round"></path><path d="M5 26 C10 22 13 17 16 14 C19 11 22 9 27 6" fill="none" stroke-width="2.6" stroke-linecap="round"></path><circle cx="16" cy="14" r="3"></circle></svg><span class="fam-lockup__name" translate="no">Constant-query verification by algebraic encoding</span></a></span><nav class="topnav" aria-label="Main"><a class="topnav__job" href="/library/pcp/read/short">Read</a><a class="topnav__job" href="/library/pcp/map">Map</a><a class="topnav__job" href="/library/pcp/compare">Compare</a><a class="topnav__job" href="/library/pcp/checks">What ran</a><a class="topnav__job topnav__job--quiet" href="/library/pcp/lean">Lean index</a></nav></header><main id="main" class="app__main"><div data-first-paper style="display:contents"><style>.reader-shape{display:grid;grid-template-columns:minmax(0,var(--reader-measure));justify-content:center;column-gap:var(--reader-gap);align-items:start;padding-inline:var(--space-6)}
+.reader-shape__outline,.reader-shape__side{display:none}
+.reader-shape__strip{height:45px;margin-bottom:var(--space-5);margin-left:-22px;border-bottom:1px solid var(--rule)}
+.reader-shape__text{display:flex;flex-direction:column;gap:14px}
+.reader-shape__text i{display:block;height:13px;background:var(--rule);opacity:.55}
+.reader-shape__text i:first-child{width:62%;height:30px;margin-bottom:var(--space-4)}
+.reader-shape__words{margin:0;font-family:var(--font-sans);font-size:var(--fs-sm);color:var(--ink-3)}
+.reader-shape .account-line{margin:var(--space-4) 0 var(--space-6);font-family:var(--font-sans);font-size:var(--fs-sm);line-height:var(--lh-ui);color:var(--ink-3);text-wrap:pretty}
+.reader-shape .paper.prose{max-width:var(--reader-measure)}
+.reader-shape .part{position:relative;display:flow-root;padding-bottom:var(--space-4)}
+.reader-shape .part__text{content-visibility:visible;contain-intrinsic-block-size:none}
+.reader-shape .part__text>:last-child{margin-bottom:0}
+@media (max-width:700px){.reader-shape{padding-inline:20px}.reader-shape__strip{margin-left:-15px}.reader-shape .account-line{margin:var(--space-3) 0 var(--space-4)}}
+@media (min-width:1120px) and (max-width:1279px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure))}.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1280px){.reader-shape{grid-template-columns:minmax(0,min(var(--reader-measure),50vw)) minmax(0,1fr);justify-content:start;padding-left:32px;padding-right:0}
+.reader-shape__side{display:block;position:sticky;top:var(--topbar-h);height:calc(100vh - var(--topbar-h));margin-left:16px;border-left:1px solid var(--rule)}}
+@media (min-width:1680px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1fr)}
+.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1921px){.reader-shape{--fs-read:clamp(18px,calc(18px + (100vw - 1920px)/320),20px);--reader-measure:clamp(680px,calc(680px + (100vw - 1920px)*.117),755px)}}
+@media (min-width:2100px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1040px);justify-content:center}}</style><div class="reader-shape"><div class="reader-shape__outline"></div><div><div class="reader-shape__strip"></div><p class="account-line">The algebraic PCP theorem: a detailed account: a detailed account to Constant-query verification by algebraic encoding, written for this reader with AI. Original algebraic proof by Amireddy, Behera, Srinivasan, Sudan and Willumsgaard; Lean formalization by Troy Lee, from his repository troyjlee/tcs-formalizations at a0ce13e (Apache-2.0). The links from the text to the Lean, the plain titles, the reading notes and the comparisons were made with AI and have not been reviewed by the authors. No mathematician has reviewed them.</p><div class="paper prose"><section class="part"><div class="part__text"><h1 id="the-algebraic-pcp-theorem-a-detailed-account-of-the-lean-proof" data-line="3">The algebraic PCP theorem: a detailed account of the Lean proof</h1>
+<p data-line="5"><em>Explanatory reconstruction prepared by Will Cook with AI assistance · 16 November 2026.</em></p>
+<p data-line="7">Algebraic construction: Amireddy, Behera, Srinivasan, Sudan and Willumsgaard. Lean formalization: Troy Lee.</p>
+<p class="run-in" data-run-in="abstract" data-line="9"><strong class="run-in__lead">Abstract.</strong> <span class="tie" data-t="0">The PCP theorem [AS98, ALMSS98] states that every language in NP has a polynomial-time verifier using <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>log</mi><mo>⁡</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(\log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">O</span><span class="mopen">(</span><span class="mop">lo<span style="margin-right:0.0139em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span> random bits and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span> proof-bit queries, with perfect completeness and soundness error at most one half.</span> We give a detailed exposition of Troy Lee’s Lean formalization of the algebraic construction of Amireddy, Behera, Srinivasan, Sudan and Willumsgaard. Set-multilinear encoding reduces the degree of line polynomials, and low-degree Hadamard encoding permits binary tests. We reconstruct the algebraic estimates and the machine-model arguments establishing the query, randomness and running-time bounds.</p>
+</div></section><section class="part"><div class="part__text"><a id="1" class="anchor" aria-hidden="true"></a>
+<a id="1-introduction" class="anchor" aria-hidden="true"></a><h2 id="introduction" data-line="14">1. Introduction</h2>
+</div></section></div></div><div class="reader-shape__side"></div></div></div><template><style>.reader-shape{display:grid;grid-template-columns:minmax(0,var(--reader-measure));justify-content:center;column-gap:var(--reader-gap);align-items:start;padding-inline:var(--space-6)}
+.reader-shape__outline,.reader-shape__side{display:none}
+.reader-shape__strip{height:45px;margin-bottom:var(--space-5);margin-left:-22px;border-bottom:1px solid var(--rule)}
+.reader-shape__text{display:flex;flex-direction:column;gap:14px}
+.reader-shape__text i{display:block;height:13px;background:var(--rule);opacity:.55}
+.reader-shape__text i:first-child{width:62%;height:30px;margin-bottom:var(--space-4)}
+.reader-shape__words{margin:0;font-family:var(--font-sans);font-size:var(--fs-sm);color:var(--ink-3)}
+.reader-shape .account-line{margin:var(--space-4) 0 var(--space-6);font-family:var(--font-sans);font-size:var(--fs-sm);line-height:var(--lh-ui);color:var(--ink-3);text-wrap:pretty}
+.reader-shape .paper.prose{max-width:var(--reader-measure)}
+.reader-shape .part{position:relative;display:flow-root;padding-bottom:var(--space-4)}
+.reader-shape .part__text{content-visibility:visible;contain-intrinsic-block-size:none}
+.reader-shape .part__text>:last-child{margin-bottom:0}
+@media (max-width:700px){.reader-shape{padding-inline:20px}.reader-shape__strip{margin-left:-15px}.reader-shape .account-line{margin:var(--space-3) 0 var(--space-4)}}
+@media (min-width:1120px) and (max-width:1279px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure))}.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1280px){.reader-shape{grid-template-columns:minmax(0,min(var(--reader-measure),50vw)) minmax(0,1fr);justify-content:start;padding-left:32px;padding-right:0}
+.reader-shape__side{display:block;position:sticky;top:var(--topbar-h);height:calc(100vh - var(--topbar-h));margin-left:16px;border-left:1px solid var(--rule)}}
+@media (min-width:1680px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1fr)}
+.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1921px){.reader-shape{--fs-read:clamp(18px,calc(18px + (100vw - 1920px)/320),20px);--reader-measure:clamp(680px,calc(680px + (100vw - 1920px)*.117),755px)}}
+@media (min-width:2100px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1040px);justify-content:center}}</style><div class="reader-shape" aria-busy="true"><div class="reader-shape__outline"></div><div><div class="reader-shape__strip"></div><p class="reader-shape__words" role="status">Loading the paper…</p><div class="reader-shape__text"><i></i><i style="width:100%"></i><i style="width:96%"></i><i style="width:98%"></i><i style="width:92%"></i><i style="width:60%"></i><i style="visibility:hidden"></i><i style="width:100%"></i><i style="width:94%"></i><i style="width:97%"></i><i style="width:88%"></i><i style="width:99%"></i><i style="width:45%"></i></div></div><div class="reader-shape__side"></div></div></template><script>(function(){if(!location.hash&&!location.search&&!history.state)return;var f=document.querySelector("[data-first-paper]");f.replaceWith(f.nextElementSibling.content)})()</script></main></div></div>
+    <noscript>
+      <p style="max-width: 40rem; margin: 4rem auto; font-family: Georgia, serif; line-height: 1.6">
+        The papers, the Lean beside them, the argument map and the comparisons on this site are drawn in the browser and need JavaScript. The paper and its Lean are in the repository under <code>instances/pcp/</code>.
+      </p>
+    </noscript>
+  </body>
+</html>

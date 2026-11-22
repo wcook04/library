@@ -1,0 +1,182 @@
+<!doctype html>
+<html data-view="read" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checking a long proof by reading a few bits · Constant-query verification by algebraic encoding</title>
+    <meta
+      name="description"
+      content="Constant-query verification by algebraic encoding, by Will Cook, using AI, read sentence by sentence beside its Lean."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Constant-query verification by algebraic encoding" />
+    <meta
+      property="og:description"
+      content="By Will Cook, using AI. Each phrase opens the Lean that states it."
+    />
+    <meta property="og:url" content="https://wcook04.github.io/library/pcp/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="describedby" href="/library/pcp/llms.txt" type="text/plain" />
+    <meta name="author" content="Will Cook" />
+    <meta name="theme-color" content="#f8f0e2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1c1526" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/library/pcp/favicon.svg" type="image/svg+xml" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("lx-theme");
+          if (stored === "light" || stored === "dark") document.documentElement.setAttribute("data-theme", stored);
+        } catch (e) {}
+      })();
+      // The paper's text waits, hidden but laid out, until its fonts (preloaded below) are in, or
+      // 100 ms at most, so a formula never paints in a fallback face and then shifts.
+      (function () {
+        var root = document.documentElement;
+        if (!document.fonts || !document.fonts.load) return;
+        root.classList.add("fonts-wait");
+        var done = function () {
+          root.classList.remove("fonts-wait");
+        };
+        setTimeout(done, 100);
+        document.addEventListener("DOMContentLoaded", function () {
+          Promise.all(["1em KaTeX_Main", "italic 1em KaTeX_Math", "1em 'STIX Two Text'"].map(function (face) {
+            return document.fonts.load(face);
+          })).then(done, done);
+        });
+      })();
+    </script>
+    <style>html.fonts-wait .paper{visibility:hidden}</style>
+    <script type="module" crossorigin src="/library/pcp/assets/index-BgUrAFKP.js"></script>
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/site-BCr6B9Li.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/noteSummaries-9uf7AZXx.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/jsx-runtime-B9YCZGtr.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/skeletonView-BqJO5dqQ.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/theme-xzFCoOLj.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/lean-Cm6F4eXZ.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/data-B6jEYTxP.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/router-DIZ6hPmk.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/papers-DpWkaMMz.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/BackControl-CSHWwqCc.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/siteName-C1IRsTfe.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/TopBar-xv-Q0-0T.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/cite-Dth-j-Q3.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/ties-ClSxO36a.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/restore-2GWsVyli.js">
+    <link rel="modulepreload" crossorigin href="/library/pcp/assets/mainGoal-DIOS9S-V.js">
+    <link rel="stylesheet" crossorigin href="/library/pcp/assets/noteSummaries-DV8vOBon.css">
+    <link rel="stylesheet" crossorigin href="/library/pcp/assets/BackControl-D90l99kx.css">
+    <link rel="stylesheet" crossorigin href="/library/pcp/assets/TopBar-BtQm4BbY.css">
+    <link rel="stylesheet" crossorigin href="/library/pcp/assets/index-BzN5QY5r.css">
+    <link rel="stylesheet" crossorigin href="/library/pcp/assets/reader-content-CVNDVUvG.css">
+  <link rel="preload" href="/library/pcp/assets/KaTeX_Main-Regular-B22Nviop.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/assets/KaTeX_Math-Italic-t53AETM-.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/assets/KaTeX_Size1-Regular-mCD8mA8B.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/assets/KaTeX_Size2-Regular-Dy4dx90m.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/assets/source-sans-3-latin-wght-normal-Bo_j9asI.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/assets/stix-two-text-latin-400-normal-Dm29J5Fl.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/assets/stix-two-text-latin-500-normal-QKEzPprE.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/pcp/edition/index.json" as="fetch" crossorigin /><link rel="modulepreload" crossorigin href="/library/pcp/assets/ReaderPage-TlGTiZSa.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/site-BCr6B9Li.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/jsx-runtime-B9YCZGtr.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/skeletonView-BqJO5dqQ.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/theme-xzFCoOLj.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/lean-Cm6F4eXZ.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/data-B6jEYTxP.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/router-DIZ6hPmk.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/BackControl-CSHWwqCc.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/papers-DpWkaMMz.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/ties-ClSxO36a.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/restore-2GWsVyli.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/useAlignment-B0zrnWR_.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/labels-DXlsYS1F.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/documents-DeWAOnpy.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/purify.es-CVP6teAQ.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/TheoremPlate-Cvac2ZGe.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/noteSummaries-9uf7AZXx.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/summary-DUqcgO0Z.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/tokenize-C5yNsREG.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/author-BiVkZYjQ.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/RecordPanel-Cjfu72zw.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/levels-BSq-4cyz.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/lazy-DMb9NIc6.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/walk-7PXRaS2z.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/map-pane-DHcd4NsQ.js" /><link rel="modulepreload" crossorigin href="/library/pcp/assets/expository-Cn4nUIKC.js" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/ReaderPage-BWJhqWA1.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/reader-content-CVNDVUvG.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/BackControl-D90l99kx.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/TheoremPlate-DaQYdRUq.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/noteSummaries-DV8vOBon.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/reader-page-gjsKmsou.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/RecordPanel-ChHSg_Aj.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/slice-FtnMEvve.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/lean-B0P2vv6P.css" /><link rel="preload" as="style" crossorigin href="/library/pcp/assets/map-pane-VPPDg1rt.css" /><link rel="preload" href="/library/pcp/edition/57e9aa27cbd44326052ab5b8255f9eb010e2f321665b6d984d9fbb62088af8ba.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/edition/80f3c9d1a57783e0f5db3307371913e00144bdf537db0dd547593e43e62cac3e.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/edition/af7de5361983c8ca4c6f4062a47ed7f47ffea872d8faf50f2079639107c8041a.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/edition/7cb292bb821c95959cf107ce05a2df3551f201ff5606c4792c2b0df1788f74f0.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/edition/b11e9ade880a39963e3832c814630ac93e9a819aecf4b3cb847c139536097366.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/edition/8331071b9e15a21ac9e48f36b72aad2eb6c9a84f2147cb5ca269d0451d764a20.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/edition/5db8b5829fb4a9443d6c421cbf1c630c420fdb756dc78bf1fc7b6babf01dcbce.md" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/edition/6407387bb894637160cee348ddcd24194f1176f5ac9d8a8e9777ba6513e01ec3.json" as="fetch" crossorigin /><link rel="preload" href="/library/pcp/edition/ties/expository.json" as="fetch" crossorigin /></head>
+  <body>
+    <div id="root"><div class="app"><header class="topbar"><span class="fam-lockup"><a class="fam-lockup__home" href="https://wcook04.github.io/" rel="author" title="All of Will Cook's websites and videos"><img src="/library/pcp/plectis.svg" alt="" width="26" height="26" /><span class="fam-lockup__owner" translate="no">Will Cook</span></a><span class="fam-lockup__rule" aria-hidden="true"></span><a class="fam-lockup__site" href="/library/pcp/" aria-label="Constant-query verification by algebraic encoding, front page"><svg viewBox="0 0 32 32" aria-hidden="true" class="wordmark__mark"><path d="M4 27 L4 5 M4 27 L28 27" fill="none" stroke-width="2" stroke-linecap="round"></path><path d="M5 26 C10 22 13 17 16 14 C19 11 22 9 27 6" fill="none" stroke-width="2.6" stroke-linecap="round"></path><circle cx="16" cy="14" r="3"></circle></svg><span class="fam-lockup__name" translate="no">Constant-query verification by algebraic encoding</span></a></span><nav class="topnav" aria-label="Main"><a class="topnav__job" href="/library/pcp/read/short">Read</a><a class="topnav__job" href="/library/pcp/map">Map</a><a class="topnav__job" href="/library/pcp/compare">Compare</a><a class="topnav__job" href="/library/pcp/checks">What ran</a><a class="topnav__job topnav__job--quiet" href="/library/pcp/lean">Lean index</a></nav></header><main id="main" class="app__main"><div data-first-paper style="display:contents"><style>.reader-shape{display:grid;grid-template-columns:minmax(0,var(--reader-measure));justify-content:center;column-gap:var(--reader-gap);align-items:start;padding-inline:var(--space-6)}
+.reader-shape__outline,.reader-shape__side{display:none}
+.reader-shape__strip{height:45px;margin-bottom:var(--space-5);margin-left:-22px;border-bottom:1px solid var(--rule)}
+.reader-shape__text{display:flex;flex-direction:column;gap:14px}
+.reader-shape__text i{display:block;height:13px;background:var(--rule);opacity:.55}
+.reader-shape__text i:first-child{width:62%;height:30px;margin-bottom:var(--space-4)}
+.reader-shape__words{margin:0;font-family:var(--font-sans);font-size:var(--fs-sm);color:var(--ink-3)}
+.reader-shape .account-line{margin:var(--space-4) 0 var(--space-6);font-family:var(--font-sans);font-size:var(--fs-sm);line-height:var(--lh-ui);color:var(--ink-3);text-wrap:pretty}
+.reader-shape .paper.prose{max-width:var(--reader-measure)}
+.reader-shape .part{position:relative;display:flow-root;padding-bottom:var(--space-4)}
+.reader-shape .part__text{content-visibility:visible;contain-intrinsic-block-size:none}
+.reader-shape .part__text>:last-child{margin-bottom:0}
+@media (max-width:700px){.reader-shape{padding-inline:20px}.reader-shape__strip{margin-left:-15px}.reader-shape .account-line{margin:var(--space-3) 0 var(--space-4)}}
+@media (min-width:1120px) and (max-width:1279px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure))}.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1280px){.reader-shape{grid-template-columns:minmax(0,min(var(--reader-measure),50vw)) minmax(0,1fr);justify-content:start;padding-left:32px;padding-right:0}
+.reader-shape__side{display:block;position:sticky;top:var(--topbar-h);height:calc(100vh - var(--topbar-h));margin-left:16px;border-left:1px solid var(--rule)}}
+@media (min-width:1680px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1fr)}
+.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1921px){.reader-shape{--fs-read:clamp(18px,calc(18px + (100vw - 1920px)/320),20px);--reader-measure:clamp(680px,calc(680px + (100vw - 1920px)*.117),755px)}}
+@media (min-width:2100px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1040px);justify-content:center}}</style><div class="reader-shape"><div class="reader-shape__outline"></div><div><div class="reader-shape__strip"></div><p class="account-line">Checking a long proof by reading a few bits: an exposition to Constant-query verification by algebraic encoding, written for this reader with AI. Original algebraic proof by Amireddy, Behera, Srinivasan, Sudan and Willumsgaard; Lean formalization by Troy Lee, from his repository troyjlee/tcs-formalizations at a0ce13e (Apache-2.0). The links from the text to the Lean, the plain titles, the reading notes and the comparisons were made with AI and have not been reviewed by the authors. No mathematician has reviewed them.</p><div class="paper prose"><section class="part"><div class="part__text"><h1 id="checking-a-long-proof-by-reading-a-few-bits" data-line="3">Checking a long proof by reading a few bits</h1>
+</div></section><section class="part"><div class="part__text"><h2 id="an-algebraic-proof-of-the-pcp-theorem-through-worked-examples" data-line="6">An algebraic proof of the PCP theorem, through worked examples</h2>
+</div></section><section class="part"><div class="part__text"><p data-line="10"><em>Explanatory reconstruction prepared by Will Cook with AI assistance · 16 November 2026.</em></p>
+<p data-line="12">Algebraic construction: Amireddy, Behera, Srinivasan, Sudan and Willumsgaard. Lean formalization: Troy Lee.</p>
+</div></section><section class="part"><div class="part__text"><h2 id="abstract" data-line="15">Abstract</h2>
+</div></section><section class="part"><div class="part__text"><p data-line="19">Every problem in NP has a randomised verifier that uses logarithmically
+many random bits, reads a constant number of proof bits, always accepts
+some proof of each true instance and rejects every proof of a false one
+with probability at least one half. We explain the algebraic proof of this
+PCP theorem by Amireddy, Behera, Srinivasan, Sudan and Willumsgaard, as
+formalized in Lean by Troy Lee, through worked examples that follow one
+colouring constraint down to the bits the verifier reads.</p>
+</div></section><section class="part"><div class="part__text"><h2 id="introduction" data-line="28">Introduction</h2>
+</div></section><section class="part"><div class="part__text"><p data-line="32">Suppose someone gives you a graph and claims that its vertices can be
+coloured with three colours, with different colours at the ends of every
+edge. By the PCP
+theorem, a more redundant <strong>proof</strong>, the bit string the verifier queries,
+can be checked by a randomised verifier reading only a constant number of
+its bits. If the graph is three-colourable, some proof always passes.
+Otherwise, every proof fails with probability at least one half.</p>
+<p data-line="40"><span class="tie" data-t="0">The same holds for every decision problem whose answer is yes exactly
+when some polynomial-length </span><strong><span class="tie" data-t="0">witness</span></strong><span class="tie" data-t="0"> is accepted by a deterministic
+polynomial-time algorithm.</span> A polynomial bound is at most <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><msup><mo stretchy="false">)</mo><mi>k</mi></msup></mrow><annotation encoding="application/x-tex">C(n+1)^k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.0991em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span></span></span></span></span></span></span></span></span></span></span> for
+fixed constants <span class="math-nobreak math-nobreak--whole"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo separator="true">,</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">C,k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span></span></span></span>,</span> where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> is the input length; the verifier’s
+running time and the proof length have such bounds, and only the number
+of proof bits read is constant. PCP stands for <em>probabilistically
+checkable proof</em>.</p>
+<p data-line="48">The constant-query PCP theorem is due to Arora, Lund, Motwani, Sudan and
+Szegedy [ALMSS98], building on Arora and Safra [AS98]. The construction
+explained here, which combines polynomial identities with binary
+encodings and avoids composition of PCP verifiers, is that of Amireddy,
+Behera, Srinivasan, Sudan and Willumsgaard [ABSSW26, version 2]; the
+formal proof in the proof assistant Lean, with explicit constants and
+corrected test hypotheses, is Troy Lee’s [Lee26]. These notes contribute
+an explanation through small worked examples.</p>
+<p data-line="57">We assume polynomial arithmetic, finite sums and elementary probability,
+and no complexity theory, coding theory or Lean. After an example
+(Section 1) and the statement (Section 2), we develop polynomial
+distance, the colouring equations, vanishing certificates, low-degree
+tests and the Hadamard encoding in Sections 3 to 7. In Section 8 we combine the
+encodings and follow one vertex condition of a two-vertex colouring to
+the bits read; in Sections 9 and 10 we prove soundness and bound the
+resources. Exercises, solutions and three appendices follow. The testing theorems are proved in the
+<a href="/library/pcp/read/long" class="companion" data-companion="long" data-fragment="">full argument</a>; the <a href="/library/pcp/read/short" class="companion" data-companion="short" data-fragment="">specialist paper</a> is a shorter account.</p>
+</div></section><section class="part"><div class="part__text"><a id="1" class="anchor" aria-hidden="true"></a>
+<a id="1-sampling-the-edges-of-a-colouring" class="anchor" aria-hidden="true"></a><h2 id="sampling-the-edges-of-a-colouring" data-line="70">1. Sampling the edges of a colouring</h2>
+</div></section><section class="part"><div class="part__text"><p data-line="74">Consider the complete graph on four vertices, <span class="math-nobreak math-nobreak--whole"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>4</mn></msub></mrow><annotation encoding="application/x-tex">K_4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0715em;">K</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>.</span> It has six edges and
+cannot be three-coloured: among four vertices, two must have the same
+colour, and those two are joined by an edge. Give its vertices the colours
+<span class="math-nobreak math-nobreak--whole"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi></mrow><mo separator="true">,</mo><mrow><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi></mrow><mo separator="true">,</mo><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi></mrow><mo separator="true">,</mo><mrow><mi mathvariant="normal">b</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">e</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">({\rm red},{\rm red},{\rm green},{\rm blue})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathrm">red</span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">red</span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">green</span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">blue</span></span></span><span class="mclose">)</span></span></span></span>.</span> Exactly one edge has equal
+colours at its ends, so sampling one edge uniformly catches this failure
+with probability <span class="math-nobreak math-nobreak--whole"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">1/6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1/6</span></span></span></span>.</span></p>
+<p data-line="81">Now add <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span> disjoint triangles, each properly coloured. The graph is still
+not three-colourable, because it still contains <span class="math-nobreak math-nobreak--whole"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>4</mn></msub></mrow><annotation encoding="application/x-tex">K_4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0715em;">K</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>,</span> but the displayed
+assignment has only one bad edge among <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>+</mo><mn>3</mn><mi>t</mi></mrow><annotation encoding="application/x-tex">6+3t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">6</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mord mathnormal">t</span></span></span></span> edges. Uniform edge sampling
+rejects with probability</p>
+<div class="math-display" data-line="87"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>6</mn><mo>+</mo><mn>3</mn><mi>t</mi></mrow></mfrac><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\frac{1}{6+3t}.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:2.0908em;vertical-align:-0.7693em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">6</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">3</span><span class="mord mathnormal">t</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">.</span></span></span></span></span></div>
+<p data-line="90">Three added triangles reduce this probability to <span class="math-nobreak math-nobreak--whole"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>15</mn></mrow><annotation encoding="application/x-tex">1/15</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1/15</span></span></span></span>.</span> For any fixed
+number of uniform edge samples, the probability of finding the bad edge
+tends to zero as <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span> grows.</p>
+<p data-line="94">The PCP verifier instead reads redundant tables related by algebraic
+identities, and checks both that they encode low-degree polynomials and
+that those polynomials satisfy the colouring conditions; tables passing often
+enough will determine a proper colouring, which for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>4</mn></msub></mrow><annotation encoding="application/x-tex">K_4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0715em;">K</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is impossible.</p>
+</div></section></div></div><div class="reader-shape__side"></div></div></div><template><style>.reader-shape{display:grid;grid-template-columns:minmax(0,var(--reader-measure));justify-content:center;column-gap:var(--reader-gap);align-items:start;padding-inline:var(--space-6)}
+.reader-shape__outline,.reader-shape__side{display:none}
+.reader-shape__strip{height:45px;margin-bottom:var(--space-5);margin-left:-22px;border-bottom:1px solid var(--rule)}
+.reader-shape__text{display:flex;flex-direction:column;gap:14px}
+.reader-shape__text i{display:block;height:13px;background:var(--rule);opacity:.55}
+.reader-shape__text i:first-child{width:62%;height:30px;margin-bottom:var(--space-4)}
+.reader-shape__words{margin:0;font-family:var(--font-sans);font-size:var(--fs-sm);color:var(--ink-3)}
+.reader-shape .account-line{margin:var(--space-4) 0 var(--space-6);font-family:var(--font-sans);font-size:var(--fs-sm);line-height:var(--lh-ui);color:var(--ink-3);text-wrap:pretty}
+.reader-shape .paper.prose{max-width:var(--reader-measure)}
+.reader-shape .part{position:relative;display:flow-root;padding-bottom:var(--space-4)}
+.reader-shape .part__text{content-visibility:visible;contain-intrinsic-block-size:none}
+.reader-shape .part__text>:last-child{margin-bottom:0}
+@media (max-width:700px){.reader-shape{padding-inline:20px}.reader-shape__strip{margin-left:-15px}.reader-shape .account-line{margin:var(--space-3) 0 var(--space-4)}}
+@media (min-width:1120px) and (max-width:1279px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure))}.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1280px){.reader-shape{grid-template-columns:minmax(0,min(var(--reader-measure),50vw)) minmax(0,1fr);justify-content:start;padding-left:32px;padding-right:0}
+.reader-shape__side{display:block;position:sticky;top:var(--topbar-h);height:calc(100vh - var(--topbar-h));margin-left:16px;border-left:1px solid var(--rule)}}
+@media (min-width:1680px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1fr)}
+.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1921px){.reader-shape{--fs-read:clamp(18px,calc(18px + (100vw - 1920px)/320),20px);--reader-measure:clamp(680px,calc(680px + (100vw - 1920px)*.117),755px)}}
+@media (min-width:2100px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1040px);justify-content:center}}</style><div class="reader-shape" aria-busy="true"><div class="reader-shape__outline"></div><div><div class="reader-shape__strip"></div><p class="reader-shape__words" role="status">Loading the paper…</p><div class="reader-shape__text"><i></i><i style="width:100%"></i><i style="width:96%"></i><i style="width:98%"></i><i style="width:92%"></i><i style="width:60%"></i><i style="visibility:hidden"></i><i style="width:100%"></i><i style="width:94%"></i><i style="width:97%"></i><i style="width:88%"></i><i style="width:99%"></i><i style="width:45%"></i></div></div><div class="reader-shape__side"></div></div></template><script>(function(){if(!location.hash&&!location.search&&!history.state)return;var f=document.querySelector("[data-first-paper]");f.replaceWith(f.nextElementSibling.content)})()</script></main></div></div>
+    <noscript>
+      <p style="max-width: 40rem; margin: 4rem auto; font-family: Georgia, serif; line-height: 1.6">
+        The papers, the Lean beside them, the argument map and the comparisons on this site are drawn in the browser and need JavaScript. The paper and its Lean are in the repository under <code>instances/pcp/</code>.
+      </p>
+    </noscript>
+  </body>
+</html>

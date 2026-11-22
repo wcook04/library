@@ -1,2 +1,0 @@
-import{a as e,t}from"./site-B2M4ZDjj.js";var n=e(),r=null;function i(){return t.library?(r??=fetch(`/library/euler/lean-notes.json`).then(e=>e.ok?e.json():{}).then(e=>e.notes??{}).catch(()=>({})),r):Promise.resolve({})}function a(e){let[t,r]=(0,n.useState)(null);return(0,n.useEffect)(()=>{let t=!0;return r(null),e&&i().then(n=>t&&r(n[e]??null)),()=>{t=!1}},[e]),t}export{a as n,i as t};
-//# sourceMappingURL=noteSummaries-9pucZZc_.js.map

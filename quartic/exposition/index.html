@@ -1,0 +1,174 @@
+<!doctype html>
+<html data-view="read" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>undefined · Quartic query separation</title>
+    <meta
+      name="description"
+      content="Reconstructing OpenAI’s nearly quartic query separation, by AI systems under the direction of Will Cook, read sentence by sentence beside its Lean."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Reconstructing OpenAI’s nearly quartic query separation" />
+    <meta
+      property="og:description"
+      content="By AI systems under the direction of Will Cook. Each phrase opens the Lean that states it."
+    />
+    <meta property="og:url" content="https://wcook04.github.io/library/quartic/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="describedby" href="/library/quartic/llms.txt" type="text/plain" />
+    <meta name="author" content="Will Cook" />
+    <meta name="theme-color" content="#f8f0e2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1c1526" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/library/quartic/favicon.svg" type="image/svg+xml" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("lx-theme");
+          if (stored === "light" || stored === "dark") document.documentElement.setAttribute("data-theme", stored);
+        } catch (e) {}
+      })();
+      // The paper's text waits, hidden but laid out, until its fonts (preloaded below) are in, or
+      // 100 ms at most, so a formula never paints in a fallback face and then shifts.
+      (function () {
+        var root = document.documentElement;
+        if (!document.fonts || !document.fonts.load) return;
+        root.classList.add("fonts-wait");
+        var done = function () {
+          root.classList.remove("fonts-wait");
+        };
+        setTimeout(done, 100);
+        document.addEventListener("DOMContentLoaded", function () {
+          Promise.all(["1em KaTeX_Main", "italic 1em KaTeX_Math", "1em 'STIX Two Text'"].map(function (face) {
+            return document.fonts.load(face);
+          })).then(done, done);
+        });
+      })();
+    </script>
+    <style>html.fonts-wait .paper{visibility:hidden}</style>
+    <script type="module" crossorigin src="/library/quartic/assets/index-DyyxKQcL.js"></script>
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/site-DKw54Y-C.js">
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/noteSummaries-DbT9v8Ko.js">
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/client-qTS4Ny4I.js">
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/jsx-runtime-D8BOIrdC.js">
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/skeletonView-cbRmBokc.js">
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/theme-nFIk46-T.js">
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/lean-Bw5COAfh.js">
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/data-iXmuD0rL.js">
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/router-BGsKcEBm.js">
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/papers-DKVlwZFK.js">
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/BackControl-DgqGGwWt.js">
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/siteName-DIdzbTmK.js">
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/TopBar-D-jxsHSq.js">
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/cite-4N7rWAc-.js">
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/preload-helper-BsvkmVse.js">
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/restore-BNg4LpV7.js">
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/ties-ClehxQ2o.js">
+    <link rel="modulepreload" crossorigin href="/library/quartic/assets/mainGoal-C9vJ_EDn.js">
+    <link rel="stylesheet" crossorigin href="/library/quartic/assets/BackControl-D90l99kx.css">
+    <link rel="stylesheet" crossorigin href="/library/quartic/assets/TopBar-BtQm4BbY.css">
+    <link rel="stylesheet" crossorigin href="/library/quartic/assets/index-ItXmH9bI.css">
+    <link rel="stylesheet" crossorigin href="/library/quartic/assets/reader-content-Bq_xmLki.css">
+  <link rel="preload" href="/library/quartic/assets/KaTeX_Main-Regular-B22Nviop.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quartic/assets/KaTeX_Math-Italic-t53AETM-.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quartic/assets/KaTeX_Size1-Regular-mCD8mA8B.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quartic/assets/KaTeX_Size2-Regular-Dy4dx90m.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quartic/assets/source-sans-3-latin-wght-normal-Bo_j9asI.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quartic/assets/stix-two-text-latin-400-normal-Dm29J5Fl.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quartic/assets/stix-two-text-latin-500-normal-QKEzPprE.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quartic/edition/index.json" as="fetch" crossorigin /><link rel="modulepreload" crossorigin href="/library/quartic/assets/ReaderPage-EH9eZFYu.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/site-DKw54Y-C.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/jsx-runtime-D8BOIrdC.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/skeletonView-cbRmBokc.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/theme-nFIk46-T.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/lean-Bw5COAfh.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/data-iXmuD0rL.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/router-BGsKcEBm.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/BackControl-DgqGGwWt.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/papers-DKVlwZFK.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/preload-helper-BsvkmVse.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/restore-BNg4LpV7.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/ties-ClehxQ2o.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/useAlignment-DgMAa_zA.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/labels-DXlsYS1F.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/documents-BpFZyFHO.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/purify.es-CKJeSf-o.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/math-DvUmVp8y.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/katex-vYDvafyF.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/TheoremPlate--TuC-Lko.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/client-qTS4Ny4I.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/noteSummaries-DbT9v8Ko.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/summary-Bv4VQoC2.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/ours-BncnaSrT.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/author-Dmi-H_jd.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/tokenize-C5yNsREG.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/RecordPanel-DWk78o_z.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/levels-FXK5Q_R4.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/lazy-CFsrU5db.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/walk-7PXRaS2z.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/map-pane-D9YkWOVW.js" /><link rel="modulepreload" crossorigin href="/library/quartic/assets/expository-D5Wsl5Pp.js" /><link rel="preload" as="style" crossorigin href="/library/quartic/assets/ReaderPage-BGubZ9E8.css" /><link rel="preload" as="style" crossorigin href="/library/quartic/assets/reader-content-Bq_xmLki.css" /><link rel="preload" as="style" crossorigin href="/library/quartic/assets/BackControl-D90l99kx.css" /><link rel="preload" as="style" crossorigin href="/library/quartic/assets/TheoremPlate-C7qrGz8L.css" /><link rel="preload" as="style" crossorigin href="/library/quartic/assets/ours-CNkwoTO3.css" /><link rel="preload" as="style" crossorigin href="/library/quartic/assets/reader-page-vzwRHp3S.css" /><link rel="preload" as="style" crossorigin href="/library/quartic/assets/RecordPanel-ChHSg_Aj.css" /><link rel="preload" as="style" crossorigin href="/library/quartic/assets/slice-FtnMEvve.css" /><link rel="preload" as="style" crossorigin href="/library/quartic/assets/lean-B0P2vv6P.css" /><link rel="preload" as="style" crossorigin href="/library/quartic/assets/map-pane-VPPDg1rt.css" /><link rel="preload" href="/library/quartic/edition/7f594109306d96a3df8c83701a458f0001aacffcc24bac672f8fa1ee0b45b906.json" as="fetch" crossorigin /><link rel="preload" href="/library/quartic/edition/67a260911445011adfb40cc0e53b951f3ec59ef537c368104942a7207e7c20de.json" as="fetch" crossorigin /><link rel="preload" href="/library/quartic/edition/365af16240f2644070a83ad39ca8b6fc5b6bf858566a9b37c83b88882c4ba92e.json" as="fetch" crossorigin /><link rel="preload" href="/library/quartic/edition/b1a51fa01d69ca01497af480de83b8abd102dd60e7465f7d344526703aab7296.json" as="fetch" crossorigin /><link rel="preload" href="/library/quartic/edition/d260a1a97835818d4b90df17dbdabcde2c108c43e7b08870337ee7346eb877b8.json" as="fetch" crossorigin /><link rel="preload" href="/library/quartic/edition/dd01794c5f8767aa9f51732a60abd5ee48c6fee4fc6343ff47b83706a651c27c.json" as="fetch" crossorigin /><link rel="preload" href="/library/quartic/edition/359d7ed5dc9dd8decc0557661fdee98a6d01f51717c30dafd2bd0188e6e21927.md" as="fetch" crossorigin /><link rel="preload" href="/library/quartic/edition/8e2fb12f6eec40af089acc4ac4fd685ed7f92b77054eca83a25602ebe6f21f2d.json" as="fetch" crossorigin /><link rel="preload" href="/library/quartic/edition/ties/expository.json" as="fetch" crossorigin /></head>
+  <body>
+    <div id="root"><div class="app"><header class="topbar"><span class="fam-lockup"><a class="fam-lockup__home" href="https://wcook04.github.io/" rel="author" title="All of Will Cook's websites and videos"><img src="/library/quartic/plectis.svg" alt="" width="26" height="26" /><span class="fam-lockup__owner" translate="no">Will Cook</span></a><span class="fam-lockup__rule" aria-hidden="true"></span><a class="fam-lockup__site" href="/library/quartic/" aria-label="Quartic query separation, front page"><svg viewBox="0 0 32 32" aria-hidden="true" class="wordmark__mark"><path d="M4 27 L4 5 M4 27 L28 27" fill="none" stroke-width="2" stroke-linecap="round"></path><path d="M5 26 C10 22 13 17 16 14 C19 11 22 9 27 6" fill="none" stroke-width="2.6" stroke-linecap="round"></path><circle cx="16" cy="14" r="3"></circle></svg><span class="fam-lockup__name" translate="no">Quartic query separation</span></a></span><nav class="topnav" aria-label="Main"><a class="topnav__job" href="/library/quartic/read/short">Read</a><a class="topnav__job" href="/library/quartic/map">Map</a><a class="topnav__job" href="/library/quartic/compare">Compare</a><a class="topnav__job" href="/library/quartic/checks">What ran</a><a class="topnav__job topnav__job--quiet" href="/library/quartic/lean">Lean index</a></nav></header><main id="main" class="app__main"><div data-first-paper style="display:contents"><style>.reader-shape{display:grid;grid-template-columns:minmax(0,var(--reader-measure));justify-content:center;column-gap:var(--reader-gap);align-items:start;padding-inline:var(--space-6)}
+.reader-shape__outline,.reader-shape__side{display:none}
+.reader-shape__strip{height:45px;margin-bottom:var(--space-5);margin-left:-22px;border-bottom:1px solid var(--rule)}
+.reader-shape__text{display:flex;flex-direction:column;gap:14px}
+.reader-shape__text i{display:block;height:13px;background:var(--rule);opacity:.55}
+.reader-shape__text i:first-child{width:62%;height:30px;margin-bottom:var(--space-4)}
+.reader-shape__words{margin:0;font-family:var(--font-sans);font-size:var(--fs-sm);color:var(--ink-3)}
+.reader-shape .account-line{margin:var(--space-4) 0 var(--space-6);font-family:var(--font-sans);font-size:var(--fs-sm);line-height:var(--lh-ui);color:var(--ink-3);text-wrap:pretty}
+.reader-shape .paper.prose{max-width:var(--reader-measure)}
+.reader-shape .part{position:relative;display:flow-root;padding-bottom:var(--space-4)}
+.reader-shape .part__text{content-visibility:visible;contain-intrinsic-block-size:none}
+.reader-shape .part__text>:last-child{margin-bottom:0}
+@media (max-width:700px){.reader-shape{padding-inline:20px}.reader-shape__strip{margin-left:-15px}.reader-shape .account-line{margin:var(--space-3) 0 var(--space-4)}}
+@media (min-width:1120px) and (max-width:1279px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure))}.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1280px){.reader-shape{grid-template-columns:minmax(0,min(var(--reader-measure),50vw)) minmax(0,1fr);justify-content:start;padding-left:32px;padding-right:0}
+.reader-shape__side{display:block;position:sticky;top:var(--topbar-h);height:calc(100vh - var(--topbar-h));margin-left:16px;border-left:1px solid var(--rule)}}
+@media (min-width:1680px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1fr)}
+.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1921px){.reader-shape{--fs-read:clamp(18px,calc(18px + (100vw - 1920px)/320),20px);--reader-measure:clamp(680px,calc(680px + (100vw - 1920px)*.117),755px)}}
+@media (min-width:2100px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1040px);justify-content:center}}</style><div class="reader-shape"><div class="reader-shape__outline"></div><div><div class="reader-shape__strip"></div><p class="account-line">How many bits must an algorithm read?: a exposition to Reconstructing OpenAI’s nearly quartic query separation, written for this reader with AI. The theorem and its proof are OpenAI’s. AI systems wrote the three accounts, the Lean and the links between them, under Will Cook’s direction. The links from the text to the Lean, the titles, the reading notes and the comparisons were made with AI. No mathematician has reviewed them.</p><div class="paper prose"><section class="part"><div class="part__text"><h1 id="how-many-bits-must-an-algorithm-read" data-line="3">How many bits must an algorithm read?</h1>
+<p data-line="5"><em>OpenAI’s nearly quartic separation between randomized and quantum queries</em></p>
+<p data-line="7">Written by AI systems under the direction of Will Cook · November 2026</p>
+<p class="run-in" data-run-in="about" data-line="10"><strong class="run-in__lead">About this paper.</strong> AI systems wrote this paper, its two companion texts and the Lean development, under the direction of Will Cook. No human expert has reviewed them, and no person has checked that the Lean statements say what OpenAI’s paper says; AI agents made that comparison. The separation theorem, its construction and its proof are OpenAI’s (<a data-ref="0" href="#cite-OpenAI2026" data-in="expository">OpenAI 2026</a>).</p>
+<p data-line="12">OpenAI recently constructed <span class="tie" data-t="0">total Boolean functions whose bounded-error randomized query complexity is almost the fourth power of their quantum query complexity</span> (<a data-ref="1" href="#cite-OpenAI2026" data-in="expository">OpenAI 2026</a>, Theorem 1.1). Since Aaronson, Ben-David, Kothari, Rao and Tal had shown that <span class="tie" data-t="1">the fourth power is always enough</span> (<a data-ref="2" href="#cite-ABKRT2020" data-in="expository">Aaronson et al. 2021</a>), this settles the largest possible gap between the two measures up to the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>o</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">o(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">o</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span> in the exponent. In this exposition we develop OpenAI’s construction and both of its query bounds from a four-column table, working each new idea out on small numbers before stating it in general. We assume finite-dimensional linear algebra, conditional probability and asymptotic notation, and no prior knowledge of quantum algorithms. Sections 1–8 form one continuous argument; the appendices hold the longer calculations and the answers to the exercises. The <span class="link-unresolved" data-unresolved-href="/library/quartic/">expert companion</span> gives a shorter route for specialists, and the <span class="link-unresolved" data-unresolved-href="/library/quartic/reconstruction/">full proof reconstruction</span> contains every supporting proof.</p>
+</div></section><section class="part"><div class="part__text"><a id="1" class="anchor" aria-hidden="true"></a>
+<a id="1-reading-bits-one-at-a-time" class="anchor" aria-hidden="true"></a><h1 id="reading-bits-one-at-a-time" data-line="17">1. Reading bits one at a time</h1>
+</div></section><section class="part"><div class="part__text"><p data-line="21">Does any column in this table have a one in every row?</p>
+<table data-line="23">
+<thead data-line="24">
+<tr data-line="25">
+<th style="text-align:left"></th>
+<th style="text-align:center">Column 1</th>
+<th style="text-align:center">Column 2</th>
+<th style="text-align:center">Column 3</th>
+<th style="text-align:center">Column 4</th>
+</tr>
+</thead>
+<tbody data-line="26">
+<tr data-line="27">
+<td style="text-align:left">Row 1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr data-line="28">
+<td style="text-align:left">Row 2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr data-line="30">
+<td style="text-align:left">Row 3</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr data-line="32">
+<td style="text-align:left">Row 4</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+</tbody>
+</table>
+<p data-line="34">Read down column 1. Its first three numbers are ones, but the number in row 4 is zero. Columns 2, 3 and 4 also contain zeros, in rows 1, 2 and 3 respectively, so the answer is no. Now change the zero in row 4 of column 1 to a one. Column 1 has four ones, and the answer changes to yes.</p>
+<p data-line="36">Cover all sixteen numbers. You may name a row and a column and uncover the number written there. Each number is a <em>bit</em>, either zero or one, and <span class="tie" data-t="2">reading the bit in one square of your choice costs one </span><em><span class="tie" data-t="2">query</span></em>. If you ask for row 2 of column 3, you get zero on either table, and you can cross out column 3. If you ask for row 4 of column 1, you get zero on the original table and one on the changed table, so one query in that square distinguishes the two tables. We think of the table as a memory that can only be read one bit at a time, and we count nothing except the reads (<a data-ref="3" href="#cite-deWolf2026" data-in="expository">de Wolf 2026</a>, sec. 2.4; <a data-ref="4" href="#cite-BuhrmanDeWolf2002" data-in="expository">Buhrman and de Wolf 2002</a>, sec. 3).</p>
+<p data-line="37">What if we move the zeros around before covering the numbers? Put a single zero in each column, choosing its row uniformly at random and independently in each column, and fill every other square with a one. Make a copy of the table, choose one of the four columns uniformly at random, and change its zero to a one in the copy. Suppose you read the four numbers across the top row of each table. You get different answers on the two tables precisely when the changed zero was in the top row, which happens with probability <span class="math-nobreak math-nobreak--whole"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">1/4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1/4</span></span></span></span>.</span> Reading the top two rows costs eight queries per table and raises the probability to <span class="math-nobreak math-nobreak--whole"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1/2</span></span></span></span>.</span></p>
+<p data-line="38">On a table with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">m</span></span></span></span> rows and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal">m</span></span></span></span> columns, reading the first <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span> rows costs <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">mh</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">mh</span></span></span></span> queries and detects the change with probability <span class="math-nobreak math-nobreak--whole"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mi mathvariant="normal">/</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">h/m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">h</span><span class="mord">/</span><span class="mord mathnormal">m</span></span></span></span>.</span> Here we chose all the rows in advance. In Section 7 the algorithm may use every bit it has already read to choose its next square, and we will see that this does not help it much.</p>
+</div></section><section class="part"><div class="part__text"><a id="1.1" class="anchor" aria-hidden="true"></a>
+<a id="11-quantum-queries" class="anchor" aria-hidden="true"></a><h2 id="quantum-queries" data-line="41">1.1 Quantum queries</h2>
+</div></section></div></div><div class="reader-shape__side"></div></div></div><template><style>.reader-shape{display:grid;grid-template-columns:minmax(0,var(--reader-measure));justify-content:center;column-gap:var(--reader-gap);align-items:start;padding-inline:var(--space-6)}
+.reader-shape__outline,.reader-shape__side{display:none}
+.reader-shape__strip{height:45px;margin-bottom:var(--space-5);margin-left:-22px;border-bottom:1px solid var(--rule)}
+.reader-shape__text{display:flex;flex-direction:column;gap:14px}
+.reader-shape__text i{display:block;height:13px;background:var(--rule);opacity:.55}
+.reader-shape__text i:first-child{width:62%;height:30px;margin-bottom:var(--space-4)}
+.reader-shape__words{margin:0;font-family:var(--font-sans);font-size:var(--fs-sm);color:var(--ink-3)}
+.reader-shape .account-line{margin:var(--space-4) 0 var(--space-6);font-family:var(--font-sans);font-size:var(--fs-sm);line-height:var(--lh-ui);color:var(--ink-3);text-wrap:pretty}
+.reader-shape .paper.prose{max-width:var(--reader-measure)}
+.reader-shape .part{position:relative;display:flow-root;padding-bottom:var(--space-4)}
+.reader-shape .part__text{content-visibility:visible;contain-intrinsic-block-size:none}
+.reader-shape .part__text>:last-child{margin-bottom:0}
+@media (max-width:700px){.reader-shape{padding-inline:20px}.reader-shape__strip{margin-left:-15px}.reader-shape .account-line{margin:var(--space-3) 0 var(--space-4)}}
+@media (min-width:1120px) and (max-width:1279px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure))}.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1280px){.reader-shape{grid-template-columns:minmax(0,min(var(--reader-measure),50vw)) minmax(0,1fr);justify-content:start;padding-left:32px;padding-right:0}
+.reader-shape__side{display:block;position:sticky;top:var(--topbar-h);height:calc(100vh - var(--topbar-h));margin-left:16px;border-left:1px solid var(--rule)}}
+@media (min-width:1680px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1fr)}
+.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}.reader-shape .account-line{display:none}}
+@media (min-width:1921px){.reader-shape{--fs-read:clamp(18px,calc(18px + (100vw - 1920px)/320),20px);--reader-measure:clamp(680px,calc(680px + (100vw - 1920px)*.117),755px)}}
+@media (min-width:2100px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1040px);justify-content:center}}</style><div class="reader-shape" aria-busy="true"><div class="reader-shape__outline"></div><div><div class="reader-shape__strip"></div><p class="reader-shape__words" role="status">Loading the paper…</p><div class="reader-shape__text"><i></i><i style="width:100%"></i><i style="width:96%"></i><i style="width:98%"></i><i style="width:92%"></i><i style="width:60%"></i><i style="visibility:hidden"></i><i style="width:100%"></i><i style="width:94%"></i><i style="width:97%"></i><i style="width:88%"></i><i style="width:99%"></i><i style="width:45%"></i></div></div><div class="reader-shape__side"></div></div></template><script>(function(){if(!location.hash&&!location.search&&!history.state)return;var f=document.querySelector("[data-first-paper]");f.replaceWith(f.nextElementSibling.content)})()</script></main></div></div>
+    <noscript>
+      <p style="max-width: 40rem; margin: 4rem auto; font-family: Georgia, serif; line-height: 1.6">
+        The papers, the Lean beside them, the argument map and the comparisons on this site are drawn in the browser and need JavaScript. The paper and its Lean are in the repository under <code>instances/quartic/</code>.
+      </p>
+    </noscript>
+  </body>
+</html>

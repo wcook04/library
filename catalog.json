@@ -298,6 +298,37 @@
    "search": null
   },
   {
+   "id": "quartic",
+   "title": "Reconstructing OpenAI’s nearly quartic query separation",
+   "authors": [
+    "AI systems under the direction of Will Cook"
+   ],
+   "href": "/library/quartic/",
+   "here": true,
+   "sentence": "For every power below four there is a total Boolean function whose randomized query complexity exceeds that power of its quantum query complexity, and four is the best possible exponent. Three accounts of OpenAI’s proof, each linked phrase by phrase to the Lean, which checks the optimal exponent with no hypothesis.",
+   "counts": {
+    "phrases": 969,
+    "statements": 492,
+    "lean": 568
+   },
+   "comparator": null,
+   "pages": [
+    {
+     "title": "How many bits must an algorithm read?",
+     "href": "/library/quartic/exposition/"
+    },
+    {
+     "title": "OpenAI’s nearly quartic query separation: a complete proof reconstruction",
+     "href": "/library/quartic/reconstruction/"
+    },
+    {
+     "title": "OpenAI’s paper and the verification details, in the old reader’s last edition",
+     "href": "https://wcook04.github.io/library/quartic/editions/dbbf1f08240a1b016e41182c308366a452c348bc42e7beb7ba2cbd803587e350/#/read/original"
+    }
+   ],
+   "search": "/library/_index/search/quartic.json"
+  },
+  {
    "id": "pcp",
    "title": "Constant-query verification by algebraic encoding",
    "authors": [

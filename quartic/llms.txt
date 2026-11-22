@@ -1,0 +1,15 @@
+# Reconstructing OpenAI’s nearly quartic query separation
+
+> Reconstructing OpenAI’s nearly quartic query separation, by AI systems under the direction of Will Cook, read beside its Lean. The theorem and construction are OpenAI’s, published with no Lean formalization. The three accounts and the Lean development were written by AI systems under Will Cook’s direction. No human expert has reviewed them. Lean reports each declaration’s statement, dependencies and axioms. The links between paper passages and Lean, and the judgments that a statement matches exactly, more strongly or only in part, were written and reviewed by AI agents; no person has checked them.
+
+The links from the text to the Lean, the titles, the reading notes and the comparisons were made with AI. No mathematician has reviewed them.
+
+## Read
+
+- [Reconstructing OpenAI’s nearly quartic query separation](https://wcook04.github.io/library/quartic/)
+
+## Data
+
+All data is static JSON under https://wcook04.github.io/library/quartic/edition/. Start at edition/index.json: it maps API routes to files.
+
+The Lean index has 194 modules and 2,721 declarations.

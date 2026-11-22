@@ -1,0 +1,2 @@
+import{a as e,r as t}from"./site-DKw54Y-C.js";import{n}from"./router-BGsKcEBm.js";var r=e();function i(){return(0,r.useEffect)(()=>{n({view:`read`,stage:t.slot},{replace:!0})},[]),null}export{i as FrontPage};
+//# sourceMappingURL=FrontPage-CWj5qR6R.js.map

@@ -1,2 +1,0 @@
-import{i as e,o as t}from"./site-ByHaKRUl.js";import{n}from"./router-Cvb5kVBY.js";var r=t();function i(){return(0,r.useEffect)(()=>{n({view:`read`,stage:e.slot},{replace:!0})},[]),null}export{i as FrontPage};
-//# sourceMappingURL=FrontPage-o5f7uFyA.js.map

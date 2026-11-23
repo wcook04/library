@@ -1,2 +1,134 @@
 <!doctype html>
-<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Finite-Time Singularity Formation for the Three-Dimensional Euler Equations</title><main><h1>Finite-Time Singularity Formation for the Three-Dimensional Euler Equations</h1><p>The hosted authors’ edition is temporarily paused.</p><p><a href="https://github.com/mcoiculescu/EulerBlowupPublic/blob/fd3a1588967810b9abe42a1dcf46ee662d6434e2/manuscript/paper.pdf">Read the paper from the authors</a></p><p><a href="/library/euler/adapted/">Read the adapted edition</a></p><p><a href="/library/euler/map/">Open the proof map</a></p></main></html>
+<html data-view="read" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Finite-Time Singularity Formation for the Three-Dimensional Euler Equations · Euler singularity on the torus</title>
+    <meta
+      name="description"
+      content="Finite-Time Singularity Formation for the Three-Dimensional Euler Equations, by Levent Alpöge, Tristan Buckmaster and Matei P. Coiculescu, read sentence by sentence beside its Lean."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Finite-Time Singularity Formation for the Three-Dimensional Euler Equations" />
+    <meta
+      property="og:description"
+      content="By Levent Alpöge, Tristan Buckmaster and Matei P. Coiculescu. Each phrase opens the Lean that states it."
+    />
+    <meta property="og:url" content="https://wcook04.github.io/library/euler/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="describedby" href="/library/euler/llms.txt" type="text/plain" />
+    <meta name="author" content="Will Cook" />
+    <meta name="theme-color" content="#f8f0e2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1c1526" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/library/euler/favicon.svg" type="image/svg+xml" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("lx-theme");
+          if (stored === "light" || stored === "dark") document.documentElement.setAttribute("data-theme", stored);
+        } catch (e) {}
+      })();
+      // The paper's text waits, hidden but laid out, until its fonts (preloaded below) are in, or
+      // 100 ms at most, so a formula never paints in a fallback face and then shifts.
+      (function () {
+        var root = document.documentElement;
+        if (!document.fonts || !document.fonts.load) return;
+        root.classList.add("fonts-wait");
+        var done = function () {
+          root.classList.remove("fonts-wait");
+        };
+        setTimeout(done, 100);
+        document.addEventListener("DOMContentLoaded", function () {
+          Promise.all(["1em KaTeX_Main", "italic 1em KaTeX_Math", "1em 'STIX Two Text'"].map(function (face) {
+            return document.fonts.load(face);
+          })).then(done, done);
+        });
+      })();
+    </script>
+    <style>html.fonts-wait .paper{visibility:hidden}</style>
+    <script type="module" crossorigin src="/library/euler/assets/index-BBccaC0M.js"></script>
+    <link rel="modulepreload" crossorigin href="/library/euler/assets/site-BQDGbLi1.js">
+    <link rel="modulepreload" crossorigin href="/library/euler/assets/aids-DE8uVbxk.js">
+    <link rel="modulepreload" crossorigin href="/library/euler/assets/jsx-runtime-D90wbopF.js">
+    <link rel="modulepreload" crossorigin href="/library/euler/assets/skeletonView-DjrnSV4h.js">
+    <link rel="modulepreload" crossorigin href="/library/euler/assets/theme-DZTiphbo.js">
+    <link rel="modulepreload" crossorigin href="/library/euler/assets/lean-BnkVsloO.js">
+    <link rel="modulepreload" crossorigin href="/library/euler/assets/data-BWVWHR0k.js">
+    <link rel="modulepreload" crossorigin href="/library/euler/assets/router-lbk6dQjV.js">
+    <link rel="modulepreload" crossorigin href="/library/euler/assets/papers-BBNeamX_.js">
+    <link rel="modulepreload" crossorigin href="/library/euler/assets/BackControl-oWZpjJTA.js">
+    <link rel="modulepreload" crossorigin href="/library/euler/assets/siteName-F26iwiZ6.js">
+    <link rel="modulepreload" crossorigin href="/library/euler/assets/TopBar-uziMxUOG.js">
+    <link rel="modulepreload" crossorigin href="/library/euler/assets/cite-BdYe53jf.js">
+    <link rel="modulepreload" crossorigin href="/library/euler/assets/ties-BcWW6QQP.js">
+    <link rel="modulepreload" crossorigin href="/library/euler/assets/restore-wUho-ZZi.js">
+    <link rel="modulepreload" crossorigin href="/library/euler/assets/mainGoal-iz3ihMbQ.js">
+    <link rel="stylesheet" crossorigin href="/library/euler/assets/aids-DV8vOBon.css">
+    <link rel="stylesheet" crossorigin href="/library/euler/assets/BackControl-D90l99kx.css">
+    <link rel="stylesheet" crossorigin href="/library/euler/assets/TopBar-BtQm4BbY.css">
+    <link rel="stylesheet" crossorigin href="/library/euler/assets/index-DP_EebKu.css">
+    <link rel="stylesheet" crossorigin href="/library/euler/assets/reader-content-BZSUm3aD.css">
+  <link rel="preload" href="/library/euler/assets/KaTeX_AMS-Regular-BQhdFMY1.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/euler/assets/KaTeX_Caligraphic-Regular-Di6jR-x-.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/euler/assets/KaTeX_Main-Bold-Cx986IdX.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/euler/assets/KaTeX_Main-Italic-NWA7e6Wa.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/euler/assets/KaTeX_Main-Regular-B22Nviop.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/euler/assets/KaTeX_Math-Italic-t53AETM-.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/euler/assets/KaTeX_Size1-Regular-mCD8mA8B.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/euler/assets/KaTeX_Size2-Regular-Dy4dx90m.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/euler/assets/KaTeX_Size3-Regular-gV2CO0n9.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/euler/assets/source-sans-3-latin-wght-normal-Bo_j9asI.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/euler/assets/stix-two-text-latin-400-italic-BLib6pG4.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/euler/assets/stix-two-text-latin-400-normal-Dm29J5Fl.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/euler/assets/stix-two-text-latin-500-normal-QKEzPprE.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/euler/edition/index.json" as="fetch" crossorigin /><link rel="modulepreload" crossorigin href="/library/euler/assets/ReaderPage-CIemAfkU.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/site-BQDGbLi1.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/jsx-runtime-D90wbopF.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/skeletonView-DjrnSV4h.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/theme-DZTiphbo.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/lean-BnkVsloO.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/data-BWVWHR0k.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/router-lbk6dQjV.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/BackControl-oWZpjJTA.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/papers-BBNeamX_.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/ties-BcWW6QQP.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/restore-wUho-ZZi.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/useAlignment-C2IjWWCw.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/labels-DXlsYS1F.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/documents-BdHG0K24.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/purify.es-BvJXSTIQ.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/TheoremPlate-CO7PbCkZ.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/aids-DE8uVbxk.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/summary-7WNsns_P.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/tokenize-C5yNsREG.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/author-BuxjK_o-.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/RecordPanel-BJDt1tPg.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/levels-D5aql6BB.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/lazy-Czs8nFLe.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/walk-7PXRaS2z.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/map-pane-GOp_cQIF.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/readerInput-tMM_8oNw.js" /><link rel="modulepreload" crossorigin href="/library/euler/assets/short-D03mgz4s.js" /><link rel="preload" as="style" crossorigin href="/library/euler/assets/ReaderPage-2dz5oW0V.css" /><link rel="preload" as="style" crossorigin href="/library/euler/assets/reader-content-BZSUm3aD.css" /><link rel="preload" as="style" crossorigin href="/library/euler/assets/BackControl-D90l99kx.css" /><link rel="preload" as="style" crossorigin href="/library/euler/assets/TheoremPlate-DaQYdRUq.css" /><link rel="preload" as="style" crossorigin href="/library/euler/assets/aids-DV8vOBon.css" /><link rel="preload" as="style" crossorigin href="/library/euler/assets/reader-page-CVwP9v0D.css" /><link rel="preload" as="style" crossorigin href="/library/euler/assets/RecordPanel-ChHSg_Aj.css" /><link rel="preload" as="style" crossorigin href="/library/euler/assets/slice-FtnMEvve.css" /><link rel="preload" as="style" crossorigin href="/library/euler/assets/lean-B0P2vv6P.css" /><link rel="preload" as="style" crossorigin href="/library/euler/assets/map-pane-CiDT2_6C.css" /><link rel="preload" href="/library/euler/edition/a4480eb53b790f767c8c10b46e88ee0b29fd53cb8bc49ab4726cf0b41e4e1438.json" as="fetch" crossorigin /><link rel="preload" href="/library/euler/edition/0799dea14e6aec4135df793595438e49ab4e63e575fbc67257df381a5ccd964f.json" as="fetch" crossorigin /><link rel="preload" href="/library/euler/edition/21be9362388e6dfda8a3c9da84111911bdbf60c97aca8b814a043932cb93b6cc.json" as="fetch" crossorigin /><link rel="preload" href="/library/euler/edition/94dd219d5db573bd7bae4b37cd2d5cf124b72105c2a898a5807fee451d1d52f6.json" as="fetch" crossorigin /><link rel="preload" href="/library/euler/edition/d2d5a2d66fafeac08772a1214505e7201296ddcd6f92c065bb34ba03b193109c.json" as="fetch" crossorigin /><link rel="preload" href="/library/euler/edition/d3ff9899ab8c29d118066595799994f78b03dca885388dc4d31d6482f2467f04.json" as="fetch" crossorigin /><link rel="preload" href="/library/euler/edition/a1593370c38e12db1c19bd7e6926ae58ff48cf2267100066f3070a6a2aaeb22c.md" as="fetch" crossorigin /><link rel="preload" href="/library/euler/edition/b626a624e567ec7444568faf9daaa4973eea40bdf63e07812ce7aef2a4aa7d25.json" as="fetch" crossorigin /><link rel="preload" href="/library/euler/edition/ties/short.json" as="fetch" crossorigin /></head>
+  <body>
+    <div id="root"><div class="app"><header class="topbar"><span class="fam-lockup"><a class="fam-lockup__home" href="https://wcook04.github.io/" rel="author" title="All of Will Cook's websites and videos"><img src="/library/euler/plectis.svg" alt="" width="26" height="26" /><span class="fam-lockup__owner" translate="no">Will Cook</span></a><span class="fam-lockup__rule" aria-hidden="true"></span><a class="fam-lockup__site" href="/library/euler/" aria-label="Euler singularity on the torus, front page"><svg viewBox="0 0 32 32" aria-hidden="true" class="wordmark__mark"><path d="M4 27 L4 5 M4 27 L28 27" fill="none" stroke-width="2" stroke-linecap="round"></path><path d="M5 26 C10 22 13 17 16 14 C19 11 22 9 27 6" fill="none" stroke-width="2.6" stroke-linecap="round"></path><circle cx="16" cy="14" r="3"></circle></svg><span class="fam-lockup__name" translate="no">Euler singularity on the torus</span></a></span><nav class="topnav" aria-label="Main"><a class="topnav__job" href="/library/euler/read/short">Read</a><a class="topnav__job" href="/library/euler/map">Map</a><a class="topnav__job" href="/library/euler/compare">Compare</a><a class="topnav__job" href="/library/euler/checks">What ran</a><a class="topnav__job topnav__job--quiet" href="/library/euler/lean">Lean index</a></nav></header><main id="main" class="app__main"><div data-first-paper style="display:contents"><style>.reader-shape{display:grid;grid-template-columns:minmax(0,var(--reader-measure));justify-content:center;column-gap:var(--reader-gap);align-items:start;padding-inline:var(--space-6)}
+.reader-shape__outline,.reader-shape__side{display:none}
+.reader-shape__strip{height:45px;margin-bottom:var(--space-5);margin-left:-22px;border-bottom:1px solid var(--rule)}
+.reader-shape__text{display:flex;flex-direction:column;gap:14px}
+.reader-shape__text i{display:block;height:13px;background:var(--rule);opacity:.55}
+.reader-shape__text i:first-child{width:62%;height:30px;margin-bottom:var(--space-4)}
+.reader-shape__words{margin:0;font-family:var(--font-sans);font-size:var(--fs-sm);color:var(--ink-3)}
+.reader-shape .account-line{margin:var(--space-4) 0 var(--space-6);font-family:var(--font-sans);font-size:var(--fs-sm);line-height:var(--lh-ui);color:var(--ink-3);text-wrap:pretty}
+.reader-shape .reader-hint{margin:0 0 var(--space-5);padding:var(--space-2) var(--space-3);border-left:2px solid var(--rule-control);font-family:var(--font-sans);font-size:var(--fs-ui);line-height:var(--lh-ui);color:var(--ink-2);text-wrap:pretty}
+.reader-shape .paper.prose{max-width:var(--reader-measure)}
+.reader-shape .part{position:relative;display:flow-root;padding-bottom:var(--space-4)}
+.reader-shape .part__text{content-visibility:visible;contain-intrinsic-block-size:none}
+.reader-shape .part__text>:last-child{margin-bottom:0}
+@media (max-width:700px){.reader-shape{padding-inline:20px}.reader-shape__strip{margin-left:-15px}.reader-shape .account-line{margin:var(--space-3) 0 var(--space-4)}}
+@media (min-width:1024px){.reader-shape{grid-template-columns:minmax(0,min(var(--reader-measure),50vw)) minmax(0,1fr);justify-content:start;column-gap:24px;padding-left:32px;padding-right:0}
+.reader-shape__side{display:block;position:sticky;top:var(--topbar-h);height:calc(100vh - var(--topbar-h));border-left:1px solid var(--rule)}}
+@media (min-width:1280px){.reader-shape{column-gap:var(--reader-gap)}.reader-shape__side{margin-left:16px}}
+@media (min-width:1680px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1fr)}
+.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}}
+@media (min-width:1921px){.reader-shape{--fs-read:clamp(18px,calc(18px + (100vw - 1920px)/320),20px);--reader-measure:clamp(680px,calc(680px + (100vw - 1920px)*.117),755px)}}
+@media (min-width:2100px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1040px);justify-content:center}}</style><div class="reader-shape"><div class="reader-shape__outline"></div><div><div class="reader-shape__strip"></div><p class="reader-hint">Select a marked phrase to see its Lean statement and how the two compare.</p><div class="paper prose"><section class="part"><div class="part__text">
+</div></section><section class="part"><div class="part__text"><h1 id="finite-time-singularity-formation-for-the-three-dimensional-euler-equations" data-line="6">Finite-Time Singularity Formation for the Three-Dimensional Euler Equations</h1>
+</div></section><section class="part"><div class="part__text"><ul class="authors">
+<li>Levent Alpöge</li>
+<li>Tristan Buckmaster</li>
+<li>Matei P. Coiculescu</li>
+</ul>
+<p class="front-credit">Paper and Lean by Levent Alpöge, Tristan Buckmaster and Matei P. Coiculescu, from their repository mcoiculescu/EulerBlowupPublic at fd3a158. Links, titles and notes made with AI. <a href="/library/euler/about/">Full credit in About</a>. <a class="pdf-link" href="/library/euler/pdf/paper.pdf" target="_blank" rel="noopener">Open PDF, 55 pages</a>.</p>
+
+
+<p data-line="20"><span class="tie" data-t="0">We construct smooth periodic initial data for the three-dimensional incompressible Euler equations whose solution blows up in finite time.</span> <span class="tie" data-t="1">The velocity remains bounded</span>, while <span class="tie" data-t="2">the vorticity magnitude at the origin tends to infinity.</span> <span class="tie" data-t="3">Away from the origin, the velocity and its time derivative have smooth spatial limits at the singular time.</span> The construction uses localized Craik–Criminale waves as building blocks of a multi-scale construction.</p>
+
+</div></section><section class="part"><div class="part__text"><a id="1" class="anchor" aria-hidden="true"></a>
+<a id="1-introduction" class="anchor" aria-hidden="true"></a><h2 id="introduction" data-line="27">1 Introduction</h2><details class="section-aid" data-aid><summary><span class="section-aid__label">Formal development in this section.</span> The introductory assertions lead to three different sorts of formal statement: definitions of the fields and estimates required, conditional results using those fields, and existence results supplying them. <span class="section-aid__more" aria-hidden="true"></span></summary><p>Theorem 1.1 includes uniqueness of the maximal velocity and lifespan. The later convergence result assumes a full inductive sequence carrying the step estimates of Theorem 7.1 for its velocities, residuals and oscillations, and does not construct those inputs. <span class="section-aid__who">Reader annotation, AI-drafted.</span></p></details>
+</div></section></div></div><div class="reader-shape__side"></div></div></div><template><style>.reader-shape{display:grid;grid-template-columns:minmax(0,var(--reader-measure));justify-content:center;column-gap:var(--reader-gap);align-items:start;padding-inline:var(--space-6)}
+.reader-shape__outline,.reader-shape__side{display:none}
+.reader-shape__strip{height:45px;margin-bottom:var(--space-5);margin-left:-22px;border-bottom:1px solid var(--rule)}
+.reader-shape__text{display:flex;flex-direction:column;gap:14px}
+.reader-shape__text i{display:block;height:13px;background:var(--rule);opacity:.55}
+.reader-shape__text i:first-child{width:62%;height:30px;margin-bottom:var(--space-4)}
+.reader-shape__words{margin:0;font-family:var(--font-sans);font-size:var(--fs-sm);color:var(--ink-3)}
+.reader-shape .account-line{margin:var(--space-4) 0 var(--space-6);font-family:var(--font-sans);font-size:var(--fs-sm);line-height:var(--lh-ui);color:var(--ink-3);text-wrap:pretty}
+.reader-shape .reader-hint{margin:0 0 var(--space-5);padding:var(--space-2) var(--space-3);border-left:2px solid var(--rule-control);font-family:var(--font-sans);font-size:var(--fs-ui);line-height:var(--lh-ui);color:var(--ink-2);text-wrap:pretty}
+.reader-shape .paper.prose{max-width:var(--reader-measure)}
+.reader-shape .part{position:relative;display:flow-root;padding-bottom:var(--space-4)}
+.reader-shape .part__text{content-visibility:visible;contain-intrinsic-block-size:none}
+.reader-shape .part__text>:last-child{margin-bottom:0}
+@media (max-width:700px){.reader-shape{padding-inline:20px}.reader-shape__strip{margin-left:-15px}.reader-shape .account-line{margin:var(--space-3) 0 var(--space-4)}}
+@media (min-width:1024px){.reader-shape{grid-template-columns:minmax(0,min(var(--reader-measure),50vw)) minmax(0,1fr);justify-content:start;column-gap:24px;padding-left:32px;padding-right:0}
+.reader-shape__side{display:block;position:sticky;top:var(--topbar-h);height:calc(100vh - var(--topbar-h));border-left:1px solid var(--rule)}}
+@media (min-width:1280px){.reader-shape{column-gap:var(--reader-gap)}.reader-shape__side{margin-left:16px}}
+@media (min-width:1680px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1fr)}
+.reader-shape__outline{display:block}.reader-shape__strip{margin-bottom:var(--space-6)}}
+@media (min-width:1921px){.reader-shape{--fs-read:clamp(18px,calc(18px + (100vw - 1920px)/320),20px);--reader-measure:clamp(680px,calc(680px + (100vw - 1920px)*.117),755px)}}
+@media (min-width:2100px){.reader-shape{grid-template-columns:var(--reader-outline) minmax(0,var(--reader-measure)) minmax(600px,1040px);justify-content:center}}</style><div class="reader-shape" aria-busy="true"><div class="reader-shape__outline"></div><div><div class="reader-shape__strip"></div><p class="reader-shape__words" role="status">Loading the paper…</p><div class="reader-shape__text"><i></i><i style="width:100%"></i><i style="width:96%"></i><i style="width:98%"></i><i style="width:92%"></i><i style="width:60%"></i><i style="visibility:hidden"></i><i style="width:100%"></i><i style="width:94%"></i><i style="width:97%"></i><i style="width:88%"></i><i style="width:99%"></i><i style="width:45%"></i></div></div><div class="reader-shape__side"></div></div></template><script>(function(){var p=location.pathname,b="/library/euler/";if(p===b||p===b+"index.html"||p.indexOf(b+"read/")===0)if(!location.hash&&!location.search&&!history.state)return;var f=document.querySelector("[data-first-paper]");f.replaceWith(f.nextElementSibling.content)})()</script></main></div></div>
+    <noscript>
+      <p style="max-width: 40rem; margin: 4rem auto; font-family: Georgia, serif; line-height: 1.6">
+        The papers, the Lean beside them, the argument map and the comparisons on this site are drawn in the browser and need JavaScript. The paper and its Lean are in the repository under <code>instances/euler/</code>.
+      </p>
+    </noscript>
+  </body>
+</html>

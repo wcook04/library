@@ -12,4 +12,4 @@ Links and notes were prepared with AI assistance. The authors have not reviewed 
 
 All data is static JSON under https://wcook04.github.io/library/quantum-programsedition/. Start at edition/index.json: it maps API routes to files.
 
-The Lean index has 60 modules and 183 declarations.
+The Lean index has 60 modules and 186 declarations.

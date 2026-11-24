@@ -6,4 +6,4 @@ By Sergey Shirobokov, Ben Jaderberg, Katerina Hristova, George Tsoukalas, Johann
 
 Links and notes were prepared with AI assistance. The authors have not reviewed them.
 
-The Lean shown here has 60 modules and 183 declarations.
+The Lean shown here has 60 modules and 186 declarations.

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search · Formally verified quantum programs</title>
+    <meta
+      name="description"
+      content="Discovering formally verified quantum programs with AI, by Sergey Shirobokov, Ben Jaderberg, Katerina Hristova, George Tsoukalas, Johannes Bausch, Eric Wieser, Francisco J.H. Heras, Nicholas C. Rubin, Guang Hao Low, Sébastien Racanière, Nenad Tomašev, Lei M. Zhang, James D. Watson, Tanuj Khattar, Aws Albarghouthi, Stavan Jain, Harun Khan, Leopoldo Sarra, Andrew W. Senior, Michael Broughton, Hussain Masoom, Sergio Boixo, Ryan Babbush, Swarat Chaudhuri and Pushmeet Kohli, read sentence by sentence beside its Lean."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Discovering formally verified quantum programs with AI" />
+    <meta
+      property="og:description"
+      content="By Sergey Shirobokov, Ben Jaderberg, Katerina Hristova, George Tsoukalas, Johannes Bausch, Eric Wieser, Francisco J.H. Heras, Nicholas C. Rubin, Guang Hao Low, Sébastien Racanière, Nenad Tomašev, Lei M. Zhang, James D. Watson, Tanuj Khattar, Aws Albarghouthi, Stavan Jain, Harun Khan, Leopoldo Sarra, Andrew W. Senior, Michael Broughton, Hussain Masoom, Sergio Boixo, Ryan Babbush, Swarat Chaudhuri and Pushmeet Kohli. Each phrase opens the Lean that states it."
+    />
+    <meta property="og:url" content="https://wcook04.github.io/library/quantum-programs" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="describedby" href="/library/quantum-programs/llms.txt" type="text/plain" />
+    <meta name="author" content="Will Cook" />
+    <meta name="theme-color" content="#f8f0e2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1c1526" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/library/quantum-programs/favicon.svg" type="image/svg+xml" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("lx-theme");
+          if (stored === "light" || stored === "dark") document.documentElement.setAttribute("data-theme", stored);
+        } catch (e) {}
+      })();
+      // The paper's text waits, hidden but laid out, until its fonts (preloaded below) are in, or
+      // 100 ms at most, so a formula never paints in a fallback face and then shifts.
+      (function () {
+        var root = document.documentElement;
+        if (!document.fonts || !document.fonts.load) return;
+        root.classList.add("fonts-wait");
+        var done = function () {
+          root.classList.remove("fonts-wait");
+        };
+        setTimeout(done, 100);
+        document.addEventListener("DOMContentLoaded", function () {
+          Promise.all(["1em KaTeX_Main", "italic 1em KaTeX_Math", "1em 'STIX Two Text'"].map(function (face) {
+            return document.fonts.load(face);
+          })).then(done, done);
+        });
+      })();
+    </script>
+    <style>html.fonts-wait .paper{visibility:hidden}</style>
+    <script type="module" crossorigin src="/library/quantum-programs/assets/index-DvUUZXep.js"></script>
+    <link rel="modulepreload" crossorigin href="/library/quantum-programs/assets/site-B2YPByDf.js">
+    <link rel="modulepreload" crossorigin href="/library/quantum-programs/assets/figures-CsTNqm4e.js">
+    <link rel="modulepreload" crossorigin href="/library/quantum-programs/assets/jsx-runtime-BtsHJDdi.js">
+    <link rel="modulepreload" crossorigin href="/library/quantum-programs/assets/skeletonView-D6UMHNnp.js">
+    <link rel="modulepreload" crossorigin href="/library/quantum-programs/assets/theme-DEqcfIqV.js">
+    <link rel="modulepreload" crossorigin href="/library/quantum-programs/assets/lean-Df0wBmuQ.js">
+    <link rel="modulepreload" crossorigin href="/library/quantum-programs/assets/data-gTtDbMf4.js">
+    <link rel="modulepreload" crossorigin href="/library/quantum-programs/assets/router-B0tq252E.js">
+    <link rel="modulepreload" crossorigin href="/library/quantum-programs/assets/papers-BX779IdB.js">
+    <link rel="modulepreload" crossorigin href="/library/quantum-programs/assets/siteName-C2DAd7G5.js">
+    <link rel="modulepreload" crossorigin href="/library/quantum-programs/assets/TopBar-CrCVAWc2.js">
+    <link rel="modulepreload" crossorigin href="/library/quantum-programs/assets/cite-Cabvut09.js">
+    <link rel="modulepreload" crossorigin href="/library/quantum-programs/assets/ties-BTS27k9D.js">
+    <link rel="modulepreload" crossorigin href="/library/quantum-programs/assets/restore-DOGc8BWV.js">
+    <link rel="modulepreload" crossorigin href="/library/quantum-programs/assets/mainGoal-DSlTkHP-.js">
+    <link rel="modulepreload" crossorigin href="/library/quantum-programs/assets/aids-f2PaemlD.js">
+    <link rel="stylesheet" crossorigin href="/library/quantum-programs/assets/figures-DV8vOBon.css">
+    <link rel="stylesheet" crossorigin href="/library/quantum-programs/assets/TopBar-BnduRX0B.css">
+    <link rel="stylesheet" crossorigin href="/library/quantum-programs/assets/index-BYHh34M2.css">
+    <link rel="stylesheet" crossorigin href="/library/quantum-programs/assets/reader-content-C4xBnl_k.css">
+  <link rel="preload" href="/library/quantum-programs/assets/KaTeX_AMS-Regular-BQhdFMY1.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quantum-programs/assets/KaTeX_Caligraphic-Regular-Di6jR-x-.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quantum-programs/assets/KaTeX_Main-Bold-Cx986IdX.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quantum-programs/assets/KaTeX_Main-Italic-NWA7e6Wa.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quantum-programs/assets/KaTeX_Main-Regular-B22Nviop.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quantum-programs/assets/KaTeX_Math-Italic-t53AETM-.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quantum-programs/assets/KaTeX_Size1-Regular-mCD8mA8B.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quantum-programs/assets/KaTeX_Size2-Regular-Dy4dx90m.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quantum-programs/assets/KaTeX_Size3-Regular-gV2CO0n9.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quantum-programs/assets/source-sans-3-latin-wght-normal-Bo_j9asI.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quantum-programs/assets/stix-two-text-latin-400-italic-BLib6pG4.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quantum-programs/assets/stix-two-text-latin-400-normal-Dm29J5Fl.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quantum-programs/assets/stix-two-text-latin-500-normal-QKEzPprE.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/quantum-programs/edition/index.json" as="fetch" crossorigin /><link rel="preload" href="/library/quantum-programs/edition/discovery.json" as="fetch" crossorigin /><link rel="preload" href="/library/quantum-programs/edition/overview.json" as="fetch" crossorigin /><link rel="preload" href="/library/quantum-programs/edition/graph.json" as="fetch" crossorigin /><link rel="preload" href="/library/quantum-programs/edition/summaries/nodes.json" as="fetch" crossorigin /><link rel="preload" href="/library/quantum-programs/edition/records/nodes.json" as="fetch" crossorigin /><link rel="preload" href="/library/quantum-programs/edition/records/sources.json" as="fetch" crossorigin /><link rel="preload" href="/library/quantum-programs/edition/records/edges.json" as="fetch" crossorigin /><link rel="preload" href="/library/quantum-programs/edition/records/evidence.json" as="fetch" crossorigin />    <link rel="stylesheet" href="/library/_index/reader-annotation-graph-35e5ed9ed2c9.css">
+</head>
+  <body>
+    <div id="root"><div class="app"><header class="topbar">
+<a class="skip-link" href="#main">Skip to content</a>
+<a class="topbar__title" href="/library/quantum-programs/" translate="no"><span class="topbar__title-text">Formally verified quantum programs</span></a>
+<div class="topbar__right">
+<details class="site-menu"><summary class="control control--plain menu-toggle"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>Menu</summary>
+<div class="site-menu__panel"><nav aria-label="Main"><p class="site-menu__label" id="static-read">Read</p><ul class="site-menu__list" aria-labelledby="static-read"><li><a class="readmenu__item" href="/library/quantum-programs/">Discovering formally verified quantum programs with AI</a></li></ul><ul class="site-menu__list site-menu__routes"><li><a class="readmenu__item" href="/library/quantum-programs/map/">Map</a></li><li><a class="readmenu__item" href="/library/quantum-programs/compare/">Compare</a></li><li><a class="readmenu__item" href="/library/quantum-programs/lean/">Lean index</a></li></ul></nav></div>
+</details>
+<a class="topbar__brand" href="https://wcook04.github.io/" rel="author" translate="no"><img src="/library/quantum-programs/plectis.svg" alt="" width="22" height="22">Will Cook</a>
+</div>
+</header><main id="main" class="app__main"></main></div></div>
+    <noscript>
+      <p style="max-width: 40rem; margin: 4rem auto; font-family: Georgia, serif; line-height: 1.6">
+        The papers, the Lean beside them, the argument map and the comparisons on this site are drawn in the browser and need JavaScript. The paper and its Lean are in the repository under <code>instances/quantum-programs/</code>.
+      </p>
+    </noscript>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+Quantum Proof Reader
+
+The arXiv paper and its TeX and HTML artifacts are by the authors listed in
+README.md and are licensed under CC BY 4.0. The upstream archive and PDF are
+unaltered. The compressed HTML decompresses to the original arXiv response.
+The JSON passage index normalizes whitespace and represents math with the
+source MathML alt text.
+
+The Lean submodule is Copyright 2026 Google LLC and carries the upstream
+Apache License, Version 2.0. Keep its license and copyright notices with it.
+
+tools/compiled_report.lean.in adapts the Apache-2.0 compiled-declaration
+extractor from wcook04/proof-reader at 46e5ea0564621dcb735ac6bd3876f50696673abe.
+Its predecessors include Lean Exposition and Comparator/Util.lean,
+Copyright 2025 Lean FRO, LLC, author Henrik Böving.
+
+The Library reader frontend in web/src/ is from wcook04/lean-exposition at
+425903ad07758418307b651bb7614f3a910df67c (Apache License, Version 2.0).
+The standalone build reads this repository’s generated Library edition.
+See web/THIRD_PARTY_NOTICES.md for frontend dependencies.

@@ -1,0 +1,166 @@
+{
+  "schema": "library-instance/1",
+  "id": "talagrand-parisi",
+  "title": "The Parisi formula",
+  "short_title": "Talagrand’s Parisi formula",
+  "authors": [
+    "Michel Talagrand"
+  ],
+  "venue": "Annals of Mathematics 163 (2006), no. 1, 221–263",
+  "credit_lines": [
+    "The SK proof in Lean is from Qiang Wu’s ParisiFormula project. The passage links, comparisons, notes and supplementary Lean checks are contributed by this project with AI assistance."
+  ],
+  "companion_credit": "Paper by Michel Talagrand. Lean proof by Qiang Wu’s ParisiFormula project.",
+  "licence": "Publisher PDF from the Annals of Mathematics, reproduced for educational and scientific use.",
+  "host": "Will Cook’s reading library.",
+  "review": "The upstream proof covers the exact-covariance SK model. The three files under Supplements contain separately checked reader contributions.",
+  "source": {
+    "upstream": {
+      "repository": "https://github.com/qiangwu2/ParisiFormula",
+      "commit": "9fd12231429de72fa524b471c43f4a237553a711",
+      "paper": "https://annals.math.princeton.edu/2006/163-1/p04"
+    },
+    "lean_scope": "The upstream Lean follows Talagrand’s proof in the Sherrington–Kirkpatrick model with exact quadratic covariance. The paper’s general covariance hypotheses have wider scope."
+  },
+  "documents": [
+    {
+      "id": "paper",
+      "slot": "short",
+      "slug": "",
+      "title": "The Parisi formula",
+      "noun": "paper",
+      "main": true,
+      "pdf": {
+        "file": "paper.pdf",
+        "sha256": "c810b21e3f0fb30ad61a3aac06bf56c228e9379f529e6f928031534f91483abe",
+        "bytes": 871566,
+        "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v163-n1-p04.pdf"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "model-and-formula",
+      "name": "SK model and variational formula",
+      "tone": "light-dark(oklch(0.50 0.19 300), oklch(0.76 0.15 300))"
+    },
+    {
+      "id": "guerra-interpolation",
+      "name": "Guerra’s interpolation",
+      "tone": "light-dark(oklch(0.48 0.18 258), oklch(0.73 0.15 258))"
+    },
+    {
+      "id": "two-replica-estimates",
+      "name": "Two-replica estimates",
+      "tone": "light-dark(oklch(0.58 0.19 48), oklch(0.76 0.17 48))"
+    },
+    {
+      "id": "basic-operators",
+      "name": "Gaussian operators and variations",
+      "tone": "light-dark(oklch(0.52 0.14 165), oklch(0.80 0.15 165))"
+    },
+    {
+      "id": "main-estimate",
+      "name": "The quadratic overlap penalty",
+      "tone": "light-dark(oklch(0.55 0.21 352), oklch(0.75 0.17 352))"
+    }
+  ],
+  "topics": [
+    {
+      "id": "sk-covariance",
+      "name": "Spin overlap and covariance",
+      "description": "The off-diagonal Hamiltonian, the overlap and the covariance approximation in (1.3).",
+      "family": "model-and-formula"
+    },
+    {
+      "id": "parisi-functional",
+      "name": "Finite-level Parisi functional",
+      "description": "The masses and breakpoints, the Gaussian recursion, and the finite-level functional and its infimum.",
+      "family": "model-and-formula"
+    },
+    {
+      "id": "pressure-limit",
+      "name": "Limit of the free energy",
+      "description": "Theorem 1.1 and the passage from interpolation at a fixed time to the limit at time one.",
+      "family": "model-and-formula"
+    },
+    {
+      "id": "guerra-identity",
+      "name": "Guerra’s identity and upper bound",
+      "description": "The interpolating pressure, its one-sided derivative bound and the decoupled time-zero calculation.",
+      "family": "guerra-interpolation"
+    },
+    {
+      "id": "fixed-level-convergence",
+      "name": "Convergence below time one",
+      "description": "Compactness and reduction of a minimizing scheme, the linear comparison, and integration of the pressure gap.",
+      "family": "guerra-interpolation"
+    },
+    {
+      "id": "coupled-recursion",
+      "name": "Shared fields and constrained pressure",
+      "description": "The two-replica law, shared Gaussian fields, half masses and the pressure at a prescribed overlap.",
+      "family": "two-replica-estimates"
+    },
+    {
+      "id": "overlap-probability",
+      "name": "Probability of a prescribed overlap",
+      "description": "The pressure deficit bounds a single overlap probability, and summation over the overlap grid gives concentration.",
+      "family": "two-replica-estimates"
+    },
+    {
+      "id": "second-interpolation",
+      "name": "A second interpolation",
+      "description": "The fixed-overlap derivative estimate and the comparison with the endpoint at which the sites decouple.",
+      "family": "two-replica-estimates"
+    },
+    {
+      "id": "gaussian-smoothing",
+      "name": "Gaussian averaging",
+      "description": "Variance differentiation, splitting the variance between two steps and interchanging steps.",
+      "family": "basic-operators"
+    },
+    {
+      "id": "minimizer-variation",
+      "name": "Variations at a minimizing scheme",
+      "description": "First variation in a mass, the endpoint stationarity identity and the curvature bound at a breakpoint.",
+      "family": "basic-operators"
+    },
+    {
+      "id": "local-overlap-bound",
+      "name": "Quadratic penalty near a breakpoint",
+      "description": "The two constructions obtained by inserting the prescribed overlap on either side of the target breakpoint.",
+      "family": "main-estimate"
+    },
+    {
+      "id": "distant-overlap-gap",
+      "name": "Strict gap beyond neighboring breakpoints",
+      "description": "The interleaved interpolation and strict scalar comparison for overlaps away from the target breakpoint.",
+      "family": "main-estimate"
+    },
+    {
+      "id": "quadratic-overlap-bound",
+      "name": "Uniform quadratic overlap penalty",
+      "description": "Theorem 2.4 assembles the local quadratic estimate and the uniform deficit away from the target breakpoint.",
+      "family": "main-estimate"
+    }
+  ],
+  "topic_order": [
+    "sk-covariance",
+    "parisi-functional",
+    "pressure-limit",
+    "guerra-identity",
+    "fixed-level-convergence",
+    "coupled-recursion",
+    "overlap-probability",
+    "second-interpolation",
+    "gaussian-smoothing",
+    "minimizer-variation",
+    "local-overlap-bound",
+    "distant-overlap-gap",
+    "quadratic-overlap-bound"
+  ],
+  "goal": "talagrand-parisi.theorem-1.1",
+  "main_lean": "SpinGlass.Targets.parisi_formula",
+  "artifact": true
+}

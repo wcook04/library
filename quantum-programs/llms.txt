@@ -1,0 +1,15 @@
+# Discovering formally verified quantum programs with AI
+
+> Discovering formally verified quantum programs with AI, by Sergey Shirobokov, Ben Jaderberg, Katerina Hristova, George Tsoukalas, Johannes Bausch, Eric Wieser, Francisco J.H. Heras, Nicholas C. Rubin, Guang Hao Low, Sébastien Racanière, Nenad Tomašev, Lei M. Zhang, James D. Watson, Tanuj Khattar, Aws Albarghouthi, Stavan Jain, Harun Khan, Leopoldo Sarra, Andrew W. Senior, Michael Broughton, Hussain Masoom, Sergio Boixo, Ryan Babbush, Swarat Chaudhuri and Pushmeet Kohli, read beside its Lean. Paper and Lean by Google DeepMind and Google Quantum AI. The authors’ paper is licensed CC BY 4.0.
+
+Links and notes were prepared with AI assistance. The authors have not reviewed them.
+
+## Read
+
+- [Discovering formally verified quantum programs with AI](https://wcook04.github.io/library/quantum-programs)
+
+## Data
+
+All data is static JSON under https://wcook04.github.io/library/quantum-programsedition/. Start at edition/index.json: it maps API routes to files.
+
+The Lean index has 60 modules and 183 declarations.

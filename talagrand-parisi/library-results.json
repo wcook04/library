@@ -1,0 +1,75 @@
+{
+ "schema": 1,
+ "results": {
+  "theorem-1.1": {
+   "claim": "parisi-formula",
+   "title": "Theorem 1.1. The Parisi formula",
+   "section": "1",
+   "tie": "theorem-1-1",
+   "lean": [
+    "SpinGlass.Targets.parisi_formula"
+   ]
+  },
+  "theorem-2.1": {
+   "claim": "guerra-identity",
+   "title": "Theorem 2.1. Guerra’s derivative formula",
+   "section": "2",
+   "tie": "theorem-2-1",
+   "lean": [
+    "SpinGlass.Targets.guerra_identity"
+   ]
+  },
+  "claim-guerra-upper-bound": {
+   "claim": "guerra-upper-bound",
+   "title": "Equation (2.15). Guerra’s upper bound",
+   "section": "2",
+   "tie": "guerra-upper-bound",
+   "lean": [
+    "SpinGlass.Targets.guerra_rsb_bound"
+   ]
+  },
+  "theorem-2.2": {
+   "claim": "interpolated-convergence",
+   "title": "Theorem 2.2. Convergence below time one",
+   "section": "2",
+   "tie": "theorem-2-2",
+   "lean": [
+    "SpinGlass.Targets.talagrand_theorem_2_2"
+   ]
+  },
+  "theorem-2.4": {
+   "claim": "quadratic-overlap-penalty",
+   "title": "Theorem 2.4. Quadratic bound on constrained pressure",
+   "section": "2",
+   "tie": "theorem-2-4",
+   "lean": [
+    "SpinGlass.Targets.talagrand_theorem_2_4"
+   ]
+  },
+  "proposition-2.5": {
+   "claim": "overlap-event-probability",
+   "title": "Proposition 2.5. Exponential bound on overlap probability",
+   "section": "2",
+   "tie": "proposition-2-5",
+   "lean": [
+    "SpinGlass.Targets.talagrand_proposition_2_5"
+   ]
+  },
+  "proposition-5.7": {
+   "claim": "nonadjacent-overlaps",
+   "title": "Proposition 5.7. Strict gap beyond neighboring breakpoints",
+   "section": "5",
+   "tie": "proposition-5-7",
+   "lean": [
+    "SpinGlass.Targets.talagrand_proposition_5_7"
+   ]
+  }
+ },
+ "sections": {
+  "1": "1. The SK model and the Parisi formula",
+  "2": "2. Guerra’s interpolation and overlap estimates",
+  "3": "3. A second interpolation for two replicas",
+  "4": "4. Gaussian operators and variational estimates",
+  "5": "5. The quadratic overlap penalty"
+ }
+}

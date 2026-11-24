@@ -105,6 +105,53 @@
    "search": "/library/_index/search/talagrand-parisi.json"
   },
   {
+   "id": "quantum-programs",
+   "title": "Discovering formally verified quantum programs with AI",
+   "authors": [
+    "Sergey Shirobokov",
+    "Ben Jaderberg",
+    "Katerina Hristova",
+    "George Tsoukalas",
+    "Johannes Bausch",
+    "Eric Wieser",
+    "Francisco J.H. Heras",
+    "Nicholas C. Rubin",
+    "Guang Hao Low",
+    "Sébastien Racanière",
+    "Nenad Tomašev",
+    "Lei M. Zhang",
+    "James D. Watson",
+    "Tanuj Khattar",
+    "Aws Albarghouthi",
+    "Stavan Jain",
+    "Harun Khan",
+    "Leopoldo Sarra",
+    "Andrew W. Senior",
+    "Michael Broughton",
+    "Hussain Masoom",
+    "Sergio Boixo",
+    "Ryan Babbush",
+    "Swarat Chaudhuri",
+    "Pushmeet Kohli"
+   ],
+   "href": "/library/quantum-programs/",
+   "here": true,
+   "sentence": "Links the paper’s account of five quantum algorithms to the Lean statements for their correctness, error and resource bounds.",
+   "counts": {
+    "phrases": 153,
+    "statements": 43,
+    "lean": 176
+   },
+   "comparator": "The authors report Comparator acceptance for all six challenges. The reader independently replayed the fixed-point arcsin and Grover Find-Any challenges.",
+   "pages": [
+    {
+     "title": "The authors’ PDF",
+     "href": "/library/quantum-programs/pdf/paper.pdf"
+    }
+   ],
+   "search": "/library/_index/search/quantum-programs.json"
+  },
+  {
    "id": "qaoa-sk",
    "title": "Why the Sherrington–Kirkpatrick order parameter has no gaps",
    "authors": [

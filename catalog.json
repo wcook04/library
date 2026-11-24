@@ -290,6 +290,10 @@
     {
      "label": "Publisher’s page",
      "href": "https://doi.org/10.1145/3808269"
+    },
+    {
+     "label": "Short video, 1:30",
+     "href": "https://www.youtube.com/watch?v=LZxaDZ-gQm8"
     }
    ]
   },
@@ -506,6 +510,10 @@
     {
      "label": "Exposition",
      "href": "/library/quartic/exposition/"
+    },
+    {
+     "label": "Short video, 1:50",
+     "href": "https://www.youtube.com/watch?v=swDOmHq8NrY"
     }
    ]
   },
@@ -566,6 +574,10 @@
     {
      "label": "Exposition",
      "href": "/library/qaoa-sk/exposition/"
+    },
+    {
+     "label": "Short video, 1:38",
+     "href": "https://www.youtube.com/watch?v=qLqea5st6Bo"
     }
    ]
   },
@@ -673,6 +685,10 @@
     {
      "label": "PDF",
      "href": "/library/erdos-257/pdf/short-paper.pdf"
+    },
+    {
+     "label": "Short video, 1:41",
+     "href": "https://www.youtube.com/watch?v=MrC-pboGZ2k"
     }
    ]
   },
@@ -1037,6 +1053,10 @@
     {
      "label": "The maths map",
      "href": "https://wcook04.github.io/practical-formal-verification/map/#mathematics"
+    },
+    {
+     "label": "Short video, 1:49",
+     "href": "https://www.youtube.com/watch?v=Dc6ogk9QlBE"
     }
    ]
   }

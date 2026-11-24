@@ -1,2 +1,0 @@
-import{o as e}from"./site-BQDGbLi1.js";import{t}from"./TopBar-BAiQzr8l.js";var n=e(),r=null,i=0;function a(){let[e,a]=(0,n.useState)(r);return(0,n.useLayoutEffect)(()=>{let e=document.getElementById(t);if(e)return i+=1,r||(r=document.createElement(`div`),r.className=`lean-slot lean-slot--compact lean-slot--bar`,e.append(r)),a(r),()=>{--i,i===0&&(r?.remove(),r=null)}},[]),e}export{a as t};
-//# sourceMappingURL=barLine-BWqB7qDy.js.map

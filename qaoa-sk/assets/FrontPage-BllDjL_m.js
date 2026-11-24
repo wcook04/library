@@ -1,0 +1,2 @@
+import{i as e,o as t}from"./site-Ckq_8ZZH.js";import{n}from"./router-CMDZIE-e.js";var r=t();function i(){return(0,r.useEffect)(()=>{n({view:`read`,stage:e.slot},{replace:!0})},[]),null}export{i as FrontPage};
+//# sourceMappingURL=FrontPage-BllDjL_m.js.map

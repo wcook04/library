@@ -134,8 +134,12 @@
      "href": "/library/quartic/reconstruction/"
     },
     {
-     "title": "OpenAI’s paper and the verification details, in the old reader’s last edition",
-     "href": "https://wcook04.github.io/library/quartic/editions/dbbf1f08240a1b016e41182c308366a452c348bc42e7beb7ba2cbd803587e350/#/read/original"
+     "title": "OpenAI’s original paper",
+     "href": "/library/quartic/source/#/read/original"
+    },
+    {
+     "title": "Verification details",
+     "href": "/library/quartic/source/#/read/verification"
     }
    ],
    "search": "/library/_index/search/quartic.json"

@@ -1,0 +1,15 @@
+# The Parisi formula
+
+> The Parisi formula, by Michel Talagrand, read beside its Lean. The SK proof in Lean is from Qiang Wu’s ParisiFormula project. The passage links, comparisons, notes and supplementary Lean checks are contributed by this project with AI assistance.
+
+The upstream proof covers the exact-covariance SK model. The three files under Supplements contain separately checked reader contributions.
+
+## Read
+
+- [The Parisi formula](https://wcook04.github.io/library/talagrand-parisi/)
+
+## Data
+
+All data is static JSON under https://wcook04.github.io/library/talagrand-parisi/edition/. Start at edition/index.json: it maps API routes to files.
+
+The Lean index has 303 modules and 2,672 declarations.

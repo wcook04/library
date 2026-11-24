@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>What ran · Talagrand’s Parisi formula</title>
+    <meta
+      name="description"
+      content="The Parisi formula, by Michel Talagrand, read sentence by sentence beside its Lean."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Parisi formula" />
+    <meta
+      property="og:description"
+      content="By Michel Talagrand. Each phrase opens the Lean that states it."
+    />
+    <meta property="og:url" content="https://wcook04.github.io/library/talagrand-parisi/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="describedby" href="/library/talagrand-parisi/llms.txt" type="text/plain" />
+    <meta name="author" content="Will Cook" />
+    <meta name="theme-color" content="#f8f0e2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1c1526" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/library/talagrand-parisi/favicon.svg" type="image/svg+xml" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("lx-theme");
+          if (stored === "light" || stored === "dark") document.documentElement.setAttribute("data-theme", stored);
+        } catch (e) {}
+      })();
+      // The paper's text waits, hidden but laid out, until its fonts (preloaded below) are in, or
+      // 100 ms at most, so a formula never paints in a fallback face and then shifts.
+      (function () {
+        var root = document.documentElement;
+        if (!document.fonts || !document.fonts.load) return;
+        root.classList.add("fonts-wait");
+        var done = function () {
+          root.classList.remove("fonts-wait");
+        };
+        setTimeout(done, 100);
+        document.addEventListener("DOMContentLoaded", function () {
+          Promise.all(["1em KaTeX_Main", "italic 1em KaTeX_Math", "1em 'STIX Two Text'"].map(function (face) {
+            return document.fonts.load(face);
+          })).then(done, done);
+        });
+      })();
+    </script>
+    <style>html.fonts-wait .paper{visibility:hidden}</style>
+    <script type="module" crossorigin src="/library/talagrand-parisi/assets/index-BzQKHlMU.js"></script>
+    <link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/site-Cz0bkTXK.js">
+    <link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/figures-DnctJJa4.js">
+    <link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/jsx-runtime-BeY-UgAB.js">
+    <link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/skeletonView-B-9WU502.js">
+    <link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/theme-DfQceZQD.js">
+    <link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/lean-pp6WieCi.js">
+    <link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/data-BzgYJvuF.js">
+    <link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/router-BmDh-rg5.js">
+    <link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/papers-BcKSP9Jm.js">
+    <link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/siteName-DBXLwV50.js">
+    <link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/TopBar-BNlpCOag.js">
+    <link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/cite-CnFLBUAd.js">
+    <link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/ties-COz_MR0z.js">
+    <link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/restore-CwO-_-1J.js">
+    <link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/mainGoal-6vsrHK4_.js">
+    <link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/aids-Ci_lk1eH.js">
+    <link rel="stylesheet" crossorigin href="/library/talagrand-parisi/assets/figures-DV8vOBon.css">
+    <link rel="stylesheet" crossorigin href="/library/talagrand-parisi/assets/TopBar-BnduRX0B.css">
+    <link rel="stylesheet" crossorigin href="/library/talagrand-parisi/assets/index-BdYVmVq9.css">
+    <link rel="stylesheet" crossorigin href="/library/talagrand-parisi/assets/reader-content-CY4pIQjE.css">
+  <link rel="preload" href="/library/talagrand-parisi/assets/KaTeX_AMS-Regular-BQhdFMY1.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/talagrand-parisi/assets/KaTeX_Caligraphic-Regular-Di6jR-x-.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/talagrand-parisi/assets/KaTeX_Main-Bold-Cx986IdX.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/talagrand-parisi/assets/KaTeX_Main-Italic-NWA7e6Wa.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/talagrand-parisi/assets/KaTeX_Main-Regular-B22Nviop.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/talagrand-parisi/assets/KaTeX_Math-Italic-t53AETM-.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/talagrand-parisi/assets/KaTeX_Size1-Regular-mCD8mA8B.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/talagrand-parisi/assets/KaTeX_Size2-Regular-Dy4dx90m.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/talagrand-parisi/assets/KaTeX_Size3-Regular-gV2CO0n9.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/talagrand-parisi/assets/source-sans-3-latin-wght-normal-Bo_j9asI.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/talagrand-parisi/assets/stix-two-text-latin-400-italic-BLib6pG4.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/talagrand-parisi/assets/stix-two-text-latin-400-normal-Dm29J5Fl.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/talagrand-parisi/assets/stix-two-text-latin-500-normal-QKEzPprE.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="/library/talagrand-parisi/edition/index.json" as="fetch" crossorigin /><link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/ChecksPage-BSLQOvWi.js" /><link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/site-Cz0bkTXK.js" /><link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/jsx-runtime-BeY-UgAB.js" /><link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/lean-pp6WieCi.js" /><link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/data-BzgYJvuF.js" /><link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/router-BmDh-rg5.js" /><link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/useAlignment-B9I1E9pp.js" /><link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/summary-BeTM6uMZ.js" /><link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/_virtual_site-facts-D2t-raHO.js" /><link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/data-5vQP7H7Z.js" /><link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/resolve-C8Lgauds.js" /><link rel="modulepreload" crossorigin href="/library/talagrand-parisi/assets/tokenize-C5yNsREG.js" /><link rel="preload" as="style" crossorigin href="/library/talagrand-parisi/assets/ChecksPage-B1VLThQ5.css" /><link rel="preload" href="/library/talagrand-parisi/edition/7b68ec6711cae9a414760fc1b0f2987bd645aee780e8935a1848755bdf1cc6c8.json" as="fetch" crossorigin /><link rel="preload" href="/library/talagrand-parisi/edition/2762f171935d5d3bfd6a2a598497b3ea6f5d35981e93ab0905b4caaee119e076.json" as="fetch" crossorigin /><link rel="preload" href="/library/talagrand-parisi/edition/a8056cb2ad1986c6eafb3705b4f40a8af220aa23e48192a4cd0d1724ddb7d6a8.json" as="fetch" crossorigin /><link rel="preload" href="/library/talagrand-parisi/edition/d8cecf9f104ac4a6a4c71ea1455123f343122451d614f1b8a71868baba87e38e.json" as="fetch" crossorigin /><link rel="preload" href="/library/talagrand-parisi/edition/72db6229bd28db0655db649b6dcf95571adf7e385a9cd8a71fbda1e1f66121bb.json" as="fetch" crossorigin /><link rel="preload" href="/library/talagrand-parisi/edition/0a98f001aff3d21213a79d803a5d9256d66a8be4b4334f6e666eecca58831bee.json" as="fetch" crossorigin /><link rel="preload" href="/library/talagrand-parisi/edition/653336a9a67ec7111e114391c5d7c50613bf09a910c2d54d114795995c96d893.json" as="fetch" crossorigin /><link rel="preload" href="/library/talagrand-parisi/edition/75a80f78beeb4880e7ee1ac766264a20e0e635a86bdc479002d56bec2c9eeabc.json" as="fetch" crossorigin /></head>
+  <body>
+    <div id="root"><div class="app"><header class="topbar">
+<a class="skip-link" href="#main">Skip to content</a>
+<a class="topbar__title" href="/library/talagrand-parisi/" translate="no"><span class="topbar__title-text">Talagrand’s Parisi formula</span></a>
+<div class="topbar__right">
+<details class="site-menu"><summary class="control control--plain menu-toggle"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>Menu</summary>
+<div class="site-menu__panel"><nav aria-label="Main"><p class="site-menu__label" id="static-read">Read</p><ul class="site-menu__list" aria-labelledby="static-read"><li><a class="readmenu__item" href="/library/talagrand-parisi/">The Parisi formula</a></li></ul><ul class="site-menu__list site-menu__routes"><li><a class="readmenu__item" href="/library/talagrand-parisi/map/">Map</a></li><li><a class="readmenu__item" href="/library/talagrand-parisi/compare/">Compare</a></li><li><a class="readmenu__item" href="/library/talagrand-parisi/lean/">Lean index</a></li></ul></nav></div>
+</details>
+<a class="topbar__brand" href="https://wcook04.github.io/" rel="author" translate="no"><img src="/library/talagrand-parisi/plectis.svg" alt="" width="22" height="22">Will Cook</a>
+</div>
+</header><main id="main" class="app__main"></main></div></div>
+    <noscript>
+      <p style="max-width: 40rem; margin: 4rem auto; font-family: Georgia, serif; line-height: 1.6">
+        The papers, the Lean beside them, the argument map and the comparisons on this site are drawn in the browser and need JavaScript. The paper and its Lean are in the repository under <code>instances/talagrand-parisi/</code>.
+      </p>
+    </noscript>
+  </body>
+</html>

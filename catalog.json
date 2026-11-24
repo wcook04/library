@@ -82,6 +82,29 @@
    "search": "/library/_index/search/erdos-257.json"
   },
   {
+   "id": "talagrand-parisi",
+   "title": "The Parisi formula",
+   "authors": [
+    "Michel Talagrand"
+   ],
+   "href": "/library/talagrand-parisi/",
+   "here": true,
+   "sentence": "Talagrand proves Parisi’s variational formula for the limiting free energy of a class of mean-field spin glass models. The linked Lean proof treats the Sherrington–Kirkpatrick case with exact quadratic covariance.",
+   "counts": {
+    "phrases": 50,
+    "statements": 12,
+    "lean": 73
+   },
+   "comparator": null,
+   "pages": [
+    {
+     "title": "The authors’ PDF",
+     "href": "https://annals.math.princeton.edu/wp-content/uploads/annals-v163-n1-p04.pdf"
+    }
+   ],
+   "search": "/library/_index/search/talagrand-parisi.json"
+  },
+  {
    "id": "qaoa-sk",
    "title": "Why the Sherrington–Kirkpatrick order parameter has no gaps",
    "authors": [

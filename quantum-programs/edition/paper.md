@@ -126,6 +126,8 @@ Unlike the other examples in this work, $\arcsin$ is known to have quantum imple
 
 ![Figure 4](figures/S2.F4.png)
 
+<a id="block-S2.SS3-block-1"></a>
+
 Figure 4: Where program improvements come from. a, d) Cost of verified solutions. Arrows mark where the mechanisms in the other panels were introduced. Interestingly, the drop at iteration 49 in a) is not present in the final solution. b) A quantum Fourier transform (QFT) moves the electrons onto a real-space grid and back. On the grid, the pair potential $v(r)$ is split into long-range (blue) and short-range (hatched) parts. The long-range part costs about 30 times less per pair than in the momentum basis (red dashed). For the short-range part, a subroutine bounds the interaction strength of configurations that violate the Pauli exclusion principle, further reducing its cost. c) Protons sit off the grid, so to apply an electron–proton interaction the circuit shifts all electrons to put the proton on a grid point, a phase set by the sum of all $218$ electron momenta. Keeping this sum in a $42$-qubit register between walk steps halves the summations per step. e) To apply the electrostatic interaction $Z_{i}Z_{j}/r_{ij}$, rather than swapping the coordinates of the interacting pair into fixed slots and back, a copy is loaded into ancilla qubits. This can be cleared cheaply by measurement without destroying the originals. f) From the loaded coordinates, $r_{ij}^{2}$ is calculated cheaply and rescaled within each interval to $\tilde{r}_{ij}^{2}\in[0,1)$. Through random sampling, one of four classically precomputed coefficients is chosen, with probabilities set by $\tilde{r}_{ij}^{2}$ (dot area). In expectation, this gives $1/r_{ij}$ as a Bernstein polynomial \[[218](<https://arxiv.org/html/2611.09822v3#biba.bibx67>)\], as shown for one value of $r_{ij}^{2}$ (shaded). g) Each nucleus has integer charge $Z_{n}\in\{1,6,7,8\}$. In the electron–nucleus attraction, rather than preparing these weights via alias sampling \[[175](<https://arxiv.org/html/2611.09822v3#biba.bibx24>)\], a uniform superposition is created and reversible logic assigns $Z_{n}$ of them to each nucleus. Applying a unit-charge interaction on every branch then gives each nucleus its full charge $Z_{n}$.
 
 In inertial-confinement fusion, hydrogen fuel ignites only if the energetic $\alpha$ particles it produces deposit enough of their energy back into the fuel to sustain the reaction \[[219](<https://arxiv.org/html/2611.09822v3#biba.bibx68>), [220](<https://arxiv.org/html/2611.09822v3#biba.bibx69>)\]. Modeling this requires knowing the fuel’s stopping power, the rate at which it absorbs the kinetic energy of an $\alpha$ particle passing through it. No classical method for these dynamics is both efficient and systematically improvable \[[199](<https://arxiv.org/html/2611.09822v3#biba.bibx48>), [221](<https://arxiv.org/html/2611.09822v3#biba.bibx70>), [222](<https://arxiv.org/html/2611.09822v3#biba.bibx71>), [223](<https://arxiv.org/html/2611.09822v3#biba.bibx72>), [224](<https://arxiv.org/html/2611.09822v3#biba.bibx73>)\].
@@ -185,6 +187,8 @@ For this problem, we find a solution that achieves a spacetime cost of $4.37\tim
 ### 2.6 Collaboration Across Agent Teams
 
 ![Figure 5](figures/S2.F5.png)
+
+<a id="block-S2.SS6-block-1"></a>
 
 Figure 5: Cross-team collaboration and idea lineage. a) Lineage of verified circuits for non-Born–Oppenheimer dynamics across Teams 1–3 (of seven participating teams) from the baseline (seed) to the final circuit (star), with the $Q\cdot\mathcal{T}$ reduction of each step. Within-team discoveries enter from below; cross-team conference and wiki ideas enter from above. b) Share of the logarithmic $Q\cdot\mathcal{T}$ reduction from within-team ideas, cross-team wiki entries, and conference exchanges once both channels were active on each scientific application, with reduction factors over this window shown at right and the unweighted average at bottom. c) Cross-team evolution of one stopping-power idea across wiki records #1–#5 and conference critiques, narrowing the shared ancilla register from $288$ to $231$ qubits; later records narrowed it further to $210$ qubits.
 
@@ -834,6 +838,8 @@ We formalize our verification and resource-counting framework for quantum algori
 
 ![Figure S1](figures/A1.F1.png)
 
+<a id="block-A1-block-2"></a>
+
 Figure S1: Verification library and specification stack. Built on Mathlib \[[196](<https://arxiv.org/html/2611.09822v3#biba.bibx45>)\], Physlib’s Lean-QuantumInfo \[[198](<https://arxiv.org/html/2611.09822v3#biba.bibx47>), [197](<https://arxiv.org/html/2611.09822v3#biba.bibx46>)\] in Lean, our quantum Hoare logic \[[193](<https://arxiv.org/html/2611.09822v3#biba.bibx42>), [248](<https://arxiv.org/html/2611.09822v3#biba.bibx97>)\] formalizes classical–quantum states, weakest preconditions and resource costs, supporting problem specifications (correctness theorem and cost bound) across dynamic Clifford+$T$ circuits and black-box query algorithms.
 
 <a id="block-A1-block-3"></a>
@@ -850,6 +856,8 @@ Verification is performed via reasoning about weakest preconditions. Starting fr
 
 ### Variable types.
 
+<a id="block-A1.SS0.SSS0.Px1-block-1"></a>
+
 Programs operate on two kinds of variables: classical and quantum. In Ref. \[[193](<https://arxiv.org/html/2611.09822v3#biba.bibx42>)\] classical variables can have two types, boolean and integer. We focus on integer-valued classical variables. This is without loss of generality, since boolean values can be encoded as integers. More precisely, given a type $\mathsf{Var}$ of classical variables, the type of classical states (stores) is:
 
 ```lean
@@ -861,6 +869,8 @@ For quantum variables, Feng and Ying \[[193](<https://arxiv.org/html/2611.09822v
 <a id="A1.SS0.SSS0.Px2"></a>
 
 ### Classical-quantum states.
+
+<a id="block-A1.SS0.SSS0.Px2-block-1"></a>
 
 Let $\mathcal{L}(d)$ be the set of Hermitian operators (matrices) on $\mathcal{H}(d)$ and $\mathcal{D}(d)=\{\rho\in\mathcal{L}(d)\mid 0\preceq\rho,\;\mathrm{Tr}(\rho)\leq 1\}$ the set of partial density operators, ordered by the Löwner order. A classical-quantum state $\Delta$ is a function $\Delta:\texttt{Store Var}\to\mathcal{D}(d)$ with countable support whose total trace $\sum_{\sigma}\mathrm{tr}(\Delta(\sigma))$ is at most $1$. In particular, any deficit $1-\|\Delta\|$ represents nontermination. In other words, for a classical store $\sigma$, $\mathrm{tr}(\Delta(\sigma))$ is the probability of being in the classical branch $\sigma$ and $\Delta(\sigma)$, suitably normalized, is the quantum state in that branch. We represent this slightly more generally as:
 
@@ -890,7 +900,11 @@ As an example, Figure [S2](<https://arxiv.org/html/2611.09822v3#A1.F2>) shows ho
 
 ![Figure S2](figures/A1.F2.png)
 
+<a id="block-A1.SS0.SSS0.Px3-block-5"></a>
+
 Figure S2: A formal definition of the clean-ancilla property. Here, a program P implements the unitary $U$ on register rTarget and returns the disjoint ancilla register rAnc to $|0\cdots 0\rangle$: for every predicate $M$, from any input with clean ancillas, P must end with clean ancillas and satisfy $M$ at least as often as applying $U$ would. Since $M$ is arbitrary, P acts exactly as $U$ on all such inputs.
+
+<a id="block-A1.SS0.SSS0.Px3-block-6"></a>
 
 Similarly to CQState, CQAssertion has a partial order: we can lift the Löwner order on observables by declaring $\Theta_{1}\preceq\Theta_{2}$, if $\Theta_{1}(\sigma)\preceq\Theta_{2}(\sigma)$ for all classical stores $\sigma$. Note that since we work with a single quantum variable, in contrast to Ref. \[[193](<https://arxiv.org/html/2611.09822v3#biba.bibx42>)\], we need not impose further conditions on the quantum variables used when defining the order. CQAssertion is a pointed $\omega$-CPO with respect to the Löwner order: it has a least element, and every increasing chain $\Theta_{0}\preceq\Theta_{1}\preceq\cdots$ has a supremum. This structure is crucial as it allows us to define the weakest precondition on a while loop as the supremum of the weakest preconditions of its finite unrollings and to prove the soundness of the while loop rule. In most logics, assertions form a complete lattice, a stronger structure in which every set of assertions has a supremum and an infimum. This matters in practice: existing verification generator frameworks such as Lean’s vcgen tactic \[[251](<https://arxiv.org/html/2611.09822v3#biba.bibx100>)\] and Loom \[[252](<https://arxiv.org/html/2611.09822v3#biba.bibx101>), [253](<https://arxiv.org/html/2611.09822v3#biba.bibx102>)\] require this. The observables on a Hilbert space of dimension at least $2$ \[[254](<https://arxiv.org/html/2611.09822v3#biba.bibx103>)\], do not even form a lattice under the Löwner order, so these frameworks are not presently applicable. Therefore, we implemented the quantum Hoare logic and weakest precondition calculus from scratch.
 
@@ -899,6 +913,8 @@ At first glance, the formalization of CQAssertion (Store Var) above differs from
 The image set $\Theta(\texttt{Store Var})$ is countable;
 
 For each $M\in\Theta(\texttt{Store Var})$, the preimage $\Theta^{-1}(M)$ is definable by a classical assertion.
+
+<a id="block-A1.SS0.SSS0.Px3-block-10"></a>
 
 We do not need to impose condition (1) separately: when the set of classical variables Var is finite, $\texttt{Store Var}=\texttt{Var}\to\mathbb{Z}$ is countable, so the image of $\Theta:\texttt{Store Var}\to\mathcal{O}(d)$ is automatically countable. We prove this in CQAssertion.equivCountable. Condition (2) holds automatically since we represent classical assertions as predicates $\texttt{Store}\ \texttt{Var}\to\texttt{Prop}$. However, if the classical assertions are first-order logic formulas over Var as is stated in the beginning of Section 3.2 of Ref. \[[193](<https://arxiv.org/html/2611.09822v3#biba.bibx42>)\], cq-assertions are no longer closed under suprema of increasing chains in the Löwner order and therefore, not an $\omega$-CPO. We encounter the same roadblock to the $\omega$-CPO structure if we explicitly impose condition (1) on the cq-assertions while allowing countably infinitely many classical variables, as opposed to obtaining it naturally by restricting to finitely many classical variables. The full formalization can be found in CQAssertion.lean \[[195](<https://arxiv.org/html/2611.09822v3#biba.bibx44>)\].
 
@@ -1101,6 +1117,8 @@ Teams exchange persistent artifacts through a version-controlled repository with
 
 ![Figure S4](figures/A3.F4.png)
 
+<a id="block-A3.SS0.SSS0.Px2-block-2"></a>
+
 Figure S4: Layout of one problem directory in the shared wiki (stopping power). The best solution and the reusable partial Lean modules are checked by the external verifier against the frozen specification before merging, while idea notes are reviewed summaries labeled verified, promising, or dead-end. Each verified record in history.md lists the teams credited for it.
 
 <a id="A3.SS0.SSS0.Px3"></a>
@@ -1126,6 +1144,8 @@ Figure S5: A cross-team conference exchange between two verified records in the 
 <a id="block-A4.SS1-block-1"></a>
 
 Throughout the fault-tolerant benchmarks in this work, candidate circuits and literature baselines are compared at matched system encodings and error budgets by their logical spacetime volume $Q\cdot\mathcal{T}$, defined as total peak logical qubits $Q$ (including clean workspace ancillas) multiplied by total $T$-gate count $\mathcal{T}$, pricing clean-ancilla Toffoli gates at $4\,\mathcal{T}$ via measurement-based temporary-$\mathrm{AND}$ uncomputation \[[259](<https://arxiv.org/html/2611.09822v3#biba.bibx108>), [174](<https://arxiv.org/html/2611.09822v3#biba.bibx23>), [260](<https://arxiv.org/html/2611.09822v3#biba.bibx109>)\]. This metric models compilation onto two-dimensional planar surface-code architectures using lattice surgery \[[261](<https://arxiv.org/html/2611.09822v3#biba.bibx110>), [262](<https://arxiv.org/html/2611.09822v3#biba.bibx111>), [194](<https://arxiv.org/html/2611.09822v3#biba.bibx43>)\]. Because Clifford gates can be tracked in the classical Pauli frame or absorbed into multi-qubit Pauli product measurements, fault-tolerant overhead is dominated by preparing non-Clifford magic states through distillation or cultivation \[[263](<https://arxiv.org/html/2611.09822v3#biba.bibx112>), [264](<https://arxiv.org/html/2611.09822v3#biba.bibx113>), [265](<https://arxiv.org/html/2611.09822v3#biba.bibx114>), [194](<https://arxiv.org/html/2611.09822v3#biba.bibx43>)\]. Under Pauli-based or serial-factory execution—where magic states are consumed at a fixed logical cycle rate—execution time tracks $\mathcal{T}$ while memory footprint tracks $Q$, making $Q\cdot\mathcal{T}$ proportional to $Q_{\mathrm{logical}}\cdot D_{\mathrm{cycles}}$, the topological spacetime volume \[[194](<https://arxiv.org/html/2611.09822v3#biba.bibx43>), [266](<https://arxiv.org/html/2611.09822v3#biba.bibx115>), [152](<https://arxiv.org/html/2611.09822v3#biba.bibx1>), [267](<https://arxiv.org/html/2611.09822v3#biba.bibx116>), [240](<https://arxiv.org/html/2611.09822v3#biba.bibx89>), [153](<https://arxiv.org/html/2611.09822v3#biba.bibx2>)\]. Optimizing $Q\cdot\mathcal{T}$ also regularizes space–time tradeoffs against degenerate extremes—neither permitting unbounded clean-ancilla QROAM replication to suppress $T$-gate count \[[175](<https://arxiv.org/html/2611.09822v3#biba.bibx24>), [268](<https://arxiv.org/html/2611.09822v3#biba.bibx117>), [155](<https://arxiv.org/html/2611.09822v3#biba.bibx4>)\] nor forcing deep ancilla-starved recomputation to save a handful of qubits \[[161](<https://arxiv.org/html/2611.09822v3#biba.bibx10>), [269](<https://arxiv.org/html/2611.09822v3#biba.bibx118>)\]—and aligns directly with the $(Q,\text{Toffoli}/\mathcal{T})$ metrics reported across standard resource-estimation benchmarks \[[154](<https://arxiv.org/html/2611.09822v3#biba.bibx3>), [270](<https://arxiv.org/html/2611.09822v3#biba.bibx119>), [178](<https://arxiv.org/html/2611.09822v3#biba.bibx27>), [239](<https://arxiv.org/html/2611.09822v3#biba.bibx88>), [271](<https://arxiv.org/html/2611.09822v3#biba.bibx120>), [199](<https://arxiv.org/html/2611.09822v3#biba.bibx48>), [211](<https://arxiv.org/html/2611.09822v3#biba.bibx60>), [209](<https://arxiv.org/html/2611.09822v3#biba.bibx58>)\].
+
+<a id="block-A4.SS1-block-2"></a>
 
 Physical device cost departs from $Q\cdot\mathcal{T}$ in two principal architectural regimes. First, provisioning parallel magic-state factories compresses execution depth from $\mathcal{T}$ toward $T$-depth at the expense of dedicated factory footprint and routing overhead \[[194](<https://arxiv.org/html/2611.09822v3#biba.bibx43>), [152](<https://arxiv.org/html/2611.09822v3#biba.bibx1>), [267](<https://arxiv.org/html/2611.09822v3#biba.bibx116>)\]. Second, architectures incorporating non-local connectivity, high-rate quantum low-density parity-check (qLDPC) memory, or Active Volume compilation decouple idle memory storage from active reaction layers, lowering the spatial cost of inactive data qubits relative to active workspace \[[272](<https://arxiv.org/html/2611.09822v3#biba.bibx121>), [273](<https://arxiv.org/html/2611.09822v3#biba.bibx122>), [240](<https://arxiv.org/html/2611.09822v3#biba.bibx89>), [241](<https://arxiv.org/html/2611.09822v3#biba.bibx90>), [212](<https://arxiv.org/html/2611.09822v3#biba.bibx61>)\]. Because every verified scientific simulation in Fig. [3](<https://arxiv.org/html/2611.09822v3#S2.F3>)b reduces both $Q$ and $\mathcal{T}$ relative to its baseline, our improvements hold under any monotone weighting of logical space and non-Clifford-gate count.
 

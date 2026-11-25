@@ -1,0 +1,1 @@
+export{c as fetchModule,p as shellResource}from"./data-kK1z73na.js";

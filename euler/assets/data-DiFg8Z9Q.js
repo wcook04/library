@@ -1,0 +1,1 @@
+export{c as fetchModule,p as shellResource}from"./data-Dg4RV6JZ.js";

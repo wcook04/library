@@ -141,9 +141,9 @@
    ],
    "search": "/library/_index/search/talagrand-parisi.json",
    "tier": "research",
-   "kind": "Authors’ paper · Independent Lean",
+   "kind": "Author’s paper · Independent Lean",
    "provenance": "academic",
-   "provenance_label": "Credit: the authors",
+   "provenance_label": "Credit: the author",
    "credits": [
     [
      "Paper",
@@ -160,7 +160,7 @@
    ],
    "versions": [
     {
-     "label": "Authors’ paper",
+     "label": "Author’s paper",
      "href": "/library/talagrand-parisi/",
      "note": "linked to Wu’s Lean"
     },
@@ -602,7 +602,7 @@
    "tier": "companion",
    "kind": "Explanation of an existing Lean result",
    "provenance": "academic",
-   "provenance_label": "Credit: the authors",
+   "provenance_label": "Credit: the author",
    "credits": [
     [
      "Lean",

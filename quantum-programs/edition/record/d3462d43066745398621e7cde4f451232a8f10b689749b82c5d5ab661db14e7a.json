@@ -1,0 +1,1 @@
+{"record":{"id":"grover/find-all","ref":"sha256:97d42f333791b1c0b43f57cfe7cded2b3fe980d33ce0aa56bff9441786339843/nodes/grover%2Ffind-all","kind":"goal","status":"unverified","label":"Probability-one recovery of the marked set","description":"Find-All terminates with probability one and outputs all $k$ elements of $S$."},"aligned_passages":[],"relations":[],"evidence":[]}

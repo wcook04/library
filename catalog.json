@@ -1,1064 +1,1064 @@
 {
- "schema": "library-catalog/3",
- "papers": [
-  {
-   "id": "navier-stokes",
-   "title": "Finite-time blow-up for the Navier–Stokes equations",
-   "authors": [
-    "Levent Alpöge",
-    "Tristan Buckmaster"
-   ],
-   "href": "/library/navier-stokes/",
-   "here": true,
-   "sentence": "The authors prove that there are smooth, compactly supported, divergence-free initial data on ℝ³, and smooth divergence-free data on the torus, whose solutions of the unforced three-dimensional Navier–Stokes equations blow up in finite time, with the profile obtained from a numerical certificate the authors will release.",
-   "counts": {
-    "phrases": 1048,
-    "statements": 269,
-    "lean": 631
-   },
-   "comparator": null,
-   "pages": [
+  "schema": "library-catalog/3",
+  "papers": [
     {
-     "title": "The authors’ PDF",
-     "href": "https://github.com/tristanbuckmaster/navier-stokes/blob/ad53419de079eb8f95f60313473374624a348546/paper/finite-time-blow-up-navier-stokes.pdf"
+      "id": "navier-stokes",
+      "title": "Finite-time blow-up for the Navier–Stokes equations",
+      "authors": [
+        "Levent Alpöge",
+        "Tristan Buckmaster"
+      ],
+      "href": "/library/navier-stokes/",
+      "here": true,
+      "sentence": "The authors prove that there are smooth, compactly supported, divergence-free initial data on ℝ³, and smooth divergence-free data on the torus, whose solutions of the unforced three-dimensional Navier–Stokes equations blow up in finite time, with the profile obtained from a numerical certificate the authors will release.",
+      "counts": {
+        "phrases": 1048,
+        "statements": 269,
+        "lean": 631
+      },
+      "comparator": null,
+      "pages": [
+        {
+          "title": "The authors’ PDF",
+          "href": "https://github.com/tristanbuckmaster/navier-stokes/blob/ad53419de079eb8f95f60313473374624a348546/paper/finite-time-blow-up-navier-stokes.pdf"
+        }
+      ],
+      "search": "/library/_index/search/navier-stokes.json",
+      "tier": "lead",
+      "kind": "Authors’ paper · Adapted edition",
+      "provenance": "anthropic",
+      "provenance_label": "Credit: Anthropic",
+      "credits": [
+        [
+          "Paper and Lean",
+          "Levent Alpöge and Tristan Buckmaster"
+        ],
+        [
+          "Credited in the paper",
+          "Anthropic. The authors thank Anthropic and say they used Claude models throughout the work."
+        ],
+        [
+          "Adapted edition",
+          "I adapted the text with AI assistance. You can see each change in the reader."
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Authors’ paper",
+          "href": "/library/navier-stokes/",
+          "note": "their text, linked to the Lean"
+        },
+        {
+          "label": "Adapted edition",
+          "href": "/library/navier-stokes/adapted/",
+          "note": "see what I changed"
+        },
+        {
+          "label": "Original PDF",
+          "href": "/library/navier-stokes/pdf/paper.pdf"
+        }
+      ]
+    },
+    {
+      "id": "euler",
+      "title": "Finite-Time Singularity Formation for the Three-Dimensional Euler Equations",
+      "authors": [
+        "Levent Alpöge",
+        "Tristan Buckmaster",
+        "Matei P. Coiculescu"
+      ],
+      "href": "/library/euler/",
+      "here": true,
+      "sentence": "The authors construct smooth periodic initial data for the three-dimensional incompressible Euler equations whose solution blows up in finite time, with the velocity bounded and the vorticity at the origin tending to infinity.",
+      "counts": {
+        "phrases": 996,
+        "statements": 256,
+        "lean": 1013
+      },
+      "comparator": "Comparator accepted the main theorem's Lean against the authors' definitions with five kernels and only the axioms propext, Quot.sound, Classical.choice. Three altered statements were rejected.",
+      "pages": [
+        {
+          "title": "The authors’ PDF",
+          "href": "https://github.com/mcoiculescu/EulerBlowupPublic/blob/fd3a1588967810b9abe42a1dcf46ee662d6434e2/manuscript/paper.pdf"
+        }
+      ],
+      "search": "/library/_index/search/euler.json",
+      "tier": "lead",
+      "kind": "Authors’ paper · Adapted edition",
+      "provenance": "anthropic",
+      "provenance_label": "Credit: Anthropic",
+      "credits": [
+        [
+          "Paper and Lean",
+          "Levent Alpöge, Tristan Buckmaster and Matei P. Coiculescu"
+        ],
+        [
+          "Credited in the paper",
+          "Anthropic. The authors thank Anthropic for the collaboration."
+        ],
+        [
+          "Adapted edition",
+          "I adapted the text with AI assistance. You can see each change in the reader. I list the added estimates separately."
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Authors’ paper",
+          "href": "/library/euler/",
+          "note": "their text, linked to the Lean"
+        },
+        {
+          "label": "Adapted edition",
+          "href": "/library/euler/adapted/",
+          "note": "see what I changed"
+        },
+        {
+          "label": "Original PDF",
+          "href": "/library/euler/pdf/paper.pdf"
+        }
+      ]
+    },
+    {
+      "id": "talagrand-parisi",
+      "title": "The Parisi formula",
+      "authors": [
+        "Michel Talagrand"
+      ],
+      "href": "/library/talagrand-parisi/",
+      "here": true,
+      "sentence": "Talagrand proves Parisi’s variational formula for the limiting free energy of a class of mean-field spin glass models. The linked Lean proof treats the Sherrington–Kirkpatrick case with exact quadratic covariance.",
+      "counts": {
+        "phrases": 50,
+        "statements": 12,
+        "lean": 73
+      },
+      "comparator": null,
+      "pages": [
+        {
+          "title": "The authors’ PDF",
+          "href": "https://annals.math.princeton.edu/wp-content/uploads/annals-v163-n1-p04.pdf"
+        }
+      ],
+      "search": "/library/_index/search/talagrand-parisi.json",
+      "tier": "research",
+      "kind": "Author’s paper · Independent Lean",
+      "provenance": "academic",
+      "provenance_label": "Credit: the author",
+      "credits": [
+        [
+          "Paper",
+          "Michel Talagrand, Annals of Mathematics 163 (2006)"
+        ],
+        [
+          "Lean",
+          "Qiang Wu’s ParisiFormula project, for the Sherrington–Kirkpatrick case"
+        ],
+        [
+          "Notes and supplementary Lean",
+          "I added these with AI assistance."
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Author’s paper",
+          "href": "/library/talagrand-parisi/",
+          "note": "linked to Wu’s Lean"
+        },
+        {
+          "label": "Original PDF",
+          "href": "/library/talagrand-parisi/pdf/paper.pdf"
+        }
+      ]
+    },
+    {
+      "id": "quantum-programs",
+      "title": "Discovering formally verified quantum programs with AI",
+      "authors": [
+        "Sergey Shirobokov",
+        "Ben Jaderberg",
+        "Katerina Hristova",
+        "George Tsoukalas",
+        "Johannes Bausch",
+        "Eric Wieser",
+        "Francisco J.H. Heras",
+        "Nicholas C. Rubin",
+        "Guang Hao Low",
+        "Sébastien Racanière",
+        "Nenad Tomašev",
+        "Lei M. Zhang",
+        "James D. Watson",
+        "Tanuj Khattar",
+        "Aws Albarghouthi",
+        "Stavan Jain",
+        "Harun Khan",
+        "Leopoldo Sarra",
+        "Andrew W. Senior",
+        "Michael Broughton",
+        "Hussain Masoom",
+        "Sergio Boixo",
+        "Ryan Babbush",
+        "Swarat Chaudhuri",
+        "Pushmeet Kohli"
+      ],
+      "href": "/library/quantum-programs/",
+      "here": true,
+      "sentence": "The paper describes five quantum algorithms. The linked Lean statements cover their correctness, error and resource bounds.",
+      "counts": {
+        "phrases": 157,
+        "statements": 43,
+        "lean": 179
+      },
+      "comparator": "The authors report Comparator acceptance for all six challenges. The reader independently replayed the fixed-point arcsin and Grover Find-Any challenges.",
+      "pages": [
+        {
+          "title": "The authors’ PDF",
+          "href": "/library/quantum-programs/pdf/paper.pdf"
+        }
+      ],
+      "search": "/library/_index/search/quantum-programs.json",
+      "tier": "research",
+      "kind": "Authors’ paper",
+      "provenance": "google",
+      "provenance_label": "Credit: Google DeepMind and Google Quantum AI",
+      "credits": [
+        [
+          "Paper and Lean",
+          "Google DeepMind and Google Quantum AI"
+        ],
+        [
+          "Links, comparisons and notes",
+          "I added these with AI assistance."
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Authors’ paper",
+          "href": "/library/quantum-programs/",
+          "note": "linked to the Lean"
+        },
+        {
+          "label": "Original PDF",
+          "href": "/library/quantum-programs/pdf/paper.pdf"
+        }
+      ]
+    },
+    {
+      "id": "contextual-embeddings",
+      "title": "Contextual Embeddings: Implementing Bound Variables Through Instance Resolution",
+      "authors": [
+        "Samantha Frohlich",
+        "Jessica Foster",
+        "G. A. Kavvos",
+        "Meng Wang"
+      ],
+      "href": "/library/contextual-embeddings/",
+      "here": true,
+      "sentence": "The authors use instance resolution to define a context-directed isomorphism between a higher-order interface for bound variables and a first-order representation. They prove the round trip in Lean.",
+      "counts": {
+        "phrases": 66,
+        "statements": 35,
+        "lean": 22
+      },
+      "comparator": null,
+      "pages": [
+        {
+          "title": "The authors’ PDF",
+          "href": "https://doi.org/10.1145/3808269"
+        }
+      ],
+      "search": "/library/_index/search/contextual-embeddings.json",
+      "tier": "research",
+      "kind": "Authors’ paper",
+      "provenance": "academic",
+      "provenance_label": "Credit: the authors",
+      "credits": [
+        [
+          "Paper and Lean",
+          "Samantha Frohlich, Jessica Foster, G. A. Kavvos and Meng Wang, from their PLDI 2026 artifact (CC BY 4.0)"
+        ],
+        [
+          "Links, titles and notes",
+          "I added these with AI assistance."
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Authors’ paper",
+          "href": "/library/contextual-embeddings/",
+          "note": "linked to the Lean"
+        },
+        {
+          "label": "Publisher’s page",
+          "href": "https://doi.org/10.1145/3808269"
+        },
+        {
+          "label": "Short video, 1:30",
+          "href": "https://www.youtube.com/watch?v=LZxaDZ-gQm8"
+        }
+      ]
+    },
+    {
+      "id": "smtlib",
+      "title": "The SMT-LIB Standard: Version 2.7",
+      "authors": [
+        "Clark Barrett",
+        "Pascal Fontaine",
+        "Cesare Tinelli"
+      ],
+      "href": "/library/smtlib/",
+      "here": true,
+      "sentence": "The reference standard for SMT-LIB 2.7, read beside BSmtLib, a Lean formalisation of its lexicon, grammar and parser.",
+      "counts": {
+        "phrases": 73,
+        "statements": 0,
+        "lean": 94
+      },
+      "comparator": null,
+      "pages": [
+        {
+          "title": "The authors’ PDF",
+          "href": "https://smt-lib.org/papers/smt-lib-reference-v2.7-r2026-09-09.pdf"
+        }
+      ],
+      "search": "/library/_index/search/smtlib.json",
+      "tier": "research",
+      "kind": "Standard · Independent Lean",
+      "provenance": "academic",
+      "provenance_label": "Credit: the authors",
+      "credits": [
+        [
+          "Standard",
+          "Clark Barrett, Pascal Fontaine and Cesare Tinelli"
+        ],
+        [
+          "Lean (BSmtLib)",
+          "Jan Onderka, Armin Biere and Henrik Böving"
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Standard",
+          "href": "/library/smtlib/",
+          "note": "hosted verbatim, linked to BSmtLib"
+        },
+        {
+          "label": "Original PDF",
+          "href": "https://smt-lib.org/papers/smt-lib-reference-v2.7-r2026-09-09.pdf"
+        }
+      ]
+    },
+    {
+      "id": "physlib-gauge-theory",
+      "title": "Gauge theory: Physlib’s API map",
+      "authors": [
+        "The Physlib contributors"
+      ],
+      "href": "https://wcook04.github.io/proof-reader/#/physlib-gauge-theory",
+      "here": false,
+      "sentence": "Physlib’s own map of its gauge theory formalisation, read beside the Lean files it cites.",
+      "counts": {
+        "phrases": 32,
+        "lean": 42
+      },
+      "comparator": null,
+      "pages": [],
+      "search": null,
+      "tier": "research",
+      "kind": "API map",
+      "provenance": "academic",
+      "provenance_label": "Credit: the Physlib contributors",
+      "credits": [
+        [
+          "API map and Lean",
+          "The Physlib contributors, at be0a9ee"
+        ],
+        [
+          "Plain titles",
+          "I added these with AI assistance."
+        ]
+      ],
+      "versions": [
+        {
+          "label": "API map",
+          "href": "https://wcook04.github.io/proof-reader/#/physlib-gauge-theory",
+          "note": "read beside the Lean it cites"
+        }
+      ]
+    },
+    {
+      "id": "pcp",
+      "title": "Constant-query verification by algebraic encoding",
+      "authors": [
+        "Will Cook, using AI"
+      ],
+      "href": "/library/pcp/",
+      "here": true,
+      "sentence": "Amireddy, Behera, Srinivasan, Sudan and Willumsgaard give an algebraic proof of the PCP theorem. Every language in NP has a polynomial-time verifier with logarithmic randomness, a constant number of proof-bit queries, perfect completeness and soundness error at most one half.",
+      "counts": {
+        "phrases": 128,
+        "statements": 28,
+        "lean": 102
+      },
+      "comparator": "Comparator accepted the forward theorem, its converse and the equivalence with the reference NP class.",
+      "pages": [
+        {
+          "title": "The algebraic PCP theorem: a detailed account",
+          "href": "/library/pcp/full-argument/"
+        },
+        {
+          "title": "Checking a long proof by reading a few bits",
+          "href": "/library/pcp/exposition/"
+        },
+        {
+          "title": "Reading the Lean PCP proof, by Troy Lee",
+          "href": "/library/pcp/reading-guide/"
+        }
+      ],
+      "search": "/library/_index/search/pcp.json",
+      "tier": "companion",
+      "kind": "Formalizer’s guide · Companion explanations",
+      "provenance": "academic",
+      "provenance_label": "Credit: the authors",
+      "credits": [
+        [
+          "Proof",
+          "Amireddy, Behera, Srinivasan, Sudan and Willumsgaard"
+        ],
+        [
+          "Lean and reading guide",
+          "Troy Lee"
+        ],
+        [
+          "Three companion accounts",
+          "I wrote these with AI assistance."
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Troy Lee’s guide",
+          "href": "/library/pcp/reading-guide/",
+          "note": "Lee’s guide to his Lean formalisation"
+        },
+        {
+          "label": "Short account",
+          "href": "/library/pcp/"
+        },
+        {
+          "label": "Detailed account",
+          "href": "/library/pcp/full-argument/"
+        },
+        {
+          "label": "Exposition",
+          "href": "/library/pcp/exposition/"
+        }
+      ]
+    },
+    {
+      "id": "quartic",
+      "title": "Reconstructing OpenAI’s nearly quartic query separation",
+      "authors": [
+        "AI systems under the direction of Will Cook"
+      ],
+      "href": "/library/quartic/",
+      "here": true,
+      "sentence": "For every power below four there is a total Boolean function whose randomized query complexity exceeds that power of its quantum query complexity, and four is the best possible exponent. I include three accounts of OpenAI’s proof, with links from the text to Lean. The Lean proof of the optimal exponent has no hypothesis.",
+      "counts": {
+        "phrases": 969,
+        "statements": 492,
+        "lean": 568
+      },
+      "comparator": null,
+      "pages": [
+        {
+          "title": "How many bits must an algorithm read?",
+          "href": "/library/quartic/exposition/"
+        },
+        {
+          "title": "OpenAI’s nearly quartic query separation: a complete proof reconstruction",
+          "href": "/library/quartic/reconstruction/"
+        }
+      ],
+      "search": "/library/_index/search/quartic.json",
+      "tier": "companion",
+      "kind": "Original paper · Companion reconstruction · New Lean",
+      "provenance": "openai",
+      "provenance_label": "Credit: OpenAI",
+      "credits": [
+        [
+          "Theorem and proof",
+          "OpenAI"
+        ],
+        [
+          "Reconstruction, new Lean and three accounts",
+          "AI systems, under my direction."
+        ]
+      ],
+      "versions": [
+        {
+          "label": "OpenAI’s paper",
+          "href": "/library/quartic/source/#/read/original",
+          "note": "the original"
+        },
+        {
+          "label": "Short account",
+          "href": "/library/quartic/"
+        },
+        {
+          "label": "Full reconstruction",
+          "href": "/library/quartic/reconstruction/"
+        },
+        {
+          "label": "Exposition",
+          "href": "/library/quartic/exposition/"
+        },
+        {
+          "label": "Short video, 1:50",
+          "href": "https://www.youtube.com/watch?v=swDOmHq8NrY"
+        }
+      ]
+    },
+    {
+      "id": "qaoa-sk",
+      "title": "Why the Sherrington–Kirkpatrick order parameter has no gaps",
+      "authors": [
+        "OpenAI (the proof and its Lean)",
+        "Will Cook, using AI (the three papers)"
+      ],
+      "href": "/library/qaoa-sk/",
+      "here": true,
+      "sentence": "A minimising Parisi order parameter of the Sherrington–Kirkpatrick spin glass has no gaps: it increases across every interval in [0, 1), and its derivative is positive between 0 and 1.",
+      "counts": {
+        "phrases": 707,
+        "statements": 250,
+        "lean": 399
+      },
+      "comparator": null,
+      "pages": [
+        {
+          "title": "Long record",
+          "href": "/library/qaoa-sk/record/"
+        },
+        {
+          "title": "Exposition",
+          "href": "/library/qaoa-sk/exposition/"
+        }
+      ],
+      "search": "/library/_index/search/qaoa-sk.json",
+      "tier": "companion",
+      "kind": "Companion papers on an existing Lean proof",
+      "provenance": "openai",
+      "provenance_label": "Credit: OpenAI",
+      "credits": [
+        [
+          "Proof and Lean",
+          "OpenAI"
+        ],
+        [
+          "Earlier full-support result",
+          "Hong-Bin Chen"
+        ],
+        [
+          "Three papers",
+          "I wrote these with AI assistance."
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Short paper",
+          "href": "/library/qaoa-sk/"
+        },
+        {
+          "label": "Long record",
+          "href": "/library/qaoa-sk/record/"
+        },
+        {
+          "label": "Exposition",
+          "href": "/library/qaoa-sk/exposition/"
+        },
+        {
+          "label": "Short video, 1:38",
+          "href": "https://www.youtube.com/watch?v=qLqea5st6Bo"
+        }
+      ]
+    },
+    {
+      "id": "coupled-spring",
+      "title": "The minimum of the coupled spring potential",
+      "authors": [
+        "Bjørn Kjos-Hanssen (the Lean)",
+        "AI agents under Will Cook’s direction (the page)"
+      ],
+      "href": "/library/coupled-spring/",
+      "here": true,
+      "sentence": "The coupled spring potential U(x₀, x₁) = x₀² + x₀x₁ + x₁² has a local minimum at the origin, proved in PhyslibAlpha by a general second-derivative test.",
+      "counts": {
+        "phrases": 24,
+        "statements": 9,
+        "lean": 18
+      },
+      "comparator": "Comparator accepted the local-minimum theorem and rejected a control that asked for a local maximum.",
+      "pages": [],
+      "search": "/library/_index/search/coupled-spring.json",
+      "tier": "companion",
+      "kind": "Explanation of an existing Lean result",
+      "provenance": "academic",
+      "provenance_label": "Credit: the author",
+      "credits": [
+        [
+          "Lean",
+          "Bjørn Kjos-Hanssen, in PhyslibAlpha (Physlib at be0a9ee)"
+        ],
+        [
+          "Explanation",
+          "AI agents, under my direction."
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Explanation",
+          "href": "/library/coupled-spring/",
+          "note": "linked to the Lean"
+        }
+      ]
+    },
+    {
+      "id": "erdos-257",
+      "title": "Which sums of 1/(2ⁿ − 1) are irrational?",
+      "authors": [
+        "Will Cook"
+      ],
+      "href": "/library/erdos-257/",
+      "here": true,
+      "sentence": "I prove that the sum of 1/(bᵃ − 1) over an infinite set A is irrational for every integer base b ≥ 2 when A satisfies a weighted summability condition, has a summable divisor cover, or lies in a union of one set of each kind. Erdős’s question for every infinite A remains open.",
+      "counts": {
+        "phrases": 1459,
+        "statements": 738,
+        "lean": 881
+      },
+      "comparator": "Comparator accepted all 51 statements replayed on GitHub Actions.",
+      "pages": [
+        {
+          "title": "Long record",
+          "href": "/library/erdos-257/record/"
+        },
+        {
+          "title": "Exposition",
+          "href": "/library/erdos-257/exposition/"
+        },
+        {
+          "title": "The authors’ PDF",
+          "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/257/erdos-257-mersenne-support-subseries.pdf"
+        }
+      ],
+      "search": "/library/_index/search/erdos-257.json",
+      "tier": "own",
+      "kind": "Original research",
+      "provenance": "will",
+      "provenance_label": "My research",
+      "credits": [
+        [
+          "Paper, record, exposition and Lean",
+          "I wrote these with AI assistance."
+        ],
+        [
+          "Question",
+          "Paul Erdős"
+        ],
+        [
+          "Review",
+          "No independent mathematician has reviewed the papers"
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Short paper",
+          "href": "/library/erdos-257/"
+        },
+        {
+          "label": "Long record",
+          "href": "/library/erdos-257/record/"
+        },
+        {
+          "label": "Exposition",
+          "href": "/library/erdos-257/exposition/"
+        },
+        {
+          "label": "PDF",
+          "href": "/library/erdos-257/pdf/short-paper.pdf"
+        },
+        {
+          "label": "Short video, 1:41",
+          "href": "https://www.youtube.com/watch?v=MrC-pboGZ2k"
+        }
+      ]
+    },
+    {
+      "id": "erdos-1041",
+      "title": "Erdős #1041: Lemniscates and Newton flow",
+      "authors": [
+        "Will Cook"
+      ],
+      "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/1041/erdos-1041-lemniscate-newton-flow.pdf",
+      "here": false,
+      "sentence": "I use ani’s degree-seven polynomial to refute the exact path-length statement of #1041 in Google DeepMind’s Formal Conjectures. The Lean checks cover the counterexample and the positive trinomial and sharp collinear families. Review of how the formal statement matches Erdős’s 1958 wording is still pending.",
+      "counts": {},
+      "comparator": null,
+      "pages": [],
+      "search": null,
+      "tier": "own",
+      "kind": "Short paper · Long record",
+      "provenance": "will",
+      "provenance_label": "My research",
+      "credits": [
+        [
+          "Papers and Lean",
+          "I worked on these with AI agents."
+        ],
+        [
+          "Question",
+          "Paul Erdős, problem #1041 on erdosproblems.com"
+        ],
+        [
+          "Counterexample",
+          "ani, a contributor to erdosproblems.com"
+        ],
+        [
+          "Review",
+          "Not peer reviewed"
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Short paper",
+          "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/1041/erdos-1041-lemniscate-newton-flow.pdf"
+        },
+        {
+          "label": "Long record",
+          "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/1041/erdos1041-lemniscate-reasoning-surface.pdf"
+        },
+        {
+          "label": "On the maths map",
+          "href": "https://wcook04.github.io/practical-formal-verification/maths/problems/erdos_1041.html"
+        }
+      ]
+    },
+    {
+      "id": "erdos-243",
+      "title": "Erdős #243: Cubic-rate irrationality and reciprocal tails",
+      "authors": [
+        "Will Cook"
+      ],
+      "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/243/erdos-243-reciprocal-tail-rigidity.pdf",
+      "here": false,
+      "sentence": "I prove that a strictly increasing integer sequence with a_n²/a_(n+1) = 1 + 3/n + o(n⁻³) has an irrational sum of reciprocals. I also prove the result for every nonintegral regular rate above one. Lean checks both results. The unrestricted Sylvester-tail question remains open.",
+      "counts": {},
+      "comparator": null,
+      "pages": [],
+      "search": null,
+      "tier": "own",
+      "kind": "Short paper · Long record",
+      "provenance": "will",
+      "provenance_label": "My research",
+      "credits": [
+        [
+          "Papers and Lean",
+          "I worked on these with AI agents."
+        ],
+        [
+          "Question",
+          "Paul Erdős, problem #243 on erdosproblems.com"
+        ],
+        [
+          "Review",
+          "Not peer reviewed"
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Short paper",
+          "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/243/erdos-243-reciprocal-tail-rigidity.pdf"
+        },
+        {
+          "label": "Long record",
+          "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/243/erdos243-reciprocal-tail-reasoning-surface.pdf"
+        },
+        {
+          "label": "On the maths map",
+          "href": "https://wcook04.github.io/practical-formal-verification/maths/problems/erdos_243.html"
+        }
+      ]
+    },
+    {
+      "id": "erdos-249",
+      "title": "Erdős #249: Binary totient series",
+      "authors": [
+        "Will Cook"
+      ],
+      "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/249/erdos-249-binary-totient-series.pdf",
+      "here": false,
+      "sentence": "I classify the base-two totient-residue series for every positive modulus, with checks in Lean. I also give the exact rank kᵉ+1 of the totient kernel at every base. The original series with unreduced totients remains open.",
+      "counts": {},
+      "comparator": null,
+      "pages": [],
+      "search": null,
+      "tier": "own",
+      "kind": "Short paper · Long record",
+      "provenance": "will",
+      "provenance_label": "My research",
+      "credits": [
+        [
+          "Papers and Lean",
+          "I worked on these with AI agents."
+        ],
+        [
+          "Question",
+          "Paul Erdős, problem #249 on erdosproblems.com"
+        ],
+        [
+          "Review",
+          "Not peer reviewed"
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Short paper",
+          "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/249/erdos-249-binary-totient-series.pdf"
+        },
+        {
+          "label": "Long record",
+          "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/249/erdos249-totient-reasoning-surface.pdf"
+        },
+        {
+          "label": "On the maths map",
+          "href": "https://wcook04.github.io/practical-formal-verification/maths/problems/erdos_249.html"
+        }
+      ]
+    },
+    {
+      "id": "erdos-1049",
+      "title": "Erdős #1049: Rational-base Lambert series",
+      "authors": [
+        "Will Cook"
+      ],
+      "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/1049/erdos-1049-rational-base-lambert.pdf",
+      "here": false,
+      "sentence": "I prove irrationality in Zudilin’s rational-base contour region, with exact Hankel orders and Lean checks. Base 3/2 and the claim for every rational base remain open.",
+      "counts": {},
+      "comparator": null,
+      "pages": [],
+      "search": null,
+      "tier": "own",
+      "kind": "Short paper · Long record",
+      "provenance": "will",
+      "provenance_label": "My research",
+      "credits": [
+        [
+          "Papers and Lean",
+          "I worked on these with AI agents."
+        ],
+        [
+          "Question",
+          "Paul Erdős, problem #1049 on erdosproblems.com"
+        ],
+        [
+          "Review",
+          "Not peer reviewed"
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Short paper",
+          "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/1049/erdos-1049-rational-base-lambert.pdf"
+        },
+        {
+          "label": "Long record",
+          "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/1049/erdos1049-rational-base-lambert-reasoning-surface.pdf"
+        },
+        {
+          "label": "On the maths map",
+          "href": "https://wcook04.github.io/practical-formal-verification/maths/problems/erdos_1049.html"
+        }
+      ]
+    },
+    {
+      "id": "erdos-269",
+      "title": "Erdős #269: Three-prime running LCM",
+      "authors": [
+        "Will Cook"
+      ],
+      "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/269/erdos-269-three-prime-running-lcm.pdf",
+      "here": false,
+      "sentence": "I use a cited Hecke–Mahler theorem to prove that both two-prime running-LCM sums are transcendental. Lean checks the formulas and the conditional transfer. The three-prime irrationality question remains open.",
+      "counts": {},
+      "comparator": null,
+      "pages": [],
+      "search": null,
+      "tier": "own",
+      "kind": "Short paper · Long record",
+      "provenance": "will",
+      "provenance_label": "My research",
+      "credits": [
+        [
+          "Papers and Lean",
+          "I worked on these with AI agents."
+        ],
+        [
+          "Question",
+          "Paul Erdős, problem #269 on erdosproblems.com"
+        ],
+        [
+          "Review",
+          "Not peer reviewed"
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Short paper",
+          "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/269/erdos-269-three-prime-running-lcm.pdf"
+        },
+        {
+          "label": "Long record",
+          "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/269/erdos269-running-lcm-reasoning-surface.pdf"
+        },
+        {
+          "label": "On the maths map",
+          "href": "https://wcook04.github.io/practical-formal-verification/maths/problems/erdos_269.html"
+        }
+      ]
+    },
+    {
+      "id": "erdos-68",
+      "title": "Erdős #68: Factorial-denominator irrationality",
+      "authors": [
+        "Will Cook"
+      ],
+      "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/68/erdos-68-factorial-denominator-irrationality.pdf",
+      "here": false,
+      "sentence": "If S = ∑ 1/(n! − 1) were a fraction, its denominator would not divide 299999! and would exceed 10¹²⁰³⁸. I prove a 3/2 growth exponent for the common denominator in Lean. Irrationality itself is still unproved.",
+      "counts": {},
+      "comparator": null,
+      "pages": [],
+      "search": null,
+      "tier": "own",
+      "kind": "Short paper · Long record",
+      "provenance": "will",
+      "provenance_label": "My research",
+      "credits": [
+        [
+          "Papers and Lean",
+          "I worked on these with AI agents."
+        ],
+        [
+          "Question",
+          "Paul Erdős, problem #68 on erdosproblems.com"
+        ],
+        [
+          "Review",
+          "Not peer reviewed"
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Short paper",
+          "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/68/erdos-68-factorial-denominator-irrationality.pdf"
+        },
+        {
+          "label": "Long record",
+          "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/68/erdos68-factorial-reasoning-surface.pdf"
+        },
+        {
+          "label": "On the maths map",
+          "href": "https://wcook04.github.io/practical-formal-verification/maths/problems/erdos_68.html"
+        }
+      ]
+    },
+    {
+      "id": "erdos-251",
+      "title": "Erdős #251: Prime-gap dyadic series",
+      "authors": [
+        "Will Cook"
+      ],
+      "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/251/erdos-251-prime-gap-dyadic-series.pdf",
+      "here": false,
+      "sentence": "I give a synthetic prime-gap countermodel checked in Lean and a sparse-perturbation obstruction. They rule out some methods of proof. The question about actual prime gaps remains open.",
+      "counts": {},
+      "comparator": null,
+      "pages": [],
+      "search": null,
+      "tier": "own",
+      "kind": "Short paper · Long record",
+      "provenance": "will",
+      "provenance_label": "My research",
+      "credits": [
+        [
+          "Papers and Lean",
+          "I worked on these with AI agents."
+        ],
+        [
+          "Question",
+          "Paul Erdős, problem #251 on erdosproblems.com"
+        ],
+        [
+          "Review",
+          "Not peer reviewed"
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Short paper",
+          "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/251/erdos-251-prime-gap-dyadic-series.pdf"
+        },
+        {
+          "label": "Long record",
+          "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/251/erdos251-prime-gap-reasoning-surface.pdf"
+        },
+        {
+          "label": "On the maths map",
+          "href": "https://wcook04.github.io/practical-formal-verification/maths/problems/erdos_251.html"
+        }
+      ]
+    },
+    {
+      "id": "erdos-synthesis",
+      "title": "Reading eight Erdős problems together",
+      "authors": [
+        "Will Cook"
+      ],
+      "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/synthesis/optimal-sparse-perturbations.pdf",
+      "here": false,
+      "sentence": "I connect the eight Erdős problems in this paper. I give ordinary proofs of the main theorems and use Lean to check the ingredients named in the paper.",
+      "counts": {},
+      "comparator": null,
+      "pages": [],
+      "search": null,
+      "tier": "own",
+      "kind": "Synthesis paper",
+      "provenance": "will",
+      "provenance_label": "My research",
+      "credits": [
+        [
+          "Paper",
+          "I wrote this with AI agents."
+        ],
+        [
+          "Review",
+          "Not peer reviewed"
+        ]
+      ],
+      "versions": [
+        {
+          "label": "Paper",
+          "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/synthesis/optimal-sparse-perturbations.pdf"
+        },
+        {
+          "label": "The maths map",
+          "href": "https://wcook04.github.io/practical-formal-verification/map/#mathematics"
+        },
+        {
+          "label": "Short video, 1:49",
+          "href": "https://www.youtube.com/watch?v=Dc6ogk9QlBE"
+        }
+      ]
     }
-   ],
-   "search": "/library/_index/search/navier-stokes.json",
-   "tier": "lead",
-   "kind": "Authors’ paper · Adapted edition",
-   "provenance": "anthropic",
-   "provenance_label": "Credit: Anthropic",
-   "credits": [
-    [
-     "Paper and Lean",
-     "Levent Alpöge and Tristan Buckmaster"
-    ],
-    [
-     "Credited in the paper",
-     "Anthropic. The authors thank Anthropic and say they used Claude models throughout the work."
-    ],
-    [
-     "Adapted edition",
-     "I adapted the text with AI assistance. You can see each change in the reader."
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Authors’ paper",
-     "href": "/library/navier-stokes/",
-     "note": "their text, linked to the Lean"
-    },
-    {
-     "label": "Adapted edition",
-     "href": "/library/navier-stokes/adapted/",
-     "note": "see what I changed"
-    },
-    {
-     "label": "Original PDF",
-     "href": "/library/navier-stokes/pdf/paper.pdf"
-    }
-   ]
-  },
-  {
-   "id": "euler",
-   "title": "Finite-Time Singularity Formation for the Three-Dimensional Euler Equations",
-   "authors": [
-    "Levent Alpöge",
-    "Tristan Buckmaster",
-    "Matei P. Coiculescu"
-   ],
-   "href": "/library/euler/",
-   "here": true,
-   "sentence": "The authors construct smooth periodic initial data for the three-dimensional incompressible Euler equations whose solution blows up in finite time, with the velocity bounded and the vorticity at the origin tending to infinity.",
-   "counts": {
-    "phrases": 996,
-    "statements": 256,
-    "lean": 1013
-   },
-   "comparator": "Comparator accepted the main theorem's Lean against the authors' definitions with five kernels and only the axioms propext, Quot.sound, Classical.choice. Three altered statements were rejected.",
-   "pages": [
-    {
-     "title": "The authors’ PDF",
-     "href": "https://github.com/mcoiculescu/EulerBlowupPublic/blob/fd3a1588967810b9abe42a1dcf46ee662d6434e2/manuscript/paper.pdf"
-    }
-   ],
-   "search": "/library/_index/search/euler.json",
-   "tier": "lead",
-   "kind": "Authors’ paper · Adapted edition",
-   "provenance": "anthropic",
-   "provenance_label": "Credit: Anthropic",
-   "credits": [
-    [
-     "Paper and Lean",
-     "Levent Alpöge, Tristan Buckmaster and Matei P. Coiculescu"
-    ],
-    [
-     "Credited in the paper",
-     "Anthropic. The authors thank Anthropic for the collaboration."
-    ],
-    [
-     "Adapted edition",
-     "I adapted the text with AI assistance. You can see each change in the reader. I list the added estimates separately."
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Authors’ paper",
-     "href": "/library/euler/",
-     "note": "their text, linked to the Lean"
-    },
-    {
-     "label": "Adapted edition",
-     "href": "/library/euler/adapted/",
-     "note": "see what I changed"
-    },
-    {
-     "label": "Original PDF",
-     "href": "/library/euler/pdf/paper.pdf"
-    }
-   ]
-  },
-  {
-   "id": "talagrand-parisi",
-   "title": "The Parisi formula",
-   "authors": [
-    "Michel Talagrand"
-   ],
-   "href": "/library/talagrand-parisi/",
-   "here": true,
-   "sentence": "Talagrand proves Parisi’s variational formula for the limiting free energy of a class of mean-field spin glass models. The linked Lean proof treats the Sherrington–Kirkpatrick case with exact quadratic covariance.",
-   "counts": {
-    "phrases": 50,
-    "statements": 12,
-    "lean": 73
-   },
-   "comparator": null,
-   "pages": [
-    {
-     "title": "The authors’ PDF",
-     "href": "https://annals.math.princeton.edu/wp-content/uploads/annals-v163-n1-p04.pdf"
-    }
-   ],
-   "search": "/library/_index/search/talagrand-parisi.json",
-   "tier": "research",
-   "kind": "Author’s paper · Independent Lean",
-   "provenance": "academic",
-   "provenance_label": "Credit: the author",
-   "credits": [
-    [
-     "Paper",
-     "Michel Talagrand, Annals of Mathematics 163 (2006)"
-    ],
-    [
-     "Lean",
-     "Qiang Wu’s ParisiFormula project, for the Sherrington–Kirkpatrick case"
-    ],
-    [
-     "Notes and supplementary Lean",
-     "I added these with AI assistance."
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Author’s paper",
-     "href": "/library/talagrand-parisi/",
-     "note": "linked to Wu’s Lean"
-    },
-    {
-     "label": "Original PDF",
-     "href": "/library/talagrand-parisi/pdf/paper.pdf"
-    }
-   ]
-  },
-  {
-   "id": "quantum-programs",
-   "title": "Discovering formally verified quantum programs with AI",
-   "authors": [
-    "Sergey Shirobokov",
-    "Ben Jaderberg",
-    "Katerina Hristova",
-    "George Tsoukalas",
-    "Johannes Bausch",
-    "Eric Wieser",
-    "Francisco J.H. Heras",
-    "Nicholas C. Rubin",
-    "Guang Hao Low",
-    "Sébastien Racanière",
-    "Nenad Tomašev",
-    "Lei M. Zhang",
-    "James D. Watson",
-    "Tanuj Khattar",
-    "Aws Albarghouthi",
-    "Stavan Jain",
-    "Harun Khan",
-    "Leopoldo Sarra",
-    "Andrew W. Senior",
-    "Michael Broughton",
-    "Hussain Masoom",
-    "Sergio Boixo",
-    "Ryan Babbush",
-    "Swarat Chaudhuri",
-    "Pushmeet Kohli"
-   ],
-   "href": "/library/quantum-programs/",
-   "here": true,
-   "sentence": "The paper describes five quantum algorithms. The linked Lean statements cover their correctness, error and resource bounds.",
-   "counts": {
-    "phrases": 153,
-    "statements": 43,
-    "lean": 176
-   },
-   "comparator": "The authors report Comparator acceptance for all six challenges. The reader independently replayed the fixed-point arcsin and Grover Find-Any challenges.",
-   "pages": [
-    {
-     "title": "The authors’ PDF",
-     "href": "/library/quantum-programs/pdf/paper.pdf"
-    }
-   ],
-   "search": "/library/_index/search/quantum-programs.json",
-   "tier": "research",
-   "kind": "Authors’ paper",
-   "provenance": "google",
-   "provenance_label": "Credit: Google DeepMind and Google Quantum AI",
-   "credits": [
-    [
-     "Paper and Lean",
-     "Google DeepMind and Google Quantum AI"
-    ],
-    [
-     "Links, comparisons and notes",
-     "I added these with AI assistance."
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Authors’ paper",
-     "href": "/library/quantum-programs/",
-     "note": "linked to the Lean"
-    },
-    {
-     "label": "Original PDF",
-     "href": "/library/quantum-programs/pdf/paper.pdf"
-    }
-   ]
-  },
-  {
-   "id": "contextual-embeddings",
-   "title": "Contextual Embeddings: Implementing Bound Variables Through Instance Resolution",
-   "authors": [
-    "Samantha Frohlich",
-    "Jessica Foster",
-    "G. A. Kavvos",
-    "Meng Wang"
-   ],
-   "href": "/library/contextual-embeddings/",
-   "here": true,
-   "sentence": "The authors use instance resolution to define a context-directed isomorphism between a higher-order interface for bound variables and a first-order representation. They prove the round trip in Lean.",
-   "counts": {
-    "phrases": 66,
-    "statements": 35,
-    "lean": 22
-   },
-   "comparator": null,
-   "pages": [
-    {
-     "title": "The authors’ PDF",
-     "href": "https://doi.org/10.1145/3808269"
-    }
-   ],
-   "search": "/library/_index/search/contextual-embeddings.json",
-   "tier": "research",
-   "kind": "Authors’ paper",
-   "provenance": "academic",
-   "provenance_label": "Credit: the authors",
-   "credits": [
-    [
-     "Paper and Lean",
-     "Samantha Frohlich, Jessica Foster, G. A. Kavvos and Meng Wang, from their PLDI 2026 artifact (CC BY 4.0)"
-    ],
-    [
-     "Links, titles and notes",
-     "I added these with AI assistance."
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Authors’ paper",
-     "href": "/library/contextual-embeddings/",
-     "note": "linked to the Lean"
-    },
-    {
-     "label": "Publisher’s page",
-     "href": "https://doi.org/10.1145/3808269"
-    },
-    {
-     "label": "Short video, 1:30",
-     "href": "https://www.youtube.com/watch?v=LZxaDZ-gQm8"
-    }
-   ]
-  },
-  {
-   "id": "smtlib",
-   "title": "The SMT-LIB Standard: Version 2.7",
-   "authors": [
-    "Clark Barrett",
-    "Pascal Fontaine",
-    "Cesare Tinelli"
-   ],
-   "href": "/library/smtlib/",
-   "here": true,
-   "sentence": "The reference standard for SMT-LIB 2.7, read beside BSmtLib, a Lean formalisation of its lexicon, grammar and parser.",
-   "counts": {
-    "phrases": 73,
-    "statements": 0,
-    "lean": 94
-   },
-   "comparator": null,
-   "pages": [
-    {
-     "title": "The authors’ PDF",
-     "href": "https://smt-lib.org/papers/smt-lib-reference-v2.7-r2026-09-09.pdf"
-    }
-   ],
-   "search": "/library/_index/search/smtlib.json",
-   "tier": "research",
-   "kind": "Standard · Independent Lean",
-   "provenance": "academic",
-   "provenance_label": "Credit: the authors",
-   "credits": [
-    [
-     "Standard",
-     "Clark Barrett, Pascal Fontaine and Cesare Tinelli"
-    ],
-    [
-     "Lean (BSmtLib)",
-     "Jan Onderka, Armin Biere and Henrik Böving"
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Standard",
-     "href": "/library/smtlib/",
-     "note": "hosted verbatim, linked to BSmtLib"
-    },
-    {
-     "label": "Original PDF",
-     "href": "https://smt-lib.org/papers/smt-lib-reference-v2.7-r2026-09-09.pdf"
-    }
-   ]
-  },
-  {
-   "id": "physlib-gauge-theory",
-   "title": "Gauge theory: Physlib’s API map",
-   "authors": [
-    "The Physlib contributors"
-   ],
-   "href": "https://wcook04.github.io/proof-reader/#/physlib-gauge-theory",
-   "here": false,
-   "sentence": "Physlib’s own map of its gauge theory formalisation, read beside the Lean files it cites.",
-   "counts": {
-    "phrases": 32,
-    "lean": 42
-   },
-   "comparator": null,
-   "pages": [],
-   "search": null,
-   "tier": "research",
-   "kind": "API map",
-   "provenance": "academic",
-   "provenance_label": "Credit: the Physlib contributors",
-   "credits": [
-    [
-     "API map and Lean",
-     "The Physlib contributors, at be0a9ee"
-    ],
-    [
-     "Plain titles",
-     "I added these with AI assistance."
-    ]
-   ],
-   "versions": [
-    {
-     "label": "API map",
-     "href": "https://wcook04.github.io/proof-reader/#/physlib-gauge-theory",
-     "note": "read beside the Lean it cites"
-    }
-   ]
-  },
-  {
-   "id": "pcp",
-   "title": "Constant-query verification by algebraic encoding",
-   "authors": [
-    "Will Cook, using AI"
-   ],
-   "href": "/library/pcp/",
-   "here": true,
-   "sentence": "Amireddy, Behera, Srinivasan, Sudan and Willumsgaard give an algebraic proof of the PCP theorem. Every language in NP has a polynomial-time verifier with logarithmic randomness, a constant number of proof-bit queries, perfect completeness and soundness error at most one half.",
-   "counts": {
-    "phrases": 128,
-    "statements": 28,
-    "lean": 102
-   },
-   "comparator": "Comparator accepted the forward theorem, its converse and the equivalence with the reference NP class.",
-   "pages": [
-    {
-     "title": "The algebraic PCP theorem: a detailed account",
-     "href": "/library/pcp/full-argument/"
-    },
-    {
-     "title": "Checking a long proof by reading a few bits",
-     "href": "/library/pcp/exposition/"
-    },
-    {
-     "title": "Reading the Lean PCP proof, by Troy Lee",
-     "href": "/library/pcp/reading-guide/"
-    }
-   ],
-   "search": "/library/_index/search/pcp.json",
-   "tier": "companion",
-   "kind": "Formalizer’s guide · Companion explanations",
-   "provenance": "academic",
-   "provenance_label": "Credit: the authors",
-   "credits": [
-    [
-     "Proof",
-     "Amireddy, Behera, Srinivasan, Sudan and Willumsgaard"
-    ],
-    [
-     "Lean and reading guide",
-     "Troy Lee"
-    ],
-    [
-     "Three companion accounts",
-     "I wrote these with AI assistance."
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Troy Lee’s guide",
-     "href": "/library/pcp/reading-guide/",
-     "note": "Lee’s guide to his Lean formalisation"
-    },
-    {
-     "label": "Short account",
-     "href": "/library/pcp/"
-    },
-    {
-     "label": "Detailed account",
-     "href": "/library/pcp/full-argument/"
-    },
-    {
-     "label": "Exposition",
-     "href": "/library/pcp/exposition/"
-    }
-   ]
-  },
-  {
-   "id": "quartic",
-   "title": "Reconstructing OpenAI’s nearly quartic query separation",
-   "authors": [
-    "AI systems under the direction of Will Cook"
-   ],
-   "href": "/library/quartic/",
-   "here": true,
-   "sentence": "For every power below four there is a total Boolean function whose randomized query complexity exceeds that power of its quantum query complexity, and four is the best possible exponent. I include three accounts of OpenAI’s proof, with links from the text to Lean. The Lean proof of the optimal exponent has no hypothesis.",
-   "counts": {
-    "phrases": 969,
-    "statements": 492,
-    "lean": 568
-   },
-   "comparator": null,
-   "pages": [
-    {
-     "title": "How many bits must an algorithm read?",
-     "href": "/library/quartic/exposition/"
-    },
-    {
-     "title": "OpenAI’s nearly quartic query separation: a complete proof reconstruction",
-     "href": "/library/quartic/reconstruction/"
-    }
-   ],
-   "search": "/library/_index/search/quartic.json",
-   "tier": "companion",
-   "kind": "Original paper · Companion reconstruction · New Lean",
-   "provenance": "openai",
-   "provenance_label": "Credit: OpenAI",
-   "credits": [
-    [
-     "Theorem and proof",
-     "OpenAI"
-    ],
-    [
-     "Reconstruction, new Lean and three accounts",
-     "AI systems, under my direction."
-    ]
-   ],
-   "versions": [
-    {
-     "label": "OpenAI’s paper",
-     "href": "/library/quartic/source/#/read/original",
-     "note": "the original"
-    },
-    {
-     "label": "Short account",
-     "href": "/library/quartic/"
-    },
-    {
-     "label": "Full reconstruction",
-     "href": "/library/quartic/reconstruction/"
-    },
-    {
-     "label": "Exposition",
-     "href": "/library/quartic/exposition/"
-    },
-    {
-     "label": "Short video, 1:50",
-     "href": "https://www.youtube.com/watch?v=swDOmHq8NrY"
-    }
-   ]
-  },
-  {
-   "id": "qaoa-sk",
-   "title": "Why the Sherrington–Kirkpatrick order parameter has no gaps",
-   "authors": [
-    "OpenAI (the proof and its Lean)",
-    "Will Cook, using AI (the three papers)"
-   ],
-   "href": "/library/qaoa-sk/",
-   "here": true,
-   "sentence": "A minimising Parisi order parameter of the Sherrington–Kirkpatrick spin glass has no gaps: it increases across every interval in [0, 1), and its derivative is positive between 0 and 1.",
-   "counts": {
-    "phrases": 707,
-    "statements": 250,
-    "lean": 399
-   },
-   "comparator": null,
-   "pages": [
-    {
-     "title": "Long record",
-     "href": "/library/qaoa-sk/record/"
-    },
-    {
-     "title": "Exposition",
-     "href": "/library/qaoa-sk/exposition/"
-    }
-   ],
-   "search": "/library/_index/search/qaoa-sk.json",
-   "tier": "companion",
-   "kind": "Companion papers on an existing Lean proof",
-   "provenance": "openai",
-   "provenance_label": "Credit: OpenAI",
-   "credits": [
-    [
-     "Proof and Lean",
-     "OpenAI"
-    ],
-    [
-     "Earlier full-support result",
-     "Hong-Bin Chen"
-    ],
-    [
-     "Three papers",
-     "I wrote these with AI assistance."
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Short paper",
-     "href": "/library/qaoa-sk/"
-    },
-    {
-     "label": "Long record",
-     "href": "/library/qaoa-sk/record/"
-    },
-    {
-     "label": "Exposition",
-     "href": "/library/qaoa-sk/exposition/"
-    },
-    {
-     "label": "Short video, 1:38",
-     "href": "https://www.youtube.com/watch?v=qLqea5st6Bo"
-    }
-   ]
-  },
-  {
-   "id": "coupled-spring",
-   "title": "The minimum of the coupled spring potential",
-   "authors": [
-    "Bjørn Kjos-Hanssen (the Lean)",
-    "AI agents under Will Cook’s direction (the page)"
-   ],
-   "href": "/library/coupled-spring/",
-   "here": true,
-   "sentence": "The coupled spring potential U(x₀, x₁) = x₀² + x₀x₁ + x₁² has a local minimum at the origin, proved in PhyslibAlpha by a general second-derivative test.",
-   "counts": {
-    "phrases": 24,
-    "statements": 9,
-    "lean": 18
-   },
-   "comparator": "Comparator accepted the local-minimum theorem and rejected a control that asked for a local maximum.",
-   "pages": [],
-   "search": "/library/_index/search/coupled-spring.json",
-   "tier": "companion",
-   "kind": "Explanation of an existing Lean result",
-   "provenance": "academic",
-   "provenance_label": "Credit: the author",
-   "credits": [
-    [
-     "Lean",
-     "Bjørn Kjos-Hanssen, in PhyslibAlpha (Physlib at be0a9ee)"
-    ],
-    [
-     "Explanation",
-     "AI agents, under my direction."
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Explanation",
-     "href": "/library/coupled-spring/",
-     "note": "linked to the Lean"
-    }
-   ]
-  },
-  {
-   "id": "erdos-257",
-   "title": "Which sums of 1/(2ⁿ − 1) are irrational?",
-   "authors": [
-    "Will Cook"
-   ],
-   "href": "/library/erdos-257/",
-   "here": true,
-   "sentence": "I prove that the sum of 1/(bᵃ − 1) over an infinite set A is irrational for every integer base b ≥ 2 when A satisfies a weighted summability condition, has a summable divisor cover, or lies in a union of one set of each kind. Erdős’s question for every infinite A remains open.",
-   "counts": {
-    "phrases": 1459,
-    "statements": 738,
-    "lean": 881
-   },
-   "comparator": "Comparator accepted all 51 statements replayed on GitHub Actions.",
-   "pages": [
-    {
-     "title": "Long record",
-     "href": "/library/erdos-257/record/"
-    },
-    {
-     "title": "Exposition",
-     "href": "/library/erdos-257/exposition/"
-    },
-    {
-     "title": "The authors’ PDF",
-     "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/257/erdos-257-mersenne-support-subseries.pdf"
-    }
-   ],
-   "search": "/library/_index/search/erdos-257.json",
-   "tier": "own",
-   "kind": "Original research",
-   "provenance": "will",
-   "provenance_label": "My research",
-   "credits": [
-    [
-     "Paper, record, exposition and Lean",
-     "I wrote these with AI assistance."
-    ],
-    [
-     "Question",
-     "Paul Erdős"
-    ],
-    [
-     "Review",
-     "No independent mathematician has reviewed the papers"
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Short paper",
-     "href": "/library/erdos-257/"
-    },
-    {
-     "label": "Long record",
-     "href": "/library/erdos-257/record/"
-    },
-    {
-     "label": "Exposition",
-     "href": "/library/erdos-257/exposition/"
-    },
-    {
-     "label": "PDF",
-     "href": "/library/erdos-257/pdf/short-paper.pdf"
-    },
-    {
-     "label": "Short video, 1:41",
-     "href": "https://www.youtube.com/watch?v=MrC-pboGZ2k"
-    }
-   ]
-  },
-  {
-   "id": "erdos-1041",
-   "title": "Erdős #1041: Lemniscates and Newton flow",
-   "authors": [
-    "Will Cook"
-   ],
-   "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/1041/erdos-1041-lemniscate-newton-flow.pdf",
-   "here": false,
-   "sentence": "I use ani’s degree-seven polynomial to refute the exact path-length statement of #1041 in Google DeepMind’s Formal Conjectures. The Lean checks cover the counterexample and the positive trinomial and sharp collinear families. Review of how the formal statement matches Erdős’s 1958 wording is still pending.",
-   "counts": {},
-   "comparator": null,
-   "pages": [],
-   "search": null,
-   "tier": "own",
-   "kind": "Short paper · Long record",
-   "provenance": "will",
-   "provenance_label": "My research",
-   "credits": [
-    [
-     "Papers and Lean",
-     "I worked on these with AI agents."
-    ],
-    [
-     "Question",
-     "Paul Erdős, problem #1041 on erdosproblems.com"
-    ],
-    [
-     "Counterexample",
-     "ani, a contributor to erdosproblems.com"
-    ],
-    [
-     "Review",
-     "Not peer reviewed"
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Short paper",
-     "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/1041/erdos-1041-lemniscate-newton-flow.pdf"
-    },
-    {
-     "label": "Long record",
-     "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/1041/erdos1041-lemniscate-reasoning-surface.pdf"
-    },
-    {
-     "label": "On the maths map",
-     "href": "https://wcook04.github.io/practical-formal-verification/maths/problems/erdos_1041.html"
-    }
-   ]
-  },
-  {
-   "id": "erdos-243",
-   "title": "Erdős #243: Cubic-rate irrationality and reciprocal tails",
-   "authors": [
-    "Will Cook"
-   ],
-   "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/243/erdos-243-reciprocal-tail-rigidity.pdf",
-   "here": false,
-   "sentence": "I prove that a strictly increasing integer sequence with a_n²/a_(n+1) = 1 + 3/n + o(n⁻³) has an irrational sum of reciprocals. I also prove the result for every nonintegral regular rate above one. Lean checks both results. The unrestricted Sylvester-tail question remains open.",
-   "counts": {},
-   "comparator": null,
-   "pages": [],
-   "search": null,
-   "tier": "own",
-   "kind": "Short paper · Long record",
-   "provenance": "will",
-   "provenance_label": "My research",
-   "credits": [
-    [
-     "Papers and Lean",
-     "I worked on these with AI agents."
-    ],
-    [
-     "Question",
-     "Paul Erdős, problem #243 on erdosproblems.com"
-    ],
-    [
-     "Review",
-     "Not peer reviewed"
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Short paper",
-     "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/243/erdos-243-reciprocal-tail-rigidity.pdf"
-    },
-    {
-     "label": "Long record",
-     "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/243/erdos243-reciprocal-tail-reasoning-surface.pdf"
-    },
-    {
-     "label": "On the maths map",
-     "href": "https://wcook04.github.io/practical-formal-verification/maths/problems/erdos_243.html"
-    }
-   ]
-  },
-  {
-   "id": "erdos-249",
-   "title": "Erdős #249: Binary totient series",
-   "authors": [
-    "Will Cook"
-   ],
-   "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/249/erdos-249-binary-totient-series.pdf",
-   "here": false,
-   "sentence": "I classify the base-two totient-residue series for every positive modulus, with checks in Lean. I also give the exact rank kᵉ+1 of the totient kernel at every base. The original series with unreduced totients remains open.",
-   "counts": {},
-   "comparator": null,
-   "pages": [],
-   "search": null,
-   "tier": "own",
-   "kind": "Short paper · Long record",
-   "provenance": "will",
-   "provenance_label": "My research",
-   "credits": [
-    [
-     "Papers and Lean",
-     "I worked on these with AI agents."
-    ],
-    [
-     "Question",
-     "Paul Erdős, problem #249 on erdosproblems.com"
-    ],
-    [
-     "Review",
-     "Not peer reviewed"
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Short paper",
-     "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/249/erdos-249-binary-totient-series.pdf"
-    },
-    {
-     "label": "Long record",
-     "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/249/erdos249-totient-reasoning-surface.pdf"
-    },
-    {
-     "label": "On the maths map",
-     "href": "https://wcook04.github.io/practical-formal-verification/maths/problems/erdos_249.html"
-    }
-   ]
-  },
-  {
-   "id": "erdos-1049",
-   "title": "Erdős #1049: Rational-base Lambert series",
-   "authors": [
-    "Will Cook"
-   ],
-   "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/1049/erdos-1049-rational-base-lambert.pdf",
-   "here": false,
-   "sentence": "I prove irrationality in Zudilin’s rational-base contour region, with exact Hankel orders and Lean checks. Base 3/2 and the claim for every rational base remain open.",
-   "counts": {},
-   "comparator": null,
-   "pages": [],
-   "search": null,
-   "tier": "own",
-   "kind": "Short paper · Long record",
-   "provenance": "will",
-   "provenance_label": "My research",
-   "credits": [
-    [
-     "Papers and Lean",
-     "I worked on these with AI agents."
-    ],
-    [
-     "Question",
-     "Paul Erdős, problem #1049 on erdosproblems.com"
-    ],
-    [
-     "Review",
-     "Not peer reviewed"
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Short paper",
-     "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/1049/erdos-1049-rational-base-lambert.pdf"
-    },
-    {
-     "label": "Long record",
-     "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/1049/erdos1049-rational-base-lambert-reasoning-surface.pdf"
-    },
-    {
-     "label": "On the maths map",
-     "href": "https://wcook04.github.io/practical-formal-verification/maths/problems/erdos_1049.html"
-    }
-   ]
-  },
-  {
-   "id": "erdos-269",
-   "title": "Erdős #269: Three-prime running LCM",
-   "authors": [
-    "Will Cook"
-   ],
-   "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/269/erdos-269-three-prime-running-lcm.pdf",
-   "here": false,
-   "sentence": "I use a cited Hecke–Mahler theorem to prove that both two-prime running-LCM sums are transcendental. Lean checks the formulas and the conditional transfer. The three-prime irrationality question remains open.",
-   "counts": {},
-   "comparator": null,
-   "pages": [],
-   "search": null,
-   "tier": "own",
-   "kind": "Short paper · Long record",
-   "provenance": "will",
-   "provenance_label": "My research",
-   "credits": [
-    [
-     "Papers and Lean",
-     "I worked on these with AI agents."
-    ],
-    [
-     "Question",
-     "Paul Erdős, problem #269 on erdosproblems.com"
-    ],
-    [
-     "Review",
-     "Not peer reviewed"
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Short paper",
-     "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/269/erdos-269-three-prime-running-lcm.pdf"
-    },
-    {
-     "label": "Long record",
-     "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/269/erdos269-running-lcm-reasoning-surface.pdf"
-    },
-    {
-     "label": "On the maths map",
-     "href": "https://wcook04.github.io/practical-formal-verification/maths/problems/erdos_269.html"
-    }
-   ]
-  },
-  {
-   "id": "erdos-68",
-   "title": "Erdős #68: Factorial-denominator irrationality",
-   "authors": [
-    "Will Cook"
-   ],
-   "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/68/erdos-68-factorial-denominator-irrationality.pdf",
-   "here": false,
-   "sentence": "If S = ∑ 1/(n! − 1) were a fraction, its denominator would not divide 299999! and would exceed 10¹²⁰³⁸. I prove a 3/2 growth exponent for the common denominator in Lean. Irrationality itself is still unproved.",
-   "counts": {},
-   "comparator": null,
-   "pages": [],
-   "search": null,
-   "tier": "own",
-   "kind": "Short paper · Long record",
-   "provenance": "will",
-   "provenance_label": "My research",
-   "credits": [
-    [
-     "Papers and Lean",
-     "I worked on these with AI agents."
-    ],
-    [
-     "Question",
-     "Paul Erdős, problem #68 on erdosproblems.com"
-    ],
-    [
-     "Review",
-     "Not peer reviewed"
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Short paper",
-     "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/68/erdos-68-factorial-denominator-irrationality.pdf"
-    },
-    {
-     "label": "Long record",
-     "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/68/erdos68-factorial-reasoning-surface.pdf"
-    },
-    {
-     "label": "On the maths map",
-     "href": "https://wcook04.github.io/practical-formal-verification/maths/problems/erdos_68.html"
-    }
-   ]
-  },
-  {
-   "id": "erdos-251",
-   "title": "Erdős #251: Prime-gap dyadic series",
-   "authors": [
-    "Will Cook"
-   ],
-   "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/251/erdos-251-prime-gap-dyadic-series.pdf",
-   "here": false,
-   "sentence": "I give a synthetic prime-gap countermodel checked in Lean and a sparse-perturbation obstruction. They rule out some methods of proof. The question about actual prime gaps remains open.",
-   "counts": {},
-   "comparator": null,
-   "pages": [],
-   "search": null,
-   "tier": "own",
-   "kind": "Short paper · Long record",
-   "provenance": "will",
-   "provenance_label": "My research",
-   "credits": [
-    [
-     "Papers and Lean",
-     "I worked on these with AI agents."
-    ],
-    [
-     "Question",
-     "Paul Erdős, problem #251 on erdosproblems.com"
-    ],
-    [
-     "Review",
-     "Not peer reviewed"
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Short paper",
-     "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/251/erdos-251-prime-gap-dyadic-series.pdf"
-    },
-    {
-     "label": "Long record",
-     "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/251/erdos251-prime-gap-reasoning-surface.pdf"
-    },
-    {
-     "label": "On the maths map",
-     "href": "https://wcook04.github.io/practical-formal-verification/maths/problems/erdos_251.html"
-    }
-   ]
-  },
-  {
-   "id": "erdos-synthesis",
-   "title": "Reading eight Erdős problems together",
-   "authors": [
-    "Will Cook"
-   ],
-   "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/synthesis/optimal-sparse-perturbations.pdf",
-   "here": false,
-   "sentence": "I connect the eight Erdős problems in this paper. I give ordinary proofs of the main theorems and use Lean to check the ingredients named in the paper.",
-   "counts": {},
-   "comparator": null,
-   "pages": [],
-   "search": null,
-   "tier": "own",
-   "kind": "Synthesis paper",
-   "provenance": "will",
-   "provenance_label": "My research",
-   "credits": [
-    [
-     "Paper",
-     "I wrote this with AI agents."
-    ],
-    [
-     "Review",
-     "Not peer reviewed"
-    ]
-   ],
-   "versions": [
-    {
-     "label": "Paper",
-     "href": "https://github.com/wcook04/plectis-erdos/blob/a501de956765730ba4e6c9ad284e6d65855d533a/paper/synthesis/optimal-sparse-perturbations.pdf"
-    },
-    {
-     "label": "The maths map",
-     "href": "https://wcook04.github.io/practical-formal-verification/map/#mathematics"
-    },
-    {
-     "label": "Short video, 1:49",
-     "href": "https://www.youtube.com/watch?v=Dc6ogk9QlBE"
-    }
-   ]
-  }
- ]
+  ]
 }

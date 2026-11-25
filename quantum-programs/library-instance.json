@@ -1,138 +1,138 @@
 {
- "schema": "library-instance/1",
- "id": "quantum-programs",
- "title": "Discovering formally verified quantum programs with AI",
- "short_title": "Formally verified quantum programs",
- "authors": [
-  "Sergey Shirobokov",
-  "Ben Jaderberg",
-  "Katerina Hristova",
-  "George Tsoukalas",
-  "Johannes Bausch",
-  "Eric Wieser",
-  "Francisco J.H. Heras",
-  "Nicholas C. Rubin",
-  "Guang Hao Low",
-  "Sébastien Racanière",
-  "Nenad Tomašev",
-  "Lei M. Zhang",
-  "James D. Watson",
-  "Tanuj Khattar",
-  "Aws Albarghouthi",
-  "Stavan Jain",
-  "Harun Khan",
-  "Leopoldo Sarra",
-  "Andrew W. Senior",
-  "Michael Broughton",
-  "Hussain Masoom",
-  "Sergio Boixo",
-  "Ryan Babbush",
-  "Swarat Chaudhuri",
-  "Pushmeet Kohli"
- ],
- "venue": "arXiv:2611.09822v3",
- "credit_lines": [
-  "Paper and Lean by Google DeepMind and Google Quantum AI. The authors’ paper is licensed CC BY 4.0."
- ],
- "licence": "CC BY 4.0 (paper), Apache 2.0 (Lean)",
- "host": "Will Cook’s reading library",
- "review": "Links and notes were prepared with AI assistance. The authors have not reviewed them.",
- "documents": [
-  {
-   "id": "paper",
-   "slot": "short",
-   "slug": "",
-   "title": "Discovering formally verified quantum programs with AI",
-   "noun": "paper",
-   "main": true,
-   "pdf": {
-    "file": "paper.pdf",
-    "name": "paper.pdf",
-    "url": "/library/quantum-programs/pdf/paper.pdf"
-   }
-  }
- ],
- "source": {
-  "upstream": {
-   "repository": "https://github.com/google-deepmind/formal-quantum-computation",
-   "commit": "a88de8ff65d78af564b2373088ca369dc95f6547",
-   "paper": "https://arxiv.org/abs/2611.09822v3"
-  },
-  "lean_scope": "The reader shows the authors’ source at their published revision. Compiled dependency and axiom metadata is available for six declarations."
- },
- "about": [
-  {
-   "heading": "Verification",
-   "paragraphs": [
-    "The authors report that Lean Comparator accepted the six challenges. The reader also has independent replay evidence for the fixed-point arcsin and Find-Any challenges."
-   ],
-   "links": [
+  "schema": "library-instance/1",
+  "id": "quantum-programs",
+  "title": "Discovering formally verified quantum programs with AI",
+  "short_title": "Formally verified quantum programs",
+  "authors": [
+    "Sergey Shirobokov",
+    "Ben Jaderberg",
+    "Katerina Hristova",
+    "George Tsoukalas",
+    "Johannes Bausch",
+    "Eric Wieser",
+    "Francisco J.H. Heras",
+    "Nicholas C. Rubin",
+    "Guang Hao Low",
+    "Sébastien Racanière",
+    "Nenad Tomašev",
+    "Lei M. Zhang",
+    "James D. Watson",
+    "Tanuj Khattar",
+    "Aws Albarghouthi",
+    "Stavan Jain",
+    "Harun Khan",
+    "Leopoldo Sarra",
+    "Andrew W. Senior",
+    "Michael Broughton",
+    "Hussain Masoom",
+    "Sergio Boixo",
+    "Ryan Babbush",
+    "Swarat Chaudhuri",
+    "Pushmeet Kohli"
+  ],
+  "venue": "arXiv:2611.09822v3",
+  "credit_lines": [
+    "Paper and Lean by Google DeepMind and Google Quantum AI. The authors’ paper is licensed CC BY 4.0."
+  ],
+  "licence": "CC BY 4.0 (paper), Apache 2.0 (Lean)",
+  "host": "Will Cook’s reading library",
+  "review": "Links and notes were prepared with AI assistance. The authors have not reviewed them.",
+  "documents": [
     {
-     "label": "Authors’ verification report",
-     "href": "https://github.com/google-deepmind/formal-quantum-computation/blob/a88de8ff65d78af564b2373088ca369dc95f6547/QuantumComputationDiscoveries/README.md"
+      "id": "paper",
+      "slot": "short",
+      "slug": "",
+      "title": "Discovering formally verified quantum programs with AI",
+      "noun": "paper",
+      "main": true,
+      "pdf": {
+        "file": "paper.pdf",
+        "name": "paper.pdf",
+        "url": "/library/quantum-programs/pdf/paper.pdf"
+      }
+    }
+  ],
+  "source": {
+    "upstream": {
+      "repository": "https://github.com/google-deepmind/formal-quantum-computation",
+      "commit": "a88de8ff65d78af564b2373088ca369dc95f6547",
+      "paper": "https://arxiv.org/abs/2611.09822v3"
+    },
+    "lean_scope": "The reader shows the authors’ source at their published revision. Compiled dependency and axiom metadata is available for 15 declarations."
+  },
+  "about": [
+    {
+      "heading": "Verification",
+      "paragraphs": [
+        "The authors report that Lean Comparator accepted the six challenges. The reader also has independent replay evidence for the fixed-point arcsin and Find-Any challenges."
+      ],
+      "links": [
+        {
+          "label": "Authors’ verification report",
+          "href": "https://github.com/google-deepmind/formal-quantum-computation/blob/a88de8ff65d78af564b2373088ca369dc95f6547/QuantumComputationDiscoveries/README.md"
+        },
+        {
+          "label": "Frozen challenge statements and independent replay outcomes",
+          "href": "./verification.json"
+        }
+      ]
+    }
+  ],
+  "families": [],
+  "topics": [
+    {
+      "id": "verification",
+      "name": "Quantum Hoare logic and formal verification",
+      "description": "The authors specify quantum programs with classical control in Lean. They use Hoare triples to state correctness and give separate rules for resource costs. Lean Comparator checks candidate proofs against the frozen specifications.",
+      "family": null
     },
     {
-     "label": "Frozen challenge statements and independent replay outcomes",
-     "href": "./verification.json"
+      "id": "grover",
+      "name": "Parallel Grover search",
+      "description": "In a domain of size $N=2^n$, Find-Any returns one marked index and Find-All returns the whole marked set. Lean proves both guarantees with probability one. For all 121 combinations of query limit $m$ and marked count $k$, Lean also bounds the expected rounds averaged over marked sets, for sufficiently large $N$. For large domains, Find-Any uses weak measurements. Some Find-All settings use a quantum walk over subsets of the domain.",
+      "family": null
+    },
+    {
+      "id": "arcsin",
+      "name": "Reversible fixed-point arcsin",
+      "description": "The circuit approximates $\\arcsin(y)$ on a signed 25-bit grid and adds its code to the output register modulo $2^{25}$. It preserves the input and returns the ancillas to zero. The Lean theorems give a uniform absolute error of at most $1.25\\times10^{-7}$ on the grid in $[-1,1]$ and a spacetime cost of at most $369{,}800$.",
+      "family": null
+    },
+    {
+      "id": "fusion",
+      "name": "Stopping power in inertial-confinement fusion",
+      "description": "Stopping power is the mean kinetic energy a projectile loses per unit distance traveled. The benchmark simulates an $\\alpha$ particle and 218 electrons moving among 216 fixed protons. For each of ten evolution times the compiled circuit approximates $e^{-iHt}$ to error $10^{-2}$ on grid states antisymmetric under exchange of same-spin electrons. Lean bounds the logical qubit count times the sum of the $T$-gate bounds for the 500 evolutions.",
+      "family": null
+    },
+    {
+      "id": "photochemistry",
+      "name": "Non-Born–Oppenheimer dynamics of C₂₃H₂₀N₃O",
+      "description": "The circuit approximates one femtosecond of time evolution for C₂₃H₂₀N₃O on a grid with quantum nuclei and electrons. Lean bounds the error on every system input with zero ancillas and the product of the logical qubit count and T count.",
+      "family": null
+    },
+    {
+      "id": "p450",
+      "name": "Cytochrome P450 Compound I",
+      "description": "The authors compile a phase-estimation circuit for the fixed Hamiltonian of Compound I in active space X. Lean bounds the capped root-mean-square energy error by 1 mHa on the 63-electron sector and the cost by 436,509,499,221 qubit–T. The adjusted baseline in Appendix I.2 is about 2.49 times that cost bound.",
+      "family": null
     }
-   ]
-  }
- ],
- "families": [],
- "topics": [
-  {
-   "id": "verification",
-   "name": "Quantum Hoare logic and formal verification",
-   "description": "The authors specify quantum programs with classical control in Lean. They use Hoare triples to state correctness and give separate rules for resource costs. Lean Comparator checks candidate proofs against the frozen specifications.",
-   "family": null
+  ],
+  "topic_order": [
+    "verification",
+    "grover",
+    "arcsin",
+    "fusion",
+    "photochemistry",
+    "p450"
+  ],
+  "goal": "arcsin/precision",
+  "reader": {
+    "lean": {
+      "owner": "the authors’",
+      "ownerSource": "the authors’ Lean source"
+    },
+    "link_caveat": "The authors’ reported verification and the reader’s editorial comparisons are separate evidence."
   },
-  {
-   "id": "grover",
-   "name": "Parallel Grover search",
-   "description": "In a domain of size $N=2^n$, Find-Any returns one marked index and Find-All returns the whole marked set. Lean proves both guarantees with probability one. For all 121 combinations of query limit $m$ and marked count $k$, Lean also bounds the expected rounds averaged over marked sets, for sufficiently large $N$. For large domains, Find-Any uses weak measurements. Some Find-All settings use a quantum walk over subsets of the domain.",
-   "family": null
-  },
-  {
-   "id": "arcsin",
-   "name": "Reversible fixed-point arcsin",
-   "description": "The circuit approximates $\\arcsin(y)$ on a signed 25-bit grid and adds its code to the output register modulo $2^{25}$. It preserves the input and returns the ancillas to zero. The Lean theorems give a uniform absolute error of at most $1.25\\times10^{-7}$ on the grid in $[-1,1]$ and a spacetime cost of at most $369{,}800$.",
-   "family": null
-  },
-  {
-   "id": "fusion",
-   "name": "Stopping power in inertial-confinement fusion",
-   "description": "Stopping power is the mean kinetic energy a projectile loses per unit distance traveled. The benchmark simulates an $\\alpha$ particle and 218 electrons moving among 216 fixed protons. For each of ten evolution times the compiled circuit approximates $e^{-iHt}$ to error $10^{-2}$ on grid states antisymmetric under exchange of same-spin electrons. Lean bounds the logical qubit count times the sum of the $T$-gate bounds for the 500 evolutions.",
-   "family": null
-  },
-  {
-   "id": "photochemistry",
-   "name": "Non-Born–Oppenheimer dynamics of C₂₃H₂₀N₃O",
-   "description": "The circuit approximates one femtosecond of time evolution for C₂₃H₂₀N₃O on a grid with quantum nuclei and electrons. Lean bounds the error on every system input with zero ancillas and the product of the logical qubit count and T count.",
-   "family": null
-  },
-  {
-   "id": "p450",
-   "name": "Cytochrome P450 Compound I",
-   "description": "The authors compile a phase-estimation circuit for the fixed Hamiltonian of Compound I in active space X. Lean bounds the capped root-mean-square energy error by 1 mHa on the 63-electron sector and the cost by 436,509,499,221 qubit–T. The adjusted baseline in Appendix I.2 is about 2.49 times that cost bound.",
-   "family": null
-  }
- ],
- "topic_order": [
-  "verification",
-  "grover",
-  "arcsin",
-  "fusion",
-  "photochemistry",
-  "p450"
- ],
- "goal": "arcsin/precision",
- "reader": {
-  "lean": {
-   "owner": "the authors’",
-   "ownerSource": "the authors’ Lean source"
-  },
-  "link_caveat": "The authors’ reported verification and the reader’s editorial comparisons are separate evidence."
- },
- "artifact": true,
- "companion_credit": "Paper and Lean by Google DeepMind and Google Quantum AI."
+  "artifact": true,
+  "companion_credit": "Paper and Lean by Google DeepMind and Google Quantum AI."
 }

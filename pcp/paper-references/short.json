@@ -1,0 +1,33 @@
+{
+  "schema": "paper-references/1",
+  "targets": {
+    "section:7": {
+      "line": 411
+    },
+    "theorem:6.1": {
+      "line": 385
+    },
+    "theorem:4.5": {
+      "line": 252,
+      "tone": 15
+    },
+    "section:2": {
+      "line": 48
+    },
+    "equation:14": {
+      "line": 312,
+      "tone": 11
+    },
+    "lemma:3.4": {
+      "line": 166
+    },
+    "equation:4": {
+      "line": 123,
+      "tone": 14
+    },
+    "theorem:1.1": {
+      "line": 23,
+      "tone": 0
+    }
+  }
+}

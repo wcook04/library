@@ -1,0 +1,23 @@
+{
+  "schema": "paper-references/1",
+  "targets": {
+    "section:3": {
+      "line": 166
+    },
+    "theorem:7.2": {
+      "line": 686,
+      "tone": 19
+    },
+    "theorem:6.1": {
+      "line": 432,
+      "tone": 15
+    },
+    "theorem:8.1": {
+      "line": 808,
+      "tone": 12
+    },
+    "section:10": {
+      "line": 1097
+    }
+  }
+}

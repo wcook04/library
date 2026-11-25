@@ -1,1 +1,498 @@
-{"schema":"paper-references/1","targets":{"corollary:10.2":{"line":4401,"page":60,"y":261.51},"corollary:4.2":{"line":1542,"page":22,"y":148.69,"tone":0},"equation:10.2":{"line":4405,"page":60,"y":291.75},"equation:4.1":{"line":1437,"page":20,"y":579.8,"tone":0},"equation:4.2":{"line":1452,"page":20,"y":711.21,"tone":0},"equation:4.3":{"line":1474,"page":21,"y":210.63,"tone":0},"equation:5.1":{"line":1633,"page":23,"y":213.62,"tone":3},"equation:5.2":{"line":1651,"page":23,"y":362.39,"tone":3},"equation:5.3":{"line":1673,"page":23,"y":540.62,"tone":3},"equation:5.4":{"line":1800,"page":25,"y":347.54,"tone":3},"equation:5.5":{"line":1808,"page":25,"y":412.5,"tone":3},"equation:6.1":{"line":1908,"page":26,"y":620.38,"tone":7},"equation:8.1":{"line":3283,"page":44,"y":651.31},"equation:8.2":{"line":3605,"page":49,"y":125.77},"equation:9.1":{"line":3845,"page":52,"y":580.42,"tone":4},"proposition:10.1":{"line":4022,"page":55,"y":387.54,"tone":6},"proposition:2.1":{"line":223,"page":4,"y":94.77,"tone":2},"proposition:3.1":{"line":600,"page":9,"y":475.96,"tone":1},"proposition:4.1":{"line":1429,"page":20,"y":522.4,"tone":0},"proposition:6.1":{"line":1903,"page":26,"y":575.45,"tone":7},"proposition:6.2":{"line":2027,"page":28,"y":393.55,"tone":0},"proposition:7.1":{"line":2123,"page":29,"y":595.34,"tone":6},"section:1":{"line":62,"page":1,"y":662.78},"section:10":{"line":3930,"page":54,"y":265.14},"section:10.1":{"line":3935,"page":54,"y":286.59,"tone":1},"section:10.2":{"line":4002,"page":55,"y":204.35},"section:10.2.1":{"line":4040,"page":55,"y":545.24,"tone":6},"section:10.2.2":{"line":4084,"page":56,"y":220.92,"tone":6},"section:10.2.3":{"line":4149,"page":57,"y":129.63,"tone":6},"section:10.2.4":{"line":4187,"page":57,"y":403.9},"section:10.3":{"line":4242,"page":58,"y":204.15,"tone":6},"section:10.4":{"line":4303,"page":59,"y":74.17},"section:10.4.1":{"line":4350,"page":59,"y":470.03},"section:11":{"line":4428,"page":60,"y":508.25,"tone":7},"section:11.1":{"line":4434,"page":60,"y":529.69,"tone":7},"section:11.1.1":{"line":4825,"page":65,"y":643.18,"tone":7},"section:11.1.2":{"line":4871,"page":66,"y":390.39,"tone":7},"section:11.2":{"line":4917,"page":67,"y":74.17,"tone":7},"section:11.3":{"line":5038,"page":68,"y":373.66,"tone":7},"section:11.4":{"line":5156,"page":70,"y":116.55,"tone":7},"section:11.5":{"line":5207,"page":70,"y":565.27,"tone":7},"section:12":{"line":5280,"page":71,"y":526.89},"section:12.1":{"line":5284,"page":71,"y":548.34},"section:12.2":{"line":5345,"page":72,"y":428.18,"tone":5},"section:12.3":{"line":5408,"page":73,"y":278.78,"tone":5},"section:12.4":{"line":5478,"page":74,"y":279.14},"section:13":{"line":5508,"page":74,"y":531.36,"tone":0},"section:2":{"line":151,"page":3,"y":129.65},"section:2.1":{"line":155,"page":3,"y":151.1},"section:2.2":{"line":221,"page":4,"y":74.17},"section:2.3":{"line":273,"page":4,"y":573.19},"section:2.4":{"line":452,"page":7,"y":471.47},"section:2.5":{"line":554,"page":9,"y":74.17},"section:3":{"line":597,"page":9,"y":454.52},"section:3.1":{"line":613,"page":9,"y":594.38},"section:3.2":{"line":636,"page":10,"y":143.09,"tone":1},"section:3.3":{"line":717,"page":11,"y":116.55,"tone":1},"section:3.4":{"line":784,"page":12,"y":163.67,"tone":1},"section:3.5":{"line":812,"page":12,"y":461.4},"section:4":{"line":881,"page":13,"y":412.68,"tone":0},"section:4.1":{"line":919,"page":14,"y":74.17,"tone":0},"section:4.2":{"line":1010,"page":15,"y":262.53,"tone":0},"section:4.3":{"line":1076,"page":16,"y":157.16,"tone":0},"section:4.4":{"line":1227,"page":18,"y":74.17,"tone":0},"section:4.5":{"line":1425,"page":20,"y":501.8,"tone":0},"section:4.6":{"line":1572,"page":22,"y":369.4,"tone":0},"section:5":{"line":1596,"page":22,"y":574.2,"tone":3},"section:6":{"line":1900,"page":26,"y":554.01},"section:7":{"line":2120,"page":29,"y":573.9},"section:7.1":{"line":2294,"page":32,"y":74.17},"section:8":{"line":2428,"page":33,"y":537.46},"section:8.1":{"line":2608,"page":36,"y":74.17},"section:8.1.1":{"line":2798,"page":38,"y":381.03},"section:8.2":{"line":2836,"page":38,"y":631.15},"section:8.3":{"line":3042,"page":41,"y":501.5},"section:8.4":{"line":3241,"page":44,"y":321.38},"section:8.5":{"line":3518,"page":48,"y":74.17},"section:8.6":{"line":3576,"page":48,"y":551.66},"section:9":{"line":3682,"page":50,"y":129.65,"tone":4},"section:9.1":{"line":3687,"page":50,"y":151.1,"tone":4},"section:9.2":{"line":3751,"page":51,"y":338.36,"tone":4},"section:9.3":{"line":3796,"page":52,"y":150.42,"tone":4},"section:9.4":{"line":3882,"page":53,"y":245.26,"tone":4},"theorem:5.1":{"line":1599,"page":22,"y":594.32,"tone":3}}}
+{
+  "schema": "paper-references/1",
+  "targets": {
+    "corollary:10.2": {
+      "line": 4401,
+      "page": 60,
+      "y": 261.51
+    },
+    "corollary:4.2": {
+      "line": 1542,
+      "page": 22,
+      "y": 148.69,
+      "tone": 0
+    },
+    "equation:10.2": {
+      "line": 4405,
+      "page": 60,
+      "y": 291.75
+    },
+    "equation:4.1": {
+      "line": 1437,
+      "page": 20,
+      "y": 579.8,
+      "tone": 0
+    },
+    "equation:4.2": {
+      "line": 1452,
+      "page": 20,
+      "y": 711.21,
+      "tone": 0
+    },
+    "equation:4.3": {
+      "line": 1474,
+      "page": 21,
+      "y": 210.63,
+      "tone": 0
+    },
+    "equation:5.1": {
+      "line": 1633,
+      "page": 23,
+      "y": 213.62,
+      "tone": 3
+    },
+    "equation:5.2": {
+      "line": 1651,
+      "page": 23,
+      "y": 362.39,
+      "tone": 3
+    },
+    "equation:5.3": {
+      "line": 1673,
+      "page": 23,
+      "y": 540.62,
+      "tone": 3
+    },
+    "equation:5.4": {
+      "line": 1800,
+      "page": 25,
+      "y": 347.54,
+      "tone": 3
+    },
+    "equation:5.5": {
+      "line": 1808,
+      "page": 25,
+      "y": 412.5,
+      "tone": 3
+    },
+    "equation:6.1": {
+      "line": 1908,
+      "page": 26,
+      "y": 620.38,
+      "tone": 7
+    },
+    "equation:8.1": {
+      "line": 3283,
+      "page": 44,
+      "y": 651.31
+    },
+    "equation:8.2": {
+      "line": 3605,
+      "page": 49,
+      "y": 125.77
+    },
+    "equation:9.1": {
+      "line": 3845,
+      "page": 52,
+      "y": 580.42,
+      "tone": 4
+    },
+    "proposition:10.1": {
+      "line": 4022,
+      "page": 55,
+      "y": 387.54,
+      "tone": 6
+    },
+    "proposition:2.1": {
+      "line": 223,
+      "page": 4,
+      "y": 94.77,
+      "tone": 2
+    },
+    "proposition:3.1": {
+      "line": 600,
+      "page": 9,
+      "y": 475.96,
+      "tone": 1
+    },
+    "proposition:4.1": {
+      "line": 1429,
+      "page": 20,
+      "y": 522.4,
+      "tone": 0
+    },
+    "proposition:6.1": {
+      "line": 1903,
+      "page": 26,
+      "y": 575.45,
+      "tone": 7
+    },
+    "proposition:6.2": {
+      "line": 2027,
+      "page": 28,
+      "y": 393.55,
+      "tone": 0
+    },
+    "proposition:7.1": {
+      "line": 2123,
+      "page": 29,
+      "y": 595.34,
+      "tone": 6
+    },
+    "section:1": {
+      "line": 62,
+      "page": 1,
+      "y": 662.78
+    },
+    "section:10": {
+      "line": 3930,
+      "page": 54,
+      "y": 265.14
+    },
+    "section:10.1": {
+      "line": 3935,
+      "page": 54,
+      "y": 286.59,
+      "tone": 1
+    },
+    "section:10.2": {
+      "line": 4002,
+      "page": 55,
+      "y": 204.35
+    },
+    "section:10.2.1": {
+      "line": 4040,
+      "page": 55,
+      "y": 545.24,
+      "tone": 6
+    },
+    "section:10.2.2": {
+      "line": 4084,
+      "page": 56,
+      "y": 220.92,
+      "tone": 6
+    },
+    "section:10.2.3": {
+      "line": 4149,
+      "page": 57,
+      "y": 129.63,
+      "tone": 6
+    },
+    "section:10.2.4": {
+      "line": 4187,
+      "page": 57,
+      "y": 403.9
+    },
+    "section:10.3": {
+      "line": 4242,
+      "page": 58,
+      "y": 204.15,
+      "tone": 6
+    },
+    "section:10.4": {
+      "line": 4303,
+      "page": 59,
+      "y": 74.17
+    },
+    "section:10.4.1": {
+      "line": 4350,
+      "page": 59,
+      "y": 470.03
+    },
+    "section:11": {
+      "line": 4428,
+      "page": 60,
+      "y": 508.25,
+      "tone": 7
+    },
+    "section:11.1": {
+      "line": 4434,
+      "page": 60,
+      "y": 529.69,
+      "tone": 7
+    },
+    "section:11.1.1": {
+      "line": 4825,
+      "page": 65,
+      "y": 643.18,
+      "tone": 7
+    },
+    "section:11.1.2": {
+      "line": 4871,
+      "page": 66,
+      "y": 390.39,
+      "tone": 7
+    },
+    "section:11.2": {
+      "line": 4917,
+      "page": 67,
+      "y": 74.17,
+      "tone": 7
+    },
+    "section:11.3": {
+      "line": 5038,
+      "page": 68,
+      "y": 373.66,
+      "tone": 7
+    },
+    "section:11.4": {
+      "line": 5156,
+      "page": 70,
+      "y": 116.55,
+      "tone": 7
+    },
+    "section:11.5": {
+      "line": 5207,
+      "page": 70,
+      "y": 565.27,
+      "tone": 7
+    },
+    "section:12": {
+      "line": 5280,
+      "page": 71,
+      "y": 526.89
+    },
+    "section:12.1": {
+      "line": 5284,
+      "page": 71,
+      "y": 548.34
+    },
+    "section:12.2": {
+      "line": 5345,
+      "page": 72,
+      "y": 428.18,
+      "tone": 5
+    },
+    "section:12.3": {
+      "line": 5408,
+      "page": 73,
+      "y": 278.78,
+      "tone": 5
+    },
+    "section:12.4": {
+      "line": 5478,
+      "page": 74,
+      "y": 279.14
+    },
+    "section:13": {
+      "line": 5508,
+      "page": 74,
+      "y": 531.36,
+      "tone": 0
+    },
+    "section:2": {
+      "line": 151,
+      "page": 3,
+      "y": 129.65
+    },
+    "section:2.1": {
+      "line": 155,
+      "page": 3,
+      "y": 151.1
+    },
+    "section:2.2": {
+      "line": 221,
+      "page": 4,
+      "y": 74.17
+    },
+    "section:2.3": {
+      "line": 273,
+      "page": 4,
+      "y": 573.19
+    },
+    "section:2.4": {
+      "line": 452,
+      "page": 7,
+      "y": 471.47
+    },
+    "section:2.5": {
+      "line": 554,
+      "page": 9,
+      "y": 74.17
+    },
+    "section:3": {
+      "line": 597,
+      "page": 9,
+      "y": 454.52
+    },
+    "section:3.1": {
+      "line": 613,
+      "page": 9,
+      "y": 594.38
+    },
+    "section:3.2": {
+      "line": 636,
+      "page": 10,
+      "y": 143.09,
+      "tone": 1
+    },
+    "section:3.3": {
+      "line": 717,
+      "page": 11,
+      "y": 116.55,
+      "tone": 1
+    },
+    "section:3.4": {
+      "line": 784,
+      "page": 12,
+      "y": 163.67,
+      "tone": 1
+    },
+    "section:3.5": {
+      "line": 812,
+      "page": 12,
+      "y": 461.4
+    },
+    "section:4": {
+      "line": 881,
+      "page": 13,
+      "y": 412.68,
+      "tone": 0
+    },
+    "section:4.1": {
+      "line": 919,
+      "page": 14,
+      "y": 74.17,
+      "tone": 0
+    },
+    "section:4.2": {
+      "line": 1010,
+      "page": 15,
+      "y": 262.53,
+      "tone": 0
+    },
+    "section:4.3": {
+      "line": 1076,
+      "page": 16,
+      "y": 157.16,
+      "tone": 0
+    },
+    "section:4.4": {
+      "line": 1227,
+      "page": 18,
+      "y": 74.17,
+      "tone": 0
+    },
+    "section:4.5": {
+      "line": 1425,
+      "page": 20,
+      "y": 501.8,
+      "tone": 0
+    },
+    "section:4.6": {
+      "line": 1572,
+      "page": 22,
+      "y": 369.4,
+      "tone": 0
+    },
+    "section:5": {
+      "line": 1596,
+      "page": 22,
+      "y": 574.2,
+      "tone": 3
+    },
+    "section:6": {
+      "line": 1900,
+      "page": 26,
+      "y": 554.01
+    },
+    "section:7": {
+      "line": 2120,
+      "page": 29,
+      "y": 573.9
+    },
+    "section:7.1": {
+      "line": 2294,
+      "page": 32,
+      "y": 74.17
+    },
+    "section:8": {
+      "line": 2428,
+      "page": 33,
+      "y": 537.46
+    },
+    "section:8.1": {
+      "line": 2608,
+      "page": 36,
+      "y": 74.17
+    },
+    "section:8.1.1": {
+      "line": 2798,
+      "page": 38,
+      "y": 381.03
+    },
+    "section:8.2": {
+      "line": 2836,
+      "page": 38,
+      "y": 631.15
+    },
+    "section:8.3": {
+      "line": 3042,
+      "page": 41,
+      "y": 501.5
+    },
+    "section:8.4": {
+      "line": 3241,
+      "page": 44,
+      "y": 321.38
+    },
+    "section:8.5": {
+      "line": 3518,
+      "page": 48,
+      "y": 74.17
+    },
+    "section:8.6": {
+      "line": 3576,
+      "page": 48,
+      "y": 551.66
+    },
+    "section:9": {
+      "line": 3682,
+      "page": 50,
+      "y": 129.65,
+      "tone": 4
+    },
+    "section:9.1": {
+      "line": 3687,
+      "page": 50,
+      "y": 151.1,
+      "tone": 4
+    },
+    "section:9.2": {
+      "line": 3751,
+      "page": 51,
+      "y": 338.36,
+      "tone": 4
+    },
+    "section:9.3": {
+      "line": 3796,
+      "page": 52,
+      "y": 150.42,
+      "tone": 4
+    },
+    "section:9.4": {
+      "line": 3882,
+      "page": 53,
+      "y": 245.26,
+      "tone": 4
+    },
+    "theorem:5.1": {
+      "line": 1599,
+      "page": 22,
+      "y": 594.32,
+      "tone": 3
+    },
+    "expository/section:7.3": {
+      "line": 1215,
+      "page": 17,
+      "y": 466.42,
+      "tone": 3,
+      "stage": "expository",
+      "colours": {
+        "light": "oklch(0.495 0.133 151.0)",
+        "dark": "oklch(0.670 0.180 151.0)"
+      }
+    },
+    "short/proposition:5": {
+      "line": 760,
+      "page": 10,
+      "y": 632.18,
+      "tone": 7,
+      "stage": "short",
+      "colours": {
+        "light": "oklch(0.475 0.190 343.0)",
+        "dark": "oklch(0.610 0.190 343.0)"
+      }
+    }
+  }
+}

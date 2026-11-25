@@ -1,0 +1,96 @@
+{
+  "schema": "paper-references/1",
+  "targets": {
+    "example:exotic": {
+      "line": 210,
+      "page": 5,
+      "y": 503.33
+    },
+    "definition:reifyindex": {
+      "line": 265,
+      "page": 6,
+      "y": 483.98,
+      "tone": 4
+    },
+    "definition:exte": {
+      "line": 245,
+      "page": 6,
+      "y": 309.54
+    },
+    "example:tt-first-order": {
+      "line": 154,
+      "page": 4,
+      "y": 510.69
+    },
+    "definition:tocvar": {
+      "line": 374,
+      "page": 8,
+      "y": 589.84,
+      "tone": 8
+    },
+    "figure:2": {
+      "line": 338,
+      "page": 8,
+      "y": 87.44
+    },
+    "lemma:indexisor": {
+      "line": 388,
+      "page": 9,
+      "y": 144.96,
+      "tone": 10
+    },
+    "axiom:closed-world": {
+      "line": 388,
+      "page": 9,
+      "y": 219.17,
+      "tone": 11
+    },
+    "theorem:isol": {
+      "line": 382,
+      "page": 8,
+      "y": 647.93,
+      "tone": 9
+    },
+    "case:isol-var": {
+      "line": 390,
+      "page": 9,
+      "y": 288.42,
+      "tone": 9
+    },
+    "definition:var-package": {
+      "line": 348,
+      "page": 8,
+      "y": 406.02,
+      "tone": 8
+    },
+    "definition:weakencvar": {
+      "line": 360,
+      "page": 8,
+      "y": 507.24,
+      "tone": 8
+    },
+    "definition:reifyindex-instances": {
+      "line": 272,
+      "page": 6,
+      "y": 520.55
+    },
+    "lemma:indexisol": {
+      "line": 386,
+      "page": 9,
+      "y": 103.11,
+      "tone": 10
+    },
+    "definition:proxytop": {
+      "line": 219,
+      "page": 5,
+      "y": 601.35,
+      "tone": 3
+    },
+    "theorem:isor": {
+      "line": 383,
+      "page": 9,
+      "y": 86.13,
+      "tone": 9
+    }
+  }
+}

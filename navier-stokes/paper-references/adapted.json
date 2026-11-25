@@ -1,1 +1,1916 @@
-{"schema":"paper-references/1","targets":{"appendix:a":{"line":1326,"page":51,"y":355.25,"tone":3},"appendix:a.1":{"line":1332,"page":51,"y":372.71,"tone":3},"appendix:a.2":{"line":1362,"page":53,"y":83.27,"tone":3},"appendix:b":{"line":1379,"page":53,"y":485.84},"appendix:b.1":{"line":1395,"page":54,"y":202.08},"appendix:b.2":{"line":1464,"page":58,"y":130.52,"tone":15},"appendix:b.3":{"line":1595,"page":63,"y":114.78},"appendix:b.4":{"line":1768,"page":72,"y":237.44},"appendix:c":{"line":1913,"page":78,"y":598.89},"appendix:c.1":{"line":1921,"page":79,"y":117.57},"appendix:c.2":{"line":1962,"page":81,"y":650.54},"appendix:c.3":{"line":1976,"page":82,"y":490.18},"appendix:c.4":{"line":1992,"page":83,"y":299.8},"corollary:7.2":{"line":1004,"page":39,"y":207.08,"tone":1},"equation:1.1":{"line":59,"page":2,"y":160.96,"tone":1},"equation:1.2":{"line":80,"page":2,"y":639.44,"tone":2},"equation:1.3":{"line":82,"page":2,"y":685.27,"tone":2},"equation:1.4":{"line":84,"page":3,"y":107.68,"tone":2},"equation:1.5":{"line":88,"page":3,"y":239.23,"tone":2},"equation:1.6":{"line":99,"page":3,"y":538.09,"tone":1},"equation:1.7":{"line":104,"page":3,"y":611.22,"tone":1},"equation:2.1":{"line":254,"page":11,"y":588.29,"tone":3},"equation:2.2":{"line":256,"page":11,"y":638.58,"tone":3},"equation:2.3":{"line":258,"page":11,"y":673.91,"tone":3},"equation:2.4":{"line":262,"page":12,"y":174.88,"tone":3},"equation:2.5":{"line":272,"page":12,"y":400.88,"tone":4},"equation:2.6":{"line":280,"page":12,"y":556.47,"tone":5},"equation:3.1":{"line":321,"page":13,"y":663.05,"tone":3},"equation:3.10":{"line":363,"page":15,"y":435.4,"tone":3},"equation:3.11":{"line":387,"page":16,"y":280.97,"tone":3},"equation:3.12":{"line":392,"page":16,"y":313.32,"tone":3},"equation:3.13":{"line":408,"page":16,"y":646.71,"tone":3},"equation:3.14":{"line":420,"page":17,"y":318.6,"tone":3},"equation:3.15":{"line":428,"page":17,"y":467.34,"tone":5},"equation:3.16":{"line":430,"page":17,"y":540.28,"tone":5},"equation:3.17":{"line":432,"page":17,"y":608.77,"tone":5},"equation:3.18":{"line":436,"page":17,"y":685.19,"tone":5},"equation:3.19":{"line":440,"page":18,"y":220.21,"tone":5},"equation:3.2":{"line":325,"page":14,"y":210.25,"tone":3},"equation:3.20":{"line":442,"page":18,"y":302.3,"tone":5},"equation:3.21":{"line":449,"page":18,"y":401.56,"tone":5},"equation:3.3":{"line":327,"page":14,"y":293.91,"tone":3},"equation:3.4":{"line":331,"page":14,"y":356.28,"tone":3},"equation:3.5":{"line":333,"page":14,"y":404.85,"tone":3},"equation:3.6":{"line":341,"page":14,"y":519.02,"tone":3},"equation:3.7":{"line":343,"page":14,"y":581.91,"tone":3},"equation:3.8":{"line":352,"page":15,"y":137.77,"tone":3},"equation:3.9":{"line":356,"page":15,"y":250.92,"tone":3},"equation:4.1":{"line":468,"page":18,"y":645.5,"tone":2},"equation:4.10":{"line":521,"page":20,"y":529.22,"tone":4},"equation:4.11":{"line":535,"page":21,"y":246.32,"tone":4},"equation:4.12":{"line":549,"page":22,"y":115.63,"tone":4},"equation:4.13":{"line":554,"page":22,"y":159.55,"tone":4},"equation:4.14":{"line":556,"page":22,"y":203.42,"tone":4},"equation:4.15":{"line":558,"page":22,"y":225.44,"tone":4},"equation:4.16":{"line":608,"page":23,"y":613.22,"tone":4},"equation:4.17":{"line":612,"page":24,"y":103.64,"tone":4},"equation:4.18":{"line":616,"page":24,"y":211.18,"tone":4},"equation:4.19":{"line":620,"page":24,"y":349.36,"tone":4},"equation:4.2":{"line":472,"page":19,"y":128.62,"tone":2},"equation:4.20":{"line":622,"page":24,"y":372.34,"tone":4},"equation:4.21":{"line":624,"page":24,"y":394.36,"tone":4},"equation:4.22":{"line":632,"page":24,"y":602.69,"tone":4},"equation:4.23":{"line":634,"page":24,"y":638.02,"tone":4},"equation:4.24":{"line":636,"page":24,"y":673.95,"tone":4},"equation:4.3":{"line":480,"page":19,"y":375.47,"tone":2},"equation:4.4":{"line":482,"page":19,"y":410.6,"tone":2},"equation:4.5":{"line":496,"page":19,"y":618.12,"tone":4},"equation:4.6":{"line":498,"page":19,"y":695.98,"tone":4},"equation:4.7":{"line":502,"page":20,"y":194.72,"tone":4},"equation:4.8":{"line":509,"page":20,"y":337.23,"tone":4},"equation:4.9":{"line":519,"page":20,"y":476.23,"tone":4},"equation:5.1":{"line":659,"page":25,"y":457.91,"tone":5},"equation:5.2":{"line":663,"page":25,"y":543.49,"tone":5},"equation:6.1":{"line":717,"page":27,"y":386.48,"tone":5},"equation:6.10":{"line":790,"page":30,"y":377.94,"tone":5},"equation:6.11":{"line":796,"page":30,"y":510.82,"tone":5},"equation:6.12":{"line":800,"page":30,"y":634.89,"tone":5},"equation:6.13":{"line":802,"page":30,"y":682.86,"tone":5},"equation:6.14":{"line":804,"page":31,"y":129.55,"tone":5},"equation:6.15":{"line":808,"page":31,"y":181.46,"tone":5},"equation:6.16":{"line":828,"page":31,"y":565.41,"tone":5},"equation:6.17":{"line":832,"page":32,"y":116.88,"tone":5},"equation:6.18":{"line":836,"page":32,"y":164.85,"tone":5},"equation:6.2":{"line":721,"page":27,"y":551.26,"tone":5},"equation:6.3":{"line":737,"page":28,"y":315.24,"tone":5},"equation:6.4":{"line":745,"page":28,"y":383.73,"tone":5},"equation:6.5":{"line":751,"page":28,"y":506.78,"tone":5},"equation:6.6":{"line":774,"page":29,"y":478.07,"tone":5},"equation:6.7":{"line":778,"page":29,"y":580.42,"tone":5},"equation:6.8":{"line":782,"page":30,"y":116.88,"tone":5},"equation:6.9":{"line":786,"page":30,"y":295.17,"tone":5},"equation:7.1":{"line":868,"page":33,"y":174.11,"tone":14},"equation:7.10":{"line":900,"page":34,"y":635.14,"tone":14},"equation:7.11":{"line":906,"page":35,"y":206.29,"tone":14},"equation:7.12":{"line":908,"page":35,"y":261.06,"tone":14},"equation:7.13":{"line":910,"page":35,"y":304.75,"tone":14},"equation:7.14":{"line":933,"page":36,"y":142.91,"tone":14},"equation:7.15":{"line":935,"page":36,"y":194.07,"tone":14},"equation:7.16":{"line":939,"page":36,"y":281.28,"tone":14},"equation:7.17":{"line":941,"page":36,"y":378.06,"tone":14},"equation:7.18":{"line":943,"page":36,"y":422.02,"tone":14},"equation:7.19":{"line":945,"page":36,"y":501.28,"tone":14},"equation:7.2":{"line":874,"page":33,"y":388.67,"tone":14},"equation:7.20":{"line":947,"page":36,"y":536.25,"tone":14},"equation:7.21":{"line":949,"page":36,"y":571.22,"tone":14},"equation:7.22":{"line":953,"page":36,"y":688.87,"tone":14},"equation:7.23":{"line":957,"page":37,"y":246.15,"tone":14},"equation:7.24":{"line":959,"page":37,"y":268.69,"tone":14},"equation:7.25":{"line":961,"page":37,"y":342.52,"tone":14},"equation:7.26":{"line":963,"page":37,"y":370.26,"tone":14},"equation:7.27":{"line":965,"page":37,"y":404.51,"tone":14},"equation:7.28":{"line":967,"page":37,"y":484.2,"tone":14},"equation:7.29":{"line":969,"page":37,"y":556.96,"tone":14},"equation:7.3":{"line":876,"page":33,"y":467.56,"tone":14},"equation:7.30":{"line":971,"page":37,"y":628.82,"tone":14},"equation:7.31":{"line":977,"page":38,"y":169.53,"tone":14},"equation:7.32":{"line":979,"page":38,"y":209.1,"tone":14},"equation:7.33":{"line":981,"page":38,"y":248.02,"tone":14},"equation:7.34":{"line":983,"page":38,"y":286.65,"tone":14},"equation:7.35":{"line":985,"page":38,"y":323.44,"tone":14},"equation:7.36":{"line":989,"page":38,"y":511.51,"tone":14},"equation:7.37":{"line":991,"page":38,"y":551.25,"tone":14},"equation:7.38":{"line":999,"page":39,"y":149.1,"tone":2},"equation:7.39":{"line":1001,"page":39,"y":190.45,"tone":2},"equation:7.4":{"line":880,"page":33,"y":595.74,"tone":14},"equation:7.40":{"line":1019,"page":39,"y":469.11,"tone":14},"equation:7.41":{"line":1021,"page":39,"y":532.14,"tone":14},"equation:7.42":{"line":1025,"page":39,"y":630.91,"tone":14},"equation:7.43":{"line":1027,"page":39,"y":670.28,"tone":14},"equation:7.44":{"line":1036,"page":40,"y":156.0,"tone":14},"equation:7.45":{"line":1040,"page":40,"y":265.67,"tone":14},"equation:7.46":{"line":1058,"page":41,"y":197.42,"tone":14},"equation:7.47":{"line":1060,"page":41,"y":248.06,"tone":14},"equation:7.48":{"line":1081,"page":42,"y":124.37,"tone":14},"equation:7.49":{"line":1083,"page":42,"y":177.36,"tone":14},"equation:7.5":{"line":884,"page":34,"y":154.48,"tone":14},"equation:7.50":{"line":1097,"page":42,"y":509.7,"tone":14},"equation:7.51":{"line":1099,"page":42,"y":561.04,"tone":14},"equation:7.52":{"line":1114,"page":43,"y":254.05,"tone":14},"equation:7.53":{"line":1123,"page":43,"y":403.55,"tone":14},"equation:7.54":{"line":1128,"page":43,"y":542.67,"tone":14},"equation:7.55":{"line":1139,"page":44,"y":223.58,"tone":14},"equation:7.56":{"line":1149,"page":44,"y":470.2,"tone":14},"equation:7.57":{"line":1164,"page":45,"y":146.69,"tone":14},"equation:7.58":{"line":1172,"page":45,"y":250.53,"tone":14},"equation:7.59":{"line":1179,"page":45,"y":454.76,"tone":14},"equation:7.6":{"line":886,"page":34,"y":215.57,"tone":14},"equation:7.60":{"line":1182,"page":45,"y":496.1,"tone":14},"equation:7.61":{"line":1219,"page":47,"y":130.87,"tone":14},"equation:7.62":{"line":1257,"page":48,"y":273.68,"tone":2},"equation:7.63":{"line":1276,"page":48,"y":626.39,"tone":3},"equation:7.64":{"line":1290,"page":49,"y":338.67},"equation:7.65":{"line":1295,"page":49,"y":544.06},"equation:7.66":{"line":1308,"page":50,"y":301.97},"equation:7.7":{"line":894,"page":34,"y":467.03,"tone":14},"equation:7.8":{"line":896,"page":34,"y":515.36,"tone":14},"equation:7.9":{"line":898,"page":34,"y":570.57,"tone":14},"equation:b.1":{"line":1401,"page":54,"y":364.08,"tone":6},"equation:b.10":{"line":1452,"page":57,"y":261.3,"tone":6},"equation:b.11":{"line":1457,"page":57,"y":620.78,"tone":6},"equation:b.12":{"line":1470,"page":58,"y":268.82,"tone":15},"equation:b.13":{"line":1473,"page":58,"y":321.14,"tone":15},"equation:b.14":{"line":1488,"page":58,"y":673.11,"tone":15},"equation:b.15":{"line":1491,"page":59,"y":147.86,"tone":15},"equation:b.16":{"line":1498,"page":59,"y":397.92,"tone":15},"equation:b.17":{"line":1532,"page":60,"y":606.61,"tone":15},"equation:b.18":{"line":1537,"page":60,"y":676.47,"tone":15},"equation:b.19":{"line":1546,"page":61,"y":257.29,"tone":15},"equation:b.2":{"line":1404,"page":54,"y":428.12,"tone":6},"equation:b.20":{"line":1554,"page":61,"y":427.65,"tone":15},"equation:b.21":{"line":1573,"page":62,"y":407.85,"tone":15},"equation:b.22":{"line":1578,"page":62,"y":458.35,"tone":15},"equation:b.23":{"line":1601,"page":63,"y":316.99,"tone":7},"equation:b.24":{"line":1608,"page":63,"y":463.45,"tone":7},"equation:b.25":{"line":1613,"page":63,"y":599.99,"tone":8},"equation:b.26":{"line":1624,"page":64,"y":569.53,"tone":8},"equation:b.27":{"line":1627,"page":65,"y":107.46,"tone":8},"equation:b.28":{"line":1630,"page":65,"y":280.8,"tone":9},"equation:b.29":{"line":1647,"page":65,"y":653.42,"tone":9},"equation:b.3":{"line":1409,"page":54,"y":548.06,"tone":6},"equation:b.30":{"line":1651,"page":66,"y":118.63,"tone":9},"equation:b.31":{"line":1654,"page":66,"y":165.81,"tone":9},"equation:b.32":{"line":1659,"page":66,"y":223.57,"tone":8},"equation:b.33":{"line":1662,"tone":8},"equation:b.34":{"line":1668,"page":66,"y":388.72,"tone":8},"equation:b.35":{"line":1695,"page":68,"y":144.09,"tone":9},"equation:b.36":{"line":1697,"page":68,"y":213.93,"tone":9},"equation:b.37":{"line":1710,"page":68,"y":667.89},"equation:b.38":{"line":1720,"page":69,"y":527.78,"tone":10},"equation:b.39":{"line":1727,"page":69,"y":661.67,"tone":10},"equation:b.4":{"line":1413,"page":54,"y":592.79,"tone":6},"equation:b.40":{"line":1729,"page":70,"y":107.09,"tone":10},"equation:b.41":{"line":1742,"page":70,"y":531.53,"tone":10},"equation:b.42":{"line":1748,"page":71,"y":103.54},"equation:b.43":{"line":1752,"page":71,"y":299.03,"tone":10},"equation:b.44":{"line":1761,"page":71,"y":619.46,"tone":10},"equation:b.45":{"line":1771,"page":72,"y":293.98,"tone":12},"equation:b.46":{"line":1776,"page":72,"y":367.21,"tone":11},"equation:b.47":{"line":1784,"page":72,"y":491.52,"tone":11},"equation:b.48":{"line":1790,"page":72,"y":596.23,"tone":11},"equation:b.49":{"line":1800,"page":73,"y":136.66,"tone":11},"equation:b.5":{"line":1417,"page":55,"y":117.57,"tone":6},"equation:b.50":{"line":1823,"page":74,"y":362.62,"tone":12},"equation:b.51":{"line":1834,"page":75,"y":292.2,"tone":12},"equation:b.52":{"line":1839,"page":75,"y":390.05,"tone":12},"equation:b.53":{"line":1846,"page":75,"y":627.62,"tone":12},"equation:b.54":{"line":1850,"page":76,"y":120.04,"tone":12},"equation:b.55":{"line":1852,"page":76,"y":217.91,"tone":12},"equation:b.56":{"line":1860,"page":76,"y":376.57,"tone":12},"equation:b.57":{"line":1871,"page":77,"y":98.14,"tone":13},"equation:b.58":{"line":1879,"page":77,"y":330.77,"tone":13},"equation:b.59":{"line":1884,"page":77,"y":399.92,"tone":13},"equation:b.6":{"line":1420,"page":55,"y":159.34,"tone":6},"equation:b.7":{"line":1427,"page":55,"y":260.24,"tone":6},"equation:b.8":{"line":1432,"page":55,"y":323.04,"tone":6},"equation:b.9":{"line":1443,"page":56,"y":237.88,"tone":6},"equation:c.1":{"line":1965,"page":81,"y":681.18,"tone":2},"equation:c.2":{"line":1971,"page":82,"y":388.51,"tone":8},"figure:1":{"line":127,"page":5,"y":377.26},"figure:2":{"line":1927,"page":79,"y":364.35},"figure:3":{"line":1942,"page":80,"y":500.41},"figure:4":{"line":1958,"page":81,"y":567.16},"lemma:2.3":{"line":291,"page":13,"y":82.4,"tone":3},"lemma:3.1":{"line":340,"page":14,"y":484.72,"tone":3},"lemma:3.2":{"line":372,"page":15,"y":580.04,"tone":3},"lemma:3.3":{"line":395,"page":16,"y":384.08,"tone":3},"lemma:3.4":{"line":401,"page":16,"y":495.19,"tone":3},"lemma:3.5":{"line":407,"page":16,"y":605.8,"tone":3},"lemma:3.6":{"line":419,"page":17,"y":278.08,"tone":3},"lemma:3.7":{"line":439,"page":18,"y":183.5,"tone":5},"lemma:4.2":{"line":479,"page":19,"y":355.19,"tone":2},"lemma:4.4":{"line":524,"page":20,"y":590.36,"tone":4},"lemma:4.5":{"line":534,"page":21,"y":211.06,"tone":4},"lemma:4.6":{"line":548,"page":22,"y":82.4,"tone":4},"lemma:4.7":{"line":619,"page":24,"y":290.57,"tone":4},"lemma:4.8":{"line":631,"page":24,"y":531.1,"tone":4},"lemma:5.1":{"line":662,"page":25,"y":499.22,"tone":5},"lemma:6.1":{"line":720,"page":27,"y":502.53,"tone":5},"lemma:6.2":{"line":750,"page":28,"y":485.85,"tone":5},"lemma:6.3":{"line":807,"page":31,"y":146.18,"tone":5},"lemma:7.4":{"line":1024,"page":39,"y":579.21,"tone":14},"lemma:7.6":{"line":1080,"page":42,"y":101.83,"tone":14},"lemma:7.7":{"line":1094,"page":42,"y":429.83,"tone":14},"lemma:b.10":{"line":1814,"page":73,"y":575.09},"lemma:b.11":{"line":1820,"page":74,"y":212.35},"lemma:b.12":{"line":1842,"page":75,"y":558.97},"lemma:b.13":{"line":1874,"page":77,"y":286.39},"lemma:b.2":{"line":1581,"page":62,"y":508.82,"tone":15},"lemma:b.3":{"line":1599,"page":63,"y":289.0,"tone":7},"lemma:b.5":{"line":1691,"page":68,"y":117.57,"tone":9},"lemma:b.6":{"line":1706,"page":68,"y":529.11,"tone":9},"lemma:b.7":{"line":1741,"page":70,"y":498.39,"tone":10},"lemma:b.9":{"line":1779,"page":72,"y":426.2},"proposition:2.1":{"line":271,"page":12,"y":337.05,"tone":4},"proposition:2.2":{"line":279,"page":12,"y":506.47,"tone":5},"proposition:4.1":{"line":471,"page":19,"y":81.23,"tone":2},"proposition:4.3":{"line":505,"page":20,"y":293.91,"tone":4},"proposition:7.10":{"line":1177,"page":45,"y":420.37,"tone":14},"proposition:7.11":{"line":1253,"page":48,"y":179.53,"tone":2},"proposition:7.5":{"line":1051,"page":40,"y":633.02,"tone":14},"proposition:7.8":{"line":1121,"page":43,"y":375.38,"tone":14},"proposition:7.9":{"line":1137,"page":44,"y":182.64,"tone":14},"proposition:b.1":{"line":1549,"page":61,"y":329.91,"tone":15},"proposition:b.14":{"line":1898,"page":78,"y":216.17,"tone":13},"proposition:b.4":{"line":1657,"page":66,"y":188.31,"tone":8},"proposition:b.8":{"line":1755,"page":71,"y":364.88,"tone":10},"remark:1.2":{"line":115,"page":4,"y":418.23,"tone":2},"remark:7.3":{"line":1006,"page":39,"y":239.46,"tone":2},"section:1":{"line":54,"page":2,"y":87.15},"section:1.1":{"line":74,"page":2,"y":548.27},"section:1.2":{"line":131,"page":5,"y":439.18},"section:1.3":{"line":163,"page":7,"y":454.74},"section:1.4":{"line":214,"page":10,"y":338.09},"section:1.5":{"line":222,"page":10,"y":583.22},"section:1.6":{"line":238,"page":11,"y":407.71},"section:2":{"line":245,"page":11,"y":457.6},"section:2.1":{"line":251,"page":11,"y":475.06},"section:2.2":{"line":267,"page":12,"y":318.78},"section:2.3":{"line":287,"page":12,"y":652.58},"section:3":{"line":310,"page":13,"y":518.02},"section:3.1":{"line":318,"page":13,"y":629.83,"tone":3},"section:3.2":{"line":338,"page":14,"y":468.09,"tone":3},"section:3.3":{"line":368,"page":15,"y":524.55,"tone":3},"section:3.4":{"line":384,"page":16,"y":223.4,"tone":3},"section:3.5":{"line":415,"page":17,"y":144.89,"tone":3},"section:3.6":{"line":425,"page":17,"y":374.97,"tone":5},"section:4":{"line":455,"page":18,"y":467.4},"section:4.1":{"line":465,"page":18,"y":591.19,"tone":2},"section:4.2":{"line":493,"page":19,"y":582.51,"tone":4},"section:4.3":{"line":514,"page":20,"y":363.05,"tone":4},"section:4.4":{"line":544,"page":21,"y":596.45,"tone":4},"section:4.5":{"line":599,"page":23,"y":494.82,"tone":4},"section:5":{"line":648,"page":25,"y":276.91},"section:5.1":{"line":656,"page":25,"y":379.35,"tone":5},"section:5.2":{"line":680,"page":26,"y":253.1},"section:6":{"line":698,"page":26,"y":589.99,"tone":5},"section:6.1":{"line":712,"page":27,"y":207.73,"tone":5},"section:6.2":{"line":742,"page":28,"y":335.25,"tone":5},"section:6.3":{"line":771,"page":29,"y":367.5,"tone":5},"section:6.4":{"line":825,"page":31,"y":507.81,"tone":5},"section:7":{"line":855,"page":32,"y":540.55},"section:7.1":{"line":865,"page":33,"y":130.52,"tone":14},"section:7.10":{"line":1272,"page":48,"y":565.56},"section:7.2":{"line":891,"page":34,"y":343.14,"tone":14},"section:7.3":{"line":917,"page":35,"y":417.21,"tone":14},"section:7.4":{"line":996,"page":39,"y":85.19},"section:7.5":{"line":1016,"page":39,"y":435.24,"tone":14},"section:7.6":{"line":1078,"page":42,"y":85.19,"tone":14},"section:7.7":{"line":1111,"page":43,"y":208.86,"tone":14},"section:7.8":{"line":1160,"page":45,"y":85.19,"tone":14},"section:7.9":{"line":1247,"page":48,"y":85.19},"section:a":{"line":1326,"page":51,"y":355.25,"tone":3},"section:a.1":{"line":1332,"page":51,"y":372.71,"tone":3},"section:a.2":{"line":1362,"page":53,"y":83.27,"tone":3},"section:b":{"line":1379,"page":53,"y":485.84},"section:b.1":{"line":1395,"page":54,"y":202.08},"section:b.2":{"line":1464,"page":58,"y":130.52,"tone":15},"section:b.3":{"line":1595,"page":63,"y":114.78},"section:b.4":{"line":1768,"page":72,"y":237.44},"section:c":{"line":1913,"page":78,"y":598.89},"section:c.1":{"line":1921,"page":79,"y":117.57},"section:c.2":{"line":1962,"page":81,"y":650.54},"section:c.3":{"line":1976,"page":82,"y":490.18},"section:c.4":{"line":1992,"page":83,"y":299.8},"theorem:1.1":{"line":95,"page":3,"y":452.93,"tone":1},"theorem:7.1":{"line":998,"page":39,"y":101.83,"tone":1}}}
+{
+  "schema": "paper-references/1",
+  "targets": {
+    "appendix:a": {
+      "line": 1326,
+      "page": 51,
+      "y": 355.25,
+      "tone": 3
+    },
+    "appendix:a.1": {
+      "line": 1332,
+      "page": 51,
+      "y": 372.71,
+      "tone": 3
+    },
+    "appendix:a.2": {
+      "line": 1362,
+      "page": 53,
+      "y": 83.27,
+      "tone": 3
+    },
+    "appendix:b": {
+      "line": 1379,
+      "page": 53,
+      "y": 485.84
+    },
+    "appendix:b.1": {
+      "line": 1395,
+      "page": 54,
+      "y": 202.08
+    },
+    "appendix:b.2": {
+      "line": 1464,
+      "page": 58,
+      "y": 130.52,
+      "tone": 15
+    },
+    "appendix:b.3": {
+      "line": 1595,
+      "page": 63,
+      "y": 114.78
+    },
+    "appendix:b.4": {
+      "line": 1768,
+      "page": 72,
+      "y": 237.44
+    },
+    "appendix:c": {
+      "line": 1913,
+      "page": 78,
+      "y": 598.89
+    },
+    "appendix:c.1": {
+      "line": 1921,
+      "page": 79,
+      "y": 117.57
+    },
+    "appendix:c.2": {
+      "line": 1962,
+      "page": 81,
+      "y": 650.54
+    },
+    "appendix:c.3": {
+      "line": 1976,
+      "page": 82,
+      "y": 490.18
+    },
+    "appendix:c.4": {
+      "line": 1992,
+      "page": 83,
+      "y": 299.8
+    },
+    "corollary:7.2": {
+      "line": 1004,
+      "page": 39,
+      "y": 207.08,
+      "tone": 1
+    },
+    "equation:1.1": {
+      "line": 59,
+      "page": 2,
+      "y": 160.96,
+      "tone": 1
+    },
+    "equation:1.2": {
+      "line": 80,
+      "page": 2,
+      "y": 639.44,
+      "tone": 2
+    },
+    "equation:1.3": {
+      "line": 82,
+      "page": 2,
+      "y": 685.27,
+      "tone": 2
+    },
+    "equation:1.4": {
+      "line": 84,
+      "page": 3,
+      "y": 107.68,
+      "tone": 2
+    },
+    "equation:1.5": {
+      "line": 88,
+      "page": 3,
+      "y": 239.23,
+      "tone": 2
+    },
+    "equation:1.6": {
+      "line": 99,
+      "page": 3,
+      "y": 538.09,
+      "tone": 1
+    },
+    "equation:1.7": {
+      "line": 104,
+      "page": 3,
+      "y": 611.22,
+      "tone": 1
+    },
+    "equation:2.1": {
+      "line": 254,
+      "page": 11,
+      "y": 588.29,
+      "tone": 3
+    },
+    "equation:2.2": {
+      "line": 256,
+      "page": 11,
+      "y": 638.58,
+      "tone": 3
+    },
+    "equation:2.3": {
+      "line": 258,
+      "page": 11,
+      "y": 673.91,
+      "tone": 3
+    },
+    "equation:2.4": {
+      "line": 262,
+      "page": 12,
+      "y": 174.88,
+      "tone": 3
+    },
+    "equation:2.5": {
+      "line": 272,
+      "page": 12,
+      "y": 400.88,
+      "tone": 4
+    },
+    "equation:2.6": {
+      "line": 280,
+      "page": 12,
+      "y": 556.47,
+      "tone": 5
+    },
+    "equation:3.1": {
+      "line": 321,
+      "page": 13,
+      "y": 663.05,
+      "tone": 3
+    },
+    "equation:3.10": {
+      "line": 363,
+      "page": 15,
+      "y": 435.4,
+      "tone": 3
+    },
+    "equation:3.11": {
+      "line": 387,
+      "page": 16,
+      "y": 280.97,
+      "tone": 3
+    },
+    "equation:3.12": {
+      "line": 392,
+      "page": 16,
+      "y": 313.32,
+      "tone": 3
+    },
+    "equation:3.13": {
+      "line": 408,
+      "page": 16,
+      "y": 646.71,
+      "tone": 3
+    },
+    "equation:3.14": {
+      "line": 420,
+      "page": 17,
+      "y": 318.6,
+      "tone": 3
+    },
+    "equation:3.15": {
+      "line": 428,
+      "page": 17,
+      "y": 467.34,
+      "tone": 5
+    },
+    "equation:3.16": {
+      "line": 430,
+      "page": 17,
+      "y": 540.28,
+      "tone": 5
+    },
+    "equation:3.17": {
+      "line": 432,
+      "page": 17,
+      "y": 608.77,
+      "tone": 5
+    },
+    "equation:3.18": {
+      "line": 436,
+      "page": 17,
+      "y": 685.19,
+      "tone": 5
+    },
+    "equation:3.19": {
+      "line": 440,
+      "page": 18,
+      "y": 220.21,
+      "tone": 5
+    },
+    "equation:3.2": {
+      "line": 325,
+      "page": 14,
+      "y": 210.25,
+      "tone": 3
+    },
+    "equation:3.20": {
+      "line": 442,
+      "page": 18,
+      "y": 302.3,
+      "tone": 5
+    },
+    "equation:3.21": {
+      "line": 449,
+      "page": 18,
+      "y": 401.56,
+      "tone": 5
+    },
+    "equation:3.3": {
+      "line": 327,
+      "page": 14,
+      "y": 293.91,
+      "tone": 3
+    },
+    "equation:3.4": {
+      "line": 331,
+      "page": 14,
+      "y": 356.28,
+      "tone": 3
+    },
+    "equation:3.5": {
+      "line": 333,
+      "page": 14,
+      "y": 404.85,
+      "tone": 3
+    },
+    "equation:3.6": {
+      "line": 341,
+      "page": 14,
+      "y": 519.02,
+      "tone": 3
+    },
+    "equation:3.7": {
+      "line": 343,
+      "page": 14,
+      "y": 581.91,
+      "tone": 3
+    },
+    "equation:3.8": {
+      "line": 352,
+      "page": 15,
+      "y": 137.77,
+      "tone": 3
+    },
+    "equation:3.9": {
+      "line": 356,
+      "page": 15,
+      "y": 250.92,
+      "tone": 3
+    },
+    "equation:4.1": {
+      "line": 468,
+      "page": 18,
+      "y": 645.5,
+      "tone": 2
+    },
+    "equation:4.10": {
+      "line": 521,
+      "page": 20,
+      "y": 529.22,
+      "tone": 4
+    },
+    "equation:4.11": {
+      "line": 535,
+      "page": 21,
+      "y": 246.32,
+      "tone": 4
+    },
+    "equation:4.12": {
+      "line": 549,
+      "page": 22,
+      "y": 115.63,
+      "tone": 4
+    },
+    "equation:4.13": {
+      "line": 554,
+      "page": 22,
+      "y": 159.55,
+      "tone": 4
+    },
+    "equation:4.14": {
+      "line": 556,
+      "page": 22,
+      "y": 203.42,
+      "tone": 4
+    },
+    "equation:4.15": {
+      "line": 558,
+      "page": 22,
+      "y": 225.44,
+      "tone": 4
+    },
+    "equation:4.16": {
+      "line": 608,
+      "page": 23,
+      "y": 613.22,
+      "tone": 4
+    },
+    "equation:4.17": {
+      "line": 612,
+      "page": 24,
+      "y": 103.64,
+      "tone": 4
+    },
+    "equation:4.18": {
+      "line": 616,
+      "page": 24,
+      "y": 211.18,
+      "tone": 4
+    },
+    "equation:4.19": {
+      "line": 620,
+      "page": 24,
+      "y": 349.36,
+      "tone": 4
+    },
+    "equation:4.2": {
+      "line": 472,
+      "page": 19,
+      "y": 128.62,
+      "tone": 2
+    },
+    "equation:4.20": {
+      "line": 622,
+      "page": 24,
+      "y": 372.34,
+      "tone": 4
+    },
+    "equation:4.21": {
+      "line": 624,
+      "page": 24,
+      "y": 394.36,
+      "tone": 4
+    },
+    "equation:4.22": {
+      "line": 632,
+      "page": 24,
+      "y": 602.69,
+      "tone": 4
+    },
+    "equation:4.23": {
+      "line": 634,
+      "page": 24,
+      "y": 638.02,
+      "tone": 4
+    },
+    "equation:4.24": {
+      "line": 636,
+      "page": 24,
+      "y": 673.95,
+      "tone": 4
+    },
+    "equation:4.3": {
+      "line": 480,
+      "page": 19,
+      "y": 375.47,
+      "tone": 2
+    },
+    "equation:4.4": {
+      "line": 482,
+      "page": 19,
+      "y": 410.6,
+      "tone": 2
+    },
+    "equation:4.5": {
+      "line": 496,
+      "page": 19,
+      "y": 618.12,
+      "tone": 4
+    },
+    "equation:4.6": {
+      "line": 498,
+      "page": 19,
+      "y": 695.98,
+      "tone": 4
+    },
+    "equation:4.7": {
+      "line": 502,
+      "page": 20,
+      "y": 194.72,
+      "tone": 4
+    },
+    "equation:4.8": {
+      "line": 509,
+      "page": 20,
+      "y": 337.23,
+      "tone": 4
+    },
+    "equation:4.9": {
+      "line": 519,
+      "page": 20,
+      "y": 476.23,
+      "tone": 4
+    },
+    "equation:5.1": {
+      "line": 659,
+      "page": 25,
+      "y": 457.91,
+      "tone": 5
+    },
+    "equation:5.2": {
+      "line": 663,
+      "page": 25,
+      "y": 543.49,
+      "tone": 5
+    },
+    "equation:6.1": {
+      "line": 717,
+      "page": 27,
+      "y": 386.48,
+      "tone": 5
+    },
+    "equation:6.10": {
+      "line": 790,
+      "page": 30,
+      "y": 377.94,
+      "tone": 5
+    },
+    "equation:6.11": {
+      "line": 796,
+      "page": 30,
+      "y": 510.82,
+      "tone": 5
+    },
+    "equation:6.12": {
+      "line": 800,
+      "page": 30,
+      "y": 634.89,
+      "tone": 5
+    },
+    "equation:6.13": {
+      "line": 802,
+      "page": 30,
+      "y": 682.86,
+      "tone": 5
+    },
+    "equation:6.14": {
+      "line": 804,
+      "page": 31,
+      "y": 129.55,
+      "tone": 5
+    },
+    "equation:6.15": {
+      "line": 808,
+      "page": 31,
+      "y": 181.46,
+      "tone": 5
+    },
+    "equation:6.16": {
+      "line": 828,
+      "page": 31,
+      "y": 565.41,
+      "tone": 5
+    },
+    "equation:6.17": {
+      "line": 832,
+      "page": 32,
+      "y": 116.88,
+      "tone": 5
+    },
+    "equation:6.18": {
+      "line": 836,
+      "page": 32,
+      "y": 164.85,
+      "tone": 5
+    },
+    "equation:6.2": {
+      "line": 721,
+      "page": 27,
+      "y": 551.26,
+      "tone": 5
+    },
+    "equation:6.3": {
+      "line": 737,
+      "page": 28,
+      "y": 315.24,
+      "tone": 5
+    },
+    "equation:6.4": {
+      "line": 745,
+      "page": 28,
+      "y": 383.73,
+      "tone": 5
+    },
+    "equation:6.5": {
+      "line": 751,
+      "page": 28,
+      "y": 506.78,
+      "tone": 5
+    },
+    "equation:6.6": {
+      "line": 774,
+      "page": 29,
+      "y": 478.07,
+      "tone": 5
+    },
+    "equation:6.7": {
+      "line": 778,
+      "page": 29,
+      "y": 580.42,
+      "tone": 5
+    },
+    "equation:6.8": {
+      "line": 782,
+      "page": 30,
+      "y": 116.88,
+      "tone": 5
+    },
+    "equation:6.9": {
+      "line": 786,
+      "page": 30,
+      "y": 295.17,
+      "tone": 5
+    },
+    "equation:7.1": {
+      "line": 868,
+      "page": 33,
+      "y": 174.11,
+      "tone": 14
+    },
+    "equation:7.10": {
+      "line": 900,
+      "page": 34,
+      "y": 635.14,
+      "tone": 14
+    },
+    "equation:7.11": {
+      "line": 906,
+      "page": 35,
+      "y": 206.29,
+      "tone": 14
+    },
+    "equation:7.12": {
+      "line": 908,
+      "page": 35,
+      "y": 261.06,
+      "tone": 14
+    },
+    "equation:7.13": {
+      "line": 910,
+      "page": 35,
+      "y": 304.75,
+      "tone": 14
+    },
+    "equation:7.14": {
+      "line": 933,
+      "page": 36,
+      "y": 142.91,
+      "tone": 14
+    },
+    "equation:7.15": {
+      "line": 935,
+      "page": 36,
+      "y": 194.07,
+      "tone": 14
+    },
+    "equation:7.16": {
+      "line": 939,
+      "page": 36,
+      "y": 281.28,
+      "tone": 14
+    },
+    "equation:7.17": {
+      "line": 941,
+      "page": 36,
+      "y": 378.06,
+      "tone": 14
+    },
+    "equation:7.18": {
+      "line": 943,
+      "page": 36,
+      "y": 422.02,
+      "tone": 14
+    },
+    "equation:7.19": {
+      "line": 945,
+      "page": 36,
+      "y": 501.28,
+      "tone": 14
+    },
+    "equation:7.2": {
+      "line": 874,
+      "page": 33,
+      "y": 388.67,
+      "tone": 14
+    },
+    "equation:7.20": {
+      "line": 947,
+      "page": 36,
+      "y": 536.25,
+      "tone": 14
+    },
+    "equation:7.21": {
+      "line": 949,
+      "page": 36,
+      "y": 571.22,
+      "tone": 14
+    },
+    "equation:7.22": {
+      "line": 953,
+      "page": 36,
+      "y": 688.87,
+      "tone": 14
+    },
+    "equation:7.23": {
+      "line": 957,
+      "page": 37,
+      "y": 246.15,
+      "tone": 14
+    },
+    "equation:7.24": {
+      "line": 959,
+      "page": 37,
+      "y": 268.69,
+      "tone": 14
+    },
+    "equation:7.25": {
+      "line": 961,
+      "page": 37,
+      "y": 342.52,
+      "tone": 14
+    },
+    "equation:7.26": {
+      "line": 963,
+      "page": 37,
+      "y": 370.26,
+      "tone": 14
+    },
+    "equation:7.27": {
+      "line": 965,
+      "page": 37,
+      "y": 404.51,
+      "tone": 14
+    },
+    "equation:7.28": {
+      "line": 967,
+      "page": 37,
+      "y": 484.2,
+      "tone": 14
+    },
+    "equation:7.29": {
+      "line": 969,
+      "page": 37,
+      "y": 556.96,
+      "tone": 14
+    },
+    "equation:7.3": {
+      "line": 876,
+      "page": 33,
+      "y": 467.56,
+      "tone": 14
+    },
+    "equation:7.30": {
+      "line": 971,
+      "page": 37,
+      "y": 628.82,
+      "tone": 14
+    },
+    "equation:7.31": {
+      "line": 977,
+      "page": 38,
+      "y": 169.53,
+      "tone": 14
+    },
+    "equation:7.32": {
+      "line": 979,
+      "page": 38,
+      "y": 209.1,
+      "tone": 14
+    },
+    "equation:7.33": {
+      "line": 981,
+      "page": 38,
+      "y": 248.02,
+      "tone": 14
+    },
+    "equation:7.34": {
+      "line": 983,
+      "page": 38,
+      "y": 286.65,
+      "tone": 14
+    },
+    "equation:7.35": {
+      "line": 985,
+      "page": 38,
+      "y": 323.44,
+      "tone": 14
+    },
+    "equation:7.36": {
+      "line": 989,
+      "page": 38,
+      "y": 511.51,
+      "tone": 14
+    },
+    "equation:7.37": {
+      "line": 991,
+      "page": 38,
+      "y": 551.25,
+      "tone": 14
+    },
+    "equation:7.38": {
+      "line": 999,
+      "page": 39,
+      "y": 149.1,
+      "tone": 2
+    },
+    "equation:7.39": {
+      "line": 1001,
+      "page": 39,
+      "y": 190.45,
+      "tone": 2
+    },
+    "equation:7.4": {
+      "line": 880,
+      "page": 33,
+      "y": 595.74,
+      "tone": 14
+    },
+    "equation:7.40": {
+      "line": 1019,
+      "page": 39,
+      "y": 469.11,
+      "tone": 14
+    },
+    "equation:7.41": {
+      "line": 1021,
+      "page": 39,
+      "y": 532.14,
+      "tone": 14
+    },
+    "equation:7.42": {
+      "line": 1025,
+      "page": 39,
+      "y": 630.91,
+      "tone": 14
+    },
+    "equation:7.43": {
+      "line": 1027,
+      "page": 39,
+      "y": 670.28,
+      "tone": 14
+    },
+    "equation:7.44": {
+      "line": 1036,
+      "page": 40,
+      "y": 156.0,
+      "tone": 14
+    },
+    "equation:7.45": {
+      "line": 1040,
+      "page": 40,
+      "y": 265.67,
+      "tone": 14
+    },
+    "equation:7.46": {
+      "line": 1058,
+      "page": 41,
+      "y": 197.42,
+      "tone": 14
+    },
+    "equation:7.47": {
+      "line": 1060,
+      "page": 41,
+      "y": 248.06,
+      "tone": 14
+    },
+    "equation:7.48": {
+      "line": 1081,
+      "page": 42,
+      "y": 124.37,
+      "tone": 14
+    },
+    "equation:7.49": {
+      "line": 1083,
+      "page": 42,
+      "y": 177.36,
+      "tone": 14
+    },
+    "equation:7.5": {
+      "line": 884,
+      "page": 34,
+      "y": 154.48,
+      "tone": 14
+    },
+    "equation:7.50": {
+      "line": 1097,
+      "page": 42,
+      "y": 509.7,
+      "tone": 14
+    },
+    "equation:7.51": {
+      "line": 1099,
+      "page": 42,
+      "y": 561.04,
+      "tone": 14
+    },
+    "equation:7.52": {
+      "line": 1114,
+      "page": 43,
+      "y": 254.05,
+      "tone": 14
+    },
+    "equation:7.53": {
+      "line": 1123,
+      "page": 43,
+      "y": 403.55,
+      "tone": 14
+    },
+    "equation:7.54": {
+      "line": 1128,
+      "page": 43,
+      "y": 542.67,
+      "tone": 14
+    },
+    "equation:7.55": {
+      "line": 1139,
+      "page": 44,
+      "y": 223.58,
+      "tone": 14
+    },
+    "equation:7.56": {
+      "line": 1149,
+      "page": 44,
+      "y": 470.2,
+      "tone": 14
+    },
+    "equation:7.57": {
+      "line": 1164,
+      "page": 45,
+      "y": 146.69,
+      "tone": 14
+    },
+    "equation:7.58": {
+      "line": 1172,
+      "page": 45,
+      "y": 250.53,
+      "tone": 14
+    },
+    "equation:7.59": {
+      "line": 1179,
+      "page": 45,
+      "y": 454.76,
+      "tone": 14
+    },
+    "equation:7.6": {
+      "line": 886,
+      "page": 34,
+      "y": 215.57,
+      "tone": 14
+    },
+    "equation:7.60": {
+      "line": 1182,
+      "page": 45,
+      "y": 496.1,
+      "tone": 14
+    },
+    "equation:7.61": {
+      "line": 1219,
+      "page": 47,
+      "y": 130.87,
+      "tone": 14
+    },
+    "equation:7.62": {
+      "line": 1257,
+      "page": 48,
+      "y": 273.68,
+      "tone": 2
+    },
+    "equation:7.63": {
+      "line": 1276,
+      "page": 48,
+      "y": 626.39,
+      "tone": 3
+    },
+    "equation:7.64": {
+      "line": 1290,
+      "page": 49,
+      "y": 338.67
+    },
+    "equation:7.65": {
+      "line": 1295,
+      "page": 49,
+      "y": 544.06
+    },
+    "equation:7.66": {
+      "line": 1308,
+      "page": 50,
+      "y": 301.97
+    },
+    "equation:7.7": {
+      "line": 894,
+      "page": 34,
+      "y": 467.03,
+      "tone": 14
+    },
+    "equation:7.8": {
+      "line": 896,
+      "page": 34,
+      "y": 515.36,
+      "tone": 14
+    },
+    "equation:7.9": {
+      "line": 898,
+      "page": 34,
+      "y": 570.57,
+      "tone": 14
+    },
+    "equation:b.1": {
+      "line": 1401,
+      "page": 54,
+      "y": 364.08,
+      "tone": 6
+    },
+    "equation:b.10": {
+      "line": 1452,
+      "page": 57,
+      "y": 261.3,
+      "tone": 6
+    },
+    "equation:b.11": {
+      "line": 1457,
+      "page": 57,
+      "y": 620.78,
+      "tone": 6
+    },
+    "equation:b.12": {
+      "line": 1470,
+      "page": 58,
+      "y": 268.82,
+      "tone": 15
+    },
+    "equation:b.13": {
+      "line": 1473,
+      "page": 58,
+      "y": 321.14,
+      "tone": 15
+    },
+    "equation:b.14": {
+      "line": 1488,
+      "page": 58,
+      "y": 673.11,
+      "tone": 15
+    },
+    "equation:b.15": {
+      "line": 1491,
+      "page": 59,
+      "y": 147.86,
+      "tone": 15
+    },
+    "equation:b.16": {
+      "line": 1498,
+      "page": 59,
+      "y": 397.92,
+      "tone": 15
+    },
+    "equation:b.17": {
+      "line": 1532,
+      "page": 60,
+      "y": 606.61,
+      "tone": 15
+    },
+    "equation:b.18": {
+      "line": 1537,
+      "page": 60,
+      "y": 676.47,
+      "tone": 15
+    },
+    "equation:b.19": {
+      "line": 1546,
+      "page": 61,
+      "y": 257.29,
+      "tone": 15
+    },
+    "equation:b.2": {
+      "line": 1404,
+      "page": 54,
+      "y": 428.12,
+      "tone": 6
+    },
+    "equation:b.20": {
+      "line": 1554,
+      "page": 61,
+      "y": 427.65,
+      "tone": 15
+    },
+    "equation:b.21": {
+      "line": 1573,
+      "page": 62,
+      "y": 407.85,
+      "tone": 15
+    },
+    "equation:b.22": {
+      "line": 1578,
+      "page": 62,
+      "y": 458.35,
+      "tone": 15
+    },
+    "equation:b.23": {
+      "line": 1601,
+      "page": 63,
+      "y": 316.99,
+      "tone": 7
+    },
+    "equation:b.24": {
+      "line": 1608,
+      "page": 63,
+      "y": 463.45,
+      "tone": 7
+    },
+    "equation:b.25": {
+      "line": 1613,
+      "page": 63,
+      "y": 599.99,
+      "tone": 8
+    },
+    "equation:b.26": {
+      "line": 1624,
+      "page": 64,
+      "y": 569.53,
+      "tone": 8
+    },
+    "equation:b.27": {
+      "line": 1627,
+      "page": 65,
+      "y": 107.46,
+      "tone": 8
+    },
+    "equation:b.28": {
+      "line": 1630,
+      "page": 65,
+      "y": 280.8,
+      "tone": 9
+    },
+    "equation:b.29": {
+      "line": 1647,
+      "page": 65,
+      "y": 653.42,
+      "tone": 9
+    },
+    "equation:b.3": {
+      "line": 1409,
+      "page": 54,
+      "y": 548.06,
+      "tone": 6
+    },
+    "equation:b.30": {
+      "line": 1651,
+      "page": 66,
+      "y": 118.63,
+      "tone": 9
+    },
+    "equation:b.31": {
+      "line": 1654,
+      "page": 66,
+      "y": 165.81,
+      "tone": 9
+    },
+    "equation:b.32": {
+      "line": 1659,
+      "page": 66,
+      "y": 223.57,
+      "tone": 8
+    },
+    "equation:b.33": {
+      "line": 1662,
+      "tone": 8,
+      "page": 66,
+      "y": 308.87
+    },
+    "equation:b.34": {
+      "line": 1668,
+      "page": 66,
+      "y": 388.72,
+      "tone": 8
+    },
+    "equation:b.35": {
+      "line": 1695,
+      "page": 68,
+      "y": 144.09,
+      "tone": 9
+    },
+    "equation:b.36": {
+      "line": 1697,
+      "page": 68,
+      "y": 213.93,
+      "tone": 9
+    },
+    "equation:b.37": {
+      "line": 1710,
+      "page": 68,
+      "y": 667.89
+    },
+    "equation:b.38": {
+      "line": 1720,
+      "page": 69,
+      "y": 527.78,
+      "tone": 10
+    },
+    "equation:b.39": {
+      "line": 1727,
+      "page": 69,
+      "y": 661.67,
+      "tone": 10
+    },
+    "equation:b.4": {
+      "line": 1413,
+      "page": 54,
+      "y": 592.79,
+      "tone": 6
+    },
+    "equation:b.40": {
+      "line": 1729,
+      "page": 70,
+      "y": 107.09,
+      "tone": 10
+    },
+    "equation:b.41": {
+      "line": 1742,
+      "page": 70,
+      "y": 531.53,
+      "tone": 10
+    },
+    "equation:b.42": {
+      "line": 1748,
+      "page": 71,
+      "y": 103.54
+    },
+    "equation:b.43": {
+      "line": 1752,
+      "page": 71,
+      "y": 299.03,
+      "tone": 10
+    },
+    "equation:b.44": {
+      "line": 1761,
+      "page": 71,
+      "y": 619.46,
+      "tone": 10
+    },
+    "equation:b.45": {
+      "line": 1771,
+      "page": 72,
+      "y": 293.98,
+      "tone": 12
+    },
+    "equation:b.46": {
+      "line": 1776,
+      "page": 72,
+      "y": 367.21,
+      "tone": 11
+    },
+    "equation:b.47": {
+      "line": 1784,
+      "page": 72,
+      "y": 491.52,
+      "tone": 11
+    },
+    "equation:b.48": {
+      "line": 1790,
+      "page": 72,
+      "y": 596.23,
+      "tone": 11
+    },
+    "equation:b.49": {
+      "line": 1800,
+      "page": 73,
+      "y": 136.66,
+      "tone": 11
+    },
+    "equation:b.5": {
+      "line": 1417,
+      "page": 55,
+      "y": 117.57,
+      "tone": 6
+    },
+    "equation:b.50": {
+      "line": 1823,
+      "page": 74,
+      "y": 362.62,
+      "tone": 12
+    },
+    "equation:b.51": {
+      "line": 1834,
+      "page": 75,
+      "y": 292.2,
+      "tone": 12
+    },
+    "equation:b.52": {
+      "line": 1839,
+      "page": 75,
+      "y": 390.05,
+      "tone": 12
+    },
+    "equation:b.53": {
+      "line": 1846,
+      "page": 75,
+      "y": 627.62,
+      "tone": 12
+    },
+    "equation:b.54": {
+      "line": 1850,
+      "page": 76,
+      "y": 120.04,
+      "tone": 12
+    },
+    "equation:b.55": {
+      "line": 1852,
+      "page": 76,
+      "y": 217.91,
+      "tone": 12
+    },
+    "equation:b.56": {
+      "line": 1860,
+      "page": 76,
+      "y": 376.57,
+      "tone": 12
+    },
+    "equation:b.57": {
+      "line": 1871,
+      "page": 77,
+      "y": 98.14,
+      "tone": 13
+    },
+    "equation:b.58": {
+      "line": 1879,
+      "page": 77,
+      "y": 330.77,
+      "tone": 13
+    },
+    "equation:b.59": {
+      "line": 1884,
+      "page": 77,
+      "y": 399.92,
+      "tone": 13
+    },
+    "equation:b.6": {
+      "line": 1420,
+      "page": 55,
+      "y": 159.34,
+      "tone": 6
+    },
+    "equation:b.7": {
+      "line": 1427,
+      "page": 55,
+      "y": 260.24,
+      "tone": 6
+    },
+    "equation:b.8": {
+      "line": 1432,
+      "page": 55,
+      "y": 323.04,
+      "tone": 6
+    },
+    "equation:b.9": {
+      "line": 1443,
+      "page": 56,
+      "y": 237.88,
+      "tone": 6
+    },
+    "equation:c.1": {
+      "line": 1965,
+      "page": 81,
+      "y": 681.18,
+      "tone": 2
+    },
+    "equation:c.2": {
+      "line": 1971,
+      "page": 82,
+      "y": 388.51,
+      "tone": 8
+    },
+    "figure:1": {
+      "line": 127,
+      "page": 5,
+      "y": 377.26
+    },
+    "figure:2": {
+      "line": 1927,
+      "page": 79,
+      "y": 364.35
+    },
+    "figure:3": {
+      "line": 1942,
+      "page": 80,
+      "y": 500.41
+    },
+    "figure:4": {
+      "line": 1958,
+      "page": 81,
+      "y": 567.16
+    },
+    "lemma:2.3": {
+      "line": 291,
+      "page": 13,
+      "y": 82.4,
+      "tone": 3
+    },
+    "lemma:3.1": {
+      "line": 340,
+      "page": 14,
+      "y": 484.72,
+      "tone": 3
+    },
+    "lemma:3.2": {
+      "line": 372,
+      "page": 15,
+      "y": 580.04,
+      "tone": 3
+    },
+    "lemma:3.3": {
+      "line": 395,
+      "page": 16,
+      "y": 384.08,
+      "tone": 3
+    },
+    "lemma:3.4": {
+      "line": 401,
+      "page": 16,
+      "y": 495.19,
+      "tone": 3
+    },
+    "lemma:3.5": {
+      "line": 407,
+      "page": 16,
+      "y": 605.8,
+      "tone": 3
+    },
+    "lemma:3.6": {
+      "line": 419,
+      "page": 17,
+      "y": 278.08,
+      "tone": 3
+    },
+    "lemma:3.7": {
+      "line": 439,
+      "page": 18,
+      "y": 183.5,
+      "tone": 5
+    },
+    "lemma:4.2": {
+      "line": 479,
+      "page": 19,
+      "y": 355.19,
+      "tone": 2
+    },
+    "lemma:4.4": {
+      "line": 524,
+      "page": 20,
+      "y": 590.36,
+      "tone": 4
+    },
+    "lemma:4.5": {
+      "line": 534,
+      "page": 21,
+      "y": 211.06,
+      "tone": 4
+    },
+    "lemma:4.6": {
+      "line": 548,
+      "page": 22,
+      "y": 82.4,
+      "tone": 4
+    },
+    "lemma:4.7": {
+      "line": 619,
+      "page": 24,
+      "y": 290.57,
+      "tone": 4
+    },
+    "lemma:4.8": {
+      "line": 631,
+      "page": 24,
+      "y": 531.1,
+      "tone": 4
+    },
+    "lemma:5.1": {
+      "line": 662,
+      "page": 25,
+      "y": 499.22,
+      "tone": 5
+    },
+    "lemma:6.1": {
+      "line": 720,
+      "page": 27,
+      "y": 502.53,
+      "tone": 5
+    },
+    "lemma:6.2": {
+      "line": 750,
+      "page": 28,
+      "y": 485.85,
+      "tone": 5
+    },
+    "lemma:6.3": {
+      "line": 807,
+      "page": 31,
+      "y": 146.18,
+      "tone": 5
+    },
+    "lemma:7.4": {
+      "line": 1024,
+      "page": 39,
+      "y": 579.21,
+      "tone": 14
+    },
+    "lemma:7.6": {
+      "line": 1080,
+      "page": 42,
+      "y": 101.83,
+      "tone": 14
+    },
+    "lemma:7.7": {
+      "line": 1094,
+      "page": 42,
+      "y": 429.83,
+      "tone": 14
+    },
+    "lemma:b.10": {
+      "line": 1814,
+      "page": 73,
+      "y": 575.09
+    },
+    "lemma:b.11": {
+      "line": 1820,
+      "page": 74,
+      "y": 212.35
+    },
+    "lemma:b.12": {
+      "line": 1842,
+      "page": 75,
+      "y": 558.97
+    },
+    "lemma:b.13": {
+      "line": 1874,
+      "page": 77,
+      "y": 286.39
+    },
+    "lemma:b.2": {
+      "line": 1581,
+      "page": 62,
+      "y": 508.82,
+      "tone": 15
+    },
+    "lemma:b.3": {
+      "line": 1599,
+      "page": 63,
+      "y": 289.0,
+      "tone": 7
+    },
+    "lemma:b.5": {
+      "line": 1691,
+      "page": 68,
+      "y": 117.57,
+      "tone": 9
+    },
+    "lemma:b.6": {
+      "line": 1706,
+      "page": 68,
+      "y": 529.11,
+      "tone": 9
+    },
+    "lemma:b.7": {
+      "line": 1741,
+      "page": 70,
+      "y": 498.39,
+      "tone": 10
+    },
+    "lemma:b.9": {
+      "line": 1779,
+      "page": 72,
+      "y": 426.2
+    },
+    "proposition:2.1": {
+      "line": 271,
+      "page": 12,
+      "y": 337.05,
+      "tone": 4
+    },
+    "proposition:2.2": {
+      "line": 279,
+      "page": 12,
+      "y": 506.47,
+      "tone": 5
+    },
+    "proposition:4.1": {
+      "line": 471,
+      "page": 19,
+      "y": 81.23,
+      "tone": 2
+    },
+    "proposition:4.3": {
+      "line": 505,
+      "page": 20,
+      "y": 293.91,
+      "tone": 4
+    },
+    "proposition:7.10": {
+      "line": 1177,
+      "page": 45,
+      "y": 420.37,
+      "tone": 14
+    },
+    "proposition:7.11": {
+      "line": 1253,
+      "page": 48,
+      "y": 179.53,
+      "tone": 2
+    },
+    "proposition:7.5": {
+      "line": 1051,
+      "page": 40,
+      "y": 633.02,
+      "tone": 14
+    },
+    "proposition:7.8": {
+      "line": 1121,
+      "page": 43,
+      "y": 375.38,
+      "tone": 14
+    },
+    "proposition:7.9": {
+      "line": 1137,
+      "page": 44,
+      "y": 182.64,
+      "tone": 14
+    },
+    "proposition:b.1": {
+      "line": 1549,
+      "page": 61,
+      "y": 329.91,
+      "tone": 15
+    },
+    "proposition:b.14": {
+      "line": 1898,
+      "page": 78,
+      "y": 216.17,
+      "tone": 13
+    },
+    "proposition:b.4": {
+      "line": 1657,
+      "page": 66,
+      "y": 188.31,
+      "tone": 8
+    },
+    "proposition:b.8": {
+      "line": 1755,
+      "page": 71,
+      "y": 364.88,
+      "tone": 10
+    },
+    "remark:1.2": {
+      "line": 115,
+      "page": 4,
+      "y": 418.23,
+      "tone": 2
+    },
+    "remark:7.3": {
+      "line": 1006,
+      "page": 39,
+      "y": 239.46,
+      "tone": 2
+    },
+    "section:1": {
+      "line": 54,
+      "page": 2,
+      "y": 87.15
+    },
+    "section:1.1": {
+      "line": 74,
+      "page": 2,
+      "y": 548.27
+    },
+    "section:1.2": {
+      "line": 131,
+      "page": 5,
+      "y": 439.18
+    },
+    "section:1.3": {
+      "line": 163,
+      "page": 7,
+      "y": 454.74
+    },
+    "section:1.4": {
+      "line": 214,
+      "page": 10,
+      "y": 338.09
+    },
+    "section:1.5": {
+      "line": 222,
+      "page": 10,
+      "y": 583.22
+    },
+    "section:1.6": {
+      "line": 238,
+      "page": 11,
+      "y": 407.71
+    },
+    "section:2": {
+      "line": 245,
+      "page": 11,
+      "y": 457.6
+    },
+    "section:2.1": {
+      "line": 251,
+      "page": 11,
+      "y": 475.06
+    },
+    "section:2.2": {
+      "line": 267,
+      "page": 12,
+      "y": 318.78
+    },
+    "section:2.3": {
+      "line": 287,
+      "page": 12,
+      "y": 652.58
+    },
+    "section:3": {
+      "line": 310,
+      "page": 13,
+      "y": 518.02
+    },
+    "section:3.1": {
+      "line": 318,
+      "page": 13,
+      "y": 629.83,
+      "tone": 3
+    },
+    "section:3.2": {
+      "line": 338,
+      "page": 14,
+      "y": 468.09,
+      "tone": 3
+    },
+    "section:3.3": {
+      "line": 368,
+      "page": 15,
+      "y": 524.55,
+      "tone": 3
+    },
+    "section:3.4": {
+      "line": 384,
+      "page": 16,
+      "y": 223.4,
+      "tone": 3
+    },
+    "section:3.5": {
+      "line": 415,
+      "page": 17,
+      "y": 144.89,
+      "tone": 3
+    },
+    "section:3.6": {
+      "line": 425,
+      "page": 17,
+      "y": 374.97,
+      "tone": 5
+    },
+    "section:4": {
+      "line": 455,
+      "page": 18,
+      "y": 467.4
+    },
+    "section:4.1": {
+      "line": 465,
+      "page": 18,
+      "y": 591.19,
+      "tone": 2
+    },
+    "section:4.2": {
+      "line": 493,
+      "page": 19,
+      "y": 582.51,
+      "tone": 4
+    },
+    "section:4.3": {
+      "line": 514,
+      "page": 20,
+      "y": 363.05,
+      "tone": 4
+    },
+    "section:4.4": {
+      "line": 544,
+      "page": 21,
+      "y": 596.45,
+      "tone": 4
+    },
+    "section:4.5": {
+      "line": 599,
+      "page": 23,
+      "y": 494.82,
+      "tone": 4
+    },
+    "section:5": {
+      "line": 648,
+      "page": 25,
+      "y": 276.91
+    },
+    "section:5.1": {
+      "line": 656,
+      "page": 25,
+      "y": 379.35,
+      "tone": 5
+    },
+    "section:5.2": {
+      "line": 680,
+      "page": 26,
+      "y": 253.1
+    },
+    "section:6": {
+      "line": 698,
+      "page": 26,
+      "y": 589.99,
+      "tone": 5
+    },
+    "section:6.1": {
+      "line": 712,
+      "page": 27,
+      "y": 207.73,
+      "tone": 5
+    },
+    "section:6.2": {
+      "line": 742,
+      "page": 28,
+      "y": 335.25,
+      "tone": 5
+    },
+    "section:6.3": {
+      "line": 771,
+      "page": 29,
+      "y": 367.5,
+      "tone": 5
+    },
+    "section:6.4": {
+      "line": 825,
+      "page": 31,
+      "y": 507.81,
+      "tone": 5
+    },
+    "section:7": {
+      "line": 855,
+      "page": 32,
+      "y": 540.55
+    },
+    "section:7.1": {
+      "line": 865,
+      "page": 33,
+      "y": 130.52,
+      "tone": 14
+    },
+    "section:7.10": {
+      "line": 1272,
+      "page": 48,
+      "y": 565.56
+    },
+    "section:7.2": {
+      "line": 891,
+      "page": 34,
+      "y": 343.14,
+      "tone": 14
+    },
+    "section:7.3": {
+      "line": 917,
+      "page": 35,
+      "y": 417.21,
+      "tone": 14
+    },
+    "section:7.4": {
+      "line": 996,
+      "page": 39,
+      "y": 85.19
+    },
+    "section:7.5": {
+      "line": 1016,
+      "page": 39,
+      "y": 435.24,
+      "tone": 14
+    },
+    "section:7.6": {
+      "line": 1078,
+      "page": 42,
+      "y": 85.19,
+      "tone": 14
+    },
+    "section:7.7": {
+      "line": 1111,
+      "page": 43,
+      "y": 208.86,
+      "tone": 14
+    },
+    "section:7.8": {
+      "line": 1160,
+      "page": 45,
+      "y": 85.19,
+      "tone": 14
+    },
+    "section:7.9": {
+      "line": 1247,
+      "page": 48,
+      "y": 85.19
+    },
+    "section:a": {
+      "line": 1326,
+      "page": 51,
+      "y": 355.25,
+      "tone": 3
+    },
+    "section:a.1": {
+      "line": 1332,
+      "page": 51,
+      "y": 372.71,
+      "tone": 3
+    },
+    "section:a.2": {
+      "line": 1362,
+      "page": 53,
+      "y": 83.27,
+      "tone": 3
+    },
+    "section:b": {
+      "line": 1379,
+      "page": 53,
+      "y": 485.84
+    },
+    "section:b.1": {
+      "line": 1395,
+      "page": 54,
+      "y": 202.08
+    },
+    "section:b.2": {
+      "line": 1464,
+      "page": 58,
+      "y": 130.52,
+      "tone": 15
+    },
+    "section:b.3": {
+      "line": 1595,
+      "page": 63,
+      "y": 114.78
+    },
+    "section:b.4": {
+      "line": 1768,
+      "page": 72,
+      "y": 237.44
+    },
+    "section:c": {
+      "line": 1913,
+      "page": 78,
+      "y": 598.89
+    },
+    "section:c.1": {
+      "line": 1921,
+      "page": 79,
+      "y": 117.57
+    },
+    "section:c.2": {
+      "line": 1962,
+      "page": 81,
+      "y": 650.54
+    },
+    "section:c.3": {
+      "line": 1976,
+      "page": 82,
+      "y": 490.18
+    },
+    "section:c.4": {
+      "line": 1992,
+      "page": 83,
+      "y": 299.8
+    },
+    "theorem:1.1": {
+      "line": 95,
+      "page": 3,
+      "y": 452.93,
+      "tone": 1
+    },
+    "theorem:7.1": {
+      "line": 998,
+      "page": 39,
+      "y": 101.83,
+      "tone": 1
+    }
+  }
+}

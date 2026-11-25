@@ -1,0 +1,56 @@
+{
+  "schema": "paper-references/1",
+  "targets": {
+    "theorem:1.2": {
+      "line": 41,
+      "tone": 0
+    },
+    "lemma:2.2": {
+      "line": 80,
+      "tone": 4
+    },
+    "lemma:3.3": {
+      "line": 231
+    },
+    "theorem:4.8": {
+      "line": 1302,
+      "tone": 15
+    },
+    "equation:b24": {
+      "line": 2078
+    },
+    "lemma:2.1": {
+      "line": 78,
+      "tone": 3
+    },
+    "proposition:5.6": {
+      "line": 1938,
+      "tone": 11
+    },
+    "equation:a19": {
+      "line": 1259
+    },
+    "theorem:4.7": {
+      "line": 1167,
+      "tone": 17
+    },
+    "equation:a26": {
+      "line": 1365
+    },
+    "theorem:5.2": {
+      "line": 1716,
+      "tone": 19
+    },
+    "theorem:4.4": {
+      "line": 1057,
+      "tone": 16
+    },
+    "corollary:5.3": {
+      "line": 1756,
+      "tone": 19
+    },
+    "equation:b16": {
+      "line": 1948
+    }
+  }
+}

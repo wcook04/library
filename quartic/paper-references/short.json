@@ -1,1 +1,218 @@
-{"schema":"paper-references/1","targets":{"equation:1":{"line":32,"tone":0},"equation:10":{"line":283,"tone":6},"equation:11":{"line":293,"tone":6},"equation:2":{"line":115,"tone":2},"equation:3":{"line":82,"tone":1},"equation:4":{"line":146,"tone":4},"equation:5":{"line":165,"tone":5},"equation:6":{"line":181,"tone":5},"equation:7":{"line":192,"tone":5},"equation:8":{"line":244,"tone":7},"equation:9":{"line":276,"tone":6},"lemma:2":{"line":79,"tone":1},"lemma:4":{"line":185,"tone":5},"lemma:5":{"line":253,"tone":6},"proposition:3":{"line":154,"tone":5},"section:1":{"line":18},"section:1.1":{"line":40},"section:2":{"line":59},"section:3":{"line":91},"section:4":{"line":133},"section:4.1":{"line":139,"tone":4},"section:4.2":{"line":152,"tone":5},"section:4.3":{"line":198,"tone":2},"section:5":{"line":209},"section:5.1":{"line":215,"tone":7},"section:5.2":{"line":237,"tone":7},"section:5.3":{"line":249,"tone":6},"section:5.4":{"line":288,"tone":6},"section:6":{"line":300,"tone":0},"section:7":{"line":318},"section:8":{"line":339},"theorem:1":{"line":28,"tone":0}}}
+{
+  "schema": "paper-references/1",
+  "targets": {
+    "equation:1": {
+      "line": 32,
+      "tone": 0
+    },
+    "equation:10": {
+      "line": 283,
+      "tone": 6
+    },
+    "equation:11": {
+      "line": 293,
+      "tone": 6
+    },
+    "equation:2": {
+      "line": 115,
+      "tone": 2
+    },
+    "equation:3": {
+      "line": 82,
+      "tone": 1
+    },
+    "equation:4": {
+      "line": 146,
+      "tone": 4
+    },
+    "equation:5": {
+      "line": 165,
+      "tone": 5
+    },
+    "equation:6": {
+      "line": 181,
+      "tone": 5
+    },
+    "equation:7": {
+      "line": 192,
+      "tone": 5
+    },
+    "equation:8": {
+      "line": 244,
+      "tone": 7
+    },
+    "equation:9": {
+      "line": 276,
+      "tone": 6
+    },
+    "lemma:2": {
+      "line": 79,
+      "tone": 1
+    },
+    "lemma:4": {
+      "line": 185,
+      "tone": 5
+    },
+    "lemma:5": {
+      "line": 253,
+      "tone": 6
+    },
+    "proposition:3": {
+      "line": 154,
+      "tone": 5
+    },
+    "section:1": {
+      "line": 18
+    },
+    "section:1.1": {
+      "line": 40
+    },
+    "section:2": {
+      "line": 59
+    },
+    "section:3": {
+      "line": 91
+    },
+    "section:4": {
+      "line": 133
+    },
+    "section:4.1": {
+      "line": 139,
+      "tone": 4
+    },
+    "section:4.2": {
+      "line": 152,
+      "tone": 5
+    },
+    "section:4.3": {
+      "line": 198,
+      "tone": 2
+    },
+    "section:5": {
+      "line": 209
+    },
+    "section:5.1": {
+      "line": 215,
+      "tone": 7
+    },
+    "section:5.2": {
+      "line": 237,
+      "tone": 7
+    },
+    "section:5.3": {
+      "line": 249,
+      "tone": 6
+    },
+    "section:5.4": {
+      "line": 288,
+      "tone": 6
+    },
+    "section:6": {
+      "line": 300,
+      "tone": 0
+    },
+    "section:7": {
+      "line": 318
+    },
+    "section:8": {
+      "line": 339
+    },
+    "theorem:1": {
+      "line": 28,
+      "tone": 0
+    },
+    "long/appendix:e.5": {
+      "line": 3892,
+      "stage": "long"
+    },
+    "expository/section:4.1": {
+      "line": 257,
+      "tone": 7,
+      "stage": "expository",
+      "colours": {
+        "light": "oklch(0.422 0.099 340.9)",
+        "dark": "oklch(0.632 0.145 340.9)"
+      }
+    },
+    "expository/section:7.3": {
+      "line": 569,
+      "tone": 5,
+      "stage": "expository",
+      "colours": {
+        "light": "oklch(0.540 0.093 229.5)",
+        "dark": "oklch(0.750 0.137 229.5)"
+      }
+    },
+    "long/appendix:g.3": {
+      "line": 4432,
+      "stage": "long"
+    },
+    "long/appendix:g.2": {
+      "line": 4298,
+      "tone": 4,
+      "stage": "long",
+      "colours": {
+        "light": "oklch(0.450 0.072 126.0)",
+        "dark": "oklch(0.665 0.110 126.0)"
+      }
+    },
+    "expository/appendix:a.2": {
+      "line": 708,
+      "tone": 8,
+      "stage": "expository",
+      "colours": {
+        "light": "oklch(0.507 0.087 348.1)",
+        "dark": "oklch(0.717 0.129 348.1)"
+      }
+    },
+    "expository/appendix:b.1": {
+      "line": 784,
+      "tone": 5,
+      "stage": "expository",
+      "colours": {
+        "light": "oklch(0.540 0.093 229.5)",
+        "dark": "oklch(0.750 0.137 229.5)"
+      }
+    },
+    "expository/appendix:b.2": {
+      "line": 807,
+      "tone": 5,
+      "stage": "expository",
+      "colours": {
+        "light": "oklch(0.540 0.093 229.5)",
+        "dark": "oklch(0.750 0.137 229.5)"
+      }
+    },
+    "long/equation:8.3": {
+      "line": 1460,
+      "tone": 5,
+      "stage": "long",
+      "colours": {
+        "light": "oklch(0.535 0.063 140.4)",
+        "dark": "oklch(0.750 0.097 140.4)"
+      }
+    },
+    "long/section:8.5": {
+      "line": 1671,
+      "tone": 5,
+      "stage": "long",
+      "colours": {
+        "light": "oklch(0.535 0.063 140.4)",
+        "dark": "oklch(0.750 0.097 140.4)"
+      }
+    },
+    "long/appendix:b.2": {
+      "line": 2622,
+      "stage": "long"
+    },
+    "long/appendix:a": {
+      "line": 2148,
+      "tone": 0,
+      "stage": "long",
+      "colours": {
+        "light": "oklch(0.380 0.081 340.1)",
+        "dark": "oklch(0.595 0.123 340.1)"
+      }
+    }
+  }
+}

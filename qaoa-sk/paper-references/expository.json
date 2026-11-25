@@ -1,1 +1,166 @@
-{"schema":"paper-references/1","targets":{"section:1":{"line":50,"page":1,"y":459.55,"tone":0},"section:2":{"line":158,"page":3,"y":156.75,"tone":1},"section:3":{"line":324,"page":5,"y":143.2},"section:3.1":{"line":333,"page":5,"y":247.67,"tone":5},"section:3.2":{"line":359,"page":5,"y":490.58},"section:3.3":{"line":423,"page":6,"y":459.56},"section:4":{"line":587,"page":9,"y":73.32},"section:5":{"line":607,"page":9,"y":238.02,"tone":7},"section:5.1":{"line":614,"page":9,"y":315.4,"tone":7},"section:5.2":{"line":745,"page":11,"y":204.62,"tone":8},"section:5.3":{"line":762,"page":11,"y":368.92},"section:5.4":{"line":864,"page":12,"y":589.69},"section:5.5":{"line":999,"page":14,"y":460.1,"tone":4},"section:6":{"line":1028,"page":15,"y":73.32,"tone":2},"section:7":{"line":1082,"page":15,"y":556.03},"section:7.1":{"line":1095,"page":16,"y":74.17,"tone":7},"section:7.2":{"line":1133,"page":16,"y":424.99},"section:7.3":{"line":1215,"page":17,"y":466.42,"tone":3},"section:7.4":{"line":1328,"page":19,"y":130.09}}}
+{
+  "schema": "paper-references/1",
+  "targets": {
+    "section:1": {
+      "line": 50,
+      "page": 1,
+      "y": 459.55,
+      "tone": 0
+    },
+    "section:2": {
+      "line": 158,
+      "page": 3,
+      "y": 156.75,
+      "tone": 1
+    },
+    "section:3": {
+      "line": 324,
+      "page": 5,
+      "y": 143.2
+    },
+    "section:3.1": {
+      "line": 333,
+      "page": 5,
+      "y": 247.67,
+      "tone": 5
+    },
+    "section:3.2": {
+      "line": 359,
+      "page": 5,
+      "y": 490.58
+    },
+    "section:3.3": {
+      "line": 423,
+      "page": 6,
+      "y": 459.56
+    },
+    "section:4": {
+      "line": 587,
+      "page": 9,
+      "y": 73.32
+    },
+    "section:5": {
+      "line": 607,
+      "page": 9,
+      "y": 238.02,
+      "tone": 7
+    },
+    "section:5.1": {
+      "line": 614,
+      "page": 9,
+      "y": 315.4,
+      "tone": 7
+    },
+    "section:5.2": {
+      "line": 745,
+      "page": 11,
+      "y": 204.62,
+      "tone": 8
+    },
+    "section:5.3": {
+      "line": 762,
+      "page": 11,
+      "y": 368.92
+    },
+    "section:5.4": {
+      "line": 864,
+      "page": 12,
+      "y": 589.69
+    },
+    "section:5.5": {
+      "line": 999,
+      "page": 14,
+      "y": 460.1,
+      "tone": 4
+    },
+    "section:6": {
+      "line": 1028,
+      "page": 15,
+      "y": 73.32,
+      "tone": 2
+    },
+    "section:7": {
+      "line": 1082,
+      "page": 15,
+      "y": 556.03
+    },
+    "section:7.1": {
+      "line": 1095,
+      "page": 16,
+      "y": 74.17,
+      "tone": 7
+    },
+    "section:7.2": {
+      "line": 1133,
+      "page": 16,
+      "y": 424.99
+    },
+    "section:7.3": {
+      "line": 1215,
+      "page": 17,
+      "y": 466.42,
+      "tone": 3
+    },
+    "section:7.4": {
+      "line": 1328,
+      "page": 19,
+      "y": 130.09
+    },
+    "long/section:12.1": {
+      "line": 5284,
+      "page": 71,
+      "y": 548.34,
+      "stage": "long"
+    },
+    "long/section:3.3": {
+      "line": 717,
+      "page": 11,
+      "y": 116.55,
+      "tone": 1,
+      "stage": "long",
+      "colours": {
+        "light": "oklch(0.520 0.155 42.5)",
+        "dark": "oklch(0.685 0.190 42.5)"
+      }
+    },
+    "short/equation:5": {
+      "line": 614,
+      "page": 8,
+      "y": 692.18,
+      "tone": 3,
+      "stage": "short",
+      "colours": {
+        "light": "oklch(0.493 0.164 143.2)",
+        "dark": "oklch(0.628 0.200 143.2)"
+      }
+    },
+    "long/section:9.2": {
+      "line": 3751,
+      "page": 51,
+      "y": 338.36,
+      "tone": 4,
+      "stage": "long",
+      "colours": {
+        "light": "oklch(0.495 0.107 162.5)",
+        "dark": "oklch(0.660 0.143 162.5)"
+      }
+    },
+    "short/section:5.1": {
+      "line": 945,
+      "page": 13,
+      "y": 170.74,
+      "tone": 5,
+      "stage": "short",
+      "colours": {
+        "light": "oklch(0.483 0.120 244.7)",
+        "dark": "oklch(0.618 0.154 244.7)"
+      }
+    },
+    "long/section:10.4": {
+      "line": 4303,
+      "page": 59,
+      "y": 74.17,
+      "stage": "long"
+    }
+  }
+}

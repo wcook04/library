@@ -1,1 +1,169 @@
-{"schema":"paper-references/1","targets":{"equation:1":{"line":160,"page":4,"y":178.79,"tone":1},"equation:2":{"line":200,"page":4,"y":568.57,"tone":4},"equation:3":{"line":220,"page":5,"y":184.34,"tone":4},"equation:4":{"line":312,"page":7,"y":196.48,"tone":5},"equation:5":{"line":438,"page":8,"y":633.76,"tone":5},"equation:6":{"line":458,"page":9,"y":395.79,"tone":6},"section:1":{"line":15,"page":1,"y":215.52},"section:2":{"line":77,"page":2,"y":386.08,"tone":0},"section:3":{"line":132,"page":3,"y":530.42,"tone":1},"section:4":{"line":166,"page":4,"y":211.34,"tone":4},"section:5":{"line":242,"page":5,"y":431.18,"tone":7},"section:6":{"line":267,"page":6,"y":173.23},"section:6.1":{"line":283,"page":6,"y":351.33,"tone":5},"section:6.2":{"line":325,"page":7,"y":382.76,"tone":5},"section:6.3":{"line":444,"page":9,"y":241.76,"tone":6},"section:7":{"line":490,"page":10,"y":182.63,"tone":3},"section:7.1":{"line":497,"page":10,"y":242.17,"tone":3},"section:7.2":{"line":532,"page":11,"y":217.59,"tone":3},"section:8":{"line":567,"page":12,"y":123.25,"tone":2},"section:a.1":{"line":600,"page":12,"y":569.5,"tone":0},"section:a.2":{"line":614,"page":13,"y":192.64,"tone":4},"section:a.3":{"line":625,"page":13,"y":327.16,"tone":5},"section:a.4":{"line":645,"page":13,"y":593.52,"tone":5},"section:a.5":{"line":651,"page":14,"y":69.34,"tone":2},"section:a.6":{"line":667,"page":14,"y":317.29},"theorem:1":{"line":88,"page":2,"y":485.18,"tone":0}}}
+{
+  "schema": "paper-references/1",
+  "targets": {
+    "equation:1": {
+      "line": 160,
+      "page": 4,
+      "y": 178.79,
+      "tone": 1
+    },
+    "equation:2": {
+      "line": 200,
+      "page": 4,
+      "y": 568.57,
+      "tone": 4
+    },
+    "equation:3": {
+      "line": 220,
+      "page": 5,
+      "y": 184.34,
+      "tone": 4
+    },
+    "equation:4": {
+      "line": 312,
+      "page": 7,
+      "y": 196.48,
+      "tone": 5
+    },
+    "equation:5": {
+      "line": 438,
+      "page": 8,
+      "y": 633.76,
+      "tone": 5
+    },
+    "equation:6": {
+      "line": 458,
+      "page": 9,
+      "y": 395.79,
+      "tone": 6
+    },
+    "section:1": {
+      "line": 15,
+      "page": 1,
+      "y": 215.52
+    },
+    "section:2": {
+      "line": 77,
+      "page": 2,
+      "y": 386.08,
+      "tone": 0
+    },
+    "section:3": {
+      "line": 132,
+      "page": 3,
+      "y": 530.42,
+      "tone": 1
+    },
+    "section:4": {
+      "line": 166,
+      "page": 4,
+      "y": 211.34,
+      "tone": 4
+    },
+    "section:5": {
+      "line": 242,
+      "page": 5,
+      "y": 431.18,
+      "tone": 7
+    },
+    "section:6": {
+      "line": 267,
+      "page": 6,
+      "y": 173.23
+    },
+    "section:6.1": {
+      "line": 283,
+      "page": 6,
+      "y": 351.33,
+      "tone": 5
+    },
+    "section:6.2": {
+      "line": 325,
+      "page": 7,
+      "y": 382.76,
+      "tone": 5
+    },
+    "section:6.3": {
+      "line": 444,
+      "page": 9,
+      "y": 241.76,
+      "tone": 6
+    },
+    "section:7": {
+      "line": 490,
+      "page": 10,
+      "y": 182.63,
+      "tone": 3
+    },
+    "section:7.1": {
+      "line": 497,
+      "page": 10,
+      "y": 242.17,
+      "tone": 3
+    },
+    "section:7.2": {
+      "line": 532,
+      "page": 11,
+      "y": 217.59,
+      "tone": 3
+    },
+    "section:8": {
+      "line": 567,
+      "page": 12,
+      "y": 123.25,
+      "tone": 2
+    },
+    "section:a.1": {
+      "line": 600,
+      "page": 12,
+      "y": 569.5,
+      "tone": 0
+    },
+    "section:a.2": {
+      "line": 614,
+      "page": 13,
+      "y": 192.64,
+      "tone": 4
+    },
+    "section:a.3": {
+      "line": 625,
+      "page": 13,
+      "y": 327.16,
+      "tone": 5
+    },
+    "section:a.4": {
+      "line": 645,
+      "page": 13,
+      "y": 593.52,
+      "tone": 5
+    },
+    "section:a.5": {
+      "line": 651,
+      "page": 14,
+      "y": 69.34,
+      "tone": 2
+    },
+    "section:a.6": {
+      "line": 667,
+      "page": 14,
+      "y": 317.29
+    },
+    "theorem:1": {
+      "line": 88,
+      "page": 2,
+      "y": 485.18,
+      "tone": 0
+    },
+    "short/theorem:a.1": {
+      "line": 499,
+      "page": 15,
+      "y": 70.71,
+      "tone": 1,
+      "stage": "short",
+      "colours": {
+        "light": "oklch(0.657 0.181 22.7)",
+        "dark": "oklch(0.732 0.164 22.7)"
+      }
+    }
+  }
+}

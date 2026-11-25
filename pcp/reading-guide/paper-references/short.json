@@ -1,0 +1,11 @@
+{
+  "schema": "paper-references/1",
+  "targets": {
+    "section:4": {
+      "line": 233
+    },
+    "section:5": {
+      "line": 271
+    }
+  }
+}

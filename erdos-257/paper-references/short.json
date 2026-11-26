@@ -266,18 +266,6 @@
       "y": 557.02,
       "tone": 5
     },
-    "problem:d.4": {
-      "line": 818,
-      "page": 23,
-      "y": 70.79,
-      "tone": 4
-    },
-    "problem:d.7": {
-      "line": 840,
-      "page": 23,
-      "y": 397.04,
-      "tone": 4
-    },
     "expository/section:6.2": {
       "line": 325,
       "page": 7,
@@ -299,6 +287,18 @@
         "light": "oklch(0.468 0.200 277.0)",
         "dark": "oklch(0.603 0.200 277.0)"
       }
+    },
+    "problem:d.4": {
+      "line": 818,
+      "page": 23,
+      "y": 70.79,
+      "tone": 4
+    },
+    "problem:d.7": {
+      "line": 840,
+      "page": 23,
+      "y": 397.04,
+      "tone": 4
     }
   }
 }

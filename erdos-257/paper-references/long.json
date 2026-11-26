@@ -1903,16 +1903,16 @@
       "y": 436.43,
       "tone": 17
     },
-    "table:2": {
-      "line": 3156,
-      "page": 90,
-      "y": 358.71
-    },
     "label:pairwise-coprime-supports": {
       "line": 4815,
       "page": 148,
       "y": 404.16,
       "tone": 10
+    },
+    "table:2": {
+      "line": 3156,
+      "page": 90,
+      "y": 358.71
     }
   }
 }

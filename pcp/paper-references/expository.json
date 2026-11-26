@@ -1,23 +1,95 @@
 {
   "schema": "paper-references/1",
   "targets": {
+    "appendix:a": {
+      "line": 1287,
+      "tone": 23
+    },
+    "appendix:b": {
+      "line": 1363,
+      "tone": 2
+    },
+    "appendix:c": {
+      "line": 1435
+    },
+    "lemma:3.1": {
+      "line": 190
+    },
+    "section:1": {
+      "line": 70
+    },
+    "section:10": {
+      "line": 1097
+    },
+    "section:11": {
+      "line": 1169
+    },
+    "section:12": {
+      "line": 1222
+    },
+    "section:2": {
+      "line": 102,
+      "tone": 0
+    },
     "section:3": {
       "line": 166
     },
-    "theorem:7.2": {
-      "line": 686,
-      "tone": 19
+    "section:4": {
+      "line": 262,
+      "tone": 6
+    },
+    "section:5": {
+      "line": 351,
+      "tone": 5
+    },
+    "section:6": {
+      "line": 419
+    },
+    "section:7": {
+      "line": 560
+    },
+    "section:8": {
+      "line": 722
+    },
+    "section:9": {
+      "line": 976
+    },
+    "section:a": {
+      "line": 1287,
+      "tone": 23
+    },
+    "section:b": {
+      "line": 1363,
+      "tone": 2
+    },
+    "section:c": {
+      "line": 1435
+    },
+    "theorem:2.1": {
+      "line": 112,
+      "tone": 0
     },
     "theorem:6.1": {
       "line": 432,
       "tone": 15
     },
+    "theorem:6.2": {
+      "line": 528,
+      "tone": 16
+    },
+    "theorem:7.1": {
+      "line": 606
+    },
+    "theorem:7.2": {
+      "line": 686,
+      "tone": 19
+    },
     "theorem:8.1": {
       "line": 808,
       "tone": 12
     },
-    "section:10": {
-      "line": 1097
+    "theorem:8.2": {
+      "line": 852
     }
   }
 }

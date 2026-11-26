@@ -1637,9 +1637,7 @@
     },
     "equation:m.5.56": {
       "line": 1217,
-      "tone": 10,
-      "page": 42,
-      "y": 350.81
+      "tone": 10
     },
     "equation:m.5.57": {
       "line": 1220,
@@ -1889,9 +1887,7 @@
     },
     "equation:m.d.2": {
       "line": 1663,
-      "tone": 13,
-      "page": 57,
-      "y": 186.68
+      "tone": 13
     },
     "equation:m.d.3": {
       "line": 1670,
@@ -2927,73 +2923,6 @@
       "y": 582.08,
       "tone": 7
     },
-    "theorem:7.1:t4": {
-      "line": 1332,
-      "tone": 3,
-      "page": 45,
-      "y": 625.39
-    },
-    "theorem:7.1:t2": {
-      "line": 1328,
-      "tone": 3,
-      "page": 45,
-      "y": 590.4
-    },
-    "lemma:d.2:c": {
-      "line": 1694,
-      "tone": 13,
-      "page": 57,
-      "y": 574.26
-    },
-    "lemma:5.3:i": {
-      "line": 906,
-      "tone": 11,
-      "page": 32,
-      "y": 377.68
-    },
-    "lemma:5.3:iii": {
-      "line": 916,
-      "tone": 11,
-      "page": 32,
-      "y": 475.85
-    },
-    "lemma:5.3:ii": {
-      "line": 911,
-      "tone": 11,
-      "page": 32,
-      "y": 426.76
-    },
-    "proof-item:7.2.4": {
-      "line": 1403,
-      "tone": 3,
-      "page": 48,
-      "y": 176.59
-    },
-    "theorem:7.1:t1": {
-      "line": 1326,
-      "tone": 3,
-      "page": 45,
-      "y": 578.29
-    },
-    "theorem:7.1:t3": {
-      "line": 1330,
-      "tone": 3,
-      "page": 45,
-      "y": 608.58
-    },
-    "proof-item:7.2.2": {
-      "line": 1381,
-      "tone": 3,
-      "page": 47,
-      "y": 150.61
-    },
-    "lemma:aux.1.2": {
-      "line": 1883,
-      "tone": 0,
-      "pdfFile": "euler-adapted-auxiliary-v8.pdf",
-      "page": 1,
-      "y": 442.56
-    },
     "equation:aux.1.1": {
       "line": 1880,
       "tone": 0,
@@ -3007,13 +2936,6 @@
       "pdfFile": "euler-adapted-auxiliary-v8.pdf",
       "page": 1,
       "y": 475.52
-    },
-    "lemma:aux.1.3": {
-      "line": 1890,
-      "tone": 0,
-      "pdfFile": "euler-adapted-auxiliary-v8.pdf",
-      "page": 1,
-      "y": 583.77
     },
     "equation:aux.1.3": {
       "line": 1892,
@@ -3029,6 +2951,13 @@
       "page": 2,
       "y": 424.76
     },
+    "equation:aux.2.2": {
+      "line": 1919,
+      "tone": 0,
+      "pdfFile": "euler-adapted-auxiliary-v8.pdf",
+      "page": 2,
+      "y": 603.0
+    },
     "equation:aux.2.3": {
       "line": 1934,
       "tone": 0,
@@ -3036,12 +2965,12 @@
       "page": 3,
       "y": 398.23
     },
-    "equation:aux.2.2": {
-      "line": 1919,
+    "equation:aux.2.4": {
+      "line": 1951,
       "tone": 0,
       "pdfFile": "euler-adapted-auxiliary-v8.pdf",
-      "page": 2,
-      "y": 603.0
+      "page": 4,
+      "y": 471.68
     },
     "equation:aux.2.5": {
       "line": 1957,
@@ -3050,12 +2979,79 @@
       "page": 4,
       "y": 537.11
     },
-    "equation:aux.2.4": {
-      "line": 1951,
+    "lemma:5.3:i": {
+      "line": 906,
+      "tone": 11,
+      "page": 32,
+      "y": 377.68
+    },
+    "lemma:5.3:ii": {
+      "line": 911,
+      "tone": 11,
+      "page": 32,
+      "y": 426.76
+    },
+    "lemma:5.3:iii": {
+      "line": 916,
+      "tone": 11,
+      "page": 32,
+      "y": 475.85
+    },
+    "lemma:aux.1.2": {
+      "line": 1883,
       "tone": 0,
       "pdfFile": "euler-adapted-auxiliary-v8.pdf",
-      "page": 4,
-      "y": 471.68
+      "page": 1,
+      "y": 442.56
+    },
+    "lemma:aux.1.3": {
+      "line": 1890,
+      "tone": 0,
+      "pdfFile": "euler-adapted-auxiliary-v8.pdf",
+      "page": 1,
+      "y": 583.77
+    },
+    "lemma:d.2:c": {
+      "line": 1694,
+      "tone": 13,
+      "page": 57,
+      "y": 574.26
+    },
+    "proof-item:7.2.2": {
+      "line": 1381,
+      "tone": 3,
+      "page": 47,
+      "y": 150.61
+    },
+    "proof-item:7.2.4": {
+      "line": 1403,
+      "tone": 3,
+      "page": 48,
+      "y": 176.59
+    },
+    "theorem:7.1:t1": {
+      "line": 1326,
+      "tone": 3,
+      "page": 45,
+      "y": 578.29
+    },
+    "theorem:7.1:t2": {
+      "line": 1328,
+      "tone": 3,
+      "page": 45,
+      "y": 590.4
+    },
+    "theorem:7.1:t3": {
+      "line": 1330,
+      "tone": 3,
+      "page": 45,
+      "y": 608.58
+    },
+    "theorem:7.1:t4": {
+      "line": 1332,
+      "tone": 3,
+      "page": 45,
+      "y": 625.39
     }
   }
 }

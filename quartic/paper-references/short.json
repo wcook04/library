@@ -121,41 +121,6 @@
       "line": 28,
       "tone": 0
     },
-    "long/appendix:e.5": {
-      "line": 3892,
-      "stage": "long"
-    },
-    "expository/section:4.1": {
-      "line": 257,
-      "tone": 7,
-      "stage": "expository",
-      "colours": {
-        "light": "oklch(0.422 0.099 340.9)",
-        "dark": "oklch(0.632 0.145 340.9)"
-      }
-    },
-    "expository/section:7.3": {
-      "line": 569,
-      "tone": 5,
-      "stage": "expository",
-      "colours": {
-        "light": "oklch(0.540 0.093 229.5)",
-        "dark": "oklch(0.750 0.137 229.5)"
-      }
-    },
-    "long/appendix:g.3": {
-      "line": 4432,
-      "stage": "long"
-    },
-    "long/appendix:g.2": {
-      "line": 4298,
-      "tone": 4,
-      "stage": "long",
-      "colours": {
-        "light": "oklch(0.450 0.072 126.0)",
-        "dark": "oklch(0.665 0.110 126.0)"
-      }
-    },
     "expository/appendix:a.2": {
       "line": 708,
       "tone": 8,
@@ -183,6 +148,54 @@
         "dark": "oklch(0.750 0.137 229.5)"
       }
     },
+    "expository/section:4.1": {
+      "line": 257,
+      "tone": 7,
+      "stage": "expository",
+      "colours": {
+        "light": "oklch(0.422 0.099 340.9)",
+        "dark": "oklch(0.632 0.145 340.9)"
+      }
+    },
+    "expository/section:7.3": {
+      "line": 569,
+      "tone": 5,
+      "stage": "expository",
+      "colours": {
+        "light": "oklch(0.540 0.093 229.5)",
+        "dark": "oklch(0.750 0.137 229.5)"
+      }
+    },
+    "long/appendix:a": {
+      "line": 2148,
+      "tone": 0,
+      "stage": "long",
+      "colours": {
+        "light": "oklch(0.380 0.081 340.1)",
+        "dark": "oklch(0.595 0.123 340.1)"
+      }
+    },
+    "long/appendix:b.2": {
+      "line": 2622,
+      "stage": "long"
+    },
+    "long/appendix:e.5": {
+      "line": 3892,
+      "stage": "long"
+    },
+    "long/appendix:g.2": {
+      "line": 4298,
+      "tone": 4,
+      "stage": "long",
+      "colours": {
+        "light": "oklch(0.450 0.072 126.0)",
+        "dark": "oklch(0.665 0.110 126.0)"
+      }
+    },
+    "long/appendix:g.3": {
+      "line": 4432,
+      "stage": "long"
+    },
     "long/equation:8.3": {
       "line": 1460,
       "tone": 5,
@@ -199,19 +212,6 @@
       "colours": {
         "light": "oklch(0.535 0.063 140.4)",
         "dark": "oklch(0.750 0.097 140.4)"
-      }
-    },
-    "long/appendix:b.2": {
-      "line": 2622,
-      "stage": "long"
-    },
-    "long/appendix:a": {
-      "line": 2148,
-      "tone": 0,
-      "stage": "long",
-      "colours": {
-        "light": "oklch(0.380 0.081 340.1)",
-        "dark": "oklch(0.595 0.123 340.1)"
       }
     }
   }

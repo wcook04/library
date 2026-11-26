@@ -1,33 +1,161 @@
 {
   "schema": "paper-references/1",
   "targets": {
-    "section:7": {
-      "line": 411
+    "appendix:a": {
+      "line": 471
     },
-    "theorem:6.1": {
-      "line": 385
+    "definition:3.1": {
+      "line": 109
     },
-    "theorem:4.5": {
-      "line": 252,
-      "tone": 15
+    "definition:3.2": {
+      "line": 137
     },
-    "section:2": {
-      "line": 48
+    "equation:1": {
+      "line": 72
+    },
+    "equation:10": {
+      "line": 217
+    },
+    "equation:11": {
+      "line": 243,
+      "tone": 13
+    },
+    "equation:12": {
+      "line": 278
+    },
+    "equation:13": {
+      "line": 288
     },
     "equation:14": {
       "line": 312,
       "tone": 11
     },
-    "lemma:3.4": {
-      "line": 166
+    "equation:15": {
+      "line": 342
+    },
+    "equation:16": {
+      "line": 352,
+      "tone": 9
+    },
+    "equation:17": {
+      "line": 368,
+      "tone": 8
+    },
+    "equation:18": {
+      "line": 391,
+      "tone": 8
+    },
+    "equation:19": {
+      "line": 401,
+      "tone": 8
+    },
+    "equation:2": {
+      "line": 91
+    },
+    "equation:20": {
+      "line": 382,
+      "tone": 8
+    },
+    "equation:21": {
+      "line": 420
+    },
+    "equation:22": {
+      "line": 434
+    },
+    "equation:3": {
+      "line": 115
     },
     "equation:4": {
       "line": 123,
       "tone": 14
     },
+    "equation:5": {
+      "line": 130
+    },
+    "equation:6": {
+      "line": 141
+    },
+    "equation:7": {
+      "line": 150
+    },
+    "equation:8": {
+      "line": 161
+    },
+    "equation:9": {
+      "line": 170
+    },
+    "lemma:2.1": {
+      "line": 77,
+      "tone": 6
+    },
+    "lemma:2.2": {
+      "line": 81
+    },
+    "lemma:3.3": {
+      "line": 146
+    },
+    "lemma:3.4": {
+      "line": 166
+    },
+    "lemma:4.1": {
+      "line": 205
+    },
+    "lemma:4.2": {
+      "line": 231
+    },
+    "lemma:4.3": {
+      "line": 237
+    },
+    "lemma:4.4": {
+      "line": 248
+    },
+    "lemma:5.2": {
+      "line": 329,
+      "tone": 9
+    },
+    "section:1": {
+      "line": 19,
+      "tone": 0
+    },
+    "section:2": {
+      "line": 48
+    },
+    "section:3": {
+      "line": 105
+    },
+    "section:4": {
+      "line": 199
+    },
+    "section:5": {
+      "line": 298
+    },
+    "section:6": {
+      "line": 360,
+      "tone": 8
+    },
+    "section:7": {
+      "line": 411
+    },
+    "section:a": {
+      "line": 471
+    },
     "theorem:1.1": {
       "line": 23,
       "tone": 0
+    },
+    "theorem:4.5": {
+      "line": 252,
+      "tone": 15
+    },
+    "theorem:4.6": {
+      "line": 270,
+      "tone": 12
+    },
+    "theorem:5.1": {
+      "line": 306
+    },
+    "theorem:6.1": {
+      "line": 385
     }
   }
 }

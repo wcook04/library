@@ -1,43 +1,91 @@
 {
   "schema": "paper-references/1",
   "targets": {
-    "example:exotic": {
-      "line": 210,
+    "section:1": {
+      "line": 48,
+      "page": 1,
+      "y": 414.4
+    },
+    "section:10": {
+      "line": 937
+    },
+    "section:2": {
+      "line": 102,
+      "page": 3,
+      "y": 445.5
+    },
+    "section:3": {
+      "line": 183,
       "page": 5,
-      "y": 503.33
+      "y": 261.3
     },
-    "definition:reifyindex": {
-      "line": 265,
-      "page": 6,
-      "y": 483.98,
-      "tone": 4
+    "section:3.1": {
+      "line": 191,
+      "page": 5,
+      "y": 345.82
     },
-    "definition:exte": {
-      "line": 245,
-      "page": 6,
-      "y": 309.54
+    "section:3.2": {
+      "line": 286,
+      "page": 7,
+      "y": 349.01,
+      "tone": 5
     },
-    "example:tt-first-order": {
-      "line": 154,
-      "page": 4,
-      "y": 510.69
+    "section:3.3": {
+      "line": 309
     },
-    "definition:tocvar": {
-      "line": 374,
-      "page": 8,
-      "y": 589.84,
-      "tone": 8
+    "section:3.4": {
+      "line": 394
     },
-    "figure:2": {
-      "line": 338,
-      "page": 8,
-      "y": 87.44
+    "section:3.5": {
+      "line": 400
     },
-    "lemma:indexisor": {
-      "line": 388,
-      "page": 9,
-      "y": 144.96,
-      "tone": 10
+    "section:3.6": {
+      "line": 419
+    },
+    "section:3.7": {
+      "line": 469,
+      "tone": 11
+    },
+    "section:4": {
+      "line": 500,
+      "page": 12,
+      "y": 429.1
+    },
+    "section:5": {
+      "line": 561,
+      "page": 13,
+      "y": 528.8
+    },
+    "section:6": {
+      "line": 646,
+      "page": 15,
+      "y": 362.0
+    },
+    "section:6.1": {
+      "line": 656,
+      "page": 15,
+      "y": 470.8
+    },
+    "section:6.2": {
+      "line": 750,
+      "page": 16,
+      "y": 359.7
+    },
+    "section:6.3": {
+      "line": 760,
+      "page": 16,
+      "y": 610.8
+    },
+    "section:7": {
+      "line": 816,
+      "page": 17,
+      "y": 477.7
+    },
+    "section:8": {
+      "line": 876
+    },
+    "section:9": {
+      "line": 908
     },
     "axiom:closed-world": {
       "line": 388,
@@ -45,17 +93,39 @@
       "y": 219.17,
       "tone": 11
     },
-    "theorem:isol": {
-      "line": 382,
-      "page": 8,
-      "y": 647.93,
-      "tone": 9
-    },
     "case:isol-var": {
       "line": 390,
       "page": 9,
       "y": 288.42,
       "tone": 9
+    },
+    "definition:exte": {
+      "line": 245,
+      "page": 6,
+      "y": 309.54
+    },
+    "definition:proxytop": {
+      "line": 219,
+      "page": 5,
+      "y": 601.35,
+      "tone": 3
+    },
+    "definition:reifyindex": {
+      "line": 265,
+      "page": 6,
+      "y": 483.98,
+      "tone": 4
+    },
+    "definition:reifyindex-instances": {
+      "line": 272,
+      "page": 6,
+      "y": 520.55
+    },
+    "definition:tocvar": {
+      "line": 374,
+      "page": 8,
+      "y": 589.84,
+      "tone": 8
     },
     "definition:var-package": {
       "line": 348,
@@ -69,10 +139,20 @@
       "y": 507.24,
       "tone": 8
     },
-    "definition:reifyindex-instances": {
-      "line": 272,
-      "page": 6,
-      "y": 520.55
+    "example:exotic": {
+      "line": 210,
+      "page": 5,
+      "y": 503.33
+    },
+    "example:tt-first-order": {
+      "line": 154,
+      "page": 4,
+      "y": 510.69
+    },
+    "figure:2": {
+      "line": 338,
+      "page": 8,
+      "y": 87.44
     },
     "lemma:indexisol": {
       "line": 386,
@@ -80,11 +160,17 @@
       "y": 103.11,
       "tone": 10
     },
-    "definition:proxytop": {
-      "line": 219,
-      "page": 5,
-      "y": 601.35,
-      "tone": 3
+    "lemma:indexisor": {
+      "line": 388,
+      "page": 9,
+      "y": 144.96,
+      "tone": 10
+    },
+    "theorem:isol": {
+      "line": 382,
+      "page": 8,
+      "y": 647.93,
+      "tone": 9
     },
     "theorem:isor": {
       "line": 383,

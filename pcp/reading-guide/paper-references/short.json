@@ -1,11 +1,35 @@
 {
   "schema": "paper-references/1",
   "targets": {
+    "section:1": {
+      "line": 33
+    },
+    "section:10": {
+      "line": 611
+    },
+    "section:2": {
+      "line": 59
+    },
+    "section:3": {
+      "line": 98
+    },
     "section:4": {
       "line": 233
     },
     "section:5": {
       "line": 271
+    },
+    "section:6": {
+      "line": 316
+    },
+    "section:7": {
+      "line": 363
+    },
+    "section:8": {
+      "line": 516
+    },
+    "section:9": {
+      "line": 579
     }
   }
 }

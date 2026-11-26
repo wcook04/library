@@ -1,38 +1,74 @@
 {
   "schema": "paper-references/1",
   "targets": {
-    "section:3.1": {
-      "line": 8,
-      "page": 23,
-      "y": 548.95
-    },
     "appendix:b": {
       "line": 196,
       "page": 104,
       "y": 182.35
     },
-    "remark:1": {
-      "page": 26,
-      "y": 621.57
+    "section:3.1": {
+      "line": 8,
+      "page": 23,
+      "y": 548.95
     },
-    "definition:1": {
-      "page": 79,
-      "y": 642.17
+    "section:3.11": {
+      "line": 165,
+      "page": 50,
+      "y": 64.7
+    },
+    "section:3.2": {
+      "line": 53,
+      "page": 26,
+      "y": 472.0,
+      "tone": 13
+    },
+    "section:3.3": {
+      "line": 66,
+      "page": 27,
+      "y": 178.8,
+      "tone": 14
+    },
+    "section:3.4": {
+      "line": 79,
+      "page": 27,
+      "y": 552.2,
+      "tone": 9
+    },
+    "section:3.5": {
+      "line": 92,
+      "page": 28,
+      "y": 198.3,
+      "tone": 15
+    },
+    "section:3.6": {
+      "line": 103,
+      "page": 30,
+      "y": 100.0
+    },
+    "section:3.6.1": {
+      "line": 126,
+      "page": 31,
+      "y": 218.5
     },
     "section:3.6.3": {
       "line": 147,
       "page": 35,
       "y": 447.09
     },
-    "remark:5": {
-      "line": 140,
-      "page": 33,
-      "y": 620.59,
-      "tone": 5
+    "section:3.6.4": {
+      "line": 156,
+      "page": 36,
+      "y": 447.6,
+      "tone": 8
     },
-    "section:3.6.2": {
-      "page": 34,
-      "y": 462.36
+    "section:b": {
+      "line": 196,
+      "page": 104,
+      "y": 182.4
+    },
+    "definition:1": {
+      "page": 79,
+      "y": 642.17
     },
     "equation:3.1": {
       "page": 31,
@@ -42,13 +78,13 @@
       "page": 31,
       "y": 385.81
     },
-    "equation:3.4": {
-      "page": 31,
-      "y": 554.32
-    },
     "equation:3.3": {
       "page": 31,
       "y": 506.46
+    },
+    "equation:3.4": {
+      "page": 31,
+      "y": 554.32
     },
     "equation:3.7": {
       "page": 34,
@@ -58,11 +94,25 @@
       "page": 85,
       "y": 666.17
     },
+    "remark:1": {
+      "page": 26,
+      "y": 621.57
+    },
+    "remark:5": {
+      "line": 140,
+      "page": 33,
+      "y": 620.59,
+      "tone": 5
+    },
     "remark:8": {
       "line": 151,
       "page": 36,
       "y": 403.38,
       "tone": 6
+    },
+    "section:3.6.2": {
+      "page": 34,
+      "y": 462.36
     },
     "section:4.2.3": {
       "page": 67,
